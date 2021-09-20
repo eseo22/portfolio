@@ -1,0 +1,175 @@
+@charset "utf-8";
+@import "reset";
+@import "sub/layout_sub";
+
+#header{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    border-top: 2px solid #222;
+
+    .inner{
+        width: 1180px;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+
+        h1{
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            transform: translateY(-50%);
+
+            a{
+                font: 30px/1 'arial'; color: #000;
+            }
+
+            
+        }
+        .gnb{
+            position: absolute;
+            top: 0;
+            right:200px;
+
+            &::after{
+                content:''; display:block; clear:both; 
+            }
+
+            li{
+                float: left;
+
+                a{
+                    display: block;
+                    width: 140px;
+                    height: 100px;
+                    font: 18px/100px 'arial'; color: #222;
+                    text-align: center;
+                    position: relative;
+
+                    &::after{
+                        content: '';
+                        display: block;
+                        width: 1px;
+                        height: 18px;
+                        background: #ddd ;
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                    }
+                }
+                &:last-child a::after{
+                    display: none;
+                }
+            }
+
+        }
+        >a{
+            display: block;
+            width: 120px;
+            height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            
+            font: 15px/40px 'arial'; color: rgb(6, 175, 133);
+            text-align: center;
+        }
+    }
+}
+#visual{
+    width: 100%;
+
+    .inner{
+        height: calc(100vh - 103px);
+    }
+}
+#footer{
+    width: 100%;
+    background: #222;
+
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+        padding: 40px 80px;
+        
+
+        .wrap{
+            width: 100%;
+            display: flex;
+        
+            article{
+                margin-right: 60px;
+                h1{
+                    font: 20px/1 'arial'; color: #ddd;
+                    margin-bottom: 30px;
+                }
+                p{
+                    font: 15px/1.2 'arial'; color: #888;
+                }
+                ul{
+                    li{
+                        margin-bottom: 15px;
+
+                        a{
+                            font: 14px/1 'arial'; color: #888;
+
+                            &:hover{
+                                font: 16px/1 'arial'; color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-of-type(1){             
+                    flex:2;
+                    
+                }
+                &:nth-of-type(2){
+                    flex:1;
+                    margin-left: 20px;
+                    
+                }
+                &:nth-of-type(3){
+                    flex:1; 
+                }
+                &:nth-of-type(4){
+                    flex:2.2;
+                    margin-right: 0px;
+
+                    >p{
+                        margin-bottom: 20px;
+
+                    }
+                    input[type="text"]{
+                        width: 180px;
+                        height: 35px;
+                    }
+                    input[type="submit"]{
+                        width: 100px;
+                        height: 35px;
+                        background-color: pink;
+                        border: none;
+                        font: 12px/1 'arial'; color: #000;
+                    }
+                    
+                }
+            }
+
+            
+        }
+        >p{
+            font: 14px/1 'arial'; color: #444;
+            margin-top: 80px;
+            
+        }
+        address{
+            font: 14px/1.4 'arial'; color: #444;
+
+        }
+
+    }
+}
