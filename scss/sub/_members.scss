@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+
+.members{
+    width: 100%;
+
+    .inner{
+        width: 1180px;
+        min-height: 500px;
+        margin: 0 auto;
+        padding: 40px 0;
+
+        h1{
+            font: 40px/1 '맑은 고딕'; color:#000;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        
+        form{
+            fieldset{
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 40px;
+
+                .title{
+                    font: 20px/1 '맑은 고딕'; color: #000;
+                    margin-bottom: 20px;
+                    
+                }
+
+                table{
+                    width: 100%;
+                    border-top: 2px solid #eee;
+                    border-collapse: collapse;
+                    
+                    tr{
+                        width: 100%;
+                        border-bottom:1px solid #eee;
+                        
+                        th{
+                            padding: 10px;
+                            font: 14px/1 'arial';
+
+                            span{
+                                color: orangered;
+                            }
+                        }
+                        td{
+                            padding: 10px;
+                            p{
+                                font: 12px/1px '맑은 고딕';
+                                margin-top: 15px;
+                                
+                            }
+                            input{
+                                width: 200px;
+                                height: 25px;
+                                padding-left: 10px;
+                                // line-height: 25px;
+                                
+                            }
+                        }
+
+                        &:nth-of-type(1),&:nth-of-type(5){
+                            td{
+                                input:nth-of-type(1){
+                                    margin-right: 5px;
+                                }
+                                input:nth-of-type(2){
+                                    font: 12px/25px '맑은 고딕';
+                                    width: 100px;
+                                    vertical-align:middle;        padding-left:0px;                       
+                                }
+                            }
+                           
+                        }
+
+                        &:nth-of-type(5){
+                            td{
+                                input:nth-of-type(3){
+                                    width: 500px;
+                                    margin-top: 5px;
+                                }
+                            }
+                        }
+                        &:nth-of-type(8){
+                            td{
+                                label{
+                                    
+                                    input{
+                                        width: 15px;
+                                        height: 15px;
+                                        margin-right: 15px;
+                                        vertical-align: middle;
+                                        
+
+                                        
+                                    }
+                                    font: 14px/15px '맑은 고딕';
+                                    margin-right: 20px;
+                                }
+                            }
+                        }
+                            
+
+                        
+                    }
+                }
+
+                >ul{
+                    width: 100%;
+                    border-top: 2px solid #eee;
+
+
+                }
+            }
+            
+        }
+    }
+
+    
+}

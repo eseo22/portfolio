@@ -1,7 +1,6 @@
 #header_sub{
     width: 100%;
     border-bottom: 1px solid #ddd;
-    border-top: 2px solid #222;
 
     .inner{
         width: 1180px;
@@ -13,10 +12,10 @@
             position: absolute;
             top: 50%;
             left: 0px;
-            transform: translateY(-50%);
+            transform: translateY(-65%);
 
             a{
-                font: 30px/1 'arial'; color: #000;
+                font: 22px/1 'arial'; color: #000;
             }
 
             
@@ -24,7 +23,7 @@
         .gnb{
             position: absolute;
             top: 0;
-            right:200px;
+            right:120px;
 
             &::after{
                 content:''; display:block; clear:both; 
@@ -37,7 +36,7 @@
                     display: block;
                     width: 140px;
                     height: 100px;
-                    font: 18px/100px 'arial'; color: #222;
+                    font: 15px/100px 'arial'; color: #222;
                     text-align: center;
                     position: relative;
 
@@ -62,7 +61,7 @@
         >a{
             display: block;
             width: 120px;
-            height: 40px;
+            height: 35px;
             border: 1px solid #ddd;
             border-radius: 20px;
 
@@ -71,7 +70,7 @@
             right: 0;
             transform: translateY(-50%);
             
-            font: 15px/40px 'arial'; color: rgb(6, 175, 133);
+            font: 15px/35px 'arial'; color: burlywood;
             text-align: center;
         }
     }
