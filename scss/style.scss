@@ -15,20 +15,20 @@
 
         h1{
             position: absolute;
-            top: 50%;
+            bottom: 20px;
             left: 0px;
-            transform: translateY(-65%);
+            
 
             a{
-                font: 22px/1 'arial'; color: #000;
+                font: 30px/1 'arial'; color: #000;
             }
 
             
         }
         .gnb{
             position: absolute;
-            top: 0;
-            right:120px;
+            bottom:0px;
+            right:0px;
 
             &::after{
                 content:''; display:block; clear:both; 
@@ -36,47 +36,42 @@
 
             li{
                 float: left;
-
                 a{
                     display: block;
                     width: 140px;
-                    height: 100px;
-                    font: 15px/100px 'arial'; color: #222;
+                    height: 60px;
+                    font: 15px/60px 'arial'; color: #222;
                     text-align: center;
                     position: relative;
 
-                    &::after{
-                        content: '';
-                        display: block;
-                        width: 1px;
-                        height: 18px;
-                        background: #ddd ;
-                        position: absolute;
-                        top: 50%;
-                        right: 0;
-                        transform: translateY(-50%);
-                    }
+                    
                 }
-                &:last-child a::after{
-                    display: none;
+                &:nth-of-type(1) a{
+                    width: 165px;
                 }
+                
             }
 
         }
-        >a{
-            display: block;
-            width: 120px;
-            height: 35px;
-            border: 1px solid #ddd;
-            border-radius: 20px;
 
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            
-            font: 15px/35px 'arial'; color: burlywood;
-            text-align: center;
+        
+        .util{
+            position: absolute; 
+            top: 10px; 
+            right: 0px;
+            &::after{
+                content: ''; display: block; clear: both;
+            }
+            li{
+                float: left;
+
+                a{
+                    display: block;
+                    width: 80px; height: 20px;
+                    font: 12px/20px 'arial'; color: #444;
+                    text-align: center;
+                }
+            }
         }
     }
 }
@@ -147,6 +142,7 @@
                     input[type="text"]{
                         width: 180px;
                         height: 35px;
+                        font: 12px/35px 'arial';
                         padding: 0px 5px;
 
                     }
@@ -155,7 +151,7 @@
                         height: 35px;
                         background-color: burlywood;
                         border: none;
-                        font: 12px/1 'arial'; color: #000;
+                        font: 12px/35px 'arial'; color: #000;
                     }
                     
                 }

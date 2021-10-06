@@ -37,7 +37,7 @@ fieldset {
     #header_sub .inner .gnb {
       position: absolute;
       top: 0;
-      right: 120px; }
+      right: 0px; }
       #header_sub .inner .gnb::after {
         content: '';
         display: block;
@@ -120,13 +120,14 @@ fieldset {
           #footer_sub .inner .wrap article:nth-of-type(4) input[type="text"] {
             width: 180px;
             height: 35px;
+            font: 12px/35px 'arial';
             padding: 0px 5px; }
           #footer_sub .inner .wrap article:nth-of-type(4) input[type="submit"] {
             width: 100px;
             height: 35px;
             background-color: burlywood;
             border: none;
-            font: 12px/1 'arial';
+            font: 12px/35px 'arial';
             color: #000; }
     #footer_sub .inner > p {
       font: 14px/1 'arial';
@@ -220,16 +221,15 @@ fieldset {
     position: relative; }
     #header .inner h1 {
       position: absolute;
-      top: 50%;
-      left: 0px;
-      transform: translateY(-65%); }
+      bottom: 20px;
+      left: 0px; }
       #header .inner h1 a {
-        font: 22px/1 'arial';
+        font: 30px/1 'arial';
         color: #000; }
     #header .inner .gnb {
       position: absolute;
-      top: 0;
-      right: 120px; }
+      bottom: 0px;
+      right: 0px; }
       #header .inner .gnb::after {
         content: '';
         display: block;
@@ -239,36 +239,30 @@ fieldset {
         #header .inner .gnb li a {
           display: block;
           width: 140px;
-          height: 100px;
-          font: 15px/100px 'arial';
+          height: 60px;
+          font: 15px/60px 'arial';
           color: #222;
           text-align: center;
           position: relative; }
-          #header .inner .gnb li a::after {
-            content: '';
-            display: block;
-            width: 1px;
-            height: 18px;
-            background: #ddd;
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%); }
-        #header .inner .gnb li:last-child a::after {
-          display: none; }
-    #header .inner > a {
-      display: block;
-      width: 120px;
-      height: 35px;
-      border: 1px solid #ddd;
-      border-radius: 20px;
+        #header .inner .gnb li:nth-of-type(1) a {
+          width: 165px; }
+    #header .inner .util {
       position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      font: 15px/35px 'arial';
-      color: burlywood;
-      text-align: center; }
+      top: 10px;
+      right: 0px; }
+      #header .inner .util::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #header .inner .util li {
+        float: left; }
+        #header .inner .util li a {
+          display: block;
+          width: 80px;
+          height: 20px;
+          font: 12px/20px 'arial';
+          color: #444;
+          text-align: center; }
 
 #visual {
   width: 100%; }
@@ -317,13 +311,14 @@ fieldset {
           #footer .inner .wrap article:nth-of-type(4) input[type="text"] {
             width: 180px;
             height: 35px;
+            font: 12px/35px 'arial';
             padding: 0px 5px; }
           #footer .inner .wrap article:nth-of-type(4) input[type="submit"] {
             width: 100px;
             height: 35px;
             background-color: burlywood;
             border: none;
-            font: 12px/1 'arial';
+            font: 12px/35px 'arial';
             color: #000; }
     #footer .inner > p {
       font: 14px/1 'arial';
