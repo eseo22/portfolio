@@ -28,55 +28,38 @@ fieldset {
     position: relative; }
     #header_sub .inner h1 {
       position: absolute;
-      top: 50%;
-      left: 0px;
-      transform: translateY(-65%); }
+      top: 23px;
+      left: 0; }
       #header_sub .inner h1 a {
-        font: 22px/1 'arial';
+        font: 24px/1 'arial';
         color: #000; }
     #header_sub .inner .gnb {
       position: absolute;
-      top: 0;
-      right: 0px; }
+      left: 200px; }
       #header_sub .inner .gnb::after {
         content: '';
         display: block;
         clear: both; }
       #header_sub .inner .gnb li {
-        float: left; }
+        float: left;
+        width: 140px;
+        height: 100px;
+        text-align: right; }
         #header_sub .inner .gnb li a {
-          display: block;
-          width: 140px;
-          height: 100px;
           font: 15px/100px 'arial';
-          color: #222;
-          text-align: center;
-          position: relative; }
-          #header_sub .inner .gnb li a::after {
-            content: '';
-            display: block;
-            width: 1px;
-            height: 18px;
-            background: #ddd;
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%); }
-        #header_sub .inner .gnb li:last-child a::after {
-          display: none; }
+          color: #222; }
     #header_sub .inner > a {
       display: block;
-      width: 120px;
-      height: 35px;
-      border: 1px solid #ddd;
-      border-radius: 20px;
+      width: 90px;
+      height: 28px;
+      border: 1px solid #bbb;
+      text-align: center;
+      font: 12px/28px 'arial';
+      color: #222;
       position: absolute;
+      right: 0px;
       top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      font: 15px/35px 'arial';
-      color: burlywood;
-      text-align: center; }
+      transform: translateY(-50%); }
 
 #footer_sub {
   width: 100%;
@@ -84,7 +67,7 @@ fieldset {
   #footer_sub .inner {
     width: 1180px;
     margin: 0 auto;
-    padding: 40px 80px; }
+    padding: 40px 0px; }
     #footer_sub .inner .wrap {
       width: 100%;
       display: flex; }
@@ -221,48 +204,38 @@ fieldset {
     position: relative; }
     #header .inner h1 {
       position: absolute;
-      bottom: 20px;
-      left: 0px; }
+      top: 23px;
+      left: 0; }
       #header .inner h1 a {
-        font: 30px/1 'arial';
+        font: 24px/1 'arial';
         color: #000; }
     #header .inner .gnb {
       position: absolute;
-      bottom: 0px;
-      right: 0px; }
+      left: 200px; }
       #header .inner .gnb::after {
         content: '';
         display: block;
         clear: both; }
       #header .inner .gnb li {
-        float: left; }
+        float: left;
+        width: 140px;
+        height: 100px;
+        text-align: right; }
         #header .inner .gnb li a {
-          display: block;
-          width: 140px;
-          height: 60px;
-          font: 15px/60px 'arial';
-          color: #222;
-          text-align: center;
-          position: relative; }
-        #header .inner .gnb li:nth-of-type(1) a {
-          width: 165px; }
-    #header .inner .util {
+          font: 15px/100px 'arial';
+          color: #222; }
+    #header .inner > a {
+      display: block;
+      width: 90px;
+      height: 28px;
+      border: 1px solid #bbb;
+      text-align: center;
+      font: 12px/28px 'arial';
+      color: #222;
       position: absolute;
-      top: 10px;
-      right: 0px; }
-      #header .inner .util::after {
-        content: '';
-        display: block;
-        clear: both; }
-      #header .inner .util li {
-        float: left; }
-        #header .inner .util li a {
-          display: block;
-          width: 80px;
-          height: 20px;
-          font: 12px/20px 'arial';
-          color: #444;
-          text-align: center; }
+      right: 0px;
+      top: 50%;
+      transform: translateY(-50%); }
 
 #visual {
   width: 100%; }
@@ -275,7 +248,7 @@ fieldset {
   #footer .inner {
     width: 1180px;
     margin: 0 auto;
-    padding: 40px 80px; }
+    padding: 40px 0px; }
     #footer .inner .wrap {
       width: 100%;
       display: flex; }
