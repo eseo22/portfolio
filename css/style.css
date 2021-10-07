@@ -157,6 +157,7 @@ fieldset {
         border-collapse: collapse; }
         .members .inner form fieldset table tr {
           width: 100%;
+          height: 60px;
           border-bottom: 1px solid #eee; }
           .members .inner form fieldset table tr th {
             width: 20%;
@@ -194,9 +195,6 @@ fieldset {
               height: 15px;
               margin-right: 15px;
               vertical-align: middle; }
-      .members .inner form fieldset > ul {
-        width: 100%;
-        border-top: 2px solid #eee; }
     .members .inner form .add table tr:nth-of-type(1) td input {
       text-align: right; }
     .members .inner form .add table tr:nth-of-type(2) td select {
@@ -213,13 +211,23 @@ fieldset {
         vertical-align: middle; }
     .members .inner form .add table tr:nth-of-type(4) td input {
       width: 250px; }
-    .members .inner form .agree .join_box {
-      padding-top: 40px; }
-      .members .inner form .agree .join_box .ckbox1 {
-        width: 500px;
-        height: 40px;
-        background: #ddd;
-        text-align: center; }
+    .members .inner form .agree {
+      position: relative;
+      height: 800px; }
+      .members .inner form .agree title {
+        display: block;
+        width: 100%;
+        border-bottom: 2px solid pink; }
+      .members .inner form .agree .join_box {
+        padding-top: 40px;
+        position: absolute;
+        left: 50%;
+        margin-left: -400px; }
+        .members .inner form .agree .join_box .ckbox1 {
+          width: 800px;
+          height: 40px;
+          background: #ddd;
+          text-align: center; }
 
 #header {
   width: 100%;
