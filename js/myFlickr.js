@@ -1,13 +1,43 @@
 $.ajax({
     url:"https://www.flickr.com/services/rest/?method=flickr.photos.search",
-    //url:"https://www.flickr.com/services/rest/?method=flickr.interestingness.getList", 
-    dataType:"json", 
+    dataType:"json",
     data:{
-        api_key:"d61e30a1010fe3e1dab106d3a2df0f21", 
-        per_page:5, 
+        api_key:"c3497ae54a8e80023a954c8815e7b28e",
+        per_page:8,
         format:"json",
-        nojsoncallback:1, //json객체를 감싸고 있는 wrapping 함수를 걷어냄 
-        privacy_filter : 5, 
-        tags :"landscape" // 검색할 이미지 키워드 입력 - method가 photos.search일 때 (interestingnesss일때는 주석처리)
+        nojsoncallback:1,
+        privacy_filter:5,
+        tags : "landscape"
     }
+
+})
+
+.success(function(data){
+    console.log(data.photos.photo);
+    let items = data.photos.photo;
+
+    $("#gallery").append("<ul>");
+    $(items).each(function(index, data){
+        let text = data.title;
+        if(!data.title){
+            text = "No description in this photo";}
+
+        $("#gallery ul")
+            .append(
+                $("<li>")
+                    .append(
+                        $("<a>").attr({href:"https://live.staticflickr.com/"+data.server+"/"+data.id+"_"+data.secret+"_b.jpg"})
+
+                        .append(
+                            $("<img>").attr({
+                                src : "https://live.staticflickr.com/"+data.server+"/"+data.id+"_"+data.secret+"_m.jpg"
+                            })
+                        )
+
+                    )
+                    .append(
+                        $("<p>").text(text)
+                    )
+            )
+    })
 })
