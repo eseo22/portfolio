@@ -79,13 +79,13 @@
                     </table>
 
                 </fieldset>
-                <fieldset>
+                <fieldset class="add">
                     <legend class="title">추가정보</legend>
                     <table summary="생년월일,가입경로,sns채널,sns주소 입력양식폼">
                         <caption class="h">추가정보 입력양식폼</caption>
                         <tr>
                             <th scope="row"><label for="userbirthday">생년월일</label></th>
-                            <td> <input type="date" name="userbirthday" id="userbirthday"></label></td>
+                            <td> <input type="date" name="userbirthday" id="userbirthday"></td>
                         </tr>
                         <tr>
                             <th scope="row">가입경로 <span>*</span></th>
@@ -102,10 +102,11 @@
                         <tr>
                             <th scope="row">SNS채널</th>
                             <td>
-                                <input type="checkbox" name="sns" value="insta">인스타그램
-                                <input type="checkbox" name="sns" value="youtube">유투브
-                                <input type="checkbox" name="sns" value="blog">블로그
-                                <input type="checkbox" name="sns" value="cafe">카페
+                                <label><input type="checkbox" name="sns" value="insta">인스타그램</label>
+                                <label><input type="checkbox" name="sns" value="youtube">유투브</label>
+                                <label><input type="checkbox" name="sns" value="blog">블로그</label>
+                                <label><input type="checkbox" name="sns" value="cafe">카페</label>
+                                
                             </td>
                         </tr>
                         <tr>
@@ -118,7 +119,7 @@
 
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="agree">
                     <legend class="title">약관동의</legend>
                     <ul class="join_box">
                         <li class="ckbox1">
