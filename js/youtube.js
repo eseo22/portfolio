@@ -18,6 +18,14 @@ $.ajax({
 
         
 
+        let txt = data.snippet.description;
+        let len = txt.length;
+        if(len>200){txt=txt.substr(0,200)+"...."}
+
+        let date = data.snippet.publishedAt;
+        date = date.split("T")[0];
+        
+
         $(".youtube .inner #vidgallery")
             .append(
                 $("<article>")
@@ -29,8 +37,8 @@ $.ajax({
                         $("<div class='con'>")
                             .append(
                                 $("<h2>").text(data.snippet.title),
-                                $("<p>").text(data.snippet.description),
-                                $("<span>").text(data.snippet.publishedAt)
+                                $("<p>").text(txt),
+                                $("<span>").text(date)
                             )
                     )                
                 )
@@ -43,3 +51,26 @@ $.ajax({
 .error(function(err){
     console.error(err);
 })
+
+$("body").on("click", "#vidgallery article a", function(e){
+    e.preventDefault();
+    let vidId = $(this).href;
+    $("body")
+        .append(
+            $("<div class='pop'>")
+                .append(
+                    $("<iframe>").attr({
+                        src:"https://www.youtube.com/embed/"+vidId,
+                        frameborder : 0,
+                        width:"100%",
+                        height:500
+                    }),
+                    $("<span>").text("close")
+                )
+            
+            )
+
+});
+$("body").on("click", ".pop span", function(){
+    $(".pop").remove();
+});

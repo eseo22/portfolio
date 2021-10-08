@@ -3,7 +3,7 @@
     .inner{
         width: 1180px;
         margin: 100px auto;
-
+        
         h1{
             text-align: center;
             font: 40px/1 'arial';
@@ -32,5 +32,25 @@
                     align-items: center;}
             }
         }
+
+        
+    }
+    
+}
+
+.pop{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    width: 1000px; height: 500px;
+
+    iframe{
+        margin-bottom: 20px;
+    }
+
+    span{
+        display: block; width: 100px; height: 50px;
+        border: 1px solid #000;
+        background: #000;
+        font: 20px/50px 'arial'; color: #fff;
+        cursor: pointer;
     }
 }
