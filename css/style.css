@@ -237,6 +237,7 @@ fieldset {
   .youtube .inner h1 {
     text-align: center;
     font: 40px/1 'arial';
+    color: #000;
     margin-bottom: 100px; }
   .youtube .inner #vidgallery {
     width: 100%; }
@@ -277,6 +278,33 @@ fieldset {
     font: 20px/50px 'arial';
     color: #fff;
     cursor: pointer; }
+
+.gallery .sub_visual {
+  background: #bbb; }
+.gallery .inner {
+  width: 1180px;
+  margin: 100px auto; }
+  .gallery .inner h1 {
+    text-align: center;
+    font: 40px/1 'arial';
+    color: #000;
+    margin-bottom: 100px; }
+  .gallery .inner #gallery {
+    width: 100%; }
+    .gallery .inner #gallery ul {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between; }
+      .gallery .inner #gallery ul li {
+        width: 20%;
+        background: pink;
+        padding: 10px; }
+        .gallery .inner #gallery ul li a {
+          width: 100%; }
+          .gallery .inner #gallery ul li a img {
+            width: 100%; }
 
 #header {
   width: 100%;

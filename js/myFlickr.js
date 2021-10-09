@@ -1,43 +1,48 @@
 $.ajax({
     url:"https://www.flickr.com/services/rest/?method=flickr.photos.search",
-    dataType:"json",
+    dataType: "json",
     data:{
-        api_key:"c3497ae54a8e80023a954c8815e7b28e",
-        per_page:8,
+        api_key: "c3497ae54a8e80023a954c8815e7b28e",
+        per_page:20,
         format:"json",
         nojsoncallback:1,
         privacy_filter:5,
-        tags : "landscape"
+        tags:"landscape"
     }
-
 })
 
 .success(function(data){
-    console.log(data.photos.photo);
+    
     let items = data.photos.photo;
+    console.log(items);
 
     $("#gallery").append("<ul>");
-    $(items).each(function(index, data){
-        let text = data.title;
-        if(!data.title){
-            text = "No description in this photo";}
 
+    $(items).each(function(index, data){
         $("#gallery ul")
             .append(
                 $("<li>")
                     .append(
                         $("<a>").attr({href:"https://live.staticflickr.com/"+data.server+"/"+data.id+"_"+data.secret+"_b.jpg"})
+                            .append(
+                                $("<img>").attr({src:"https://live.staticflickr.com/"+data.server+"/"+data.id+"_"+data.secret+"_m.jpg"})
+                            ),
+                        
+                        $("<p>").text(data.title),
 
-                        .append(
-                            $("<img>").attr({
-                                src : "https://live.staticflickr.com/"+data.server+"/"+data.id+"_"+data.secret+"_m.jpg"
-                            })
-                        )
-
-                    )
-                    .append(
-                        $("<p>").text(text)
+                        $("<div class='profile'>")
+                            .append(
+                                $("<img>").attr({src:"https://www.flickr.com/buddyicons/"+data.owner+".jpg"}),
+                                $("<span>").text(data.owner)
+                            )
+                
                     )
             )
     })
+    
 })
+
+.error(function(err){
+    console.error(err);
+})
+
