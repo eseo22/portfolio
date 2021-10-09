@@ -296,15 +296,39 @@ fieldset {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-content: space-between; }
+      align-items: flex-start; }
       .gallery .inner #gallery ul li {
-        width: 20%;
+        width: 220px;
+        margin-bottom: 20px;
         background: pink;
-        padding: 10px; }
+        padding: 10px;
+        cursor: pointer; }
         .gallery .inner #gallery ul li a {
           width: 100%; }
           .gallery .inner #gallery ul li a img {
-            width: 100%; }
+            width: 100%;
+            margin-bottom: 40px; }
+        .gallery .inner #gallery ul li p {
+          width: 100%;
+          margin-bottom: 40px; }
+        .gallery .inner #gallery ul li .profile {
+          width: 100%; }
+
+.pop {
+  width: 50vh;
+  height: 50vh;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .pop img {
+    width: 100%;
+    height: 100%; }
+  .pop span {
+    font: 40px/1 'arial';
+    color: #fff;
+    cursor: pointer; }
 
 #header {
   width: 100%;

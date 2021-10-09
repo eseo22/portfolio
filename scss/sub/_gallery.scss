@@ -16,26 +16,49 @@
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-between;
-                align-content: space-between;
+                justify-content: space-between;  
+                align-items: flex-start;
 
-                // &::after{content: ''; display: block; clear: both;}
                 li{
-                    width: 20%;
+                    width: 220px;
+                    margin-bottom: 20px;
                     background: pink;
                     padding: 10px;
-                    
-                    
+                    cursor: pointer;
 
+                    
                     a{
                         width: 100%;
-
-                        img{width: 100%;}
+                        img{width: 100%; margin-bottom: 40px;}
                     }
 
+                    p{
+                        width: 100%;
+                        margin-bottom: 40px;
+                    }
+
+                    .profile{
+                        width: 100%;
+                    }
+                    
                 }
             }
+
+            
         }
 
+    }
+}
+
+.pop{
+    width: 50vh; height: 50vh;
+    background: rgba(0,0,0,0.6);
+    position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    
+
+    img{width: 100%; height: 100%;}
+    span{
+        font: 40px/1 'arial'; color: #fff;
+        cursor: pointer;
     }
 }

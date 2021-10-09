@@ -3,7 +3,7 @@ $.ajax({
     dataType: "json",
     data:{
         api_key: "c3497ae54a8e80023a954c8815e7b28e",
-        per_page:20,
+        per_page:15,
         format:"json",
         nojsoncallback:1,
         privacy_filter:5,
@@ -46,3 +46,21 @@ $.ajax({
     console.error(err);
 })
 
+$("body").on("click", "#gallery ul li", function(e){
+    e.preventDefault();
+
+    let imgSrc = $(this).children("a").attr("href");
+
+    $("body")
+        .append(
+            $("<div class='pop'>")
+                .append(
+                    $("<img>").attr({src:imgSrc}),
+                    $("<span>").text("close")
+                )
+        )
+});
+
+$("body").on("click", ".pop span", function(){
+    $(".pop").remove();
+});
