@@ -29,7 +29,7 @@
 
                 table{
                     width: 100%;
-                    border-top: 2px solid #eee;
+                    border-top: 1px solid #222;
                     border-collapse: collapse;
                     
                     
@@ -37,6 +37,7 @@
                         width: 100%;
                         height: 60px;
                         border-bottom:1px solid #eee;
+
                         
                         th{
                             width: 20%;
@@ -51,6 +52,7 @@
                         td{
                             width: 80%;
                             padding: 15px;
+
                             p{
                                 font: 12px/1px '맑은 고딕';
                                 margin-top: 20px;
@@ -163,7 +165,7 @@
                 .title{
                     display: block;
                     width: 100%;
-                    border-bottom: 2px solid #eee;
+                    border-bottom: 1px solid #222;
                     padding-bottom: 20px;
                 }
                 .join_box{

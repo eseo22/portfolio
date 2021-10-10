@@ -52,12 +52,12 @@ $.ajax({
     console.error(err);
 })
 
-$("body").on("click", "#vidgallery article a", function(e){
+$("body").on("click", "#vidgallery article", function(e){
     e.preventDefault();
-    let vidId = $(this).href;
+    let vidId = $(this).children("a").attr("href");
     $("body")
         .append(
-            $("<div class='pop'>")
+            $("<div class='popVideo'>")
                 .append(
                     $("<iframe>").attr({
                         src:"https://www.youtube.com/embed/"+vidId,
@@ -71,6 +71,6 @@ $("body").on("click", "#vidgallery article a", function(e){
             )
 
 });
-$("body").on("click", ".pop span", function(){
-    $(".pop").remove();
+$("body").on("click", ".popVideo span", function(){
+    $(".popVideo").remove();
 });

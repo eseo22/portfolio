@@ -3,7 +3,7 @@ $.ajax({
     dataType: "json",
     data:{
         api_key: "c3497ae54a8e80023a954c8815e7b28e",
-        per_page:15,
+        per_page:12,
         format:"json",
         nojsoncallback:1,
         privacy_filter:5,
@@ -48,6 +48,8 @@ $.ajax({
 
 $("body").on("click", "#gallery ul li", function(e){
     e.preventDefault();
+
+    $(".pop").remove();
 
     let imgSrc = $(this).children("a").attr("href");
 
