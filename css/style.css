@@ -132,7 +132,8 @@ fieldset {
     margin: 0 auto; }
 
 .members {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 240px; }
   .members .inner {
     width: 1180px;
     min-height: 500px;
@@ -214,20 +215,44 @@ fieldset {
     .members .inner form .agree {
       position: relative;
       height: 800px; }
-      .members .inner form .agree title {
+      .members .inner form .agree .title {
         display: block;
         width: 100%;
-        border-bottom: 2px solid pink; }
+        border-bottom: 2px solid #eee;
+        padding-bottom: 20px; }
       .members .inner form .agree .join_box {
-        padding-top: 40px;
-        position: absolute;
-        left: 50%;
-        margin-left: -400px; }
+        padding: 40px; }
         .members .inner form .agree .join_box .ckbox1 {
-          width: 800px;
-          height: 40px;
+          width: 100%;
+          height: 60px;
           background: #ddd;
-          text-align: center; }
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 40px; }
+          .members .inner form .agree .join_box .ckbox1 label {
+            font: 18px/1 'arial';
+            color: #000; }
+          .members .inner form .agree .join_box .ckbox1 input {
+            width: 20px;
+            height: 15px;
+            margin-left: 20px; }
+        .members .inner form .agree .join_box .ckbox2 p {
+          font: 18px/1 'arial';
+          color: #000;
+          margin-bottom: 20px; }
+        .members .inner form .agree .join_box .ckbox2 input {
+          width: 20px;
+          height: 15px;
+          margin-left: 20px; }
+        .members .inner form .agree .join_box .ckbox2 textarea {
+          width: 100%;
+          height: 140px;
+          font: 16px/1.5 'arial';
+          color: #444;
+          padding: 0px 20px;
+          margin-bottom: 60px; }
 
 .youtube .sub_visual {
   background: bisque; }
