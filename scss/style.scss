@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Gowun+Batang&family=Noto+Sans+KR:wght@100&family=Prompt:wght@200&display=swap');
 @import "reset";
 @import "sub/layout_sub";
 @import "sub/members";
@@ -17,16 +18,18 @@
         position: relative;
 
         h1{
+            width: 20%;
             position: absolute;
             top: 23px;
             left: 0;
             a{
-                font: 24px/1 'arial'; color: #000;
+                font: bold 24px/1 'Prompt'; color: #000;
             }
         }
         .gnb{
+            width: 65%;
             position: absolute;
-            left: 200px;
+            left: 20%;
 
             &::after{
                 content: ''; display: block; clear: both;
@@ -34,11 +37,11 @@
 
             li{
                 float: left;
-                width: 140px;
+                width: 120px;
                 height: 100px;
-                text-align: right;
+                text-align: center;
                 a{
-                    font: 15px/100px 'arial'; color: #222;
+                    font: bold 15px/100px 'Prompt'; color: #222;
                     
                 }
             }
@@ -46,11 +49,11 @@
 
         >a{
             display: block;
-            width: 90px;
+            width: 10%;
             height: 28px;
             border: 1px solid #bbb;
             text-align: center;
-            font: 12px/28px 'arial'; color: #222;
+            font: bold 12px/28px 'Prompt'; color: #222;
             position: absolute;
             right: 0px;
             top: 50%;

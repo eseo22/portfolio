@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Gowun+Batang&family=Noto+Sans+KR:wght@100&family=Prompt:wght@200&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -27,34 +27,36 @@ fieldset {
     margin: 0 auto;
     position: relative; }
     #header_sub .inner h1 {
+      width: 20%;
       position: absolute;
       top: 23px;
       left: 0; }
       #header_sub .inner h1 a {
-        font: 24px/1 'arial';
+        font: bold 24px/1 'Prompt';
         color: #000; }
     #header_sub .inner .gnb {
+      width: 65%;
       position: absolute;
-      left: 200px; }
+      left: 20%; }
       #header_sub .inner .gnb::after {
         content: '';
         display: block;
         clear: both; }
       #header_sub .inner .gnb li {
         float: left;
-        width: 140px;
+        width: 120px;
         height: 100px;
-        text-align: right; }
+        text-align: center; }
         #header_sub .inner .gnb li a {
-          font: 15px/100px 'arial';
+          font: bold 15px/100px 'Prompt';
           color: #222; }
     #header_sub .inner > a {
       display: block;
-      width: 90px;
+      width: 10%;
       height: 28px;
       border: 1px solid #bbb;
       text-align: center;
-      font: 12px/28px 'arial';
+      font: bold 12px/28px 'Prompt';
       color: #222;
       position: absolute;
       right: 0px;
@@ -140,8 +142,8 @@ fieldset {
     margin: 0 auto;
     padding: 40px 0; }
     .members .inner h1 {
-      font: 40px/1 '맑은 고딕';
-      color: #000;
+      font: 50px/1 'Crimson Text';
+      color: #524C4A;
       text-align: center;
       margin-bottom: 80px; }
     .members .inner form fieldset {
@@ -149,7 +151,7 @@ fieldset {
       margin: 0 auto;
       margin-bottom: 80px; }
       .members .inner form fieldset .title {
-        font: 20px/1 '맑은 고딕';
+        font: 30px/1 'Gowun Batang';
         color: #000;
         margin-bottom: 20px; }
       .members .inner form fieldset table {
@@ -163,25 +165,34 @@ fieldset {
           .members .inner form fieldset table tr th {
             width: 20%;
             padding: 10px 0px 10px 40px;
-            font: 14px/1 'arial';
-            text-align: left; }
-            .members .inner form fieldset table tr th span {
-              color: orangered; }
+            font: 18px/1 'Gowun Batang';
+            color: #333;
+            text-align: left;
+            background-color: #f9f9f9; }
+            .members .inner form fieldset table tr th i {
+              color: pink;
+              font-size: 0.5px; }
+            .members .inner form fieldset table tr th label {
+              font: 18px/1 'Gowun Batang';
+              color: #333; }
           .members .inner form fieldset table tr td {
             width: 80%;
-            padding: 15px; }
+            padding: 12px; }
             .members .inner form fieldset table tr td p {
-              font: 12px/1px '맑은 고딕';
-              margin-top: 20px; }
+              font: 14px/1px 'Gowun Batang';
+              color: #505050;
+              margin-top: 20px;
+              margin-bottom: 12px; }
             .members .inner form fieldset table tr td input {
-              width: 200px;
-              height: 28px;
+              width: 250px;
+              height: 30px;
               padding-left: 10px;
-              font: 12px/28px 'arial'; }
+              font: 14px/30px 'Gowun Batang';
+              vertical-align: top; }
           .members .inner form fieldset table tr:nth-of-type(1) td input:nth-of-type(1), .members .inner form fieldset table tr:nth-of-type(5) td input:nth-of-type(1) {
             margin-right: 8px; }
           .members .inner form fieldset table tr:nth-of-type(1) td input:nth-of-type(2), .members .inner form fieldset table tr:nth-of-type(5) td input:nth-of-type(2) {
-            font: 12px/28px '맑은 고딕';
+            font: 14px/30px 'Gowun Batang';
             width: 100px;
             vertical-align: middle;
             padding-left: 0px; }
@@ -189,32 +200,38 @@ fieldset {
             width: 500px;
             margin-top: 8px; }
           .members .inner form fieldset table tr:nth-of-type(8) td label {
-            font: 14px/15px '맑은 고딕';
+            font: 18px/1 'Gowun Batang';
             margin-right: 20px; }
             .members .inner form fieldset table tr:nth-of-type(8) td label input {
               width: 15px;
-              height: 15px;
+              height: 20px;
               margin-right: 15px;
-              vertical-align: middle; }
+              vertical-align: top; }
     .members .inner form .add table tr:nth-of-type(1) td input {
       text-align: right; }
     .members .inner form .add table tr:nth-of-type(2) td select {
-      width: 200px;
-      height: 28px;
-      text-align: center; }
+      width: 250px;
+      height: 30px;
+      text-align: center;
+      font: 14px/28px 'Gowun Batang';
+      color: #888; }
+      .members .inner form .add table tr:nth-of-type(2) td select option {
+        font: 14/1 'Gowun Batang';
+        color: #000; }
     .members .inner form .add table tr:nth-of-type(3) td label {
       margin-right: 20px;
-      font: 14px/15px '맑은 고딕'; }
+      font: 18px/1 'Gowun Batang'; }
       .members .inner form .add table tr:nth-of-type(3) td label input {
         width: 15px;
-        height: 15px;
-        margin-right: 10px;
-        vertical-align: middle; }
+        height: 20px;
+        margin-right: 15px;
+        vertical-align: top; }
     .members .inner form .add table tr:nth-of-type(4) td input {
       width: 250px; }
     .members .inner form .agree {
       position: relative;
-      height: 800px; }
+      height: 800px;
+      margin-bottom: 150px; }
       .members .inner form .agree .title {
         display: block;
         width: 100%;
@@ -223,36 +240,50 @@ fieldset {
       .members .inner form .agree .join_box {
         padding: 40px; }
         .members .inner form .agree .join_box .ckbox1 {
-          width: 100%;
-          height: 60px;
-          background: #ddd;
-          text-align: center;
-          display: flex;
-          align-items: center;
-          justify-content: center;
           margin-bottom: 40px; }
           .members .inner form .agree .join_box .ckbox1 label {
-            font: 18px/1 'arial';
+            font: 20px/1 'Gowun Batang';
             color: #000; }
           .members .inner form .agree .join_box .ckbox1 input {
             width: 20px;
             height: 15px;
-            margin-left: 20px; }
+            margin-right: 20px; }
         .members .inner form .agree .join_box .ckbox2 p {
-          font: 18px/1 'arial';
-          color: #000;
+          font: 20px/1 'Gowun Batang';
+          color: #2A2A2A;
           margin-bottom: 20px; }
         .members .inner form .agree .join_box .ckbox2 input {
           width: 20px;
           height: 15px;
-          margin-left: 20px; }
+          margin-right: 20px; }
         .members .inner form .agree .join_box .ckbox2 textarea {
           width: 100%;
           height: 140px;
-          font: 16px/1.5 'arial';
-          color: #444;
+          font: 16px/1.5 'Noto Sans KR';
+          color: #666;
           padding: 0px 20px;
-          margin-bottom: 60px; }
+          margin-bottom: 40px; }
+    .members .inner form .submit {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between; }
+      .members .inner form .submit a {
+        display: inline-block;
+        width: 50%;
+        height: 80px;
+        border: 1px solid #524C4A;
+        font: bold 20px/80px 'Noto Sans KR';
+        color: #505050;
+        text-align: center;
+        margin-right: 20px; }
+      .members .inner form .submit input {
+        width: 50%;
+        height: 80px;
+        background-color: #524C4A;
+        font: bold 20px/1 'Noto Sans KR';
+        color: #fff;
+        border: none; }
 
 .youtube .sub_visual {
   background: bisque; }
@@ -390,34 +421,36 @@ fieldset {
     margin: 0 auto;
     position: relative; }
     #header .inner h1 {
+      width: 20%;
       position: absolute;
       top: 23px;
       left: 0; }
       #header .inner h1 a {
-        font: 24px/1 'arial';
+        font: bold 24px/1 'Prompt';
         color: #000; }
     #header .inner .gnb {
+      width: 65%;
       position: absolute;
-      left: 200px; }
+      left: 20%; }
       #header .inner .gnb::after {
         content: '';
         display: block;
         clear: both; }
       #header .inner .gnb li {
         float: left;
-        width: 140px;
+        width: 120px;
         height: 100px;
-        text-align: right; }
+        text-align: center; }
         #header .inner .gnb li a {
-          font: 15px/100px 'arial';
+          font: bold 15px/100px 'Prompt';
           color: #222; }
     #header .inner > a {
       display: block;
-      width: 90px;
+      width: 10%;
       height: 28px;
       border: 1px solid #bbb;
       text-align: center;
-      font: 12px/28px 'arial';
+      font: bold 12px/28px 'Prompt';
       color: #222;
       position: absolute;
       right: 0px;

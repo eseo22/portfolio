@@ -10,7 +10,7 @@
         padding: 40px 0;
 
         h1{
-            font: 40px/1 '맑은 고딕'; color:#000;
+            font: 50px/1 'Crimson Text'; color:#524C4A;
             text-align: center;
             margin-bottom: 80px;
         }
@@ -22,7 +22,7 @@
                 margin-bottom: 80px;
 
                 .title{
-                    font: 20px/1 '맑은 고딕'; color: #000;
+                    font: 30px/1 'Gowun Batang'; color: #000;
                     margin-bottom: 20px;
                     
                 }
@@ -42,27 +42,40 @@
                         th{
                             width: 20%;
                             padding: 10px 0px 10px 40px;
-                            font: 14px/1 'arial';
+                            font: 18px/1 'Gowun Batang';
+                            color: #333;
+                            
                             text-align: left;
+                            background-color: #f9f9f9;
 
-                            span{
-                                color: orangered;
+                            i{
+                                color: pink;
+                                font-size: 0.5px;
+                               
+                            }
+                            label{
+                                font: 18px/1 'Gowun Batang';
+                                color: #333;
                             }
                         }
                         td{
                             width: 80%;
-                            padding: 15px;
+                            padding: 12px;
+                            
 
                             p{
-                                font: 12px/1px '맑은 고딕';
+                                font: 14px/1px 'Gowun Batang';
+                                color: #505050;
                                 margin-top: 20px;
+                                margin-bottom: 12px;
                                 
                             }
                             input{
-                                width: 200px;
-                                height: 28px;
+                                width: 250px;
+                                height: 30px;
                                 padding-left: 10px;
-                                font: 12px/28px 'arial';
+                                font: 14px/30px 'Gowun Batang';
+                                vertical-align: top;
                                 
                             }
                         }
@@ -73,7 +86,7 @@
                                     margin-right: 8px;
                                 }
                                 input:nth-of-type(2){
-                                    font: 12px/28px '맑은 고딕';
+                                    font: 14px/30px 'Gowun Batang';
                                     width: 100px;
                                     vertical-align:middle;        
                                     padding-left:0px;                       
@@ -97,13 +110,14 @@
                                     
                                     input{
                                         width: 15px;
-                                        height: 15px;
+                                        height: 20px;
                                         margin-right: 15px;
-                                        vertical-align: middle;
+                                        vertical-align: top;
                                                                             
                                     }
-                                    font: 14px/15px '맑은 고딕';
+                                    font: 18px/1 'Gowun Batang';
                                     margin-right: 20px;
+                                    
                                 }
                             }
                         }
@@ -128,9 +142,15 @@
                         &:nth-of-type(2){
                             td{
                                 select{
-                                    width: 200px; height: 28px;
-                                    
+                                    width: 250px; height: 30px;                      
                                     text-align: center;
+                                    font: 14px/28px 'Gowun Batang';
+                                    color: #888;
+
+                                    option{
+                                        font: 14/1 'Gowun Batang';
+                                        color: #000;
+                                    }
                                 }
                             }
                         }
@@ -138,12 +158,12 @@
                             td{
                                 label{
                                     input{
-                                        width: 15px; height: 15px;
-                                        margin-right: 10px;
-                                        vertical-align: middle;
+                                        width: 15px; height: 20px;
+                                        margin-right: 15px;
+                                        vertical-align: top;
                                     }
                                     margin-right : 20px;
-                                    font: 14px/15px '맑은 고딕';
+                                    font: 18px/1 'Gowun Batang';
                                 }                                
                             }
                         }
@@ -162,6 +182,7 @@
             .agree{
                 position: relative;
                 height: 800px;
+                margin-bottom: 150px;
                 .title{
                     display: block;
                     width: 100%;
@@ -170,41 +191,61 @@
                 }
                 .join_box{
                     padding: 40px;
-                    
-
+                
                     .ckbox1{
-                        width: 100%; height: 60px;
-                        background: #ddd;
-                        text-align: center;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
                         margin-bottom: 40px;
-
                         label{
-                            font: 18px/1 'arial'; color: #000;
+                            font: 20px/1 'Gowun Batang'; color: #000;
+                           
                         }
                         input{
-                            width: 20px; height: 15px; margin-left: 20px;
+                            width: 20px; height: 15px; 
+                            margin-right: 20px;
                         }
                     }
 
                     .ckbox2{
                         
-                        p{font: 18px/1 'arial'; color: #000; margin-bottom: 20px;}
+                        p{font: 20px/1 'Gowun Batang'; color:#2A2A2A; margin-bottom: 20px;}
                         input{
-                            width: 20px; height: 15px; margin-left: 20px;
+                            width: 20px; height: 15px; 
+                            margin-right: 20px;
                         }
                         textarea{
                             width: 100%; height: 140px; 
-                            font: 16px/1.5 'arial'; color: #444;
+                            font: 16px/1.5 'Noto Sans KR'; color: #666;
                             padding: 0px 20px;
-                            margin-bottom: 60px;
+                            margin-bottom: 40px;
                         }
                     }
 
 
 
+                }
+                
+            }
+            .submit{
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                
+                
+                a{
+                    display: inline-block; 
+                    width: 50%; height: 80px;
+                    border: 1px solid #524C4A;
+                    font:bold 20px/80px 'Noto Sans KR'; color: #505050;
+                    text-align: center;
+                    margin-right: 20px;
+
+                }
+                input{
+                    width: 50%; height: 80px;
+                    background-color: #524C4A;
+                    font:bold 20px/1 'Noto Sans KR'; color: #fff;
+                    border: none;
+                    
                 }
             }
             
