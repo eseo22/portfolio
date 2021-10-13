@@ -13,6 +13,9 @@ a {
 fieldset {
   border: none; }
 
+input, a, select, option {
+  outline: 0; }
+
 .h {
   position: absolute;
   top: -9999px;
@@ -102,12 +105,12 @@ fieldset {
           margin-right: 0px; }
           #footer_sub .inner .wrap article:nth-of-type(4) > p {
             margin-bottom: 20px; }
-          #footer_sub .inner .wrap article:nth-of-type(4) input[type="text"] {
+          #footer_sub .inner .wrap article:nth-of-type(4) input[type=text] {
             width: 180px;
             height: 35px;
             font: 12px/35px 'arial';
             padding: 0px 5px; }
-          #footer_sub .inner .wrap article:nth-of-type(4) input[type="submit"] {
+          #footer_sub .inner .wrap article:nth-of-type(4) input[type=submit] {
             width: 100px;
             height: 35px;
             background-color: burlywood;
@@ -140,12 +143,12 @@ fieldset {
     width: 1180px;
     min-height: 500px;
     margin: 0 auto;
-    padding: 40px 0; }
+    padding: 80px 0; }
     .members .inner h1 {
-      font: 50px/1 'Crimson Text';
+      font: 55px/1 'Crimson Text';
       color: #524C4A;
       text-align: center;
-      margin-bottom: 80px; }
+      margin-bottom: 120px; }
     .members .inner form fieldset {
       width: 80%;
       margin: 0 auto;
@@ -178,17 +181,14 @@ fieldset {
           .members .inner form fieldset table tr td {
             width: 80%;
             padding: 12px; }
-            .members .inner form fieldset table tr td p {
-              font: 14px/1px 'Gowun Batang';
-              color: #505050;
-              margin-top: 20px;
-              margin-bottom: 12px; }
             .members .inner form fieldset table tr td input {
               width: 250px;
               height: 30px;
               padding-left: 10px;
               font: 14px/30px 'Gowun Batang';
               vertical-align: top; }
+              .members .inner form fieldset table tr td input:focus {
+                border: 1px solid burlywood; }
           .members .inner form fieldset table tr:nth-of-type(1) td input:nth-of-type(1), .members .inner form fieldset table tr:nth-of-type(5) td input:nth-of-type(1) {
             margin-right: 8px; }
           .members .inner form fieldset table tr:nth-of-type(1) td input:nth-of-type(2), .members .inner form fieldset table tr:nth-of-type(5) td input:nth-of-type(2) {
@@ -263,12 +263,12 @@ fieldset {
           color: #666;
           padding: 0px 20px;
           margin-bottom: 40px; }
-    .members .inner form .submit {
+    .members .inner form .btns {
       width: 80%;
       margin: 0 auto;
       display: flex;
       justify-content: space-between; }
-      .members .inner form .submit input[type="reset"] {
+      .members .inner form .btns input[type=reset] {
         display: inline-block;
         width: 50%;
         height: 80px;
@@ -277,13 +277,17 @@ fieldset {
         color: #505050;
         text-align: center;
         margin-right: 20px; }
-      .members .inner form .submit input[type="submit"] {
+      .members .inner form .btns input[type=submit] {
         width: 50%;
         height: 80px;
         background-color: #524C4A;
         font: bold 20px/1 'Noto Sans KR';
         color: #fff;
         border: none; }
+    .members .inner form p {
+      font: 14px/1px 'Gowun Batang';
+      color: orangered;
+      margin-top: 20px; }
 
 .youtube .sub_visual {
   background: bisque; }
@@ -530,12 +534,12 @@ fieldset {
           margin-right: 0px; }
           #footer .inner .wrap article:nth-of-type(4) > p {
             margin-bottom: 20px; }
-          #footer .inner .wrap article:nth-of-type(4) input[type="text"] {
+          #footer .inner .wrap article:nth-of-type(4) input[type=text] {
             width: 180px;
             height: 35px;
             font: 12px/35px 'arial';
             padding: 0px 5px; }
-          #footer .inner .wrap article:nth-of-type(4) input[type="submit"] {
+          #footer .inner .wrap article:nth-of-type(4) input[type=submit] {
             width: 100px;
             height: 35px;
             background-color: burlywood;

@@ -7,12 +7,12 @@
         width: 1180px;
         min-height: 500px;
         margin: 0 auto;
-        padding: 40px 0;
+        padding: 80px 0;
 
         h1{
-            font: 50px/1 'Crimson Text'; color:#524C4A;
+            font: 55px/1 'Crimson Text'; color:#524C4A;
             text-align: center;
-            margin-bottom: 80px;
+            margin-bottom: 120px;
         }
         
         form{
@@ -66,19 +66,23 @@
                             padding: 12px;
                             
 
-                            p{
-                                font: 14px/1px 'Gowun Batang';
-                                color: #505050;
-                                margin-top: 20px;
-                                margin-bottom: 12px;
+                            // p{
+                            //     font: 14px/1px 'Gowun Batang';
+                            //     color: #505050;
+                            //     margin-top: 20px;
+                            //     margin-bottom: 12px;
                                 
-                            }
+                            // }
                             input{
                                 width: 250px;
                                 height: 30px;
                                 padding-left: 10px;
                                 font: 14px/30px 'Gowun Batang';
                                 vertical-align: top;
+
+                                &:focus{
+                                    border: 1px solid burlywood;
+                                }
                                 
                             }
                         }
@@ -231,14 +235,14 @@
             }
 
             //전송버튼
-            .submit{
+            .btns{
                 width: 80%;
                 margin: 0 auto;
                 display: flex;
                 justify-content: space-between;
                 
                 
-                input[type="reset"]{
+                input[type=reset]{
                     display: inline-block; 
                     width: 50%; height: 80px;
                     border: 1px solid #524C4A;
@@ -247,7 +251,7 @@
                     margin-right: 20px;
 
                 }
-                input[type="submit"]{
+                input[type=submit]{
                     width: 50%; height: 80px;
                     background-color: #524C4A;
                     font:bold 20px/1 'Noto Sans KR'; color: #fff;
@@ -256,6 +260,11 @@
                 }
             }
             
+            p{
+                font: 14px/1px 'Gowun Batang';
+                color: orangered;
+                margin-top: 20px;
+            }
         }
     }
 
