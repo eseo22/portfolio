@@ -16,6 +16,8 @@
         }
         
         form{
+            
+            //기본정보
             fieldset{
                 width: 80%;
                 margin: 0 auto;
@@ -26,6 +28,7 @@
                     margin-bottom: 20px;
                     
                 }
+
 
                 table{
                     width: 100%;
@@ -130,6 +133,7 @@
                 
             }
 
+            //추가정보
             .add{
                 
                 table{
@@ -179,6 +183,7 @@
                 }
             }
 
+            //약관동의
             .agree{
                 position: relative;
                 height: 800px;
@@ -224,6 +229,8 @@
                 }
                 
             }
+
+            //전송버튼
             .submit{
                 width: 80%;
                 margin: 0 auto;
@@ -231,7 +238,7 @@
                 justify-content: space-between;
                 
                 
-                a{
+                input[type="reset"]{
                     display: inline-block; 
                     width: 50%; height: 80px;
                     border: 1px solid #524C4A;
@@ -240,7 +247,7 @@
                     margin-right: 20px;
 
                 }
-                input{
+                input[type="submit"]{
                     width: 50%; height: 80px;
                     background-color: #524C4A;
                     font:bold 20px/1 'Noto Sans KR'; color: #fff;

@@ -35,6 +35,7 @@
         <div class="inner">
             <h1>Join Us</h1>
             <form action="/" method="POST">
+                <!-- 기본정보 -->
                 <fieldset>
                     <legend class="title">기본정보</legend>
 
@@ -89,6 +90,7 @@
                     </table>
 
                 </fieldset>
+                <!-- 추가정보 -->
                 <fieldset class="add">
                     <legend class="title">추가정보</legend>
                     <table summary="생년월일,가입경로,sns채널,sns주소 입력양식폼">
@@ -101,7 +103,7 @@
                             <th scope="row">가입경로</th>
                             <td>
                                 <select name="join" required>
-                                    <option value="choose">선택해주세요</option>
+                                    <option value="">선택해주세요</option>
                                     <option value="SNS">SNS</option>
                                     <option value="blog">블로그</option>
                                     <option value="cafe">카페</option>
@@ -129,6 +131,7 @@
 
                 </fieldset>
 
+                <!-- 약관동의 -->
                 <fieldset class="agree">
                     <legend class="title">약관동의</legend>
                     <ul class="join_box">
@@ -162,8 +165,9 @@
                     </ul>
 
                 </fieldset>
+                <!-- 전송버튼 -->
                 <div class="submit">
-                    <a href="index.html">취소하기</a>
+                    <input type="reset" value="취소하기">
                     <input type="submit" value="가입하기">
 
                 </div>

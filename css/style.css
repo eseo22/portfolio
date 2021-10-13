@@ -77,7 +77,7 @@ fieldset {
         margin-right: 60px; }
         #footer_sub .inner .wrap article h1 {
           font: 20px/1 'arial';
-          color: #ddd;
+          color: #bbb;
           margin-bottom: 30px; }
         #footer_sub .inner .wrap article p {
           font: 15px/1.2 'arial';
@@ -268,7 +268,7 @@ fieldset {
       margin: 0 auto;
       display: flex;
       justify-content: space-between; }
-      .members .inner form .submit a {
+      .members .inner form .submit input[type="reset"] {
         display: inline-block;
         width: 50%;
         height: 80px;
@@ -277,7 +277,7 @@ fieldset {
         color: #505050;
         text-align: center;
         margin-right: 20px; }
-      .members .inner form .submit input {
+      .members .inner form .submit input[type="submit"] {
         width: 50%;
         height: 80px;
         background-color: #524C4A;
