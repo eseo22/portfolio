@@ -228,7 +228,7 @@ input, a, select, option {
         margin-right: 15px;
         vertical-align: top; }
     .members .inner form .add table tr:nth-of-type(4) td input {
-      width: 250px; }
+      width: 380px; }
     .members .inner form .agree {
       position: relative;
       height: 800px;
@@ -277,14 +277,16 @@ input, a, select, option {
         font: bold 20px/80px 'Noto Sans KR';
         color: #505050;
         text-align: center;
-        margin-right: 20px; }
+        margin-right: 20px;
+        cursor: pointer; }
       .members .inner form .btns input[type=submit] {
         width: 50%;
         height: 80px;
         background-color: #524C4A;
         font: bold 20px/1 'Noto Sans KR';
         color: #fff;
-        border: none; }
+        border: none;
+        cursor: pointer; }
     .members .inner form p {
       font: 14px/1px 'Gowun Batang';
       color: orangered;

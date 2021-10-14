@@ -96,7 +96,8 @@
                                     font: 14px/30px 'Gowun Batang';
                                     width: 100px;
                                     vertical-align:middle;        
-                                    padding-left:0px;                       
+                                    padding-left:0px;              
+                                
                                 }
                             }
                            
@@ -111,6 +112,7 @@
                                 }
                             }
                         }
+                        
                         &:nth-of-type(8){
                             td{
                                 label{
@@ -178,7 +180,7 @@
                         &:nth-of-type(4){
                             td{
                                 input{
-                                    width: 250px;
+                                    width: 380px;
                                 }
                             }
                         }
@@ -241,7 +243,6 @@
                 display: flex;
                 justify-content: space-between;
                 
-                
                 input[type=reset]{
                     display: inline-block; 
                     width: 50%; height: 80px;
@@ -249,6 +250,7 @@
                     font:bold 20px/80px 'Noto Sans KR'; color: #505050;
                     text-align: center;
                     margin-right: 20px;
+                    cursor: pointer;
 
                 }
                 input[type=submit]{
@@ -256,7 +258,7 @@
                     background-color: #524C4A;
                     font:bold 20px/1 'Noto Sans KR'; color: #fff;
                     border: none;
-                    
+                    cursor: pointer;
                 }
             }
             

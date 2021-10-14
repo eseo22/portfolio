@@ -3,6 +3,10 @@ $("input[type=submit]").on("click", function(e){
     if(!password("userpw1","userpw2")) e.preventDefault();
 });
 
+$("input[type=button]").on("click", function(e){
+    if(!isTxt("userid",5)) e.preventDefault();
+})
+
 //아이디 인증
 function isTxt(name, len){
 
