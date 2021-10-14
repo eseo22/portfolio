@@ -71,6 +71,24 @@
         height: calc(100vh - 103px);
     }
 }
+
+#popup{
+    width: 500px; min-height:200px; background-color: pink;
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    padding: 20px;
+    .content{
+        font: 20px/1 '맑은 고딕'; color: #000;
+        margin-bottom: 100px;
+    }
+    .wrap{
+        &::after{content: ''; display: block; clear: both;}
+        label{font: 15px/1 '맑은 고딕'; color: #000; float: left;}
+        input{margin-right: 10px;}
+
+        a{font: 15px/1 'arial'; color: #000; float: right;}
+    }
+}
+
 #footer{
     width: 100%;
     background: #222;
