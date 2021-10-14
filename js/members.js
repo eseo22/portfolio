@@ -3,15 +3,15 @@ $("input[type=submit]").on("click", function(e){
     
 });
 
-
+//아이디 인증
 function isTxt(name, len){
 
     if(len === undefined) len=5;
     let txt = $("input[name="+name+"]").val();
     
-    let eng = /^[a-z0-9]+$/;
+    let ideng = /^[a-z0-9]+$/;
 
-    if(txt.length>=len && eng.test(txt)){
+    if(txt.length>=len && ideng.test(txt)){
         $("input[name="+name+"]").parent().find("p").remove();
         return true;
     
@@ -22,4 +22,12 @@ function isTxt(name, len){
         );
         return false;
     }
+}
+//비밀번호 인증
+function password(name1, name2){
+    let pw1 = $("input[name="+name1+"]").val();
+    let pw2 = $("input[name="+name2+"]").val();
+
+    let len = 8
+    let eng = /a-zA-Z/
 }
