@@ -3,7 +3,7 @@ $.ajax({
     dataType: "json",
     data:{
         api_key: "c3497ae54a8e80023a954c8815e7b28e",
-        per_page:12,
+        per_page:6,
         format:"json",
         nojsoncallback:1,
         privacy_filter:5,
@@ -32,8 +32,9 @@ $.ajax({
 
                         $("<div class='profile'>")
                             .append(
-                                $("<img>").attr({src:"https://www.flickr.com/buddyicons/"+data.owner+".jpg"}),
-                                $("<span>").text(data.owner)
+                                $("<span>").text(data.owner),
+                                $("<img>").attr({src:"https://www.flickr.com/buddyicons/"+data.owner+".jpg"})
+                               
                             )
                 
                     )
