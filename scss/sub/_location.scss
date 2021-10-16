@@ -2,22 +2,38 @@
     .inner{
         width: 1180px;
         margin: 0 auto;
+        margin-bottom: 500px;
+
         .txt{
-            width: 50%;
-            h2{font: 60px/1 'arial'; color: #000;}
-            p{font: 30px/1 'arial'; color: #222;}
+
+            width: 500px;
+            h1{
+                font: 50px/1 'arial'; color: #000;
+                margin-bottom: 20px;
+            }
+            p{font: 25px/1 'arial'; color: #222;}
+            margin-bottom:80px ;
         }
         
         .wrap{
             width: 100%;
-            
+            border-bottom: 1px solid #555;
+            margin-bottom: 80px;
+            display: flex;
+            justify-content: flex-end;
             article{
-                width: 300px;
+                width: 400px;
                 padding: 20px;
                 
-                i{font-size: 40px; color: #000;}
-                h3{font-size: 20px; color: #000;}
-                >p{font-size: 18px; color: #222;}
+                h3{
+                    font-size: 20px; color: #000;
+                    margin-bottom: 20px;
+                }
+                ul{
+                    li{font-size: 18px; color: #222;}
+                }
+                
+                
             }
         }
         #map{

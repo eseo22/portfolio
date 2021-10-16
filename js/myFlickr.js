@@ -32,8 +32,9 @@ $.ajax({
 
                         $("<div class='profile'>")
                             .append(
-                                $("<span>").text(data.owner),
-                                $("<img>").attr({src:"https://www.flickr.com/buddyicons/"+data.owner+".jpg"})
+                                
+                                $("<img>").attr({src:"https://www.flickr.com/buddyicons/"+data.owner+".jpg"}),
+                                $("<span>").text(data.owner)
                                
                             )
                 
