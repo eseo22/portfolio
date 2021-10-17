@@ -483,7 +483,8 @@ input, a, select, option {
   width: 100%; }
   .community .inner {
     width: 1180px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-bottom: 200px; }
     .community .inner h1 {
       font: 50px/1 'arial';
       color: #000;
@@ -510,7 +511,8 @@ input, a, select, option {
           border-bottom: 2px solid #000;
           padding-left: 20px; }
     .community .inner .table {
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 80px; }
       .community .inner .table table {
         width: 100%; }
         .community .inner .table table thead tr th {
@@ -537,8 +539,33 @@ input, a, select, option {
           .community .inner .table table tbody tr td a {
             font: 20px/1 '맑은 고딕';
             color: #000; }
-    .community .inner .pagination ul li {
-      display: inline; }
+    .community .inner .pagination {
+      text-align: center; }
+      .community .inner .pagination > ul {
+        display: inline-block;
+        font-size: 0; }
+        .community .inner .pagination > ul:nth-of-type(1) {
+          text-align: right; }
+        .community .inner .pagination > ul:nth-of-type(3) {
+          text-align: left; }
+        .community .inner .pagination > ul:nth-of-type(odd) li a i {
+          font-size: 15px;
+          color: #ccc; }
+        .community .inner .pagination > ul li {
+          display: inline; }
+          .community .inner .pagination > ul li a {
+            display: inline-block;
+            width: 43px;
+            height: 43px;
+            font: 20px/43px 'arial';
+            color: #343434;
+            margin-left: 4px; }
+      .community .inner .pagination .pgnumb {
+        margin: 0 20px; }
+        .community .inner .pagination .pgnumb li:hover a {
+          border-radius: 22px;
+          background-color: #343434;
+          color: #fff; }
 
 #header {
   width: 100%;

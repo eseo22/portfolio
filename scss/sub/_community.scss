@@ -4,6 +4,7 @@
     .inner{
         width: 1180px; 
         margin: 0 auto;
+        margin-bottom: 200px;
 
         h1{
             font: 50px/1 'arial'; color: #000; 
@@ -36,6 +37,7 @@
         }
         .table{
             width: 100%;
+            margin-bottom: 80px;
             table{
                 width: 100%;
 
@@ -74,10 +76,46 @@
         }
 
         .pagination{
-            ul{
+            text-align: center;
+
+            >ul{
+                display: inline-block;
+                font-size: 0;
+
+                &:nth-of-type(1){text-align: right;}
+                &:nth-of-type(3){text-align: left;}
+                &:nth-of-type(odd){
+                    li{
+                        a{
+                            i{
+                                font-size: 15px;
+                                color: #ccc;}
+                        }
+                    }
+                }
+
                 li{
                     display: inline;
+                    a{
+                        display: inline-block;
+                        width: 43px; height: 43px;
+                        font: 20px/43px 'arial';
+                        color: #343434;
+                        margin-left: 4px;
+                    }                
                 }
+            }
+
+            .pgnumb{
+                margin: 0 20px;
+                li{
+                    &:hover a{
+                        border-radius: 22px;
+                        background-color: #343434;
+                        color: #fff;
+                    }
+                }
+
             }
         }
     }
