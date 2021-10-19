@@ -1,6 +1,8 @@
 #header_sub{
     width: 100%;
     border-bottom: 1px solid #ddd;
+    position: relative;
+    z-index: 2;
 
     .inner{
         width: 1180px;
@@ -17,7 +19,7 @@
                 font: bold 24px/1 'Prompt'; color: #000;
             }
         }
-        .gnb{
+        >.gnb{
             width: 65%;
             position: absolute;
             left: 20%;
@@ -26,14 +28,39 @@
                 content: ''; display: block; clear: both;
             }
 
-            li{
+            >li{
                 float: left;
                 width: 120px;
                 height: 100px;
                 text-align: center;
+                
                 a{
                     font: bold 15px/100px 'Prompt'; color: #222;
-                    
+                }
+                
+                .sub{
+                    width: 1180px; height: 300px;
+                    position: absolute; top: 101px;
+                    right: -177px;
+                    background: #bbb;
+                    display: none;
+
+                    h2{font: 14px/1 'arial'; color: #000;}
+
+                    &::before{
+                        content: ''; display: block;
+                        width: 100%; height: 100%;
+                        position: absolute; top: 0;
+                        left: -100%;
+                        background: #bbb;
+                    }
+                    &::after{
+                        content: ''; display: block;
+                        width: 100%; height: 100%;
+                        position: absolute; top: 0;
+                        right: -100%;
+                        background: #bbb;
+                    }
                 }
             }
         }
