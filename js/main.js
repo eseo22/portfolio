@@ -1,10 +1,10 @@
 
 //메뉴에 마우스 호버시 2depth
-$(".gnb>li a").on("mouseenter", function(){
-    $(this).parent("li").find(".sub").show();
+$(".gnb>li").on("mouseenter", function(){
+    $(this).find(".sub").show();
 });
-$(".gnb>li a").on("mouseleave", function(){
-    $(this).parent("li").find(".sub").hide();
+$(".gnb>li").on("mouseleave", function(){
+    $(this).find(".sub").hide();
 });
 
 //포커스 이동시 2depth 활성화
