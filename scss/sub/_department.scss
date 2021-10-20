@@ -1,0 +1,122 @@
+.department{
+    .sub_visual{
+        h1{
+            font: 50px/1 'arial'; color: #000;
+        }
+    }
+
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+        .about{
+            width: 100%;
+            .txt{
+                width: 100%;
+                text-align: center;
+                padding: 80px 0px;
+                h2{
+                    font: 40px/1 'arial'; color: #000;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font: 20px/1 'arial'; color: #444;
+                }
+            }
+
+            .wrap{
+                width: 100%;
+                padding: 40px 0px;
+
+                &::after{content: ''; display: block; clear: both;}
+                article{
+                    width: 280px;
+                    margin-right: 20px;
+                    float: left;
+                    text-align: center;
+
+                    &:nth-of-type(4){margin-right: 0px;}
+
+                    i{
+                        font-size: 40px;
+                        color: lightpink;
+                        margin-bottom: 30px;
+                    }
+                    h3{
+                        font: bold 18px/1 'arial'; color: #000;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font: 18px/1 'arial'; color: #444;
+                        width: 200px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        .value{
+            width: 100%; 
+            position: relative;
+            padding: 150px 0px 200px;
+
+            >.txt{
+                text-align: center;
+                margin-bottom: 120px;
+                h2{
+                    font: 40px/1 'arial'; color: #000;
+                    margin-bottom: 10px;
+                }
+                p{font: 20px/1 'arial'; color: #444;}
+            }
+            
+            
+            .wrap2{
+                
+                &::after{content: ''; display: block; clear: both;}
+                .pic{
+                    width: 40%; height: 300px; 
+                    margin-right: 50px;
+                    float: left;
+                    position: relative;
+                        img{
+                            width: 100%; height: 100%;
+                            object-fit: cover;
+                            position: relative;
+                            z-index: 10;
+                        }
+
+                    &::before{
+                        content: ''; display: block;
+                        width: 100%; height: 300px;
+                        background-color: #444;
+                        position: absolute; left: -20px; top: 20px;
+                        z-index: 1;
+                    }
+                    
+                }
+                .txt{
+                    width: 50%; 
+                    margin-top: 20px;
+                    float: left;
+                    h3{
+                        font: 22px/1.2 'arial'; color:#000;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font: 18px/1.2 'arial'; color: #444;
+                    }
+                }
+                
+            }
+        }
+
+        .people{
+            width: 100%; min-height: 500px;
+            text-align: center;
+            h2{
+                font: 40px/1 'arial'; color: #000;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
