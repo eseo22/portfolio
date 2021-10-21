@@ -300,19 +300,19 @@ input, a, select, option {
       width: 80%;
       margin: 0 auto;
       display: flex;
-      justify-content: space-between; }
+      justify-content: center; }
       .members .inner form .btns input[type=reset] {
         display: inline-block;
-        width: 50%;
+        width: 300px;
         height: 80px;
         border: 1px solid #524C4A;
-        font: bold 20px/80px 'Noto Sans KR';
+        font: bold 20px/1 'Noto Sans KR';
         color: #505050;
         text-align: center;
         margin-right: 20px;
         cursor: pointer; }
       .members .inner form .btns input[type=submit] {
-        width: 50%;
+        width: 300px;
         height: 80px;
         background-color: #524C4A;
         font: bold 20px/1 'Noto Sans KR';
@@ -530,19 +530,27 @@ input, a, select, option {
     .community .inner .box {
       margin-bottom: 80px; }
       .community .inner .box form {
-        text-align: right; }
+        text-align: right;
+        position: relative; }
         .community .inner .box form select {
           width: 120px;
           height: 50px;
           border: none;
           border-bottom: 2px solid #000;
-          margin-right: 5px; }
+          margin-right: 5px;
+          font: 15px/1 'arial';
+          color: #000; }
         .community .inner .box form input {
           width: 360px;
           height: 50px;
           border: none;
           border-bottom: 2px solid #000;
-          padding-left: 20px; }
+          padding-left: 60px; }
+        .community .inner .box form i {
+          font-size: 20px;
+          position: absolute;
+          top: 10px;
+          right: 320px; }
     .community .inner .table {
       width: 100%;
       margin-bottom: 80px; }
@@ -554,7 +562,7 @@ input, a, select, option {
           height: 50px;
           padding: 10px 30px;
           text-align: center;
-          font: 18px/1 '맑은 고딕';
+          font: bold 18px/1 '맑은 고딕';
           color: #000;
           border-bottom: 1px solid #888; }
           .community .inner .table table thead tr th:nth-of-type(1) {
@@ -669,7 +677,7 @@ input, a, select, option {
         float: left; }
         .department .inner .about2 article:nth-of-type(1) {
           height: 400px;
-          margin-right: 50px; }
+          margin-right: 80px; }
           .department .inner .about2 article:nth-of-type(1) h2 {
             font: 40px/1 'arial';
             color: #000;
@@ -699,9 +707,8 @@ input, a, select, option {
         color: #000;
         margin-bottom: 100px; }
       .department .inner .department .org {
-        width: 80%;
-        height: 600px;
-        margin: 0 auto; }
+        width: 100%;
+        height: 600px; }
         .department .inner .department .org img {
           width: 100%; }
 

@@ -241,20 +241,20 @@
                 width: 80%;
                 margin: 0 auto;
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 
                 input[type=reset]{
                     display: inline-block; 
-                    width: 50%; height: 80px;
+                    width: 300px; height: 80px;
                     border: 1px solid #524C4A;
-                    font:bold 20px/80px 'Noto Sans KR'; color: #505050;
+                    font:bold 20px/1 'Noto Sans KR'; color: #505050;
                     text-align: center;
                     margin-right: 20px;
                     cursor: pointer;
 
                 }
                 input[type=submit]{
-                    width: 50%; height: 80px;
+                    width: 300px; height: 80px;
                     background-color: #524C4A;
                     font:bold 20px/1 'Noto Sans KR'; color: #fff;
                     border: none;
