@@ -26,19 +26,23 @@
                     border: none;
                     border-bottom: 2px solid #000;
                     margin-right: 5px;
-                    font: 15px/1 'arial'; color: #000;
+                    font: 15px/50px 'arial'; color: #000;
                 }
-                input{
-                    width: 360px; height: 50px;
-                    border: none;
-                    border-bottom: 2px solid #000;
-                    padding-left: 60px;
-                    
+                label{
+                    i{
+                        font-size: 20px;
+                        position: relative; left: 20px; top: 5px;
+                    }
+                    input{
+                        width: 360px; height: 50px;
+                        border: none;
+                        border-bottom: 2px solid #000;
+                        padding-left: 60px;
+                        
+                    }
                 }
-                i{
-                    font-size: 20px;
-                    position: absolute; top: 10px; right: 320px;
-                }
+                
+                
             }
 
         }
