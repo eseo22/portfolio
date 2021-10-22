@@ -59,15 +59,67 @@ input, a, select, option {
           color: #222; }
         #header_sub .inner > .gnb > li .sub {
           width: 1180px;
-          height: 200px;
           position: absolute;
           top: 101px;
           right: -177px;
-          background: #bbb;
-          display: none; }
+          background: #fff;
+          display: none;
+          box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5); }
           #header_sub .inner > .gnb > li .sub h2 {
-            font: 14px/1 'arial';
-            color: #000; }
+            width: 200px;
+            height: 320px;
+            padding-top: 60px;
+            float: left;
+            font: 20px/1 'arial';
+            color: #000;
+            text-align: left; }
+          #header_sub .inner > .gnb > li .sub .subli {
+            width: 250px;
+            height: 320px;
+            padding: 40px 0px;
+            float: left;
+            position: relative; }
+            #header_sub .inner > .gnb > li .sub .subli ul {
+              display: inline-block;
+              position: absolute;
+              top: 40px;
+              left: 30px; }
+              #header_sub .inner > .gnb > li .sub .subli ul li {
+                width: 100%;
+                height: 50px;
+                text-align: left; }
+                #header_sub .inner > .gnb > li .sub .subli ul li a {
+                  font: 18px/50px 'arial';
+                  color: #000; }
+            #header_sub .inner > .gnb > li .sub .subli::before {
+              content: '';
+              display: inline-block;
+              width: 1px;
+              height: 240px;
+              background: #ddd;
+              position: relative;
+              left: -120px; }
+          #header_sub .inner > .gnb > li .sub .subpic {
+            width: 400px;
+            height: 280px;
+            padding: 40px 20px 0px;
+            float: right; }
+            #header_sub .inner > .gnb > li .sub .subpic img {
+              width: 100%;
+              height: 100%; }
+          #header_sub .inner > .gnb > li .sub .subli2 {
+            width: 250px;
+            height: 320px;
+            padding-top: 40px;
+            float: right; }
+            #header_sub .inner > .gnb > li .sub .subli2 ul li {
+              width: 100%;
+              height: 60px;
+              text-align: left;
+              border-top: 1px solid #ddd; }
+              #header_sub .inner > .gnb > li .sub .subli2 ul li a {
+                font: 20px/60px 'arial';
+                color: #000; }
           #header_sub .inner > .gnb > li .sub::before {
             content: '';
             display: block;
@@ -76,7 +128,8 @@ input, a, select, option {
             position: absolute;
             top: 0;
             left: -100%;
-            background: #bbb; }
+            background: #fff;
+            box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5); }
           #header_sub .inner > .gnb > li .sub::after {
             content: '';
             display: block;
@@ -85,7 +138,8 @@ input, a, select, option {
             position: absolute;
             top: 0;
             right: -100%;
-            background: #bbb; }
+            background: #fff;
+            box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5); }
     #header_sub .inner > a {
       display: block;
       width: 10%;
@@ -752,15 +806,67 @@ body {
           color: #222; }
         #header .inner > .gnb > li .sub {
           width: 1180px;
-          height: 200px;
           position: absolute;
           top: 101px;
           right: -177px;
-          background: #bbb;
-          display: none; }
+          background: #fff;
+          display: none;
+          box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5); }
           #header .inner > .gnb > li .sub h2 {
-            font: 14px/1 'arial';
-            color: #000; }
+            width: 200px;
+            height: 320px;
+            padding-top: 60px;
+            float: left;
+            font: 20px/1 'arial';
+            color: #000;
+            text-align: left; }
+          #header .inner > .gnb > li .sub .subli {
+            width: 250px;
+            height: 320px;
+            padding: 40px 0px;
+            float: left;
+            position: relative; }
+            #header .inner > .gnb > li .sub .subli ul {
+              display: inline-block;
+              position: absolute;
+              top: 40px;
+              left: 30px; }
+              #header .inner > .gnb > li .sub .subli ul li {
+                width: 100%;
+                height: 50px;
+                text-align: left; }
+                #header .inner > .gnb > li .sub .subli ul li a {
+                  font: 18px/50px 'arial';
+                  color: #000; }
+            #header .inner > .gnb > li .sub .subli::before {
+              content: '';
+              display: inline-block;
+              width: 1px;
+              height: 240px;
+              background: #ddd;
+              position: relative;
+              left: -120px; }
+          #header .inner > .gnb > li .sub .subpic {
+            width: 400px;
+            height: 280px;
+            padding: 40px 20px 0px;
+            float: right; }
+            #header .inner > .gnb > li .sub .subpic img {
+              width: 100%;
+              height: 100%; }
+          #header .inner > .gnb > li .sub .subli2 {
+            width: 250px;
+            height: 320px;
+            padding-top: 40px;
+            float: right; }
+            #header .inner > .gnb > li .sub .subli2 ul li {
+              width: 100%;
+              height: 60px;
+              text-align: left;
+              border-top: 1px solid #ddd; }
+              #header .inner > .gnb > li .sub .subli2 ul li a {
+                font: 20px/60px 'arial';
+                color: #000; }
           #header .inner > .gnb > li .sub::before {
             content: '';
             display: block;
@@ -769,7 +875,8 @@ body {
             position: absolute;
             top: 0;
             left: -100%;
-            background: #bbb; }
+            background: #fff;
+            box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5); }
           #header .inner > .gnb > li .sub::after {
             content: '';
             display: block;
@@ -778,7 +885,8 @@ body {
             position: absolute;
             top: 0;
             right: -100%;
-            background: #bbb; }
+            background: #fff;
+            box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5); }
     #header .inner > a {
       display: block;
       width: 10%;
