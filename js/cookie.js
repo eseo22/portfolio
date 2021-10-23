@@ -1,3 +1,5 @@
+//쿠키팝업
+
 $("#popup .close").on("click", function(e){
     e.preventDefault();
 

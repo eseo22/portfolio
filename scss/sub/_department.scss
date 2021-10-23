@@ -9,6 +9,7 @@
             padding: 40px;
             position: relative;
             margin-bottom: 100px;
+            
             .pic{ 
                 width: 350px; height: 450px;
                 img{width: 100%; height: 100%; object-fit: cover;}
@@ -39,7 +40,21 @@
             }
         }
         
+        .department{
+            width: 100%; 
+            
+            h2{
+                font: 30px/1 'arial'; color: #000;
+                margin-bottom: 40px;
+            }
+            .org{
+                width: 90%; height: 600px;
 
+                img{
+                    width: 100%;
+                }
+            }
+        }
         .about2{
             width: 100%;
             margin-bottom: 100px;
@@ -52,7 +67,7 @@
                 &:nth-of-type(1){
                     height: 400px; margin-right: 80px;
                     h2{
-                        font: 40px/1 'arial'; color: #000;
+                        font: 30px/1 'arial'; color: #000;
                         margin-bottom: 20px;
                     }
                     p{
@@ -75,21 +90,7 @@
             }
         }
 
-        .department{
-            width: 100%; 
-            
-            h2{
-                font: 40px/1 'arial'; color: #000;
-                margin-bottom: 100px;
-            }
-            .org{
-                width: 100%; height: 600px;
-
-                img{
-                    width: 100%;
-                }
-            }
-        }
+        
     }
 
 }

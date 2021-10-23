@@ -203,7 +203,8 @@ input, a, select, option {
             background-color: burlywood;
             border: none;
             font: 12px/35px 'arial';
-            color: #000; }
+            color: #000;
+            cursor: pointer; }
     #footer_sub .inner > p {
       font: 14px/1 'arial';
       color: #444;
@@ -539,7 +540,7 @@ input, a, select, option {
       padding-top: 100px;
       margin-bottom: 80px; }
       .location .inner .txt h1 {
-        font: 50px/1 'arial';
+        font: 40px/1 'arial';
         color: #000;
         margin-bottom: 20px; }
       .location .inner .txt p {
@@ -717,6 +718,17 @@ input, a, select, option {
         .department .inner .about1 .txt p {
           font: 20px/1.2 'arial';
           color: #888; }
+    .department .inner .department {
+      width: 100%; }
+      .department .inner .department h2 {
+        font: 30px/1 'arial';
+        color: #000;
+        margin-bottom: 40px; }
+      .department .inner .department .org {
+        width: 90%;
+        height: 600px; }
+        .department .inner .department .org img {
+          width: 100%; }
     .department .inner .about2 {
       width: 100%;
       margin-bottom: 100px; }
@@ -733,7 +745,7 @@ input, a, select, option {
           height: 400px;
           margin-right: 80px; }
           .department .inner .about2 article:nth-of-type(1) h2 {
-            font: 40px/1 'arial';
+            font: 30px/1 'arial';
             color: #000;
             margin-bottom: 20px; }
           .department .inner .about2 article:nth-of-type(1) p {
@@ -754,17 +766,6 @@ input, a, select, option {
           .department .inner .about2 article:nth-of-type(4) p {
             font: 18px/1 'arial';
             color: #888; }
-    .department .inner .department {
-      width: 100%; }
-      .department .inner .department h2 {
-        font: 40px/1 'arial';
-        color: #000;
-        margin-bottom: 100px; }
-      .department .inner .department .org {
-        width: 100%;
-        height: 600px; }
-        .department .inner .department .org img {
-          width: 100%; }
 
 body {
   width: 100%;
@@ -903,7 +904,7 @@ body {
 #visual {
   width: 100%;
   height: calc(100vh - 101px);
-  background: lightpink;
+  background: lightgrey;
   position: relative;
   z-index: 1; }
   #visual .inner {
@@ -917,6 +918,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
   padding: 20px; }
   #popup .content {
     font: 20px/1 '맑은 고딕';
@@ -987,7 +989,8 @@ body {
             background-color: burlywood;
             border: none;
             font: 12px/35px 'arial';
-            color: #000; }
+            color: #000;
+            cursor: pointer; }
     #footer .inner > p {
       font: 14px/1 'arial';
       color: #444;
