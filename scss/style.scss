@@ -277,3 +277,17 @@ body{width: 100%; overflow-x: hidden;}
 
     }
 }
+
+@media screen and (max-width:1179px){
+    #header{
+        .inner{
+            width: 100%;
+        }
+    }
+
+    #footer{
+        .inner{
+            width: 100%;
+        }
+    }
+}
