@@ -720,15 +720,25 @@ input, a, select, option {
           color: #888; }
     .department .inner .department {
       width: 100%; }
-      .department .inner .department h2 {
-        font: 30px/1 'arial';
-        color: #000;
-        margin-bottom: 40px; }
-      .department .inner .department .org {
-        width: 90%;
-        height: 600px; }
-        .department .inner .department .org img {
-          width: 100%; }
+      .department .inner .department::after {
+        content: '';
+        display: block;
+        clear: both; }
+      .department .inner .department div {
+        width: 250px;
+        height: 340px;
+        margin-left: 30px;
+        float: right; }
+        .department .inner .department div img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .department .inner .department .dpbox {
+        width: 280px;
+        height: 250px;
+        float: left;
+        margin-left: 0px;
+        border: 2px solid #000; }
     .department .inner .about2 {
       width: 100%;
       margin-bottom: 100px; }
@@ -908,7 +918,7 @@ body {
   position: relative;
   z-index: 1; }
   #visual .inner {
-    height: calc(100vh - 103px); }
+    height: calc(100vh - 101px); }
 
 #popup {
   width: 500px;

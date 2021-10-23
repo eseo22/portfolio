@@ -43,17 +43,22 @@
         .department{
             width: 100%; 
             
-            h2{
-                font: 30px/1 'arial'; color: #000;
-                margin-bottom: 40px;
-            }
-            .org{
-                width: 90%; height: 600px;
-
+            &::after{content: ''; display: block; clear: both;}
+            div{
+                width: 250px; height: 340px;
+                margin-left: 30px; 
+                float: right;
                 img{
-                    width: 100%;
+                    width: 100%; height: 100%; object-fit: cover;
                 }
             }
+            .dpbox{
+                width: 280px; height: 250px;
+                float: left;
+                margin-left: 0px;
+                border: 2px solid #000;
+            }
+            
         }
         .about2{
             width: 100%;
