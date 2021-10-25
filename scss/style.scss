@@ -28,7 +28,8 @@ body{width: 100%; overflow-x: hidden;}
             top: 23px;
             left: 0;
             a{
-                font: bold 24px/1 'Prompt'; color: #000;
+                display: block; width: 100%; height: 50px;
+                font: bold 24px/50px 'Prompt'; color: #000;
             }
         }
         >.gnb{
@@ -393,15 +394,17 @@ body{width: 100%; overflow-x: hidden;}
     #header{
         .inner{
             width: 100%;
-            height: 80px;
-            
+            height: 80px;  
+
             h1{
-                width: 20%; height: 60px;
-                position: absolute; top: 50%; left: 50%;
+                width: 50%;
+                top: 50%; left: 50%;
                 transform: translate(-50%, -50%);
+                
                 a{
-                    display: block; width: 100%; height: 60px;
-                    line-height: 60px;
+                    height: 80px;
+                    line-height: 80px;
+                    text-align: center;
                 }
             }
             >.gnb{
@@ -428,6 +431,7 @@ body{width: 100%; overflow-x: hidden;}
             padding: 0px;  
             .wrap{
                 display: inline-block;
+                &::after{content: ''; display: block; clear: both;}
                 article{
                     margin-right: 0px;
                     float: left;
@@ -446,23 +450,21 @@ body{width: 100%; overflow-x: hidden;}
                     
                     &:nth-of-type(4){
                         width: 100%;
-                        margin-top: 40px;    
-                        >h1{margin-bottom: 0px;}
-                        >p{margin-bottom: 20px; width: 40%;}
+                        margin-top: 40px;  
+                        >h1{
+                            margin-bottom: 5px;
+                        }
+                        >p{
+                            margin-bottom: 20px; width: 100%;
+                        }
                         input[type=text]{
-                            width: 180px;
                             height: 30px;
-                            font: 12px/30px 'arial';
-                            padding: 0px 5px;
-    
+                            font: 12px/30px 'arial';    
                         }
                         input[type=submit]{
                             width: 80px;
                             height: 30px;
-                            background-color: burlywood;
-                            border: none;
-                            font: 12px/30px 'arial'; color: #000;
-                            cursor: pointer;
+                            font: 12px/30px 'arial'; 
                         }
                         
                     }
@@ -471,13 +473,66 @@ body{width: 100%; overflow-x: hidden;}
                 
             }
             >p{
-                font: 14px/1 'arial'; color: #444;
-                margin-top: 80px;
-                
+                font-size: 12px;
+                margin-top: 60px; 
+                padding-top: 10px ;
+                border-top: 1px solid #444;
             }
             address{
-                font: 14px/1.4 'arial'; color: #444;
+                font-size: 12px;
+            }
     
+        }
+    }
+}
+@media screen and (max-width:539px){
+    #header{
+        .inner{
+            >a{display: none;} 
+            .btnCall{left: 20px;}
+        }
+    }
+
+    #footer{
+        .inner{ 
+            .wrap{
+                article{
+                    ul{
+                        li{ margin-bottom: 5px;}
+                    }
+    
+                    &:nth-of-type(1){
+                        width: 100%;
+                        margin-right: 0px;
+                        margin-bottom: 50px;
+                        h1{
+                            margin-bottom: 5px;
+                        }
+
+                    }
+                    &:nth-of-type(2), &:nth-of-type(3){
+                        width:50%;
+                        margin:0px;
+                        h1{margin-bottom: 10px;}
+                    }
+                    
+                    &:nth-of-type(4){
+                        input[type=text]{ 
+                            width: 66%;
+                            background-color: #eee;
+                            border: none;
+                        }
+                        input[type=submit]{
+                            width: 30%;
+                            
+                        }
+                    }
+                }
+    
+                
+            }
+            >p{
+                margin-bottom: 5px;
             }
     
         }
