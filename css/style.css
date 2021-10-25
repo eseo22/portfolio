@@ -1098,13 +1098,14 @@ body {
       #header .inner .btnCall:hover span {
         width: 100%; }
     #header .inner .menuMo {
-      width: 60%;
+      width: 80%;
       height: 100vh;
       background: #fff;
       position: fixed;
-      right: 0;
+      left: -100%;
       top: 0;
       z-index: 10;
+      display: none;
       box-shadow: 10px 0px 40px -10px #000; }
       #header .inner .menuMo .txtbox {
         width: 100%;
@@ -1169,6 +1170,8 @@ body {
             height: 40px;
             font: 15px/40px 'arial';
             color: #000; }
+      #header .inner .menuMo.on {
+        left: 0; }
 
 #visual {
   width: 100%;
@@ -1294,112 +1297,56 @@ body {
     #header .inner .btnCall {
       left: 30px;
       display: block; }
-      #header .inner .btnCall::before {
-        content: '';
-        display: block;
-        width: 80%;
-        height: 2px;
-        background: #222;
-        transition: 0.5s; }
-      #header .inner .btnCall span {
-        display: block;
-        width: 60%;
-        height: 2px;
-        background: #222;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        margin-top: -1px;
-        text-indent: -9999px;
-        transition: 0.5s; }
-      #header .inner .btnCall::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2px;
-        background: #222;
-        position: absolute;
-        bottom: 0;
-        left: 0; }
-      #header .inner .btnCall:hover::before {
-        width: 100%; }
-      #header .inner .btnCall:hover span {
-        width: 100%; }
-    #header .inner .menuMo {
-      width: 60%;
-      height: 100vh;
-      background: #fff;
-      position: fixed;
-      right: 0;
-      top: 0;
-      z-index: 10;
-      display: none;
-      box-shadow: 10px 0px 40px -10px #000; }
-      #header .inner .menuMo .txtbox {
-        width: 100%;
-        height: 300px;
-        padding: 40px; }
-        #header .inner .menuMo .txtbox > a {
-          display: block;
-          width: 25px;
-          height: 25px;
-          position: relative;
-          margin-bottom: 60px; }
-          #header .inner .menuMo .txtbox > a::before {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 2px;
-            background: #000;
-            position: absolute;
-            top: 50%;
-            margin-top: -0.5px; }
-          #header .inner .menuMo .txtbox > a span {
-            display: block;
-            text-indent: -9999px; }
-          #header .inner .menuMo .txtbox > a::after {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 2px;
-            transform: rotate(-90deg);
-            background: #000;
-            position: absolute;
-            top: 50%;
-            margin-top: -0.5px;
-            transition: 0.5s; }
-          #header .inner .menuMo .txtbox > a:hover::after {
-            transform: rotate(0deg); }
-        #header .inner .menuMo .txtbox p {
-          width: 250px;
-          font: 16px/1.8 'arial';
-          color: #000; }
-          #header .inner .menuMo .txtbox p a {
-            font-size: 16px;
-            color: #000;
-            position: relative; }
-            #header .inner .menuMo .txtbox p a::after {
-              content: '';
-              display: block;
-              width: 55px;
-              height: 1px;
-              background: #000;
-              position: absolute;
-              left: 0px;
-              bottom: -2px; }
-      #header .inner .menuMo .gnbmo {
-        background: #eee; }
-        #header .inner .menuMo .gnbmo li {
-          width: 100%;
-          padding: 20px 40px;
-          border-bottom: 1px solid #ddd; }
-          #header .inner .menuMo .gnbmo li a {
-            display: block;
-            height: 40px;
-            font: 15px/40px 'arial';
-            color: #000; }
 
-  #footer .inner {
-    width: 100%; } }
+  #footer {
+    padding: 20px 20px; }
+    #footer .inner {
+      width: 100%;
+      padding: 0px; }
+      #footer .inner .wrap {
+        display: inline-block; }
+        #footer .inner .wrap article {
+          margin-right: 0px;
+          float: left;
+          width: 30%; }
+          #footer .inner .wrap article h1 {
+            font-size: 18px; }
+          #footer .inner .wrap article p {
+            font-size: 14px; }
+          #footer .inner .wrap article ul li {
+            margin-bottom: 10px; }
+          #footer .inner .wrap article:nth-of-type(1) {
+            margin-right: 30px; }
+          #footer .inner .wrap article:nth-of-type(2), #footer .inner .wrap article:nth-of-type(3) {
+            width: 25%;
+            margin-right: 0px; }
+          #footer .inner .wrap article:nth-of-type(4) {
+            width: 100%;
+            margin-top: 40px; }
+            #footer .inner .wrap article:nth-of-type(4) > h1 {
+              margin-bottom: 0px; }
+            #footer .inner .wrap article:nth-of-type(4) > p {
+              margin-bottom: 20px;
+              width: 40%; }
+            #footer .inner .wrap article:nth-of-type(4) input[type=text] {
+              width: 180px;
+              height: 30px;
+              font: 12px/30px 'arial';
+              padding: 0px 5px; }
+            #footer .inner .wrap article:nth-of-type(4) input[type=submit] {
+              width: 80px;
+              height: 30px;
+              background-color: burlywood;
+              border: none;
+              font: 12px/30px 'arial';
+              color: #000;
+              cursor: pointer; }
+      #footer .inner > p {
+        font: 14px/1 'arial';
+        color: #444;
+        margin-top: 80px; }
+      #footer .inner address {
+        font: 14px/1.4 'arial';
+        color: #444; } }
 
 /*# sourceMappingURL=style.css.map */
