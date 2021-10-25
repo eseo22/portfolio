@@ -724,7 +724,7 @@ input, a, select, option {
         .department .inner .about1 .txt p {
           font: 20px/1.2 'arial';
           color: #888; }
-    .department .inner .members {
+    .department .inner .team {
       width: 100%;
       height: 450px;
       position: relative;
@@ -732,7 +732,7 @@ input, a, select, option {
       background: #eee;
       display: flex;
       justify-content: flex-end; }
-      .department .inner .members::before {
+      .department .inner .team::before {
         content: '';
         display: block;
         width: 100%;
@@ -740,21 +740,21 @@ input, a, select, option {
         background: #eee;
         position: absolute;
         left: 100%; }
-      .department .inner .members .pic {
+      .department .inner .team .pic {
         width: 250px;
         height: 340px;
         margin-left: 30px;
         margin-top: 40px; }
-        .department .inner .members .pic img {
+        .department .inner .team .pic img {
           width: 100%;
           height: 100%;
           object-fit: cover;
           object-position: center center;
           filter: grayscale(80%);
           transition: 0.5s; }
-        .department .inner .members .pic:hover img {
+        .department .inner .team .pic:hover img {
           filter: grayscale(0%); }
-      .department .inner .members .dpbox {
+      .department .inner .team .dpbox {
         width: 280px;
         height: 250px;
         border: 2.5px solid #000;
@@ -762,16 +762,16 @@ input, a, select, option {
         position: absolute;
         top: -40px;
         left: -50px; }
-        .department .inner .members .dpbox p {
+        .department .inner .team .dpbox p {
           font: 30px/1.2 'arial';
           color: #000; }
-      .department .inner .members .dptxt {
+      .department .inner .team .dptxt {
         width: 280px;
         height: 100px;
         position: absolute;
         top: 230px;
         left: 40px; }
-        .department .inner .members .dptxt p {
+        .department .inner .team .dptxt p {
           font: 16px/1.2 'arial';
           color: #000; }
     .department .inner .about2 {
@@ -828,23 +828,23 @@ input, a, select, option {
         left: 320px; }
         .department .inner .about1 .txt p {
           width: 340px; }
-    .department .inner .members {
+    .department .inner .team {
       height: auto;
       margin-bottom: 100px;
       padding: 20px; }
-      .department .inner .members::before {
+      .department .inner .team::before {
         display: none; }
-      .department .inner .members .pic {
+      .department .inner .team .pic {
         width: 200px;
         height: 320px;
         margin-left: 0px; }
-      .department .inner .members .dpbox {
+      .department .inner .team .dpbox {
         width: 220px;
         height: 320px;
         padding: 10px;
         top: 60px;
         left: 20px; }
-      .department .inner .members .dptxt {
+      .department .inner .team .dptxt {
         width: 200px;
         top: 200px;
         left: 30px; }
@@ -883,28 +883,28 @@ input, a, select, option {
     .department .inner .about1 .txt p {
       font-size: 15px;
       width: 100%; }
-  .department .inner .members {
+  .department .inner .team {
     width: 100%;
     display: block; }
-    .department .inner .members::after {
+    .department .inner .team::after {
       content: '';
       display: block;
       clear: both; }
-    .department .inner .members .pic {
+    .department .inner .team .pic {
       width: 50%;
       height: 200px;
       float: right;
       margin-top: 0px; }
-    .department .inner .members .dpbox {
+    .department .inner .team .dpbox {
       width: 50%;
       height: 200px;
       position: static;
       float: left; }
-    .department .inner .members .dptxt {
+    .department .inner .team .dptxt {
       width: 100%;
       position: static;
       float: left; }
-      .department .inner .members .dptxt p {
+      .department .inner .team .dptxt p {
         font-size: 15px;
         margin-top: 20px; }
   .department .inner .about2 article {
@@ -1049,7 +1049,7 @@ body {
             box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5); }
     #header .inner > a {
       display: block;
-      width: 10%;
+      width: 8%;
       height: 28px;
       border: 1px solid #bbb;
       text-align: center;
@@ -1059,6 +1059,116 @@ body {
       right: 0px;
       top: 50%;
       transform: translateY(-50%); }
+    #header .inner .btnCall {
+      display: block;
+      width: 30px;
+      height: 16px;
+      position: absolute;
+      right: 0px;
+      display: none; }
+      #header .inner .btnCall::before {
+        content: '';
+        display: block;
+        width: 80%;
+        height: 2px;
+        background: #222;
+        transition: 0.5s; }
+      #header .inner .btnCall span {
+        display: block;
+        width: 60%;
+        height: 2px;
+        background: #222;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -1px;
+        text-indent: -9999px;
+        transition: 0.5s; }
+      #header .inner .btnCall::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #222;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+      #header .inner .btnCall:hover::before {
+        width: 100%; }
+      #header .inner .btnCall:hover span {
+        width: 100%; }
+    #header .inner .menuMo {
+      width: 60%;
+      height: 100vh;
+      background: #fff;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 10;
+      box-shadow: 10px 0px 40px -10px #000; }
+      #header .inner .menuMo .txtbox {
+        width: 100%;
+        height: 300px;
+        padding: 40px; }
+        #header .inner .menuMo .txtbox > a {
+          display: block;
+          width: 25px;
+          height: 25px;
+          position: relative;
+          margin-bottom: 60px; }
+          #header .inner .menuMo .txtbox > a::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #000;
+            position: absolute;
+            top: 50%;
+            margin-top: -0.5px; }
+          #header .inner .menuMo .txtbox > a span {
+            display: block;
+            text-indent: -9999px; }
+          #header .inner .menuMo .txtbox > a::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            transform: rotate(-90deg);
+            background: #000;
+            position: absolute;
+            top: 50%;
+            margin-top: -0.5px;
+            transition: 0.5s; }
+          #header .inner .menuMo .txtbox > a:hover::after {
+            transform: rotate(0deg); }
+        #header .inner .menuMo .txtbox p {
+          width: 250px;
+          font: 16px/1.8 'arial';
+          color: #000; }
+          #header .inner .menuMo .txtbox p a {
+            font-size: 16px;
+            color: #000;
+            position: relative; }
+            #header .inner .menuMo .txtbox p a::after {
+              content: '';
+              display: block;
+              width: 55px;
+              height: 1px;
+              background: #000;
+              position: absolute;
+              left: 0px;
+              bottom: -2px; }
+      #header .inner .menuMo .gnbmo {
+        background: #eee; }
+        #header .inner .menuMo .gnbmo li {
+          width: 100%;
+          padding: 20px 40px;
+          border-bottom: 1px solid #ddd; }
+          #header .inner .menuMo .gnbmo li a {
+            display: block;
+            height: 40px;
+            font: 15px/40px 'arial';
+            color: #000; }
 
 #visual {
   width: 100%;
@@ -1160,7 +1270,134 @@ body {
 
 @media screen and (max-width: 1179px) {
   #header .inner {
-    width: 100%; }
+    width: 100%;
+    height: 80px; }
+    #header .inner h1 {
+      width: 20%;
+      height: 60px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      #header .inner h1 a {
+        display: block;
+        width: 100%;
+        height: 60px;
+        line-height: 60px; }
+    #header .inner > .gnb {
+      display: none; }
+    #header .inner > a {
+      border: none;
+      letter-spacing: 1px;
+      color: #666;
+      right: 30px; }
+    #header .inner .btnCall {
+      left: 30px;
+      display: block; }
+      #header .inner .btnCall::before {
+        content: '';
+        display: block;
+        width: 80%;
+        height: 2px;
+        background: #222;
+        transition: 0.5s; }
+      #header .inner .btnCall span {
+        display: block;
+        width: 60%;
+        height: 2px;
+        background: #222;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -1px;
+        text-indent: -9999px;
+        transition: 0.5s; }
+      #header .inner .btnCall::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #222;
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+      #header .inner .btnCall:hover::before {
+        width: 100%; }
+      #header .inner .btnCall:hover span {
+        width: 100%; }
+    #header .inner .menuMo {
+      width: 60%;
+      height: 100vh;
+      background: #fff;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 10;
+      display: none;
+      box-shadow: 10px 0px 40px -10px #000; }
+      #header .inner .menuMo .txtbox {
+        width: 100%;
+        height: 300px;
+        padding: 40px; }
+        #header .inner .menuMo .txtbox > a {
+          display: block;
+          width: 25px;
+          height: 25px;
+          position: relative;
+          margin-bottom: 60px; }
+          #header .inner .menuMo .txtbox > a::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #000;
+            position: absolute;
+            top: 50%;
+            margin-top: -0.5px; }
+          #header .inner .menuMo .txtbox > a span {
+            display: block;
+            text-indent: -9999px; }
+          #header .inner .menuMo .txtbox > a::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            transform: rotate(-90deg);
+            background: #000;
+            position: absolute;
+            top: 50%;
+            margin-top: -0.5px;
+            transition: 0.5s; }
+          #header .inner .menuMo .txtbox > a:hover::after {
+            transform: rotate(0deg); }
+        #header .inner .menuMo .txtbox p {
+          width: 250px;
+          font: 16px/1.8 'arial';
+          color: #000; }
+          #header .inner .menuMo .txtbox p a {
+            font-size: 16px;
+            color: #000;
+            position: relative; }
+            #header .inner .menuMo .txtbox p a::after {
+              content: '';
+              display: block;
+              width: 55px;
+              height: 1px;
+              background: #000;
+              position: absolute;
+              left: 0px;
+              bottom: -2px; }
+      #header .inner .menuMo .gnbmo {
+        background: #eee; }
+        #header .inner .menuMo .gnbmo li {
+          width: 100%;
+          padding: 20px 40px;
+          border-bottom: 1px solid #ddd; }
+          #header .inner .menuMo .gnbmo li a {
+            display: block;
+            height: 40px;
+            font: 15px/40px 'arial';
+            color: #000; }
 
   #footer .inner {
     width: 100%; } }

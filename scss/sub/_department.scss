@@ -40,7 +40,7 @@
             }
         }
         
-        .members{
+        .team{
             width: 100%; height: 450px;
             position: relative;
             margin-bottom: 200px;
@@ -147,7 +147,7 @@
                     p{width: 340px;}
                 }
             }
-            .members{
+            .team{
                 height: auto;
                 margin-bottom: 100px;
                 padding: 20px;
@@ -217,7 +217,7 @@
                     p{font-size:15px ; width: 100%;}
                 }
             }
-            .members{
+            .team{
                 width: 100%;
                 display: block;
                 &::after{content: ''; display: block; clear: both;}
