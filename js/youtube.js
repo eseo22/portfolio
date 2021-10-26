@@ -18,9 +18,14 @@ $.ajax({
 
         
 
+        let tit = data.snippet.title;
+        let titlen = tit.length;
+        if(titlen>30){tit=tit.substr(0,30)+"...."}
+
         let txt = data.snippet.description;
         let len = txt.length;
-        if(len>200){txt=txt.substr(0,200)+"...."}
+        if(len>100){txt=txt.substr(0,100)+"...."}
+        
 
         let date = data.snippet.publishedAt;
         date = date.split("T")[0];
@@ -36,7 +41,7 @@ $.ajax({
                             ),
                         $("<div class='con'>")
                             .append(
-                                $("<h2>").text(data.snippet.title),
+                                $("<h2>").text(tit),
                                 $("<p>").text(txt),
                                 $("<span>").text(date)
                             )

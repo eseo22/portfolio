@@ -140,7 +140,7 @@
             width: 100%;
             .about1{
                 height: 500px;
-                padding: 0 20px;
+                padding: 20px 20px 0px;
                 .pic{width: 280px; height: 400px;}
                 .txt{
                     position: absolute; top: 120px; left: 320px; 
@@ -185,7 +185,7 @@
                     }
                     &:nth-of-type(4){
                         width: 100%;
-                        padding-top: 10px;
+                        
                        
                     }
                 }

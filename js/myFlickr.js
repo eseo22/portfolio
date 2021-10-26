@@ -6,7 +6,7 @@ $.ajax({
         per_page:6,
         format:"json",
         nojsoncallback:1,
-        privacy_filter:5,
+        privacy_filter:1,
         tags:"landscape"
     }
 })
@@ -32,15 +32,25 @@ $.ajax({
 
                         $("<div class='profile'>")
                             .append(
-                                
-                                $("<img>").attr({src:"https://www.flickr.com/buddyicons/"+data.owner+".jpg"}),
                                 $("<span>").text(data.owner)
-                               
                             )
                 
                     )
             )
-    })
+    });
+
+    const total = $("gallery ul li").length;
+    let imgNum = 0;
+
+    $("#gallery img").each(function(index, data){
+        data.onload = function(){
+            imgNum++;
+            if(imgNum === total){   
+                $(".loading").addClass("off");
+            }
+        }
+        
+    });
     
 })
 
