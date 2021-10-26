@@ -1401,7 +1401,7 @@ body {
   #intro > .inner {
     width: 1180px;
     margin: 0 auto;
-    padding: 200px 0px; }
+    padding: 100px 0px 200px; }
     #intro > .inner::after {
       content: '';
       display: block;
@@ -1616,6 +1616,102 @@ body {
     #header .inner .btnCall {
       left: 30px;
       display: block; }
+
+  #intro {
+    width: 100%; }
+    #intro > .inner {
+      width: 100%;
+      padding: 40px 20px; }
+      #intro > .inner .txtbox {
+        margin-bottom: 20px; }
+        #intro > .inner .txtbox h2 {
+          font: 30px/1 'arial';
+          color: #000;
+          margin-bottom: 20px; }
+        #intro > .inner .txtbox p {
+          font: 20px/1.4 'arial';
+          color: #444;
+          margin-bottom: 20px; }
+        #intro > .inner .txtbox a {
+          display: block;
+          width: 130px;
+          height: 50px;
+          font: 20px/45px 'arial';
+          color: #000;
+          text-align: center;
+          border: 2px solid #CFB6A4; }
+      #intro > .inner .picbox {
+        width: 100%; }
+        #intro > .inner .picbox .pic {
+          width: 250px;
+          height: 400px;
+          margin-right: 15px; }
+          #intro > .inner .picbox .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+          #intro > .inner .picbox .pic:last-child {
+            margin-right: 0px; }
+
+  #news > .inner {
+    width: 100%;
+    padding: 40px 20px; }
+    #news > .inner .txtbox {
+      text-align: center; }
+      #news > .inner .txtbox h2 {
+        font: 40px/1 'arial';
+        color: #222;
+        margin-bottom: 40px; }
+      #news > .inner .txtbox p {
+        font: 20px/1.4 'arial';
+        color: #666;
+        margin-bottom: 80px; }
+    #news > .inner .wrap {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      #news > .inner .wrap a {
+        display: block;
+        width: 49%;
+        margin-right: 2%;
+        margin-bottom: 60px; }
+        #news > .inner .wrap a:nth-of-type(even) {
+          margin-right: 0; }
+        #news > .inner .wrap a article .pic {
+          width: 100%;
+          height: 190px;
+          margin-bottom: 30px; }
+          #news > .inner .wrap a article .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom; }
+        #news > .inner .wrap a article .txt h3 {
+          font: 18px/1.2 'arial';
+          color: #222;
+          margin-bottom: 10px; }
+        #news > .inner .wrap a article .txt p {
+          font: 16px/1 'arial';
+          color: #666; }
+        #news > .inner .wrap a:first-child article .pic > img {
+          object-position: center; }
+
+  #brand .inner {
+    width: 100%; }
+    #brand .inner .brandbox::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #brand .inner .brandbox .box {
+      width: 580px;
+      height: 600px;
+      float: left; }
+      #brand .inner .brandbox .box:nth-of-type(1), #brand .inner .brandbox .box:nth-of-type(4) {
+        height: 400px;
+        background: pink; }
+      #brand .inner .brandbox .box:nth-of-type(2), #brand .inner .brandbox .box:nth-of-type(3) {
+        height: 400px;
+        background: lightcyan; }
 
   #footer {
     padding: 20px 20px; }
