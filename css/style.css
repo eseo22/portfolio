@@ -196,17 +196,18 @@ input, a, select, option {
     #header_sub .inner .menuMo {
       width: 80%;
       height: 100vh;
-      background: #fff;
+      background: #ddd;
       position: fixed;
-      left: -100%;
+      left: -80%;
       top: 0;
       z-index: 10;
-      display: none;
-      box-shadow: 10px 0px 40px -10px #000; }
+      box-shadow: 5px 0px 10px -10px #000;
+      transition: 1s; }
       #header_sub .inner .menuMo .txtbox {
         width: 100%;
-        height: 300px;
-        padding: 40px; }
+        height: 280px;
+        padding: 40px;
+        background: #fff; }
         #header_sub .inner .menuMo .txtbox > a {
           display: block;
           width: 25px;
@@ -249,7 +250,7 @@ input, a, select, option {
             #header_sub .inner .menuMo .txtbox p a::after {
               content: '';
               display: block;
-              width: 55px;
+              width: 50px;
               height: 1px;
               background: #000;
               position: absolute;
@@ -1312,17 +1313,18 @@ body {
     #header .inner .menuMo {
       width: 80%;
       height: 100vh;
-      background: #fff;
+      background: #ddd;
       position: fixed;
-      left: -100%;
+      left: -80%;
       top: 0;
       z-index: 10;
-      display: none;
-      box-shadow: 10px 0px 40px -10px #000; }
+      box-shadow: 5px 0px 10px -10px #000;
+      transition: 1s; }
       #header .inner .menuMo .txtbox {
         width: 100%;
-        height: 300px;
-        padding: 40px; }
+        height: 280px;
+        padding: 40px;
+        background: #fff; }
         #header .inner .menuMo .txtbox > a {
           display: block;
           width: 25px;
@@ -1365,7 +1367,7 @@ body {
             #header .inner .menuMo .txtbox p a::after {
               content: '';
               display: block;
-              width: 55px;
+              width: 50px;
               height: 1px;
               background: #000;
               position: absolute;
@@ -1393,6 +1395,114 @@ body {
   z-index: 1; }
   #visual .inner {
     height: calc(100vh - 101px); }
+
+#intro {
+  width: 100%; }
+  #intro > .inner {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 200px 0px; }
+    #intro > .inner::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #intro > .inner .txtbox {
+      width: 400px;
+      padding: 40px 40px 20px 0px;
+      float: left; }
+      #intro > .inner .txtbox h2 {
+        font: 30px/1 'arial';
+        color: #000;
+        margin-bottom: 20px; }
+      #intro > .inner .txtbox p {
+        font: 20px/1.4 'arial';
+        color: #444;
+        margin-bottom: 20px; }
+      #intro > .inner .txtbox a {
+        display: block;
+        width: 130px;
+        height: 50px;
+        font: 20px/45px 'arial';
+        color: #000;
+        text-align: center;
+        border: 2px solid #CFB6A4; }
+    #intro > .inner .picbox {
+      float: right;
+      display: flex; }
+      #intro > .inner .picbox .pic {
+        width: 250px;
+        height: 400px;
+        margin-right: 15px; }
+        #intro > .inner .picbox .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        #intro > .inner .picbox .pic:last-child {
+          margin-right: 0px; }
+
+#news {
+  width: 100%; }
+  #news > .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #news > .inner .txtbox {
+      text-align: center; }
+      #news > .inner .txtbox h2 {
+        font: 40px/1 'arial';
+        color: #222;
+        margin-bottom: 40px; }
+      #news > .inner .txtbox p {
+        font: 20px/1.4 'arial';
+        color: #666;
+        margin-bottom: 80px; }
+    #news > .inner .wrap {
+      display: flex;
+      flex-wrap: wrap; }
+      #news > .inner .wrap a {
+        display: block;
+        width: 380px;
+        margin-right: 20px;
+        margin-bottom: 60px; }
+        #news > .inner .wrap a:nth-of-type(3) {
+          margin-right: 0; }
+        #news > .inner .wrap a article .pic {
+          width: 100%;
+          height: 190px;
+          margin-bottom: 30px; }
+          #news > .inner .wrap a article .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: bottom; }
+        #news > .inner .wrap a article .txt h3 {
+          font: 18px/1.2 'arial';
+          color: #222;
+          margin-bottom: 10px; }
+        #news > .inner .wrap a article .txt p {
+          font: 16px/1 'arial';
+          color: #666; }
+        #news > .inner .wrap a:first-child article .pic > img {
+          object-position: center; }
+
+#brand {
+  width: 100%; }
+  #brand .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #brand .inner .brandbox::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #brand .inner .brandbox .box {
+      width: 580px;
+      height: 600px;
+      float: left; }
+      #brand .inner .brandbox .box:nth-of-type(1), #brand .inner .brandbox .box:nth-of-type(4) {
+        height: 400px;
+        background: pink; }
+      #brand .inner .brandbox .box:nth-of-type(2), #brand .inner .brandbox .box:nth-of-type(3) {
+        height: 400px;
+        background: lightcyan; }
 
 #popup {
   width: 500px;

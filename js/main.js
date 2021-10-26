@@ -17,3 +17,14 @@ $(".gnb>li").each(function(index){
     });
 });
 
+//btnCall 클릭시 메뉴 열기, 닫기 클릭시 메뉴 닫기
+const btnCall = document.querySelector(".btnCall");
+const menuMo = document.querySelector(".menuMo");
+const menuClose = menuMo.querySelector(".txtbox a");
+
+$(btnCall).on("click", function(){
+    $(menuMo).addClass("on");
+});
+$(menuClose).on("click",function(){
+    $(menuMo).removeClass("on");
+});
