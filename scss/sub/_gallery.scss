@@ -6,13 +6,18 @@
         width: 1180px;
         margin: 100px auto;
 
-        h1{
+        >h2{
             text-align: center;
-            font: 40px/1 'arial'; color: #000;
+            font: 30px/1 'arial'; color: #222;
+            margin-bottom: 20px;
+        }
+        >p{
+            text-align: center;
+            font: 18px/1 'arial'; color: #666;
             margin-bottom: 100px;
         }
         #gallery{
-            width: 100%; min-height: 500px;
+            width: 100%; 
             position: relative;
             .loading{
                 width: 80px; height: 80px;
@@ -24,24 +29,39 @@
                 }
             }
             ul{
+                width: 100%;
                 &::after{content: ''; display: block; clear: both;}
                 li{
-                    width: 380px;
-                    border: 1px solid #000;
-                    margin-right: 20px;
+                    width: 380px; margin-right: 20px;
                     float: left;
-                    &:nth-of-type(3n){
-                        margin-right: 0px;
-                    }
-                    a{
-                        display: block;
-                        width: 100%; 
+                    margin-bottom: 40px;
 
-                        img{
+                    &:nth-of-type(3n) {margin-right: 0px; }
+
+                    >div{
+                        a{
+                            display: block;
                             width: 100%; 
-                            //object-fit: cover;
+                            margin-bottom: 30px;
+                            .thumb{
+                                width: 100%;
+                            }
                         }
+                        p{
+                            font: bold 20px/1 'arial'; color:#000;
+                            border-top:2px solid #000;
+                            border-bottom: 2px solid #000;
+                            padding: 20px 0px 40px;
+                        }
+                        .profile{
+                            text-align: right;
+                            span{
+                                font: 15px/1 'arial'; color: #000;
+                            }
+                        }
+                        
                     }
+                    
                 }
             }
 

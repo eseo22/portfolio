@@ -609,8 +609,7 @@ input, a, select, option {
     width: 100%; }
     .youtube .inner #vidgallery article {
       width: 100%;
-      border-bottom: 2px solid #000;
-      margin-bottom: 120px;
+      margin-bottom: 150px;
       position: relative; }
       .youtube .inner #vidgallery article::after {
         content: '';
@@ -631,7 +630,8 @@ input, a, select, option {
         float: left;
         position: relative;
         top: 150px;
-        left: 20px; }
+        left: 30px;
+        text-align: right; }
         .youtube .inner #vidgallery article .con h2 {
           font: 40px/1 'arial';
           color: #000;
@@ -645,7 +645,7 @@ input, a, select, option {
         float: right;
         position: relative;
         left: -20px;
-        text-align: right; }
+        text-align: left; }
 
 .popVideo {
   position: fixed;
@@ -676,14 +676,18 @@ input, a, select, option {
 .gallery .inner {
   width: 1180px;
   margin: 100px auto; }
-  .gallery .inner h1 {
+  .gallery .inner > h2 {
     text-align: center;
-    font: 40px/1 'arial';
-    color: #000;
+    font: 30px/1 'arial';
+    color: #222;
+    margin-bottom: 20px; }
+  .gallery .inner > p {
+    text-align: center;
+    font: 18px/1 'arial';
+    color: #666;
     margin-bottom: 100px; }
   .gallery .inner #gallery {
     width: 100%;
-    min-height: 500px;
     position: relative; }
     .gallery .inner #gallery .loading {
       width: 80px;
@@ -694,22 +698,36 @@ input, a, select, option {
       transform: translateX(-50%); }
       .gallery .inner #gallery .loading.off {
         opacity: 0; }
-    .gallery .inner #gallery ul::after {
-      content: '';
-      display: block;
-      clear: both; }
-    .gallery .inner #gallery ul li {
-      width: 380px;
-      border: 1px solid #000;
-      margin-right: 20px;
-      float: left; }
-      .gallery .inner #gallery ul li:nth-of-type(3n) {
-        margin-right: 0px; }
-      .gallery .inner #gallery ul li a {
+    .gallery .inner #gallery ul {
+      width: 100%; }
+      .gallery .inner #gallery ul::after {
+        content: '';
         display: block;
-        width: 100%; }
-        .gallery .inner #gallery ul li a img {
-          width: 100%; }
+        clear: both; }
+      .gallery .inner #gallery ul li {
+        width: 380px;
+        margin-right: 20px;
+        float: left;
+        margin-bottom: 40px; }
+        .gallery .inner #gallery ul li:nth-of-type(3n) {
+          margin-right: 0px; }
+        .gallery .inner #gallery ul li > div a {
+          display: block;
+          width: 100%;
+          margin-bottom: 30px; }
+          .gallery .inner #gallery ul li > div a .thumb {
+            width: 100%; }
+        .gallery .inner #gallery ul li > div p {
+          font: bold 20px/1 'arial';
+          color: #000;
+          border-top: 2px solid #000;
+          border-bottom: 2px solid #000;
+          padding: 20px 0px 40px; }
+        .gallery .inner #gallery ul li > div .profile {
+          text-align: right; }
+          .gallery .inner #gallery ul li > div .profile span {
+            font: 15px/1 'arial';
+            color: #000; }
 
 .pop {
   width: 800px;
@@ -737,7 +755,7 @@ input, a, select, option {
     right: 40px; }
 
 .location {
-  background: #eee; }
+  background: #fff; }
   .location .inner {
     width: 1180px;
     margin: 0 auto;
@@ -773,6 +791,50 @@ input, a, select, option {
     .location .inner #map {
       width: 100%;
       height: 400px; }
+    .location .inner .contact {
+      width: 100%;
+      margin-top: 120px;
+      display: flex; }
+      .location .inner .contact > .contacttxt {
+        width: 40%;
+        margin-right: 20px; }
+        .location .inner .contact > .contacttxt h3 {
+          font: 40px/1 'arial';
+          color: #000;
+          margin-bottom: 20px; }
+        .location .inner .contact > .contacttxt p {
+          font: 18px/1.2 'arial';
+          color: #222; }
+      .location .inner .contact > .form {
+        width: 60%; }
+        .location .inner .contact > .form ul {
+          width: 100%; }
+          .location .inner .contact > .form ul li {
+            width: 48%;
+            float: left;
+            margin-right: 0px;
+            margin-bottom: 20px; }
+            .location .inner .contact > .form ul li input {
+              width: 100%;
+              height: 50px;
+              border: 1px solid #ccc;
+              padding: 14px 18px;
+              font: 15px/50px 'arial';
+              color: #000; }
+            .location .inner .contact > .form ul li:nth-of-type(2) {
+              margin-left: 4%; }
+            .location .inner .contact > .form ul li:nth-of-type(3) {
+              width: 100%; }
+            .location .inner .contact > .form ul li:nth-of-type(4) {
+              width: 100%; }
+              .location .inner .contact > .form ul li:nth-of-type(4) textarea {
+                width: 100%;
+                height: 150px;
+                border: 1px solid #ccc;
+                padding: 14px 18px;
+                font: 15px/1 'arial';
+                color: #000;
+                resize: none; }
 
 .community {
   width: 100%; }
