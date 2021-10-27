@@ -4,46 +4,100 @@
     .inner{
         width: 1180px; 
         margin: 0 auto;
-        margin-bottom: 200px;
 
         h1{
             font: 50px/1 'arial'; color: #000; 
             text-align: center;
         }
-        p{
+        >p{
             font: 25px/1 '맑은 고딕'; color: #222;
             text-align: center;
             margin-bottom: 80px;
         }
 
-        .box{
-            margin-bottom: 80px;
-            form{
-                text-align: right;
-                position: relative;
-                select{
-                    width: 120px; height: 50px;
-                    border: none;
-                    border-bottom: 2px solid #000;
-                    margin-right: 5px;
-                    font: 15px/50px 'arial'; color: #000;
+        >.wrap{
+            width: 100%;
+            margin-bottom: 200px;
+            &::after{content: ''; display: block; clear: both;}
+            >.btn{
+                width: 25%; min-height: 260px;
+                padding: 0 50px;
+                float: left;
+                text-align: center;
+                border-right: 2px solid #f1e2d7;
+                
+                
+                >i{
+                    font-size: 40px; margin-bottom: 40px;
+                    color: #d0b7a5;
                 }
-                label{
-                    i{
-                        font-size: 20px;
-                        position: relative; left: 20px; top: 5px;
+                >h3{
+                    font: 22px/1 '맑은 고딕'; color: #000;
+                    margin-bottom: 20px;
+                }
+                >p{
+                    font: 18px/1.2 '맑은 고딕'; color: #666;
+                    margin-bottom: 30px;
+                    height: 65px;
+                }
+                .line{
+                    display: block;
+                    width: 80px; height: 2px;
+                    background: burlywood;
+                    margin: 50px auto;
+                    &::after{
+                        content: ''; display: block; 
+                        width: 10px; height: 2px;
+                        background: burlywood;
+                        position: relative; top: -3px; left: 72px;
+                        transform: rotate(45deg);
                     }
-                    input{
-                        width: 360px; height: 50px;
-                        border: none;
-                        border-bottom: 2px solid #000;
-                        padding-left: 60px;
+                }
+                &:nth-of-type(1){
+                    border-left: 2px solid #f1e2d7;
+                    span{font: 14px/1 'arial'; color: #222;}
+                    p{
                         
+                        &::after{display: none;}
+                        &:nth-of-type(2){
+                            font: 24px/1 'arial'; color: #222;
+                            height: auto;
+                            margin-bottom: 10px;
+                        }
                     }
                 }
-                
-                
+
+
             }
+        }
+
+        .searchbox{
+            width: 100%; 
+            background: #d0b7a5;
+            padding: 30px 0px;
+            margin-bottom: 100px;
+            text-align: center;
+            select{
+                width: 200px; height: 50px;
+                border: none;
+                border: 2px solid #eee;
+                margin-right: 5px;
+                font: 15px/50px 'arial'; color: #000;
+            }
+            label{
+                i{
+                    font-size: 20px;
+                    position: relative; left: 40px; top: 4px;
+                }
+                input{
+                    width: 600px; height: 50px;
+                    border: 2px solid #eee;
+                    vertical-align: top;
+                    padding-left: 80px;
+                    
+                }
+            }
+            
 
         }
         .table{
@@ -51,7 +105,7 @@
             margin-bottom: 80px;
             table{
                 width: 100%;
-                border-top: 1px solid #222;
+                border-top: 2px solid #222;
                 border-collapse:collapse;
                 thead{
                     tr{
@@ -60,7 +114,7 @@
                             padding: 10px 30px;
                             text-align: center;
                             font: bold 18px/1 '맑은 고딕'; color: #000;
-                            border-bottom: 1px solid #888;
+                            border-bottom: 1px solid #222;
 
                             &:nth-of-type(1){width: 150px;}
                             &:nth-of-type(2){width: 600px;text-align: left;}
@@ -79,7 +133,7 @@
                             padding: 10px 30px;
                             text-align: center;
                             font: 20px/1 '맑은 고딕'; color: #000;
-                            border-bottom: 1px solid #888;
+                            border-bottom: 1px solid #eee;
 
                             &:nth-of-type(2){text-align: left;}
 
@@ -99,7 +153,7 @@
 
         .pagination{
             text-align: center;
-
+            margin-bottom: 150px;
             >ul{
                 display: inline-block;
                 font-size: 0;
@@ -140,5 +194,40 @@
 
             }
         }
+
+        
+            
+        .helpbox{
+            width: 100%; height: 300px;
+            background: url(../../img/help.jpg) no-repeat bottom;
+            background-size: cover;
+            filter: grayscale(20%);
+            margin-bottom: 120px;
+            padding: 80px 40px;
+            .txtbox{
+                h2{
+                    font: 30px/1 'arial'; color:#fff;
+                    margin-bottom: 20px;
+                }
+                p{
+                    font: 18px/1.2 'arial'; color: #ddd;
+                    margin-bottom: 40px;
+
+                    a{
+                        display: inline-block;
+                        width: 126px;
+                        color: #ddd;
+                        border-bottom: 1px solid #ddd;
+
+                    }
+                }
+                i{
+                    font-size: 20px; color: #fff;
+                    margin-right: 10px;
+                }
+            }
+        }
+        
+        
     }
 }

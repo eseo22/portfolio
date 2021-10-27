@@ -1,13 +1,15 @@
 $.ajax({
-    url:"https://www.flickr.com/services/rest/?method=flickr.photos.search",
+    //url:"https://www.flickr.com/services/rest/?method=flickr.photos.search",
+    url:"https://www.flickr.com/services/rest/?method=flickr.people.getPhotos",
     dataType: "json",
     data:{
         api_key: "c3497ae54a8e80023a954c8815e7b28e",
-        per_page:9,
+        per_page:5,
         format:"json",
         nojsoncallback:1,
         privacy_filter:1,
-        tags:"landscape"
+        user_id : "194104311@N02"
+        //tags:"landscape"
     }
 })
 
@@ -79,12 +81,13 @@ $.ajax({
     console.error(err);
 })
 
+
 $("body").on("click", "#gallery ul li", function(e){
     e.preventDefault();
 
     $(".pop").remove();
 
-    let imgSrc = $(this).children("a").attr("href");
+    let imgSrc = $(this).find("a").attr("href");
 
     $("body")
         .append(
@@ -99,3 +102,4 @@ $("body").on("click", "#gallery ul li", function(e){
 $("body").on("click", ".pop span", function(){
     $(".pop").remove();
 });
+
