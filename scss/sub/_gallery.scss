@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto+Slab&family=Zen+Antique+Soft&display=swap');
 
 .gallery{
     .sub_visual{background: #bbb;}
@@ -8,12 +8,12 @@
 
         >h2{
             text-align: center;
-            font: 30px/1 'arial'; color: #222;
+            font: 30px/1 'Zen Antique Soft'; color: #222;
             margin-bottom: 20px;
         }
         >p{
             text-align: center;
-            font: 18px/1 'arial'; color: #666;
+            font: 18px/1 'Nanum Gothic'; color: #bbb;
             margin-bottom: 100px;
         }
         #gallery{
@@ -34,8 +34,6 @@
                 li{
                     width: 380px; 
                     float: left;
-                    // margin-bottom: 40px;
-                    // margin-right: 20px;
                     padding: 20px;
 
                     >div{
@@ -48,7 +46,8 @@
                             }
                         }
                         p{
-                            font: bold 20px/1 'arial'; color:#000;
+                            font: bold 20px/1 'Zen Antique Soft'; 
+                            color:#000;
                             border-top:2px solid #000;
                             border-bottom: 2px solid #000;
                             padding: 20px 0px 40px;
@@ -56,7 +55,7 @@
                         .profile{
                             text-align: right;
                             span{
-                                font: 15px/1 'arial'; color: #000;
+                                font: 15px/1 'Nanum Gothic'; color: #000;
                             }
                         }
                         

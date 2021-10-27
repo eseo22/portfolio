@@ -8,7 +8,7 @@ $.ajax({
         format:"json",
         nojsoncallback:1,
         privacy_filter:1,
-        user_id : "194104311@N02"
+        user_id : "82828410@N02"
         //tags:"landscape"
     }
 })

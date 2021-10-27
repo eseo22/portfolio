@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Gowun+Batang&family=Noto+Sans+KR:wght@100&family=Prompt:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto+Slab&family=Zen+Antique+Soft&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -681,13 +681,13 @@ input, a, select, option {
   margin: 100px auto; }
   .gallery .inner > h2 {
     text-align: center;
-    font: 30px/1 'arial';
+    font: 30px/1 'Zen Antique Soft';
     color: #222;
     margin-bottom: 20px; }
   .gallery .inner > p {
     text-align: center;
-    font: 18px/1 'arial';
-    color: #666;
+    font: 18px/1 'Nanum Gothic';
+    color: #bbb;
     margin-bottom: 100px; }
   .gallery .inner #gallery {
     width: 100%;
@@ -718,7 +718,7 @@ input, a, select, option {
           .gallery .inner #gallery ul li > div a .thumb {
             width: 100%; }
         .gallery .inner #gallery ul li > div p {
-          font: bold 20px/1 'arial';
+          font: bold 20px/1 'Zen Antique Soft';
           color: #000;
           border-top: 2px solid #000;
           border-bottom: 2px solid #000;
@@ -726,7 +726,7 @@ input, a, select, option {
         .gallery .inner #gallery ul li > div .profile {
           text-align: right; }
           .gallery .inner #gallery ul li > div .profile span {
-            font: 15px/1 'arial';
+            font: 15px/1 'Nanum Gothic';
             color: #000; }
 
 .pop {
