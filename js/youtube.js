@@ -4,7 +4,7 @@ $.ajax({
     data:{
         part:"snippet",
         key:"AIzaSyBV00UM1Z3KR6sj0aucOKHTErQ8BZl-fMk",
-        maxResults : 5,
+        maxResults : 6,
         playlistId : "PLOeezfJjSXUGdB0j2f6O3SOc7RbXfUF6O"
     }
 })
@@ -20,7 +20,7 @@ $.ajax({
 
         let tit = data.snippet.title;
         let titlen = tit.length;
-        if(titlen>30){tit=tit.substr(0,30)+"...."}
+        if(titlen>20){tit=tit.substr(0,20)+"...."}
 
         let txt = data.snippet.description;
         let len = txt.length;
@@ -31,7 +31,7 @@ $.ajax({
         date = date.split("T")[0];
         
 
-        $(".youtube .inner #vidgallery")
+        $("#vidgallery")
             .append(
                 $("<article>")
                     .append(

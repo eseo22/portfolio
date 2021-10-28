@@ -1,27 +1,50 @@
 .community{
     width: 100%;
+    >.sub_visual{
+        width: 100%;
+        position: relative;
+        background-color: #000;
+        margin-bottom: 120px;
+        
+        >.pic{
+            width: 100%; height: 100%;
+            background: url(../../img/test3.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+        }
+        .txt{
+            text-align: center;
+            position: absolute; top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            h1{
+                font: 50px/1 'Crimson Text'; color: #fff; 
+                text-align: center;
+                margin-bottom: 10px;
     
+                span{
+                    font: 15px/1 '맑은 고딕'; color: #fff;
+                }
+            }
+            >p{
+                font: 20px/1 'Zen Kaku Gothic Antique'; color: #fff;
+            }
+        }
+        
+    }
     .inner{
         width: 1180px; 
         margin: 0 auto;
 
-        h1{
-            font: 50px/1 'arial'; color: #000; 
-            text-align: center;
-        }
-        >p{
-            font: 25px/1 '맑은 고딕'; color: #222;
-            text-align: center;
-            margin-bottom: 80px;
-        }
+        
 
         >.wrap{
             width: 100%;
-            margin-bottom: 200px;
+            margin-bottom: 100px;
             &::after{content: ''; display: block; clear: both;}
             >.btn{
                 width: 25%; min-height: 260px;
-                padding: 0 50px;
+                padding: 10px 50px;
                 float: left;
                 text-align: center;
                 border-right: 2px solid #f1e2d7;
@@ -29,14 +52,14 @@
                 
                 >i{
                     font-size: 40px; margin-bottom: 40px;
-                    color: #d0b7a5;
+                    color: #444;
                 }
                 >h3{
-                    font: 22px/1 '맑은 고딕'; color: #000;
+                    font: 22px/1 '맑은 고딕'; color: #222;
                     margin-bottom: 20px;
                 }
                 >p{
-                    font: 18px/1.2 '맑은 고딕'; color: #666;
+                    font: 18px/1.2 'Zen Kaku Gothic Antique'; color: #666;
                     margin-bottom: 30px;
                     height: 65px;
                 }
@@ -201,7 +224,7 @@
             width: 100%; height: 300px;
             background: url(../../img/help.jpg) no-repeat bottom;
             background-size: cover;
-            filter: grayscale(20%);
+            filter: grayscale(40%);
             margin-bottom: 120px;
             padding: 80px 40px;
             .txtbox{
