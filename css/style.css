@@ -691,6 +691,7 @@ input, a, select, option {
       clear: both; }
     .youtube .inner #vidgallery article {
       width: 50%;
+      border-bottom: 1px solid #ddd;
       padding: 20px 0px 20px 20px;
       float: left; }
       .youtube .inner #vidgallery article:nth-of-type(2n) {
@@ -823,7 +824,7 @@ input, a, select, option {
         display: block;
         clear: both; }
       .gallery .inner #gallery ul li {
-        width: 380px;
+        width: 33.3%;
         float: left;
         padding: 20px; }
         .gallery .inner #gallery ul li > div a {
