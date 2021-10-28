@@ -793,7 +793,7 @@ input, a, select, option {
     width: 30%;
     height: 500px;
     background-color: #eee;
-    float: left; }
+    float: right; }
     .gallery .inner .galleryintro #searchBox {
       width: 100%;
       padding: 50px 0px; }
@@ -806,7 +806,7 @@ input, a, select, option {
         vertical-align: top; }
   .gallery .inner #gallery {
     width: 70%;
-    float: right;
+    float: left;
     position: relative; }
     .gallery .inner #gallery .loading {
       width: 80px;

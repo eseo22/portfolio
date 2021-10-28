@@ -60,7 +60,7 @@
         .galleryintro{
             width: 30%; height: 500px;
             background-color: #eee;
-            float: left;
+            float: right;
 
             #searchBox{
                 width: 100%;
@@ -80,7 +80,7 @@
         
         #gallery{
             width: 70%; 
-            float: right;
+            float: left;
             position: relative; 
             .loading{
                 width: 80px; height: 80px;
