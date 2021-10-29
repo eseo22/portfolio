@@ -273,9 +273,9 @@ body{width: 100%; overflow-x: hidden;}
 #visual{
     width: 100%;
     height: calc(100vh - 101px);
-    background: lightgrey;
     position: relative;
     z-index: 1;
+    background-color: #222;
 
     .inner{
         height: calc(100vh - 101px);
@@ -377,45 +377,97 @@ body{width: 100%; overflow-x: hidden;}
                         }
                     }
                 }
-                &:first-child{
-                    article{
-                        .pic{
-                            >img{
-                                object-position: center;
-                            }
-                        }
-                    }
-                   
-                }
+                
             }
             
         }
     }
 }
 
-#brand{
+#notice{
     width: 100%;
+    margin: 200px 0px;
     .inner{
         width: 1180px;
         margin: 0 auto;
+        &::after{content: ''; display: block; clear: both;}
 
-        .brandbox{
+        h1{
+            font: 40px/1 'Varela Round';
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .boxwrap{
+            float: left;
+            width: 60%;
+            border: 1px solid pink;
             &::after{content: ''; display: block; clear: both;}
+
             .box{
-                width: 580px; height: 600px;
+                width: 50%;
+                height: 250px;
+                padding: 20px;
+                border: 1px solid #eee;
                 float: left;
 
-                &:nth-of-type(1),&:nth-of-type(4){
-                    height: 400px; background: pink;
-                }
-                &:nth-of-type(2),&:nth-of-type(3){
-                    height: 400px; background: lightcyan;
+                &:nth-of-type(4){
+                    margin-right: 0px;
                 }
             }
+        }
+        .cardnews{
+            float: right;
+            width: 40%; height: 500px;
+            background: pink;
         }
     }
 }
 
+#comment{
+    width: 100%;
+    padding: 100px 0;
+    background: #eee;
+
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+
+        h1{
+            font: 40px/1 'Varela Round';
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        ul{
+            width: 100%;
+            li{
+                width: 100%;
+                border: 1px solid #555;
+                padding: 10px 30px;
+                margin-bottom: 20px;
+                &::after{
+                    content: ''; display: block; clear: both;
+                }
+
+                a{
+                    font: 14px/1 'arial'; color: #000;
+                    float: left;
+                }
+                span{
+                    font: 12px/1 'arial'; color: #000;
+                    float: right;
+                }
+
+                &:hover {
+                    background: #222;
+
+                    a, span{color: lightsalmon;}
+                }
+
+            }
+            
+        }
+    }
+}
 
 #popup{
     width: 500px; min-height:200px; background-color: pink;

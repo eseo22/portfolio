@@ -1,7 +1,65 @@
-
 getList({
     type: "interest"
 });
+
+//검색어 입력후 클릭
+$("#searchBox .search").on("click", function(e){
+    e.preventDefault();
+    
+    $("#gallery ul").removeClass("on");
+    $(".loading").removeClass("off");
+
+    var inputs = $("#searchBox input").val();
+    $("#searchBox input").val("");
+    getList({
+        type:"search",
+        tag: inputs
+    });
+});
+
+//검색어 입력후 엔터
+$(window).on("keypress", function(e){
+    if(e.keyCode == 13){
+
+        $("#gallery ul").removeClass("on");
+        $(".loading").removeClass("off");
+
+        var inputs = $("#searchBox input").val();
+        $("#searchBox input").val("");
+        getList({
+                type:"search",
+                tag: inputs
+            });
+    }
+})
+
+
+
+//리스트 클릭 팝업 생성, span클릭시 팝업 닫기
+
+$("body").on("click", "#gallery ul li", function (e) {
+    e.preventDefault();
+
+    $(".pop").remove();
+
+    let imgSrc = $(this).find("a").attr("href");
+    console.log(imgSrc);
+
+    $("body")
+        .append(
+            $("<div class='pop'>")
+                .append(
+                    $("<img>").attr({ src: imgSrc }),
+                    $("<span>").text("close")
+                )
+        )
+});
+
+$("body").on("click", ".pop span", function () {
+    $(".pop").remove();
+});
+
+
 
 function getList(opt) {
     var result_opt = {};
@@ -54,6 +112,7 @@ function getList(opt) {
         let items = data.photos.photo;
         console.log(items);
 
+        $("#gallery").empty();
         $("#gallery").append("<ul>");
 
         $(items).each(function (index, data) {
@@ -67,7 +126,7 @@ function getList(opt) {
                         .append(
                             $("<div>").append(
                                 $("<a>").attr({
-                                    href: "https://live.staticflickr.com/" + data.server + "/" + data.id + "_" + data.secret + "_b.jpg"
+                                    href: "https://live.staticflickr.com/" + data.server + "/"+ data.id +"_"+ data.secret+ "_b.jpg"
                                 })
                                     .append(
                                         $("<img class='thumb'>").attr({
@@ -95,6 +154,7 @@ function getList(opt) {
             data.onload = function () {
                 imgNum++;
                 console.log(imgNum);
+                
                 if (imgNum === total) {
 
                     $(".loading").addClass("off");
@@ -105,7 +165,7 @@ function getList(opt) {
                         transitionDuration: "0.5s"
                     });
 
-
+                    $("#gallery ul").addClass("on");
                 }
             }
 
@@ -114,34 +174,6 @@ function getList(opt) {
     })
 
 .error(function (err) {
-        console.error(err);
+        console.error("error");
     });
 }
-
-
-
-
-
-$("body").on("click", "#gallery ul li", function (e) {
-    e.preventDefault();
-
-    $(".pop").remove();
-
-    let imgSrc = $(this).find("a").attr("href");
-
-    $("body")
-        .append(
-            $("<div class='pop'>")
-                .append(
-                    $("<img>").attr({ src: imgSrc }),
-                    $("<span>").text("close")
-                )
-        )
-});
-
-$("body").on("click", ".pop span", function () {
-    $(".pop").remove();
-});
-
-
-

@@ -1,11 +1,14 @@
 $("input[type=submit]").on("click", function(e){
     if(!isTxt("userid", 5)) e.preventDefault();
     if(!password("userpw1","userpw2")) e.preventDefault();
+    if(!isEmail("email")) e.preventDefault();
+    if(!isPhone("hpnum")) e.preventDefault();
 });
 
 $("input[type=button]").on("click", function(e){
     if(!isTxt("userid",5)) e.preventDefault();
 })
+
 
 //아이디 인증
 function isTxt(name, len){
@@ -48,5 +51,41 @@ function password(name1, name2){
         );
         return false;
 
+    }
+}
+
+//이메일 인증
+function isEmail(name){
+    let txt = $("[name="+name+"]").val();
+ 
+    if(/@/.test(txt)){
+       $("[name="+name+"]").parent().find("p").remove();
+       return true;
+    }else{
+       $("[name="+name+"]").parent().find("p").remove();
+       $("[name="+name+"]").parent().append(
+          "<p>@를 포함한 전체 메일주소를 입력하세요.</p>"
+       );
+       return false;
+    }
+}
+
+//휴대전화 인증
+
+function isPhone(name){
+    let hpNum = $("[name="+name+"]").val(); 
+    let len = 11;
+    let num = /[0-9]/gi;
+    
+    if(hpNum.length = len && num.test(hpNum)){
+        $("input[name="+name+"]").parent().find("p").remove();
+        return true;
+
+    }else{
+        $("input[name="+name+"]").parent().find("p").remove();
+        $("input[name="+name+"]").parent().append(
+            "<p>전화번호 입력시 -를 제외하고 입력해주세요"
+        );
+        return false;
     }
 }

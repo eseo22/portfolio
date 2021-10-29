@@ -12,7 +12,7 @@
             width: 100%; height: 100%;
             background: url(../img/test2.jpg) no-repeat;
             background-size: cover;
-            background-position: center center;
+            background-position: center bottom;
             opacity: 0.6;
         }
         >.txt{
@@ -75,11 +75,6 @@
                             text-align: left;
                             background-color: #f9f9f9;
 
-                            i{
-                                color: pink;
-                                font-size: 0.5px;
-                               
-                            }
                             label{
                                 font: 18px/1 'Gowun Batang';
                                 color: #333;
@@ -295,4 +290,222 @@
     }
 
     
+}
+
+@media screen and (max-width:1179px){
+    .members{
+        
+        .inner{
+            width: 100%;
+            padding: 40px 20px;
+            
+            form{
+                
+                //기본정보
+                fieldset{
+                    width: 100%;
+                    text-align: center;
+    
+                    table{
+                        width: 100%;
+                        tr{
+                            width: 100%;
+                            th{
+                                display: block;
+                                width: 30%; height: 60px;
+                                padding: 0px;
+                                label{
+                                    font: 18px/1 'Gowun Batang';
+                                    color: #333;
+                                }
+                            }
+                            td{
+                                width: 70%;
+                                padding: 12px;
+                                text-align: left;
+    
+                                // p{
+                                //     font: 14px/1px 'Gowun Batang';
+                                //     color: #505050;
+                                //     margin-top: 20px;
+                                //     margin-bottom: 12px;
+                                    
+                                // }
+                                input{
+                                    text-align: center;
+                                    width: 300px;
+                                    height: 30px;
+                                    padding-left: 10px;
+                                    font: 14px/30px 'Gowun Batang';
+                                    vertical-align: top;
+    
+                                    &:focus{
+                                        border: 1px solid burlywood;
+                                    }
+                                    
+                                }
+                            }
+    
+                            &:nth-of-type(1),&:nth-of-type(5){
+                                td{
+                                    input:nth-of-type(1){
+                                        margin-right: 0px;
+                                    }
+                                    input:nth-of-type(2){
+                                        font: 14px/30px 'Gowun Batang';
+                                        width: 100px;
+                                        vertical-align:middle;        
+                                        padding-left:0px;              
+                                    
+                                    }
+                                }
+                               
+                            }
+    
+                            &:nth-of-type(5){
+                                td{
+                                    input:nth-of-type(3){
+                                        width: 100%;
+                                        margin-top: 8px;
+                                        
+                                    }
+                                }
+                            }
+                            
+                            &:nth-of-type(8){
+                                td{
+                                    label{
+                                        
+                                        input{
+                                            width: 15px;
+                                            height: 20px;
+                                            margin-right: 15px;
+                                            vertical-align: top;
+                                                                                
+                                        }
+                                        font: 18px/1 'Gowun Batang';
+                                        margin-right: 20px;
+                                        
+                                    }
+                                }
+                            }
+                                
+    
+                            
+                        }
+                    }
+    
+                    
+                }
+    
+                //추가정보
+                .add{
+                    
+                    table{
+                        tr{
+                            &:nth-of-type(1){
+                                td{
+                                    input{  text-align: right;}
+                                }
+                            }
+                            &:nth-of-type(2){
+                                td{
+                                    select{
+                                        width: 250px; height: 30px;                      
+                                        text-align: center;
+                                        font: 14px/28px 'Gowun Batang';
+                                        color: #888;
+    
+                                        option{
+                                            font: 14/1 'Gowun Batang';
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-of-type(3){
+                                width: 100%;
+                                >td{
+                                    display: inline-block; width: 100%;
+                                    
+                                    padding: 0px 20px;
+                                    label{
+                                        input{
+                                            width: 15px; height: 20px;
+                                            margin-right: 15px;
+                                            vertical-align: top;
+                                        }
+                                        margin-right : 20px;
+                                        font: 18px/1 'Gowun Batang';
+                                    }                                
+                                }
+                            }
+                            &:nth-of-type(4){
+                                th{
+                                    display: inline-block; width: 100%;
+                                }
+                                td{
+                                    display: inline-block; width: 100%;
+                                    input{
+                                        width: 380px;
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+    
+                //약관동의
+                .agree{
+                    
+                    .join_box{
+                        padding: 0px;
+                    
+                        .ckbox1{
+                            text-align: left;
+                        }
+    
+                        .ckbox2{
+                            text-align: left;
+                        }
+    
+    
+    
+                    }
+                    
+                }
+    
+                //전송버튼
+                .btns{
+                    width: 80%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    
+                    input[type=reset]{
+                        display: inline-block; 
+                        width: 300px; height: 80px;
+                        border: 1px solid #524C4A;
+                        font:bold 20px/1 'Noto Sans KR'; color: #505050;
+                        text-align: center;
+                        margin-right: 20px;
+                        cursor: pointer;
+    
+                    }
+                    input[type=submit]{
+                        width: 300px; height: 80px;
+                        background-color: #524C4A;
+                        font:bold 20px/1 'Noto Sans KR'; color: #fff;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+                
+            }
+        }
+    
+        
+    }
+
 }
