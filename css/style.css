@@ -1356,7 +1356,7 @@ input, a, select, option {
     .community .inner .helpbox {
       width: 100%;
       height: 300px;
-      background: url(../../img/help.jpg) no-repeat bottom;
+      background: url(../img/help.jpg) no-repeat bottom;
       background-size: cover;
       filter: grayscale(40%);
       margin-bottom: 120px;
