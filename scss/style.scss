@@ -829,9 +829,27 @@ body{width: 100%; overflow-x: hidden;}
 
                     }
                     &:nth-of-type(2), &:nth-of-type(3){
-                        width:50%;
-                        margin:0px;
-                        h1{margin-bottom: 10px;}
+                        width:100%;
+                        margin:0px 0px 20px;
+                        
+                        h1{margin-bottom: 5px;}
+
+                        li{
+                            display: inline-block; 
+                            padding-right: 10px;
+                            
+                            &::after{
+                                content: ''; display: block;
+                                width: 1px; height: 10px;
+                                background: #eee;
+                                position: relative;
+                                top: -13px; left: -9px;
+                            }
+                            &:nth-of-type(1){
+                                &::after{display: none;}
+                            }
+                        }
+
                     }
                     
                     &:nth-of-type(4){

@@ -2347,10 +2347,24 @@ body {
     #footer .inner .wrap article:nth-of-type(1) h1 {
       margin-bottom: 5px; }
   #footer .inner .wrap article:nth-of-type(2), #footer .inner .wrap article:nth-of-type(3) {
-    width: 50%;
-    margin: 0px; }
+    width: 100%;
+    margin: 0px 0px 20px; }
     #footer .inner .wrap article:nth-of-type(2) h1, #footer .inner .wrap article:nth-of-type(3) h1 {
-      margin-bottom: 10px; }
+      margin-bottom: 5px; }
+    #footer .inner .wrap article:nth-of-type(2) li, #footer .inner .wrap article:nth-of-type(3) li {
+      display: inline-block;
+      padding-right: 10px; }
+      #footer .inner .wrap article:nth-of-type(2) li::after, #footer .inner .wrap article:nth-of-type(3) li::after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 10px;
+        background: #eee;
+        position: relative;
+        top: -13px;
+        left: -9px; }
+      #footer .inner .wrap article:nth-of-type(2) li:nth-of-type(1)::after, #footer .inner .wrap article:nth-of-type(3) li:nth-of-type(1)::after {
+        display: none; }
   #footer .inner .wrap article:nth-of-type(4) input[type=text] {
     width: 66%;
     background-color: #eee;
