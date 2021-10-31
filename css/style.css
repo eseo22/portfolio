@@ -1940,33 +1940,79 @@ body {
   width: 100%; }
   #arts .inner {
     width: 1180px;
-    margin: 0 auto; }
-    #arts .inner .txtbox > h2 {
-      font: 40px/1 'EB Garamond';
-      color: #525252; }
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative; }
+    #arts .inner .txtbox {
+      margin-bottom: 140px; }
+      #arts .inner .txtbox > h2 {
+        font: 40px/1 'EB Garamond';
+        color: #525252; }
     #arts .inner .slider {
-      border: 1px solid #000;
-      width: 1500px; }
-      #arts .inner .slider ul::after {
-        content: '';
-        display: block;
-        clear: both; }
-      #arts .inner .slider ul li {
-        width: 300px;
-        float: left;
-        border: 1px solid pink; }
-        #arts .inner .slider ul li .pic {
-          width: 100%;
-          height: 400px;
-          background-color: #eee; }
+      width: 340px;
+      height: 600px;
+      margin: 100px auto;
+      position: relative; }
+      #arts .inner .slider .list {
+        width: calc(100% * 5);
+        height: 100%;
+        margin-left: -100%; }
+        #arts .inner .slider .list::after {
+          content: '';
+          display: block;
+          clear: both; }
+        #arts .inner .slider .list li {
+          width: calc(100% / 5);
+          height: 100%;
+          float: left;
+          padding: 20px; }
+          #arts .inner .slider .list li.box2, #arts .inner .slider .list li.box4 {
+            margin-top: 40px; }
+          #arts .inner .slider .list li .pic {
+            width: 100%;
+            height: 400px;
+            background-color: #eee;
+            overflow: hidden; }
+            #arts .inner .slider .list li .pic img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: 0.5s; }
+              #arts .inner .slider .list li .pic img:hover {
+                transform: scale(1.1); }
+          #arts .inner .slider .list li .pictxt {
+            width: 220px;
+            background-color: #fff;
+            position: relative;
+            top: -50px; }
+            #arts .inner .slider .list li .pictxt p {
+              font: 17px/1  'EB Garamond';
+              color: #C9AB81;
+              padding: 23px 0px; }
+            #arts .inner .slider .list li .pictxt a {
+              font: 22px/1.4  'EB Garamond';
+              color: #525252; }
+              #arts .inner .slider .list li .pictxt a:hover {
+                color: #c9ab81; }
+    #arts .inner .slidebtn {
+      position: absolute;
+      top: 60px;
+      right: 0; }
+      #arts .inner .slidebtn a {
+        margin-right: 40px; }
+        #arts .inner .slidebtn a i {
+          font-size: 30px;
+          color: #C9AB81; }
 
 #news {
-  width: 100%; }
+  width: 100%;
+  background: #f3f3f2; }
   #news .inner {
     width: 1180px;
     margin: 0 auto; }
     #news .inner .box {
-      width: 100%; }
+      width: 100%;
+      padding: 140px 0px; }
       #news .inner .box::after {
         content: '';
         display: block;

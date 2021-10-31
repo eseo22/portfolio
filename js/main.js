@@ -28,3 +28,36 @@ $(btnCall).on("click", function(){
 $(menuClose).on("click",function(){
     $(menuMo).removeClass("on");
 });
+
+
+//슬라이드
+
+let enableClick = true;  
+
+$(".next").on("click", function(e){
+    e.preventDefault(); 
+
+    if(enableClick){
+        enableClick = false; 
+        $(".list").animate({marginLeft:"-200%" },500, function(){
+            $(".list").css({marginLeft : "-100%"}); 
+            $(".list li").first().appendTo(".list");
+            enableClick = true;  
+        }); 
+       
+    }
+   
+}); 
+
+$(".prev").on("click", function(e){
+    e.preventDefault(); 
+
+    if(enableClick){
+        $(".list").animate({ marginLeft: "0%"},500, function(){
+            $(".list").css({marginLeft :"-100%"}); 
+            $(".list li").last().prependTo(".list"); 
+            enableClick = true; 
+        });
+        enableClick = false; 
+    }    
+});
