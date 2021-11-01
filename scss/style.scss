@@ -291,8 +291,9 @@ body{width: 100%; overflow-x: hidden;}
 
         
         .txtbox{
-            width: 600px; height: 500px;
-            border:1px solid pink;
+            width: 40%; height: 500px;
+            display: inline-block;
+            //border:1px solid pink;
 
             h2{
                 font: 52px/1 'EB Garamond'; color: #525252;
@@ -303,6 +304,11 @@ body{width: 100%; overflow-x: hidden;}
             }
 
         }
+        // .picbox{
+        //     display: inline-block;
+        //     width: 60%; height: 800px;
+        //     img{width: 100%; height: 100%; object-fit: cover;}
+        // }
         
     }
 }
@@ -319,14 +325,13 @@ body{width: 100%; overflow-x: hidden;}
             
             >h2{font: 40px/1 'EB Garamond'; color: #525252;}
         }
-        .slider{
+        .slider1{
             width:340px; 
             height:600px;  
-            margin:100px auto; 
             position:relative; 
             
 
-            .list{
+            .list1{
                 width: calc(100% * 5);
                 height: 100%;
                 margin-left: -100%;
@@ -384,6 +389,225 @@ body{width: 100%; overflow-x: hidden;}
     }
 }
 
+#banner{
+    width: 100%;
+    background: url(../img/banner3.jpg) no-repeat right/ cover fixed;
+
+    .inner{
+        width: 1180px; margin: 0 auto;
+        overflow: hidden;
+        
+        position: relative;
+        padding: 50px 0px;
+        .txtbox{
+            margin-bottom: 60px;
+            span{
+                display: block; font-size: 28px; color: #ED1846; text-align: center;
+                margin-bottom: 27px;
+            }
+            h2{font: 36px/1 'arial'; color: #fff; text-align: center;}
+        }
+
+        .slider2{
+            width: 400px; //height: 600px;
+            margin: 0 auto;
+            
+            
+            .list2{
+                width: calc(100% * 5);
+                height: 100%;
+                margin-left: -100%;
+                &::after{content: ''; display: block; clear: both;}
+                position: relative;
+                
+                button{
+                    position: absolute; z-index: 10;
+                    border: 1px solid #fff;
+                    width: 50px; height: 50px;
+                    background: #fff;
+
+                    i{color: #000; font-size: 20px;}
+                }
+                >li{
+                    width: calc(100% / 5);
+                    height: 100%;
+                    float: left;
+
+                    
+                    
+                    a{
+                        display: block;
+                        padding-top: 20px;
+                        margin-bottom: 20px;
+
+                        .pic{
+                            width: 100%; height: 300px;
+                            padding: 0px 15px;
+                            margin-bottom: 20px;
+                            img{
+                                width: 100%; height: 100%; object-fit: contain;
+                                object-position: center;
+                            }
+                        }
+                    }
+                    
+
+                    .pictxt{
+                        padding: 0px 40px;
+                        text-align: center;
+                        span{
+                            font: 18px/1 'arial'; color:#fff;
+                            margin-bottom: 10px; display: block;
+                        }
+                        p{
+                            font: 26px/1.2 'arial'; color:#fff;
+                            margin-bottom: 10px;
+                        }
+                        
+                    }
+                }
+            }
+            .prev{
+                position:absolute; 
+                top:50%; 
+                left:50px; 
+                margin-top:-50px; 
+            }
+            .next{
+                position:absolute; 
+                top:50%; 
+                margin-top:-50px; 
+                right:50px; 
+            }
+        }
+    }
+}
+
+#notice{
+    width: 100%;
+    .inner{
+        width: 1180px; margin: 0 auto;
+        border: 1px solid pink;
+        padding: 100px 0px;
+
+        &::after{content: ''; display: block; clear: both;}
+
+        h2{
+            font: 36px/1 'arial'; color: #222; text-align: center;
+            margin-bottom: 100px;
+        }
+        .leftbox{
+            width: 48%;
+            float: left;
+            
+
+            #tab{
+                width: 100%;
+                border-top: 2px solid #000;
+                margin:50px auto; 
+                position:relative; 
+
+                dl{
+                    dt{
+                        width: 120px; height: 50px; 
+                        position: absolute; top: -51.5px;
+                        
+
+                        &:nth-of-type(1){left: 0;}
+                        &:nth-of-type(2){left: 120px;}
+
+                        a{
+                            display: block; width: 100%; height: 100%;
+                            border: 1px solid #000;
+                            
+                            background: #fff;
+                            font: 15px/50px 'arial'; color: #000;
+                            text-align: center;
+
+                            &.on{
+                                background: #000;
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    dd{
+                        width: 100%; 
+                        display: none;
+
+                        &#tab1{display: block;}
+
+                        ul{
+                            li{
+                                width: 100%; height: 60px;
+                                padding: 20px 0px 12px;
+                                border-bottom: 1px solid #e2e2e2;
+                                a{
+                                    display: block; width: 100%; height: 100%;
+                                    p{
+                                        display: inline-block; width: 80%;
+                                        font: 20px/1 'arial'; color: #222;
+                                    }
+                                    span{font: 15px/1 'arial'; color: #222;}
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+        .rightbox{
+            width: 50%;
+            float: right;
+            padding-left: 40px;
+            padding-top: 10px;
+
+            h3{font: 20px/1 'arial'; color: #000; margin-bottom: 20px;}
+            img{width: 100%; object-fit: cover;}
+        }
+    }
+}
+
+#sns{
+    width: 100%;
+    .inner{
+        width: 1180px; margin: 0 auto;
+
+        .titbox{
+            width: 100%;
+            text-align: center;
+            span{
+                display: block;
+                font: 28px/1 'arial'; color: #222;
+                margin-bottom: 10px;
+            }
+            h2{
+                font: 50px/1 'arial'; color: #222;
+                margin-bottom: 80px;
+            }
+        }
+
+        .picbox{
+            width: 100%;
+            &::after{content: ''; display: block; clear: both;}
+            .box{
+                width: 280px; height: 250px;
+                float: left; 
+                margin-right: 20px;
+
+                &:nth-of-type(1){background: orange;}
+                &:nth-of-type(2){background: orangered;}
+                &:nth-of-type(3){background: lightpink;}
+                &:nth-of-type(4){background: lightcyan; margin-right:0px;}
+
+
+            }
+        }
+    }
+}
+
 #news{
     width: 100%;
     background: #f3f3f2;
@@ -408,7 +632,7 @@ body{width: 100%; overflow-x: hidden;}
                 li{
                     width: 100%;
                     display: flex;
-                    border-bottom: 1px solid #eee;
+                    border-bottom: 1px solid #222;
 
                     &:nth-of-type(1){
                         border-top: 2px solid #222;
@@ -437,7 +661,7 @@ body{width: 100%; overflow-x: hidden;}
                                 font: 30px/1 'arial'; color: #333;
                             }
                             >p{
-                                font: 24px/1 'arial'; color: #777;
+                                font: 20px/1 'arial'; color: #777;
                                 
                             }
                             .icon{

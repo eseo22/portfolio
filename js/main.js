@@ -33,31 +33,53 @@ $(menuClose).on("click",function(){
 //슬라이드
 
 let enableClick = true;  
+test(".slidebtn", ".list1");
+test(".slider2", ".list2");
 
-$(".next").on("click", function(e){
+function test(btn, list){
+    $(btn).find(".next").on("click", function(e){
+        e.preventDefault(); 
+    
+        if(enableClick){
+            enableClick = false; 
+            $(list).animate({marginLeft:"-200%" },500, function(){
+                $(list).css({marginLeft : "-100%"}); 
+                $(list).children("li").first().appendTo(list);
+                enableClick = true;  
+            });
+        }
+    }); 
+    
+    $(btn).find(".prev").on("click", function(e){
+        e.preventDefault(); 
+    
+        if(enableClick){
+            $(list).animate({ marginLeft: "-0%"},500, function(){
+                $(list).css({marginLeft :"-100%"}); 
+                $(list).children("li").last().prependTo(list); 
+                enableClick = true; 
+            });
+            enableClick = false; 
+        }    
+    });
+}
+
+
+//tab
+const $tab = $("#tab"); 
+const $btns = $tab.find("dt a"); 
+const $boxs = $tab.find("dd"); 
+
+$btns.on("click focusin", function(e){
     e.preventDefault(); 
 
-    if(enableClick){
-        enableClick = false; 
-        $(".list").animate({marginLeft:"-200%" },500, function(){
-            $(".list").css({marginLeft : "-100%"}); 
-            $(".list li").first().appendTo(".list");
-            enableClick = true;  
-        }); 
-       
-    }
-   
-}); 
+    let isOn = $(this).hasClass("on"); 
+    if(isOn) return; 
 
-$(".prev").on("click", function(e){
-    e.preventDefault(); 
-
-    if(enableClick){
-        $(".list").animate({ marginLeft: "0%"},500, function(){
-            $(".list").css({marginLeft :"-100%"}); 
-            $(".list li").last().prependTo(".list"); 
-            enableClick = true; 
-        });
-        enableClick = false; 
-    }    
-});
+    var target = $(this).attr("href"); 
+    $boxs.hide();  
+    $(target).show();
+    
+    $btns.removeClass("on"); 
+    $(this).addClass("on"); 
+});  
