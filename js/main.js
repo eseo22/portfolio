@@ -31,7 +31,7 @@ $(menuClose).on("click",function(){
 
 
 //슬라이드
-
+/*
 let enableClick = true;  
 test(".slider2", ".list2");
 
@@ -112,3 +112,4 @@ $(window).on("scroll", function(){
         }
     }
 })
+*/

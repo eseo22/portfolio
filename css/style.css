@@ -1827,7 +1827,8 @@ body {
         background: #222;
         position: absolute;
         bottom: 0;
-        left: 0; }
+        left: 0;
+        transition: 0.5s; }
       #header .inner .btnCall:hover::before {
         width: 100%; }
       #header .inner .btnCall:hover span {
@@ -1861,7 +1862,7 @@ body {
             background: #000;
             position: absolute;
             top: 50%;
-            margin-top: -0.5px; }
+            margin-top: -1px; }
           #header .inner .menuMo .txtbox > a span {
             display: block;
             text-indent: -9999px; }
@@ -1874,7 +1875,7 @@ body {
             background: #000;
             position: absolute;
             top: 50%;
-            margin-top: -0.5px;
+            margin-top: -1px;
             transition: 0.5s; }
           #header .inner .menuMo .txtbox > a:hover::after {
             transform: rotate(0deg); }
@@ -1920,350 +1921,279 @@ body {
 
 #intro {
   width: 100%; }
-  #intro .inner {
+  #intro > .inner {
     width: 1180px;
     margin: 0 auto;
-    padding: 100px 0px; }
-    #intro .inner::after {
+    padding: 100px 0px 120px; }
+    #intro > .inner::after {
       content: '';
       display: block;
       clear: both; }
-    #intro .inner .txtbox {
-      width: 40%;
+    #intro > .inner > .imgwrap {
       float: left;
-      padding-top: 60px; }
-      #intro .inner .txtbox h2 {
-        font: 52px/1 'EB Garamond';
-        color: #525252;
-        margin-bottom: 60px; }
-        #intro .inner .txtbox h2 span {
-          display: block;
-          font: 22px/1 'EB Garamond';
-          color: #c9ab81; }
-      #intro .inner .txtbox p {
-        width: 90%;
-        font: 20px/1.4 'Alegreya Sans';
-        color: #5f5f5f;
-        margin-bottom: 50px; }
-      #intro .inner .txtbox a {
-        display: block;
-        width: 160px;
-        height: 50px;
-        font: 20px/44px 'Alegreya Sans';
-        color: #525252;
-        text-align: center;
-        border: 1px solid #c9ab81; }
-    #intro .inner .picbox {
-      float: right;
-      width: 60%;
-      height: 500px;
-      padding: 20px 0px 20px 20px; }
-      #intro .inner .picbox img {
-        width: 100%;
-        height: 100%;
+      width: 50%; }
+      #intro > .inner > .imgwrap img {
+        width: 240px;
+        height: 400px;
         object-fit: cover; }
+        #intro > .inner > .imgwrap img:nth-of-type(1) {
+          margin-right: 22px;
+          object-position: -220px center; }
+        #intro > .inner > .imgwrap img:nth-of-type(2) {
+          position: relative;
+          top: 70px; }
+    #intro > .inner > .txtbox {
+      float: right;
+      width: 50%;
+      margin-top: 68px; }
+      #intro > .inner > .txtbox span {
+        font-size: 12px;
+        color: #444;
+        display: block;
+        margin-bottom: 15px; }
+        #intro > .inner > .txtbox span::before {
+          content: '';
+          display: block;
+          width: 30px;
+          height: 1.5px;
+          background: #222;
+          position: relative;
+          left: -50px;
+          top: 10px; }
+      #intro > .inner > .txtbox h2 {
+        font: 30px/1.2 'arial';
+        color: #222;
+        margin-bottom: 20px; }
+      #intro > .inner > .txtbox h3 {
+        font: 20px/1.2 'arial';
+        color: #222;
+        margin-bottom: 20px;
+        width: 450px; }
+      #intro > .inner > .txtbox p {
+        font: 20px/1.2 'arial';
+        color: #444;
+        margin-bottom: 30px;
+        width: 420px; }
+      #intro > .inner > .txtbox a {
+        display: block;
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        font: 15px/50px 'arial';
+        color: #444;
+        border: 1px solid #ddd; }
+
+#intro2 {
+  width: 100%;
+  background: #222; }
+  #intro2 .inner {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 100px 0px; }
+    #intro2 .inner .txtbox {
+      padding-left: 20px;
+      margin-bottom: 80px; }
+      #intro2 .inner .txtbox span {
+        font-size: 12px;
+        color: #ddd;
+        display: block;
+        margin-bottom: 15px; }
+        #intro2 .inner .txtbox span::before {
+          content: '';
+          display: block;
+          width: 30px;
+          height: 1.5px;
+          background: #fff;
+          position: relative;
+          left: -50px;
+          top: 10px; }
+      #intro2 .inner .txtbox h2 {
+        font: 30px/1.2 'arial';
+        color: #ddd; }
+    #intro2 .inner .iconwrap::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #intro2 .inner .iconwrap .iconbox {
+      width: 280px;
+      margin-right: 20px;
+      padding-right: 40px;
+      float: left; }
+      #intro2 .inner .iconwrap .iconbox i {
+        font-size: 32px;
+        color: 222;
+        margin-bottom: 32px;
+        color: #fff; }
+      #intro2 .inner .iconwrap .iconbox h3 {
+        font: 20px/1 'arial';
+        color: #fff;
+        margin-bottom: 18px; }
+      #intro2 .inner .iconwrap .iconbox p {
+        font: 18px/1.2 'arial';
+        color: #aaa; }
+      #intro2 .inner .iconwrap .iconbox:last-child {
+        margin-right: 0px; }
+
+#pics .picwrap {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-bottom: 130px; }
+  #pics .picwrap .picbox {
+    width: calc(100% / 3);
+    height: 600px;
+    background: #000; }
+    #pics .picwrap .picbox:nth-of-type(2) img {
+      opacity: 0.2; }
+    #pics .picwrap .picbox img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.6; }
+    #pics .picwrap .picbox p {
+      font: 20px/1.2 'arial';
+      color: #fff;
+      position: relative;
+      top: -80px;
+      left: 30px; }
+    #pics .picwrap .picbox span {
+      display: block;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      #pics .picwrap .picbox span::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        margin-top: -1px; }
+      #pics .picwrap .picbox span::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        transform: rotate(-90deg);
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        margin-top: -1px; }
+
+#news {
+  width: 100%;
+  margin-bottom: 100px; }
+  #news > .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #news > .inner .txtbox {
+      padding-left: 20px;
+      margin-bottom: 80px; }
+      #news > .inner .txtbox span {
+        font-size: 12px;
+        color: #444;
+        display: block;
+        margin-bottom: 15px; }
+        #news > .inner .txtbox span::before {
+          content: '';
+          display: block;
+          width: 30px;
+          height: 1.5px;
+          background: #222;
+          position: relative;
+          left: -50px;
+          top: 10px; }
+      #news > .inner .txtbox h2 {
+        font: 30px/1.2 'arial';
+        color: #222; }
+    #news > .inner .articlebox {
+      width: 100%;
+      margin-bottom: 60px;
+      display: flex; }
+      #news > .inner .articlebox article {
+        width: 380px;
+        margin-right: 20px; }
+        #news > .inner .articlebox article:last-child {
+          margin-right: 0px; }
+        #news > .inner .articlebox article .pic {
+          width: 100%;
+          height: 250px;
+          margin-bottom: 20px; }
+          #news > .inner .articlebox article .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top; }
+          #news > .inner .articlebox article .pic span {
+            display: block;
+            width: 80px;
+            height: 30px;
+            background: #444;
+            font-size: 12px;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            position: relative;
+            top: -42px;
+            left: 10px; }
+          #news > .inner .articlebox article .pic:nth-of-type(1) img {
+            object-position: center; }
+        #news > .inner .articlebox article .pictxt {
+          padding: 0px 20px; }
+          #news > .inner .articlebox article .pictxt h3 {
+            font: 20px/1 'arial';
+            color: #222;
+            margin-bottom: 10px; }
+          #news > .inner .articlebox article .pictxt span {
+            font-size: 15px;
+            color: #222;
+            margin-bottom: 10px;
+            display: block; }
+          #news > .inner .articlebox article .pictxt p {
+            font: 18px/1.2 'arial';
+            color: #444; }
+    #news > .inner > a {
+      display: block;
+      width: 150px;
+      height: 40px;
+      margin: 0 auto;
+      border: 2px solid #ddd;
+      font: 18px/40px 'arial';
+      color: #222;
+      text-align: center; }
 
 #banner {
   width: 100%;
-  height: 500px;
-  background: url(../img/banner3.jpg) no-repeat right/cover;
-  margin-bottom: 300px; }
-  #banner > .inner {
-    width: 1180px;
+  background: pink;
+  padding: 90px 0px;
+  background: url(../img/banner2.jpg) no-repeat bottom/cover; }
+  #banner > .txtbox {
+    width: 40%;
     margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    padding: 50px 0px; }
-    #banner > .inner > .txtbox {
-      margin-bottom: 60px; }
-      #banner > .inner > .txtbox span {
-        display: block;
-        font-size: 25px;
-        color: #ED1846;
-        text-align: center;
-        margin-bottom: 27px; }
-      #banner > .inner > .txtbox h2 {
-        font: 36px/1 '맑은 고딕';
-        color: #fff;
-        text-align: center; }
-    #banner > .inner .slider2 {
-      width: 400px;
-      margin: 0 auto; }
-      #banner > .inner .slider2 .list2 {
-        width: calc(100% * 5);
-        height: 100%;
-        margin-left: -100%;
-        position: relative; }
-        #banner > .inner .slider2 .list2::after {
-          content: '';
-          display: block;
-          clear: both; }
-        #banner > .inner .slider2 .list2 > li {
-          width: calc(100% / 5);
-          height: 100%;
-          float: left; }
-          #banner > .inner .slider2 .list2 > li a {
-            display: block;
-            padding-top: 20px;
-            margin-bottom: 20px; }
-            #banner > .inner .slider2 .list2 > li a .pic {
-              width: 100%;
-              height: 300px;
-              padding: 0px 15px;
-              margin-bottom: 20px; }
-              #banner > .inner .slider2 .list2 > li a .pic img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                object-position: center; }
-          #banner > .inner .slider2 .list2 > li .pictxt {
-            padding: 0px 40px;
-            text-align: center; }
-            #banner > .inner .slider2 .list2 > li .pictxt span {
-              font: 18px/1 'arial';
-              color: #222;
-              margin-bottom: 10px;
-              display: block; }
-            #banner > .inner .slider2 .list2 > li .pictxt p {
-              font: 26px/1.2 'arial';
-              color: #222;
-              margin-bottom: 10px; }
-      #banner > .inner .slider2 .prev {
-        position: absolute;
-        top: 50%;
-        left: 50px;
-        margin-top: -50px; }
-      #banner > .inner .slider2 .next {
-        position: absolute;
-        top: 50%;
-        margin-top: -50px;
-        right: 50px; }
-
-#notice {
-  width: 100%; }
-  #notice .inner {
-    width: 1180px;
-    margin: 0 auto;
-    padding: 100px 0px; }
-    #notice .inner::after {
-      content: '';
+    text-align: center; }
+    #banner > .txtbox span {
+      font: 20px/1 'arial';
+      color: #fff;
+      margin-bottom: 20px;
+      display: block; }
+    #banner > .txtbox p {
+      font: 30px/1.2 'arial';
+      color: #fff;
+      margin-bottom: 40px;
+      letter-spacing: 1px; }
+    #banner > .txtbox a {
       display: block;
-      clear: both; }
-    #notice .inner .leftbox {
-      width: 48%;
-      float: left; }
-      #notice .inner .leftbox .txtbox span {
-        display: block;
-        font-size: 15px;
-        color: #444;
-        margin-bottom: 10px;
-        letter-spacing: 1px; }
-      #notice .inner .leftbox .txtbox h2 {
-        font: 36px/1 '맑은 고딕';
-        color: #222; }
-      #notice .inner .leftbox #tab {
-        width: 100%;
-        border-top: 2px solid #000;
-        margin: 80px auto;
-        position: relative; }
-        #notice .inner .leftbox #tab dl dt {
-          width: 120px;
-          height: 50px;
-          position: absolute;
-          top: -51.5px; }
-          #notice .inner .leftbox #tab dl dt:nth-of-type(1) {
-            left: 0; }
-          #notice .inner .leftbox #tab dl dt:nth-of-type(2) {
-            left: 120px; }
-          #notice .inner .leftbox #tab dl dt a {
-            display: block;
-            width: 100%;
-            height: 100%;
-            border: 1px solid #000;
-            background: #fff;
-            font: 15px/50px '맑은 고딕';
-            color: #000;
-            text-align: center; }
-            #notice .inner .leftbox #tab dl dt a.on {
-              background: #000;
-              color: #fff; }
-        #notice .inner .leftbox #tab dl dd {
-          width: 100%;
-          display: none; }
-          #notice .inner .leftbox #tab dl dd#tab1 {
-            display: block; }
-          #notice .inner .leftbox #tab dl dd ul li {
-            width: 100%;
-            height: 60px;
-            padding: 20px 0px 12px;
-            border-bottom: 1px solid #e2e2e2; }
-            #notice .inner .leftbox #tab dl dd ul li a {
-              display: block;
-              width: 100%;
-              height: 100%; }
-              #notice .inner .leftbox #tab dl dd ul li a p {
-                display: inline-block;
-                width: 80%;
-                font: 20px/1 '맑은 고딕';
-                color: #222; }
-                #notice .inner .leftbox #tab dl dd ul li a p em {
-                  display: inline-block;
-                  padding: 2px 5px;
-                  font: normal bold 14px/1 '맑은 고딕';
-                  color: #222;
-                  border: 1px solid #000;
-                  margin-right: 5px; }
-              #notice .inner .leftbox #tab dl dd ul li a span {
-                font: 15px/1 '맑은 고딕';
-                color: #222; }
-    #notice .inner .rightbox {
-      width: 50%;
-      float: right;
-      padding-left: 40px; }
-      #notice .inner .rightbox .txtbox {
-        margin-bottom: 60px; }
-        #notice .inner .rightbox .txtbox span {
-          display: block;
-          font-size: 15px;
-          color: #444;
-          margin-bottom: 10px;
-          letter-spacing: 1px; }
-        #notice .inner .rightbox .txtbox h2 {
-          font: 36px/1 '맑은 고딕';
-          color: #222; }
-      #notice .inner .rightbox img {
-        width: 100%;
-        object-fit: cover; }
-
-#cards {
-  width: 100%; }
-  #cards .inner {
-    width: 1180px;
-    margin: 0 auto;
-    padding: 100px 0px; }
-    #cards .inner > .txtbox {
+      width: 200px;
+      height: 50px;
       text-align: center;
-      margin-bottom: 60px; }
-      #cards .inner > .txtbox h2 {
-        font: 40px/1 'EB Garamond';
-        color: #222; }
-    #cards .inner .picbox {
-      width: 100%; }
-      #cards .inner .picbox::after {
-        content: '';
-        display: block;
-        clear: both; }
-      #cards .inner .picbox article {
-        width: 280px;
-        height: 400px;
-        float: left;
-        margin-right: 20px;
-        transform: translateY(100px);
-        opacity: 0;
-        transition: 0.5s; }
-        #cards .inner .picbox article:nth-of-type(1) {
-          transition-delay: 0s; }
-        #cards .inner .picbox article:nth-of-type(2) {
-          transition-delay: 0.2s; }
-        #cards .inner .picbox article:nth-of-type(3) {
-          transition-delay: 0.4s; }
-        #cards .inner .picbox article:nth-of-type(4) {
-          margin-right: 0;
-          transition-delay: 0.6s; }
-        #cards .inner .picbox article img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover; }
-  #cards.on .inner .picbox article {
-    transform: translateY(0);
-    opacity: 1; }
-
-#comment {
-  width: 100%; }
-  #comment .inner {
-    width: 1180px;
-    margin: 0 auto; }
-    #comment .inner .box {
-      width: 100%;
-      padding: 140px 0px; }
-      #comment .inner .box::after {
-        content: '';
-        display: block;
-        clear: both; }
-      #comment .inner .box > h2 {
-        width: 100%;
-        font: 40px/1 'EB Garamond';
-        color: #525252;
-        float: left;
-        margin-bottom: 50px; }
-      #comment .inner .box > ul {
-        width: 100%;
-        float: right; }
-        #comment .inner .box > ul li {
-          width: 100%;
-          display: flex;
-          border-bottom: 1px solid #222; }
-          #comment .inner .box > ul li:nth-of-type(1) {
-            border-top: 2px solid #222; }
-          #comment .inner .box > ul li a {
-            display: block;
-            width: 100%;
-            font-size: 0px;
-            padding: 38px;
-            display: flex; }
-            #comment .inner .box > ul li a > p {
-              width: 20%;
-              font: 30px/1 'Montserrat';
-              color: #333; }
-              #comment .inner .box > ul li a > p span {
-                display: block;
-                margin-top: 5px;
-                font: 15px/1 'Montserrat';
-                color: #777; }
-            #comment .inner .box > ul li a .txt {
-              width: 80%;
-              padding-right: 100px;
-              position: relative; }
-              #comment .inner .box > ul li a .txt > h3 {
-                font: 30px/1 '맑은 고딕';
-                color: #333; }
-              #comment .inner .box > ul li a .txt > p {
-                font: 20px/1 '맑은 고딕';
-                color: #777; }
-              #comment .inner .box > ul li a .txt .icon {
-                display: block;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                position: absolute;
-                right: 0px;
-                top: -2px;
-                transition: 0.4s; }
-                #comment .inner .box > ul li a .txt .icon::before {
-                  content: '';
-                  display: block;
-                  width: 26px;
-                  height: 1px;
-                  background: #333;
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%); }
-                #comment .inner .box > ul li a .txt .icon::after {
-                  content: '';
-                  display: block;
-                  width: 26px;
-                  height: 1px;
-                  background: #333;
-                  position: absolute;
-                  top: 50%;
-                  left: 26%;
-                  transform: translateY(-50%);
-                  transform: rotate(90deg); }
-            #comment .inner .box > ul li a:hover .icon {
-              background-color: #222; }
-              #comment .inner .box > ul li a:hover .icon::after, #comment .inner .box > ul li a:hover .icon::before {
-                background-color: #fff; }
+      font: 20px/50px 'arial';
+      color: #fff;
+      border: 1px solid #eee;
+      margin: 0 auto; }
 
 #popup {
   width: 500px;
@@ -2378,98 +2308,6 @@ body {
       left: 30px;
       display: block; }
 
-  #intro {
-    width: 100%; }
-    #intro .inner {
-      width: 100%;
-      padding: 20px; }
-      #intro .inner .txtbox h2 {
-        font-size: 40px;
-        margin-bottom: 30px; }
-        #intro .inner .txtbox h2 span {
-          font-size: 22px;
-          margin-bottom: 5px; }
-      #intro .inner .txtbox p {
-        width: 90%;
-        font: 18px/1.2 'Alegreya Sans';
-        margin-bottom: 30px; }
-
-  #banner {
-    width: 100%;
-    height: 400px;
-    margin-bottom: 300px; }
-    #banner > .inner {
-      width: 100%;
-      padding: 20px; }
-      #banner > .inner > .txtbox {
-        margin-bottom: 50px; }
-        #banner > .inner > .txtbox span {
-          font-size: 20px; }
-        #banner > .inner > .txtbox h2 {
-          font-size: 30px; }
-      #banner > .inner .slider2 {
-        width: 60%; }
-        #banner > .inner .slider2 .list2 > li a .pic {
-          width: 80%;
-          margin: 0 auto; }
-        #banner > .inner .slider2 .list2 > li .pictxt {
-          padding: 0px 40px;
-          text-align: center; }
-          #banner > .inner .slider2 .list2 > li .pictxt span {
-            font-size: 15px; }
-          #banner > .inner .slider2 .list2 > li .pictxt p {
-            font-size: 20px; }
-        #banner > .inner .slider2 .prev img, #banner > .inner .slider2 .next img {
-          width: 40px;
-          height: 60px; }
-
-  #notice {
-    width: 100%; }
-    #notice .inner {
-      width: 100%;
-      padding: 100px 20px; }
-      #notice .inner .leftbox {
-        width: 100%; }
-      #notice .inner .rightbox {
-        width: 100%;
-        padding-left: 0px; }
-        #notice .inner .rightbox img {
-          height: 350px;
-          object-fit: cover; }
-
-  #cards {
-    width: 100%; }
-    #cards .inner {
-      width: 100%;
-      padding: 0px 40px; }
-      #cards .inner .picbox article {
-        width: 50%;
-        height: 300px;
-        margin-right: 0px;
-        transform: translateY(0px);
-        opacity: 1; }
-
-  #comment .inner {
-    width: 100%; }
-    #comment .inner .box {
-      width: 100%;
-      padding: 100px 20px; }
-      #comment .inner .box > ul li:nth-of-type(1) {
-        border-top: 2px solid #222; }
-      #comment .inner .box > ul li a {
-        padding: 25px 10px; }
-        #comment .inner .box > ul li a > p {
-          width: 18%; }
-        #comment .inner .box > ul li a .txt {
-          padding-right: 20px; }
-          #comment .inner .box > ul li a .txt > h3 {
-            font-size: 25px;
-            margin-bottom: 5px; }
-          #comment .inner .box > ul li a .txt > p {
-            font-size: 18px; }
-          #comment .inner .box > ul li a .txt .icon {
-            right: -30px; }
-
   #footer {
     padding: 20px 20px; }
     #footer .inner {
@@ -2523,94 +2361,6 @@ body {
     display: none; }
   #header .inner .btnCall {
     left: 20px; }
-
-  #intro .inner .txtbox {
-    width: 100%; }
-    #intro .inner .txtbox h2 {
-      font-size: 22px;
-      margin-bottom: 20px; }
-      #intro .inner .txtbox h2 span {
-        font-size: 14px; }
-    #intro .inner .txtbox p {
-      width: 100%;
-      font-size: 14px;
-      margin-bottom: 20px; }
-    #intro .inner .txtbox a {
-      width: 100px;
-      height: 30px;
-      margin-bottom: 20px;
-      font: 18px/24px '맑은 고딕'; }
-  #intro .inner .picbox {
-    width: 100%;
-    height: 140px;
-    padding: 0px; }
-
-  #banner {
-    height: 240px;
-    margin-bottom: 100px; }
-    #banner > .inner > .txtbox {
-      margin-bottom: 0px; }
-    #banner > .inner .slider2 .list2 > li a {
-      padding-top: 0px; }
-    #banner > .inner .slider2 .list2 > li .pictxt {
-      display: none; }
-    #banner > .inner .slider2 .prev, #banner > .inner .slider2 .next {
-      margin-top: -25px; }
-      #banner > .inner .slider2 .prev img, #banner > .inner .slider2 .next img {
-        width: 20px;
-        height: 40px; }
-
-  #notice .inner {
-    padding: 100px 20px 20px; }
-    #notice .inner .leftbox > .txtbox {
-      margin-bottom: 20px;
-      text-align: center; }
-      #notice .inner .leftbox > .txtbox span {
-        font-size: 12px;
-        margin-bottom: 2px; }
-      #notice .inner .leftbox > .txtbox h2 {
-        font-size: 25px; }
-    #notice .inner .leftbox #tab dl dt {
-      height: 36px; }
-      #notice .inner .leftbox #tab dl dt a {
-        font-size: 15px;
-        line-height: 36px; }
-    #notice .inner .leftbox #tab dl dd ul li {
-      height: auto; }
-      #notice .inner .leftbox #tab dl dd ul li a p {
-        width: 100%;
-        margin-bottom: 4px;
-        font-size: 18px; }
-      #notice .inner .leftbox #tab dl dd ul li a span {
-        font-size: 14px; }
-    #notice .inner .rightbox > .txtbox {
-      margin-bottom: 20px;
-      text-align: center; }
-      #notice .inner .rightbox > .txtbox span {
-        font-size: 12px;
-        margin-bottom: 2px; }
-      #notice .inner .rightbox > .txtbox h2 {
-        font-size: 25px; }
-    #notice .inner .rightbox img {
-      height: 150px; }
-
-  #cards .inner {
-    padding: 0px 20px; }
-    #cards .inner .txtbox {
-      margin-bottom: 20px; }
-      #cards .inner .txtbox h2 {
-        font-size: 30px; }
-    #cards .inner .picbox article {
-      width: 100%;
-      height: 120px; }
-
-  #comment .inner .box > ul li a > p {
-    width: 30%; }
-  #comment .inner .box > ul li a .txt {
-    padding-right: 0px;
-    width: 70%; }
-    #comment .inner .box > ul li a .txt .icon {
-      display: none; }
 
   #footer .inner .wrap article ul li {
     margin-bottom: 5px; }
