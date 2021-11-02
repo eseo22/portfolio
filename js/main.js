@@ -33,7 +33,6 @@ $(menuClose).on("click",function(){
 //슬라이드
 
 let enableClick = true;  
-test(".slidebtn", ".list1");
 test(".slider2", ".list2");
 
 function test(btn, list){
@@ -45,6 +44,7 @@ function test(btn, list){
             $(list).animate({marginLeft:"-200%" },500, function(){
                 $(list).css({marginLeft : "-100%"}); 
                 $(list).children("li").first().appendTo(list);
+
                 enableClick = true;  
             });
         }
@@ -83,3 +83,32 @@ $btns.on("click focusin", function(e){
     $btns.removeClass("on"); 
     $(this).addClass("on"); 
 });  
+
+//scroll
+const posArr = [];
+const $scrollBox = $(".myScroll");
+let len = $scrollBox.length;
+let baseLine = -500;
+
+for(let i=0; i<len; i++){
+    posArr.push($scrollBox.eq(i).offset().top);
+}
+$(window).on("resize", function(){
+    posArr =[]; 
+    for(let i=0; i<len; i++){
+       posArr.push($scrollBox.eq(i).offset().top); 
+    }
+}); 
+
+$(window).on("scroll", function(){
+    let scroll = $(this).scrollTop();
+    console.log(scroll);
+
+    for(let i=0; i<len; i++){
+        if(scroll >= posArr[i] +baseLine){
+
+            $scrollBox.removeClass("on");
+            $scrollBox.eq(i).addClass("on");
+        }
+    }
+})

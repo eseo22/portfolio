@@ -13,7 +13,7 @@
     <script defer src="js/main.js"></script>
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="myScroll">
         <div class="inner">
             <h1><a href="index.html">DCODELAB</a></h1>
             <ul class="gnb">
@@ -116,87 +116,24 @@
     <figure id="visual">
         <div class="inner"></div>
     </figure>
-    <section id="intro">
+    <section id="intro" class="myScroll">
         <div class="inner">
             <div class="txtbox">
-                <h2>ART<br>CULTURE</h2>
+                <h2>
+                    <span>The Museum archive</span>
+                    WORKS OF ART
+                </h2>
                 <p>Sharing place to share joy and impression through cultural art.lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nulla iste exercitationem dolorum quibusdam inventore ut consectetur nam quisquam atque!</p>
-                <a href="#">View more<span></span></a>
+                <a href="#">view more</a>
             </div>
-            <!-- <div class="picbox">
-               
-            </div> -->
+            <div class="picbox">
+                <img src="img/sns.jpg" alt="">
+            </div>
         </div>
         
     </section>
-    <section id="arts">
-        <div class="inner">
-            <div class="txtbox">
-                <h2>CURRENTLY ON VIEW</h2>
-            </div>
-            <div class="slider1">
-                <ul class="list1">
-                    <li class="box1">
-                        <div class="pic">
-                            <img src="img/p1.jpg" alt="">
-                        </div>
-                        <div class="pictxt">
-                            <p>Mar 1 - Mar 15 2022</p>
-                            <a href="#">Lorem, ipsum dolor.</a>
-                        </div>
-                    </li>
-                    <li class="box2">
-                        <div class="pic">
-                            <img src="img/p2.jpg" alt="">
-                        </div>
-                        <div class="pictxt">
-                            <p>Mar 1 - Mar 15 2022</p>
-                            <a href="#">Lorem, ipsum dolor.</a>
-                        </div>
-                    </li>
-                    <li class="box3">
-                        <div class="pic">
-                            <img src="img/test2.jpg" alt="">
-                        </div>
-                        <div class="pictxt">
-                            <p>Mar 1 - Mar 15 2022</p>
-                            <a href="#">Lorem, ipsum dolor.</a>
-                        </div>
-                    </li>
-                    <li class="box4">
-                        <div class="pic">
-                            <img src="img/test3.jpg" alt="">
-                        </div>
-                        <div class="pictxt">
-                            <p>Mar 1 - Mar 15 2022</p>
-                            <a href="#">Lorem, ipsum dolor.</a>
-                        </div>
-                    </li>
-                    <li class="box5">
-                        <div class="pic">
-                            <img src="img/test4.jpg" alt="">
-                        </div>
-                        <div class="pictxt">
-                            <p>Mar 1 - Mar 15 2022</p>
-                            <a href="#">Lorem, ipsum dolor.</a>
-                        </div>
-                    </li>
     
-                </ul>
-                
-            </div>
-            <div class="slidebtn">
-                <a href="#" class="prev">
-                    <i class="fas fa-chevron-left"></i>
-                </a>
-                <a href="#" class="next">
-                    <i class="fas fas fa-chevron-right"></i>
-                </a>
-            </div>
-        </div>
-        
-    </section>
-    <section id="banner">
+    <section id="banner" class="myScroll">
         <div class="inner">
             <div class="txtbox">
                 <span>EVENT</span>
@@ -278,10 +215,14 @@
             
         </div>
     </section>
-    <section id="notice">
+    <section id="notice" class="myScroll">
         <div class="inner">
-            <h2>Notice</h2>
+            
             <div class="leftbox">
+                <div class="txtbox">
+                    <span>NOTICE</span>
+                    <h2>공지사항</h2>
+                </div>
                 <div id="tab">
                     <dl>
                         <dt>
@@ -291,25 +232,25 @@
                             <ul>
                                 <li>
                                     <a href="#">
-                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        <p><em>공지</em>Lorem ipsum dolor sit amet consectetur.</p>
                                         <span>2021.10.29</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        <p><em>공지</em>Lorem ipsum dolor sit.</p>
                                         <span>2021.10.29</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        <p><em>공지</em>Lorem ipsum dolor sit amet.</p>
                                         <span>2021.10.29</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                        <p><em>공지</em>Lorem ipsum dolor sit amet consectetur.</p>
                                         <span>2021.10.29</span>
                                     </a>
                                 </li>
@@ -328,19 +269,19 @@
                             </ul>
                         </dd>
                         <dt>
-                            <a href="#tab2">알림2</a>
+                            <a href="#tab2">입찰/공고</a>
                         </dt>
                         <dd id="tab2">
                             <ul>
                                 <li>
                                     <a href="#">
-                                        <p>2Lorem ipsum dolor sit amet consectetur.</p>
+                                        <p><em>공지</em>2Lorem ipsum dolor sit amet consectetur.</p>
                                         <span>2021.10.29</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <p>2Lorem ipsum dolor sit amet consectetur.</p>
+                                        <p><em>공지</em>2Lorem ipsum dolor sit amet consectetur.</p>
                                         <span>2021.10.29</span>
                                     </a>
                                 </li>
@@ -374,30 +315,34 @@
                 </div>              
             </div>
             <div class="rightbox">
-                <h3>팝업</h3>
+                <div class="txtbox">
+                    <span>BANNER</span>
+                    <h2>알림존</h2>
+                </div>
                 <img src="img/pop.jpg" alt="">
             </div>
         </div>
     </section>
-    <section id="sns">
+    <section id="cards" class="myScroll">
         <div class="inner">
-            <div class="titbox">
-                <span>social hub</span>
-                <h2>Arts SNS</h2>
+            <div class="txtbox">
+                <h2>Art & Culture</h2>
             </div>
             <div class="picbox">
-                <div class="box"><img src="" alt=""></div>
-                <div class="box"><img src="" alt=""></div>
-                <div class="box"><img src="" alt=""></div>
-                <div class="box"><img src="" alt=""></div>
+                <article><img src="img/sns.jpg" alt=""></article>
+                <article><img src="img/sns2.jpg" alt=""></article>
+                <article><img src="img/test4.jpg" alt=""></article>
+                <article><img src="img/test5.jpg" alt=""></article>
+
             </div>
         </div>
         
     </section>
-    <section id="news">
+    
+    <section id="comment" class="myScroll">
         <div class="inner">
             <div class="box">
-                <h2>NEWS</h2>
+                <h2>Comment</h2>
                 <ul>
                     <li>
                         <a href="#">
@@ -454,6 +399,7 @@
             
         </div>
     </section>
+    
     <aside id="popup">
         <div class="content">환영합니다</div>
         <div class="wrap">

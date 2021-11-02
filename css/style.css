@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Playfair+Display&family=Roboto+Slab&family=Zen+Antique+Soft&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto+Slab&family=Zen+Antique+Soft&family=Zen+Kaku+Gothic+Antique:wght@300&family=EB+Garamond&family=EB+Garamond:ital@0;1&display=swap");
 * {
@@ -1923,165 +1923,117 @@ body {
   #intro .inner {
     width: 1180px;
     margin: 0 auto;
-    padding: 40px 0px; }
+    padding: 100px 0px; }
+    #intro .inner::after {
+      content: '';
+      display: block;
+      clear: both; }
     #intro .inner .txtbox {
       width: 40%;
-      height: 500px;
-      display: inline-block; }
+      float: left;
+      padding-top: 60px; }
       #intro .inner .txtbox h2 {
         font: 52px/1 'EB Garamond';
         color: #525252;
         margin-bottom: 60px; }
-      #intro .inner .txtbox p {
-        font: 20px/1.4 'Alegreya Sans';
-        color: #5f5f5f; }
-
-#arts {
-  width: 100%; }
-  #arts .inner {
-    width: 1180px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative; }
-    #arts .inner .txtbox {
-      margin-bottom: 140px; }
-      #arts .inner .txtbox > h2 {
-        font: 40px/1 'EB Garamond';
-        color: #525252; }
-    #arts .inner .slider1 {
-      width: 340px;
-      height: 600px;
-      position: relative; }
-      #arts .inner .slider1 .list1 {
-        width: calc(100% * 5);
-        height: 100%;
-        margin-left: -100%; }
-        #arts .inner .slider1 .list1::after {
-          content: '';
+        #intro .inner .txtbox h2 span {
           display: block;
-          clear: both; }
-        #arts .inner .slider1 .list1 li {
-          width: calc(100% / 5);
-          height: 100%;
-          float: left;
-          padding: 20px; }
-          #arts .inner .slider1 .list1 li.box2, #arts .inner .slider1 .list1 li.box4 {
-            margin-top: 40px; }
-          #arts .inner .slider1 .list1 li .pic {
-            width: 100%;
-            height: 400px;
-            background-color: #eee;
-            overflow: hidden; }
-            #arts .inner .slider1 .list1 li .pic img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              transition: 0.5s; }
-              #arts .inner .slider1 .list1 li .pic img:hover {
-                transform: scale(1.1); }
-          #arts .inner .slider1 .list1 li .pictxt {
-            width: 220px;
-            background-color: #fff;
-            position: relative;
-            top: -50px; }
-            #arts .inner .slider1 .list1 li .pictxt p {
-              font: 17px/1  'EB Garamond';
-              color: #C9AB81;
-              padding: 23px 0px; }
-            #arts .inner .slider1 .list1 li .pictxt a {
-              font: 22px/1.4  'EB Garamond';
-              color: #525252; }
-              #arts .inner .slider1 .list1 li .pictxt a:hover {
-                color: #c9ab81; }
-    #arts .inner .slidebtn {
-      position: absolute;
-      top: 60px;
-      right: 0; }
-      #arts .inner .slidebtn a {
-        margin-right: 40px; }
-        #arts .inner .slidebtn a i {
-          font-size: 30px;
-          color: #C9AB81; }
+          font: 22px/1 'EB Garamond';
+          color: #c9ab81; }
+      #intro .inner .txtbox p {
+        width: 90%;
+        font: 20px/1.4 'Alegreya Sans';
+        color: #5f5f5f;
+        margin-bottom: 50px; }
+      #intro .inner .txtbox a {
+        display: block;
+        width: 160px;
+        height: 50px;
+        font: 20px/44px 'Alegreya Sans';
+        color: #525252;
+        text-align: center;
+        border: 1px solid #c9ab81; }
+    #intro .inner .picbox {
+      float: right;
+      width: 60%;
+      height: 500px;
+      padding: 20px 0px 20px 20px; }
+      #intro .inner .picbox img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
 
 #banner {
   width: 100%;
-  background: url(../img/banner3.jpg) no-repeat right/cover fixed; }
-  #banner .inner {
+  height: 500px;
+  background: url(../img/banner3.jpg) no-repeat right/cover;
+  margin-bottom: 300px; }
+  #banner > .inner {
     width: 1180px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
     padding: 50px 0px; }
-    #banner .inner .txtbox {
+    #banner > .inner > .txtbox {
       margin-bottom: 60px; }
-      #banner .inner .txtbox span {
+      #banner > .inner > .txtbox span {
         display: block;
-        font-size: 28px;
+        font-size: 25px;
         color: #ED1846;
         text-align: center;
         margin-bottom: 27px; }
-      #banner .inner .txtbox h2 {
-        font: 36px/1 'arial';
+      #banner > .inner > .txtbox h2 {
+        font: 36px/1 '맑은 고딕';
         color: #fff;
         text-align: center; }
-    #banner .inner .slider2 {
+    #banner > .inner .slider2 {
       width: 400px;
       margin: 0 auto; }
-      #banner .inner .slider2 .list2 {
+      #banner > .inner .slider2 .list2 {
         width: calc(100% * 5);
         height: 100%;
         margin-left: -100%;
         position: relative; }
-        #banner .inner .slider2 .list2::after {
+        #banner > .inner .slider2 .list2::after {
           content: '';
           display: block;
           clear: both; }
-        #banner .inner .slider2 .list2 button {
-          position: absolute;
-          z-index: 10;
-          border: 1px solid #fff;
-          width: 50px;
-          height: 50px;
-          background: #fff; }
-          #banner .inner .slider2 .list2 button i {
-            color: #000;
-            font-size: 20px; }
-        #banner .inner .slider2 .list2 > li {
+        #banner > .inner .slider2 .list2 > li {
           width: calc(100% / 5);
           height: 100%;
           float: left; }
-          #banner .inner .slider2 .list2 > li a {
+          #banner > .inner .slider2 .list2 > li a {
             display: block;
             padding-top: 20px;
             margin-bottom: 20px; }
-            #banner .inner .slider2 .list2 > li a .pic {
+            #banner > .inner .slider2 .list2 > li a .pic {
               width: 100%;
               height: 300px;
               padding: 0px 15px;
               margin-bottom: 20px; }
-              #banner .inner .slider2 .list2 > li a .pic img {
+              #banner > .inner .slider2 .list2 > li a .pic img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
                 object-position: center; }
-          #banner .inner .slider2 .list2 > li .pictxt {
+          #banner > .inner .slider2 .list2 > li .pictxt {
             padding: 0px 40px;
             text-align: center; }
-            #banner .inner .slider2 .list2 > li .pictxt span {
+            #banner > .inner .slider2 .list2 > li .pictxt span {
               font: 18px/1 'arial';
-              color: #fff;
+              color: #222;
               margin-bottom: 10px;
               display: block; }
-            #banner .inner .slider2 .list2 > li .pictxt p {
+            #banner > .inner .slider2 .list2 > li .pictxt p {
               font: 26px/1.2 'arial';
-              color: #fff;
+              color: #222;
               margin-bottom: 10px; }
-      #banner .inner .slider2 .prev {
+      #banner > .inner .slider2 .prev {
         position: absolute;
         top: 50%;
         left: 50px;
         margin-top: -50px; }
-      #banner .inner .slider2 .next {
+      #banner > .inner .slider2 .next {
         position: absolute;
         top: 50%;
         margin-top: -50px;
@@ -2092,24 +2044,27 @@ body {
   #notice .inner {
     width: 1180px;
     margin: 0 auto;
-    border: 1px solid pink;
     padding: 100px 0px; }
     #notice .inner::after {
       content: '';
       display: block;
       clear: both; }
-    #notice .inner h2 {
-      font: 36px/1 'arial';
-      color: #222;
-      text-align: center;
-      margin-bottom: 100px; }
     #notice .inner .leftbox {
       width: 48%;
       float: left; }
+      #notice .inner .leftbox .txtbox span {
+        display: block;
+        font-size: 15px;
+        color: #444;
+        margin-bottom: 10px;
+        letter-spacing: 1px; }
+      #notice .inner .leftbox .txtbox h2 {
+        font: 36px/1 '맑은 고딕';
+        color: #222; }
       #notice .inner .leftbox #tab {
         width: 100%;
         border-top: 2px solid #000;
-        margin: 50px auto;
+        margin: 80px auto;
         position: relative; }
         #notice .inner .leftbox #tab dl dt {
           width: 120px;
@@ -2126,7 +2081,7 @@ body {
             height: 100%;
             border: 1px solid #000;
             background: #fff;
-            font: 15px/50px 'arial';
+            font: 15px/50px '맑은 고딕';
             color: #000;
             text-align: center; }
             #notice .inner .leftbox #tab dl dt a.on {
@@ -2149,116 +2104,133 @@ body {
               #notice .inner .leftbox #tab dl dd ul li a p {
                 display: inline-block;
                 width: 80%;
-                font: 20px/1 'arial';
+                font: 20px/1 '맑은 고딕';
                 color: #222; }
+                #notice .inner .leftbox #tab dl dd ul li a p em {
+                  display: inline-block;
+                  padding: 2px 5px;
+                  font: normal bold 14px/1 '맑은 고딕';
+                  color: #222;
+                  border: 1px solid #000;
+                  margin-right: 5px; }
               #notice .inner .leftbox #tab dl dd ul li a span {
-                font: 15px/1 'arial';
+                font: 15px/1 '맑은 고딕';
                 color: #222; }
     #notice .inner .rightbox {
       width: 50%;
       float: right;
-      padding-left: 40px;
-      padding-top: 10px; }
-      #notice .inner .rightbox h3 {
-        font: 20px/1 'arial';
-        color: #000;
-        margin-bottom: 20px; }
+      padding-left: 40px; }
+      #notice .inner .rightbox .txtbox {
+        margin-bottom: 60px; }
+        #notice .inner .rightbox .txtbox span {
+          display: block;
+          font-size: 15px;
+          color: #444;
+          margin-bottom: 10px;
+          letter-spacing: 1px; }
+        #notice .inner .rightbox .txtbox h2 {
+          font: 36px/1 '맑은 고딕';
+          color: #222; }
       #notice .inner .rightbox img {
         width: 100%;
         object-fit: cover; }
 
-#sns {
+#cards {
   width: 100%; }
-  #sns .inner {
+  #cards .inner {
     width: 1180px;
-    margin: 0 auto; }
-    #sns .inner .titbox {
-      width: 100%;
-      text-align: center; }
-      #sns .inner .titbox span {
-        display: block;
-        font: 28px/1 'arial';
-        color: #222;
-        margin-bottom: 10px; }
-      #sns .inner .titbox h2 {
-        font: 50px/1 'arial';
-        color: #222;
-        margin-bottom: 80px; }
-    #sns .inner .picbox {
+    margin: 0 auto;
+    padding: 100px 0px; }
+    #cards .inner > .txtbox {
+      text-align: center;
+      margin-bottom: 60px; }
+      #cards .inner > .txtbox h2 {
+        font: 40px/1 'EB Garamond';
+        color: #222; }
+    #cards .inner .picbox {
       width: 100%; }
-      #sns .inner .picbox::after {
+      #cards .inner .picbox::after {
         content: '';
         display: block;
         clear: both; }
-      #sns .inner .picbox .box {
+      #cards .inner .picbox article {
         width: 280px;
-        height: 250px;
+        height: 400px;
         float: left;
-        margin-right: 20px; }
-        #sns .inner .picbox .box:nth-of-type(1) {
-          background: orange; }
-        #sns .inner .picbox .box:nth-of-type(2) {
-          background: orangered; }
-        #sns .inner .picbox .box:nth-of-type(3) {
-          background: lightpink; }
-        #sns .inner .picbox .box:nth-of-type(4) {
-          background: lightcyan;
-          margin-right: 0px; }
+        margin-right: 20px;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.5s; }
+        #cards .inner .picbox article:nth-of-type(1) {
+          transition-delay: 0s; }
+        #cards .inner .picbox article:nth-of-type(2) {
+          transition-delay: 0.2s; }
+        #cards .inner .picbox article:nth-of-type(3) {
+          transition-delay: 0.4s; }
+        #cards .inner .picbox article:nth-of-type(4) {
+          margin-right: 0;
+          transition-delay: 0.6s; }
+        #cards .inner .picbox article img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  #cards.on .inner .picbox article {
+    transform: translateY(0);
+    opacity: 1; }
 
-#news {
-  width: 100%;
-  background: #f3f3f2; }
-  #news .inner {
+#comment {
+  width: 100%; }
+  #comment .inner {
     width: 1180px;
     margin: 0 auto; }
-    #news .inner .box {
+    #comment .inner .box {
       width: 100%;
       padding: 140px 0px; }
-      #news .inner .box::after {
+      #comment .inner .box::after {
         content: '';
         display: block;
         clear: both; }
-      #news .inner .box > h2 {
+      #comment .inner .box > h2 {
         width: 100%;
         font: 40px/1 'EB Garamond';
         color: #525252;
         float: left;
         margin-bottom: 50px; }
-      #news .inner .box > ul {
-        width: 80%;
+      #comment .inner .box > ul {
+        width: 100%;
         float: right; }
-        #news .inner .box > ul li {
+        #comment .inner .box > ul li {
           width: 100%;
           display: flex;
           border-bottom: 1px solid #222; }
-          #news .inner .box > ul li:nth-of-type(1) {
+          #comment .inner .box > ul li:nth-of-type(1) {
             border-top: 2px solid #222; }
-          #news .inner .box > ul li a {
+          #comment .inner .box > ul li a {
             display: block;
             width: 100%;
             font-size: 0px;
             padding: 38px;
             display: flex; }
-            #news .inner .box > ul li a > p {
+            #comment .inner .box > ul li a > p {
               width: 20%;
               font: 30px/1 'Montserrat';
               color: #333; }
-              #news .inner .box > ul li a > p span {
+              #comment .inner .box > ul li a > p span {
                 display: block;
                 margin-top: 5px;
                 font: 15px/1 'Montserrat';
                 color: #777; }
-            #news .inner .box > ul li a .txt {
+            #comment .inner .box > ul li a .txt {
               width: 80%;
               padding-right: 100px;
               position: relative; }
-              #news .inner .box > ul li a .txt > h3 {
-                font: 30px/1 'arial';
+              #comment .inner .box > ul li a .txt > h3 {
+                font: 30px/1 '맑은 고딕';
                 color: #333; }
-              #news .inner .box > ul li a .txt > p {
-                font: 20px/1 'arial';
+              #comment .inner .box > ul li a .txt > p {
+                font: 20px/1 '맑은 고딕';
                 color: #777; }
-              #news .inner .box > ul li a .txt .icon {
+              #comment .inner .box > ul li a .txt .icon {
                 display: block;
                 width: 50px;
                 height: 50px;
@@ -2267,7 +2239,7 @@ body {
                 right: 0px;
                 top: -2px;
                 transition: 0.4s; }
-                #news .inner .box > ul li a .txt .icon::before {
+                #comment .inner .box > ul li a .txt .icon::before {
                   content: '';
                   display: block;
                   width: 26px;
@@ -2277,7 +2249,7 @@ body {
                   top: 50%;
                   left: 50%;
                   transform: translate(-50%, -50%); }
-                #news .inner .box > ul li a .txt .icon::after {
+                #comment .inner .box > ul li a .txt .icon::after {
                   content: '';
                   display: block;
                   width: 26px;
@@ -2288,9 +2260,9 @@ body {
                   left: 26%;
                   transform: translateY(-50%);
                   transform: rotate(90deg); }
-            #news .inner .box > ul li a:hover .icon {
+            #comment .inner .box > ul li a:hover .icon {
               background-color: #222; }
-              #news .inner .box > ul li a:hover .icon::after, #news .inner .box > ul li a:hover .icon::before {
+              #comment .inner .box > ul li a:hover .icon::after, #comment .inner .box > ul li a:hover .icon::before {
                 background-color: #fff; }
 
 #popup {
@@ -2408,99 +2380,95 @@ body {
 
   #intro {
     width: 100%; }
-    #intro > .inner {
+    #intro .inner {
       width: 100%;
-      padding: 40px 20px; }
-      #intro > .inner .txtbox {
-        margin-bottom: 20px; }
-        #intro > .inner .txtbox h2 {
-          font: 30px/1 'arial';
-          color: #000;
-          margin-bottom: 20px; }
-        #intro > .inner .txtbox p {
-          font: 20px/1.4 'arial';
-          color: #444;
-          margin-bottom: 20px; }
-        #intro > .inner .txtbox a {
-          display: block;
-          width: 130px;
-          height: 50px;
-          font: 20px/45px 'arial';
-          color: #000;
-          text-align: center;
-          border: 2px solid #CFB6A4; }
-      #intro > .inner .picbox {
-        width: 100%; }
-        #intro > .inner .picbox .pic {
-          width: 250px;
-          height: 400px;
-          margin-right: 15px; }
-          #intro > .inner .picbox .pic img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; }
-          #intro > .inner .picbox .pic:last-child {
-            margin-right: 0px; }
+      padding: 20px; }
+      #intro .inner .txtbox h2 {
+        font-size: 40px;
+        margin-bottom: 30px; }
+        #intro .inner .txtbox h2 span {
+          font-size: 22px;
+          margin-bottom: 5px; }
+      #intro .inner .txtbox p {
+        width: 90%;
+        font: 18px/1.2 'Alegreya Sans';
+        margin-bottom: 30px; }
 
-  #news > .inner {
+  #banner {
     width: 100%;
-    padding: 40px 20px; }
-    #news > .inner .txtbox {
-      text-align: center; }
-      #news > .inner .txtbox h2 {
-        font: 40px/1 'arial';
-        color: #222;
-        margin-bottom: 40px; }
-      #news > .inner .txtbox p {
-        font: 20px/1.4 'arial';
-        color: #666;
-        margin-bottom: 80px; }
-    #news > .inner .wrap {
+    height: 400px;
+    margin-bottom: 300px; }
+    #banner > .inner {
       width: 100%;
-      display: flex;
-      flex-wrap: wrap; }
-      #news > .inner .wrap a {
-        display: block;
-        width: 49%;
-        margin-right: 2%;
-        margin-bottom: 60px; }
-        #news > .inner .wrap a:nth-of-type(even) {
-          margin-right: 0; }
-        #news > .inner .wrap a article .pic {
-          width: 100%;
-          height: 190px;
-          margin-bottom: 30px; }
-          #news > .inner .wrap a article .pic img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: bottom; }
-        #news > .inner .wrap a article .txt h3 {
-          font: 18px/1.2 'arial';
-          color: #222;
-          margin-bottom: 10px; }
-        #news > .inner .wrap a article .txt p {
-          font: 16px/1 'arial';
-          color: #666; }
-        #news > .inner .wrap a:first-child article .pic > img {
-          object-position: center; }
+      padding: 20px; }
+      #banner > .inner > .txtbox {
+        margin-bottom: 50px; }
+        #banner > .inner > .txtbox span {
+          font-size: 20px; }
+        #banner > .inner > .txtbox h2 {
+          font-size: 30px; }
+      #banner > .inner .slider2 {
+        width: 60%; }
+        #banner > .inner .slider2 .list2 > li a .pic {
+          width: 80%;
+          margin: 0 auto; }
+        #banner > .inner .slider2 .list2 > li .pictxt {
+          padding: 0px 40px;
+          text-align: center; }
+          #banner > .inner .slider2 .list2 > li .pictxt span {
+            font-size: 15px; }
+          #banner > .inner .slider2 .list2 > li .pictxt p {
+            font-size: 20px; }
+        #banner > .inner .slider2 .prev img, #banner > .inner .slider2 .next img {
+          width: 40px;
+          height: 60px; }
 
-  #brand .inner {
+  #notice {
     width: 100%; }
-    #brand .inner .brandbox::after {
-      content: '';
-      display: block;
-      clear: both; }
-    #brand .inner .brandbox .box {
-      width: 580px;
-      height: 600px;
-      float: left; }
-      #brand .inner .brandbox .box:nth-of-type(1), #brand .inner .brandbox .box:nth-of-type(4) {
-        height: 400px;
-        background: pink; }
-      #brand .inner .brandbox .box:nth-of-type(2), #brand .inner .brandbox .box:nth-of-type(3) {
-        height: 400px;
-        background: lightcyan; }
+    #notice .inner {
+      width: 100%;
+      padding: 100px 20px; }
+      #notice .inner .leftbox {
+        width: 100%; }
+      #notice .inner .rightbox {
+        width: 100%;
+        padding-left: 0px; }
+        #notice .inner .rightbox img {
+          height: 350px;
+          object-fit: cover; }
+
+  #cards {
+    width: 100%; }
+    #cards .inner {
+      width: 100%;
+      padding: 0px 40px; }
+      #cards .inner .picbox article {
+        width: 50%;
+        height: 300px;
+        margin-right: 0px;
+        transform: translateY(0px);
+        opacity: 1; }
+
+  #comment .inner {
+    width: 100%; }
+    #comment .inner .box {
+      width: 100%;
+      padding: 100px 20px; }
+      #comment .inner .box > ul li:nth-of-type(1) {
+        border-top: 2px solid #222; }
+      #comment .inner .box > ul li a {
+        padding: 25px 10px; }
+        #comment .inner .box > ul li a > p {
+          width: 18%; }
+        #comment .inner .box > ul li a .txt {
+          padding-right: 20px; }
+          #comment .inner .box > ul li a .txt > h3 {
+            font-size: 25px;
+            margin-bottom: 5px; }
+          #comment .inner .box > ul li a .txt > p {
+            font-size: 18px; }
+          #comment .inner .box > ul li a .txt .icon {
+            right: -30px; }
 
   #footer {
     padding: 20px 20px; }
@@ -2555,6 +2523,94 @@ body {
     display: none; }
   #header .inner .btnCall {
     left: 20px; }
+
+  #intro .inner .txtbox {
+    width: 100%; }
+    #intro .inner .txtbox h2 {
+      font-size: 22px;
+      margin-bottom: 20px; }
+      #intro .inner .txtbox h2 span {
+        font-size: 14px; }
+    #intro .inner .txtbox p {
+      width: 100%;
+      font-size: 14px;
+      margin-bottom: 20px; }
+    #intro .inner .txtbox a {
+      width: 100px;
+      height: 30px;
+      margin-bottom: 20px;
+      font: 18px/24px '맑은 고딕'; }
+  #intro .inner .picbox {
+    width: 100%;
+    height: 140px;
+    padding: 0px; }
+
+  #banner {
+    height: 240px;
+    margin-bottom: 100px; }
+    #banner > .inner > .txtbox {
+      margin-bottom: 0px; }
+    #banner > .inner .slider2 .list2 > li a {
+      padding-top: 0px; }
+    #banner > .inner .slider2 .list2 > li .pictxt {
+      display: none; }
+    #banner > .inner .slider2 .prev, #banner > .inner .slider2 .next {
+      margin-top: -25px; }
+      #banner > .inner .slider2 .prev img, #banner > .inner .slider2 .next img {
+        width: 20px;
+        height: 40px; }
+
+  #notice .inner {
+    padding: 100px 20px 20px; }
+    #notice .inner .leftbox > .txtbox {
+      margin-bottom: 20px;
+      text-align: center; }
+      #notice .inner .leftbox > .txtbox span {
+        font-size: 12px;
+        margin-bottom: 2px; }
+      #notice .inner .leftbox > .txtbox h2 {
+        font-size: 25px; }
+    #notice .inner .leftbox #tab dl dt {
+      height: 36px; }
+      #notice .inner .leftbox #tab dl dt a {
+        font-size: 15px;
+        line-height: 36px; }
+    #notice .inner .leftbox #tab dl dd ul li {
+      height: auto; }
+      #notice .inner .leftbox #tab dl dd ul li a p {
+        width: 100%;
+        margin-bottom: 4px;
+        font-size: 18px; }
+      #notice .inner .leftbox #tab dl dd ul li a span {
+        font-size: 14px; }
+    #notice .inner .rightbox > .txtbox {
+      margin-bottom: 20px;
+      text-align: center; }
+      #notice .inner .rightbox > .txtbox span {
+        font-size: 12px;
+        margin-bottom: 2px; }
+      #notice .inner .rightbox > .txtbox h2 {
+        font-size: 25px; }
+    #notice .inner .rightbox img {
+      height: 150px; }
+
+  #cards .inner {
+    padding: 0px 20px; }
+    #cards .inner .txtbox {
+      margin-bottom: 20px; }
+      #cards .inner .txtbox h2 {
+        font-size: 30px; }
+    #cards .inner .picbox article {
+      width: 100%;
+      height: 120px; }
+
+  #comment .inner .box > ul li a > p {
+    width: 30%; }
+  #comment .inner .box > ul li a .txt {
+    padding-right: 0px;
+    width: 70%; }
+    #comment .inner .box > ul li a .txt .icon {
+      display: none; }
 
   #footer .inner .wrap article ul li {
     margin-bottom: 5px; }
