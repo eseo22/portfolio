@@ -2154,9 +2154,9 @@ body {
           #news > .inner .articlebox article .pic:nth-of-type(1) img {
             object-position: center; }
         #news > .inner .articlebox article .pictxt {
-          padding: 0px 10px; }
+          padding: 0px 15px; }
           #news > .inner .articlebox article .pictxt h3 {
-            font: bold 20px/1 'Montserrat';
+            font: bold 18px/1 'Montserrat';
             color: #222;
             margin-bottom: 10px; }
           #news > .inner .articlebox article .pictxt span {
