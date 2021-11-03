@@ -1,5 +1,6 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap');
+
 @import "reset";
 @import "sub/layout_sub";
 @import "sub/members";
@@ -298,7 +299,7 @@ body{width: 100%; overflow-x: hidden;}
             }
         }
         >.txtbox{
-            float: right; width: 50%; margin-top: 68px;
+            float: right; width: 50%; margin-top: 68px; padding-left: 40px;
             span{
                 font-size: 12px; color: #444; display:block; margin-bottom: 15px;
                 &::before{
@@ -306,14 +307,14 @@ body{width: 100%; overflow-x: hidden;}
                     background: #222; position: relative; left: -50px; top: 10px;
                 }
             }
-            h2{font: 30px/1.2 'arial'; color: #222; margin-bottom: 20px;}
-            h3{font: 20px/1.2 'arial'; color: #222; margin-bottom: 20px; width: 450px;}
-            p{font: 20px/1.2 'arial'; color: #444; margin-bottom: 30px; width: 420px;}
+            h2{font: bold 30px/1.2 'Montserrat'; color: #222; margin-bottom: 20px;}
+            h3{font: 20px/1.2 'Open Sans'; color: #222; margin-bottom: 20px; width: 450px;}
+            p{font: 18px/1.2 'Open Sans'; color: #555; margin-bottom: 30px; width: 420px;}
             a{
                 display: block; width: 150px; height: 50px;
                 text-align: center;
-                font: 15px/50px 'arial'; color: #444;
-                border: 1px solid #ddd;
+                font: bold 15px/50px 'Montserrat'; color: #444;
+                border: 2px solid #ddd;
             }
         }
     }
@@ -323,7 +324,7 @@ body{width: 100%; overflow-x: hidden;}
     .inner{
         width: 1180px; margin: 0 auto; padding: 100px 0px;
         .txtbox{
-            padding-left: 20px; margin-bottom: 80px;
+            padding-left: 50px; margin-bottom: 80px;
             span{
                 font-size: 12px; color: #ddd; display:block; margin-bottom: 15px;
                 &::before{
@@ -331,17 +332,17 @@ body{width: 100%; overflow-x: hidden;}
                     background: #fff; position: relative; left: -50px; top: 10px;
                 }
             }
-            h2{font: 30px/1.2 'arial'; color: #ddd; }
+            h2{font: bold 30px/1.2 'Montserrat'; color: #ddd; }
         }
         .iconwrap{
             &::after{content: ''; display: block; clear: both;}
             .iconbox{
-                width: 280px; margin-right: 20px; padding-right: 40px;
-                float: left;
+                width: 280px; margin-right: 20px; padding: 30px 20px 40px;
+                float: left; border: 1px solid #333;
 
                 i{font-size: 32px; color: 222; margin-bottom: 32px; color: #fff;}
-                h3{font: 20px/1 'arial'; color: #fff; margin-bottom: 18px;}
-                p{font: 18px/1.2 'arial'; color: #aaa;}
+                h3{font: bold 20px/1 'Montserrat'; color: #fff; margin-bottom: 18px;}
+                p{font: 18px/1.2 'Open Sans'; color: #aaa;}
 
                 &:last-child{margin-right:  0px;}
             }
@@ -354,36 +355,44 @@ body{width: 100%; overflow-x: hidden;}
             margin-bottom: 130px;
 
             .picbox{
-                width: calc(100% / 3); height: 600px;
+                width: calc(100% / 3); height: 600px;                     overflow: hidden; 
                 background: #000;
                 &:nth-of-type(2){img{opacity: 0.2;}}
+                &:nth-of-type(odd){
+                    &:hover{img{transform: scale(1.2); opacity: 0.6;}}
+                }
                 img{
-                    width: 100%; height: 100%; object-fit: cover; opacity: 0.6;
-                   
+                    width: 100%; height: 100%; object-fit: cover; opacity: 0.4;
+                    transition: 1s;
                 }
                 p{
-                    font: 20px/1.2 'arial'; color: #fff;
-                    position: relative; top: -80px; left: 30px;
+                    font: bold 20px/1.5 'Montserrat'; color: #fff;
+                    position: relative; top: -100px; left: 45px;
                 }
-                span{
+                a{
                     display: block; width: 40px; height: 40px;
                     position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
-                    &::before{
-                        content: ''; display: block;
-                        width: 100%; height: 2px;
-                        background: #fff;
-                        position: absolute; top: 50%;
-                        margin-top: -1px;
-                    }
-                    &::after{
-                        content: ''; display: block;
-                        width: 100%; height: 2px;
-                        transform: rotate(-90deg);
-                        background: #fff;
-                        position: absolute; top: 50%;
-                        margin-top: -1px;
+                    span{
+                        display: block; width: 100%; height: 100%;
+                        
+                        &::before{
+                            content: ''; display: block;
+                            width: 100%; height: 2px;
+                            background: #fff;
+                            position: absolute; top: 50%;
+                            margin-top: -1px;
+                        }
+                        &::after{
+                            content: ''; display: block;
+                            width: 100%; height: 2px;
+                            transform: rotate(-90deg);
+                            background: #fff;
+                            position: absolute; top: 50%;
+                            margin-top: -1px;
+                        }
                     }
                 }
+                
             }
         }
     
@@ -395,7 +404,7 @@ body{width: 100%; overflow-x: hidden;}
         width: 1180px; margin: 0 auto;
 
         .txtbox{
-            padding-left: 20px; margin-bottom: 80px;
+            padding-left: 50px; margin-bottom: 80px;
             span{
                 font-size: 12px; color: #444; display:block; margin-bottom: 15px;
                 &::before{
@@ -403,10 +412,10 @@ body{width: 100%; overflow-x: hidden;}
                     background: #222; position: relative; left: -50px; top: 10px;
                 }
             }
-            h2{font: 30px/1.2 'arial'; color: #222;}
+            h2{font: bold 30px/1.2 'Montserrat'; color: #222;}
         }
         .articlebox{
-            width: 100%; margin-bottom: 60px;
+            width: 100%; margin-bottom: 80px;
             display: flex;
             article{
                 width: 380px; margin-right: 20px;
@@ -425,19 +434,19 @@ body{width: 100%; overflow-x: hidden;}
                 }
 
                 .pictxt{
-                    padding: 0px 20px;
+                    padding: 0px 10px;
 
-                    h3{font: 20px/1 'arial'; color: #222; margin-bottom: 10px;}
+                    h3{font: bold 20px/1 'Montserrat'; color: #222; margin-bottom: 10px;}
                     span{font-size: 15px; color: #222; margin-bottom: 10px; display: block;}
-                    p{font: 18px/1.2 'arial'; color: #444;}
+                    p{font: 18px/1.2 'Open Sans'; color: #444;}
                 }
             }
 
         }
         >a{
-            display: block; width: 150px; height: 40px; margin: 0 auto;
+            display: block; width: 150px; height: 50px; margin: 0 auto;
             border: 2px solid #ddd;
-            font: 18px/40px 'arial'; color: #222; text-align: center;
+            font: bold 15px/50px 'Montserrat'; color: #444; text-align: center;
         }
     }
 }
@@ -446,12 +455,12 @@ body{width: 100%; overflow-x: hidden;}
     background: url(../img/banner2.jpg) no-repeat bottom /cover;
 
     >.txtbox{
-        width: 40%; margin: 0 auto; text-align: center;
-        span{font: 20px/1 'arial'; color: #fff; margin-bottom: 20px; display: block;}
-        p{font:30px/1.2 'arial'; color: #fff; margin-bottom: 40px; letter-spacing: 1px;}
+        width: 60%; margin: 0 auto; text-align: center;
+        span{font-size: 20px/1 'Open Sans'; color: #fff; margin-bottom: 20px; display: block;}
+        p{font:bold 30px/1.2 'Montserrat'; color: #fff; margin-bottom: 40px; letter-spacing: 1px;}
         a{
             display: block; width: 200px; height: 50px; text-align: center;
-            font: 20px/50px 'arial'; color: #fff; border: 1px solid #eee;
+            font: 20px/50px 'Montserrat'; color: #fff; border: 1px solid #eee;
             margin: 0 auto;
         }
     }

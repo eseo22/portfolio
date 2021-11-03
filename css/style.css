@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Playfair+Display&family=Roboto+Slab&family=Zen+Antique+Soft&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto+Slab&family=Zen+Antique+Soft&family=Zen+Kaku+Gothic+Antique:wght@300&family=EB+Garamond&family=EB+Garamond:ital@0;1&display=swap");
 * {
@@ -1945,7 +1945,8 @@ body {
     #intro > .inner > .txtbox {
       float: right;
       width: 50%;
-      margin-top: 68px; }
+      margin-top: 68px;
+      padding-left: 40px; }
       #intro > .inner > .txtbox span {
         font-size: 12px;
         color: #444;
@@ -1961,17 +1962,17 @@ body {
           left: -50px;
           top: 10px; }
       #intro > .inner > .txtbox h2 {
-        font: 30px/1.2 'arial';
+        font: bold 30px/1.2 'Montserrat';
         color: #222;
         margin-bottom: 20px; }
       #intro > .inner > .txtbox h3 {
-        font: 20px/1.2 'arial';
+        font: 20px/1.2 'Open Sans';
         color: #222;
         margin-bottom: 20px;
         width: 450px; }
       #intro > .inner > .txtbox p {
-        font: 20px/1.2 'arial';
-        color: #444;
+        font: 18px/1.2 'Open Sans';
+        color: #555;
         margin-bottom: 30px;
         width: 420px; }
       #intro > .inner > .txtbox a {
@@ -1979,9 +1980,9 @@ body {
         width: 150px;
         height: 50px;
         text-align: center;
-        font: 15px/50px 'arial';
+        font: bold 15px/50px 'Montserrat';
         color: #444;
-        border: 1px solid #ddd; }
+        border: 2px solid #ddd; }
 
 #intro2 {
   width: 100%;
@@ -1991,7 +1992,7 @@ body {
     margin: 0 auto;
     padding: 100px 0px; }
     #intro2 .inner .txtbox {
-      padding-left: 20px;
+      padding-left: 50px;
       margin-bottom: 80px; }
       #intro2 .inner .txtbox span {
         font-size: 12px;
@@ -2008,7 +2009,7 @@ body {
           left: -50px;
           top: 10px; }
       #intro2 .inner .txtbox h2 {
-        font: 30px/1.2 'arial';
+        font: bold 30px/1.2 'Montserrat';
         color: #ddd; }
     #intro2 .inner .iconwrap::after {
       content: '';
@@ -2017,19 +2018,20 @@ body {
     #intro2 .inner .iconwrap .iconbox {
       width: 280px;
       margin-right: 20px;
-      padding-right: 40px;
-      float: left; }
+      padding: 30px 20px 40px;
+      float: left;
+      border: 1px solid #333; }
       #intro2 .inner .iconwrap .iconbox i {
         font-size: 32px;
         color: 222;
         margin-bottom: 32px;
         color: #fff; }
       #intro2 .inner .iconwrap .iconbox h3 {
-        font: 20px/1 'arial';
+        font: bold 20px/1 'Montserrat';
         color: #fff;
         margin-bottom: 18px; }
       #intro2 .inner .iconwrap .iconbox p {
-        font: 18px/1.2 'arial';
+        font: 18px/1.2 'Open Sans';
         color: #aaa; }
       #intro2 .inner .iconwrap .iconbox:last-child {
         margin-right: 0px; }
@@ -2042,21 +2044,26 @@ body {
   #pics .picwrap .picbox {
     width: calc(100% / 3);
     height: 600px;
+    overflow: hidden;
     background: #000; }
     #pics .picwrap .picbox:nth-of-type(2) img {
       opacity: 0.2; }
+    #pics .picwrap .picbox:nth-of-type(odd):hover img {
+      transform: scale(1.2);
+      opacity: 0.6; }
     #pics .picwrap .picbox img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      opacity: 0.6; }
+      opacity: 0.4;
+      transition: 1s; }
     #pics .picwrap .picbox p {
-      font: 20px/1.2 'arial';
+      font: bold 20px/1.5 'Montserrat';
       color: #fff;
       position: relative;
-      top: -80px;
-      left: 30px; }
-    #pics .picwrap .picbox span {
+      top: -100px;
+      left: 45px; }
+    #pics .picwrap .picbox a {
       display: block;
       width: 40px;
       height: 40px;
@@ -2064,25 +2071,29 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-      #pics .picwrap .picbox span::before {
-        content: '';
+      #pics .picwrap .picbox a span {
         display: block;
         width: 100%;
-        height: 2px;
-        background: #fff;
-        position: absolute;
-        top: 50%;
-        margin-top: -1px; }
-      #pics .picwrap .picbox span::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2px;
-        transform: rotate(-90deg);
-        background: #fff;
-        position: absolute;
-        top: 50%;
-        margin-top: -1px; }
+        height: 100%; }
+        #pics .picwrap .picbox a span::before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: #fff;
+          position: absolute;
+          top: 50%;
+          margin-top: -1px; }
+        #pics .picwrap .picbox a span::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 2px;
+          transform: rotate(-90deg);
+          background: #fff;
+          position: absolute;
+          top: 50%;
+          margin-top: -1px; }
 
 #news {
   width: 100%;
@@ -2091,7 +2102,7 @@ body {
     width: 1180px;
     margin: 0 auto; }
     #news > .inner .txtbox {
-      padding-left: 20px;
+      padding-left: 50px;
       margin-bottom: 80px; }
       #news > .inner .txtbox span {
         font-size: 12px;
@@ -2108,11 +2119,11 @@ body {
           left: -50px;
           top: 10px; }
       #news > .inner .txtbox h2 {
-        font: 30px/1.2 'arial';
+        font: bold 30px/1.2 'Montserrat';
         color: #222; }
     #news > .inner .articlebox {
       width: 100%;
-      margin-bottom: 60px;
+      margin-bottom: 80px;
       display: flex; }
       #news > .inner .articlebox article {
         width: 380px;
@@ -2143,9 +2154,9 @@ body {
           #news > .inner .articlebox article .pic:nth-of-type(1) img {
             object-position: center; }
         #news > .inner .articlebox article .pictxt {
-          padding: 0px 20px; }
+          padding: 0px 10px; }
           #news > .inner .articlebox article .pictxt h3 {
-            font: 20px/1 'arial';
+            font: bold 20px/1 'Montserrat';
             color: #222;
             margin-bottom: 10px; }
           #news > .inner .articlebox article .pictxt span {
@@ -2154,16 +2165,16 @@ body {
             margin-bottom: 10px;
             display: block; }
           #news > .inner .articlebox article .pictxt p {
-            font: 18px/1.2 'arial';
+            font: 18px/1.2 'Open Sans';
             color: #444; }
     #news > .inner > a {
       display: block;
       width: 150px;
-      height: 40px;
+      height: 50px;
       margin: 0 auto;
       border: 2px solid #ddd;
-      font: 18px/40px 'arial';
-      color: #222;
+      font: bold 15px/50px 'Montserrat';
+      color: #444;
       text-align: center; }
 
 #banner {
@@ -2172,16 +2183,16 @@ body {
   padding: 90px 0px;
   background: url(../img/banner2.jpg) no-repeat bottom/cover; }
   #banner > .txtbox {
-    width: 40%;
+    width: 60%;
     margin: 0 auto;
     text-align: center; }
     #banner > .txtbox span {
-      font: 20px/1 'arial';
+      font-size: 20px/1 'Open Sans';
       color: #fff;
       margin-bottom: 20px;
       display: block; }
     #banner > .txtbox p {
-      font: 30px/1.2 'arial';
+      font: bold 30px/1.2 'Montserrat';
       color: #fff;
       margin-bottom: 40px;
       letter-spacing: 1px; }
@@ -2190,7 +2201,7 @@ body {
       width: 200px;
       height: 50px;
       text-align: center;
-      font: 20px/50px 'arial';
+      font: 20px/50px 'Montserrat';
       color: #fff;
       border: 1px solid #eee;
       margin: 0 auto; }
