@@ -278,7 +278,9 @@ body{width: 100%; overflow-x: hidden;}
     height: calc(100vh - 101px);
     position: relative;
     z-index: 1;
-    background-color: #eee;
+    background: url(../img/l2.jpg) no-repeat;
+    background-size: cover; 
+    background-position: right center;
 
     .inner{
         height: calc(100vh - 101px);
@@ -320,7 +322,7 @@ body{width: 100%; overflow-x: hidden;}
     }
 }
 #intro2{
-    width: 100%; background: #222;
+    width: 100%; background: #272723;
     .inner{
         width: 1180px; margin: 0 auto; padding: 100px 0px;
         .txtbox{

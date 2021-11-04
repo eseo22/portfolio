@@ -1915,7 +1915,9 @@ body {
   height: calc(100vh - 101px);
   position: relative;
   z-index: 1;
-  background-color: #eee; }
+  background: url(../img/l2.jpg) no-repeat;
+  background-size: cover;
+  background-position: right center; }
   #visual .inner {
     height: calc(100vh - 101px); }
 
@@ -1986,7 +1988,7 @@ body {
 
 #intro2 {
   width: 100%;
-  background: #222; }
+  background: #272723; }
   #intro2 .inner {
     width: 1180px;
     margin: 0 auto;
