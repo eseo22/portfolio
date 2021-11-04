@@ -30,6 +30,21 @@ $(menuClose).on("click",function(){
 });
 
 
+//호버시
+const picbox = document.querySelectorAll("#pics .picbox");
+
+picspan(0); 
+picspan(2);
+function picspan(picnum){
+    $(picbox).eq(picnum).on("mouseenter", function(){
+        $(this).parent().find("span").hide();
+    })
+    $(picbox).eq(picnum).on("mouseleave", function(){
+        $(this).parent().find("span").show();
+    })
+}
+
+
 //슬라이드
 /*
 let enableClick = true;  
