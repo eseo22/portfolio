@@ -30,7 +30,7 @@ $(menuClose).on("click",function(){
 });
 
 
-//호버시
+//main pic 호버시
 const picbox = document.querySelectorAll("#pics .picbox");
 
 picspan(0); 

@@ -1669,13 +1669,13 @@ body {
   z-index: 2; }
   #header .inner {
     width: 1180px;
-    height: 100px;
+    height: 90px;
     margin: 0 auto;
     position: relative; }
     #header .inner h1 {
       width: 20%;
       position: absolute;
-      top: 23px;
+      top: 20px;
       left: 0; }
       #header .inner h1 a {
         display: block;
@@ -1694,15 +1694,15 @@ body {
       #header .inner > .gnb > li {
         float: left;
         width: 120px;
-        height: 100px;
+        height: 90px;
         text-align: center; }
         #header .inner > .gnb > li a {
-          font: 15px/100px 'Prompt';
+          font: 15px/90px 'Prompt';
           color: #222; }
         #header .inner > .gnb > li .sub {
           width: 1180px;
           position: absolute;
-          top: 101px;
+          top: 91px;
           right: -177px;
           background: #fff;
           display: none;
@@ -1912,14 +1912,53 @@ body {
 
 #visual {
   width: 100%;
-  height: calc(100vh - 101px);
+  height: calc(100vh - 91px);
   position: relative;
   z-index: 1;
-  background: url(../img/l2.jpg) no-repeat;
+  background: url(../img/l4.jpg) no-repeat;
   background-size: cover;
-  background-position: right center; }
+  background-position: center center; }
   #visual .inner {
-    height: calc(100vh - 101px); }
+    width: 1180px;
+    margin: 0 auto; }
+    #visual .inner .txtwrap {
+      width: 40%;
+      position: relative;
+      top: 140px;
+      left: 50px; }
+      #visual .inner .txtwrap span {
+        font-size: 14px;
+        color: #eee;
+        display: block;
+        margin-bottom: 30px; }
+      #visual .inner .txtwrap h2 {
+        font: bold 40px/1.2 'Montserrat';
+        color: #fff;
+        margin-bottom: 20px; }
+      #visual .inner .txtwrap p {
+        font: 15px/1.2 'Open Sans';
+        color: #fff;
+        width: 70%; }
+    #visual .inner .viswrap {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: flex; }
+      #visual .inner .viswrap .visbox {
+        width: 240px;
+        height: 120px;
+        background: #fff;
+        padding: 20px;
+        border: 1px solid #bbb; }
+        #visual .inner .viswrap .visbox span {
+          font-size: 15px;
+          color: #999;
+          display: block;
+          margin-bottom: 10px; }
+        #visual .inner .viswrap .visbox p {
+          font: bold 18px/1.4 'Montserrat';
+          color: #999;
+          margin-bottom: 20px; }
 
 #intro {
   width: 100%; }
@@ -2211,33 +2250,45 @@ body {
       margin: 0 auto; }
 
 #popup {
-  width: 500px;
-  min-height: 200px;
-  background-color: pink;
+  width: 300px;
+  background-color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10;
-  padding: 20px; }
+  z-index: 10; }
   #popup .content {
-    font: 20px/1 '맑은 고딕';
-    color: #000;
-    margin-bottom: 100px; }
-  #popup .wrap::after {
-    content: '';
-    display: block;
-    clear: both; }
-  #popup .wrap label {
-    font: 15px/1 '맑은 고딕';
-    color: #000;
-    float: left; }
-  #popup .wrap input {
-    margin-right: 10px; }
-  #popup .wrap a {
-    font: 15px/1 'arial';
-    color: #000;
-    float: right; }
+    padding: 20px 20px 40px;
+    background-color: #272723; }
+    #popup .content p {
+      font: 30px/1 '맑은 고딕';
+      color: #fff; }
+  #popup .wrap {
+    width: 100%;
+    border-top: 1px solid #000; }
+    #popup .wrap::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #popup .wrap span {
+      font: 15px/50px '맑은 고딕';
+      color: #000;
+      float: left;
+      width: 50%;
+      height: 50px;
+      background-color: #fff;
+      padding: 0px 10px;
+      text-align: center;
+      border-right: 1px solid #000; }
+    #popup .wrap a {
+      font: 15px/50px 'arial';
+      color: #000;
+      float: right;
+      width: 50%;
+      height: 50px;
+      background-color: #fff;
+      padding: 0px 10px;
+      text-align: center; }
 
 #footer {
   width: 100%;
