@@ -1959,6 +1959,9 @@ body {
           font: bold 18px/1.4 'Montserrat';
           color: #999;
           margin-bottom: 20px; }
+        #visual .inner .viswrap .visbox:hover span, #visual .inner .viswrap .visbox:hover p {
+          color: #000;
+          transition: 0.5s; }
 
 #intro {
   width: 100%; }
