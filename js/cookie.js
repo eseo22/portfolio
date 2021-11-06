@@ -1,7 +1,7 @@
 //쿠키팝업
 $("#popup .wrap span").on("click", function(){
     setCookie();
-    $("popup").hide();
+    $("#popup").hide();
 })
 
 
@@ -24,6 +24,7 @@ if(isCookie == -1){
     $("#popup").show();
     console.log("쿠키없음");
 }else{
+    
     $("#popup").hide();
     console.log("쿠키있음");
 }
