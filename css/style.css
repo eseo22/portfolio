@@ -2390,17 +2390,26 @@ body {
         font: bold 15px/1.2 'Montserrat'; }
 
   #intro > .inner {
-    width: 100%;
     padding: 50px 20px 100px;
-    font-size: 0; }
+    font-size: 0;
+    display: block;
+    width: 100%; }
     #intro > .inner > .imgwrap {
-      display: inline-block;
-      width: 50%; }
+      width: 100%;
+      font-size: 0px; }
       #intro > .inner > .imgwrap img:nth-of-type(1) {
-        margin-right: 0px; }
+        display: inline-block;
+        width: 50%;
+        margin: 0px; }
+      #intro > .inner > .imgwrap img:nth-of-type(2) {
+        display: inline-block;
+        width: 50%;
+        margin-right: 0px;
+        top: 0px; }
     #intro > .inner > .txtbox {
-      display: inline-block;
-      width: 50%; }
+      width: 100%;
+      display: block;
+      padding-left: 0px; }
       #intro > .inner > .txtbox span::before {
         display: none; }
 
@@ -2408,185 +2417,105 @@ body {
     width: 100%;
     padding: 20px; }
     #intro2 .inner .txtbox {
-      padding-left: 50px;
-      margin-bottom: 80px; }
-      #intro2 .inner .txtbox span {
-        font-size: 12px;
-        color: #ddd;
-        display: block;
-        margin-bottom: 15px; }
-        #intro2 .inner .txtbox span::before {
-          display: none; }
-      #intro2 .inner .txtbox h2 {
-        font: bold 30px/1.2 'Montserrat';
-        color: #ddd; }
+      padding-left: 0px; }
+      #intro2 .inner .txtbox span::before {
+        display: none; }
     #intro2 .inner .iconwrap::after {
       content: '';
       display: block;
       clear: both; }
     #intro2 .inner .iconwrap .iconbox {
-      width: 280px;
-      margin-right: 20px;
-      padding: 30px 20px 40px;
-      float: left;
-      border: 1px solid #333; }
-      #intro2 .inner .iconwrap .iconbox i {
-        font-size: 32px;
-        color: 222;
-        margin-bottom: 32px;
-        color: #fff; }
-      #intro2 .inner .iconwrap .iconbox h3 {
-        font: bold 20px/1 'Montserrat';
-        color: #fff;
-        margin-bottom: 18px; }
-      #intro2 .inner .iconwrap .iconbox p {
-        font: 18px/1.2 'Open Sans';
-        color: #aaa; }
-      #intro2 .inner .iconwrap .iconbox:last-child {
-        margin-right: 0px; }
+      width: 25%;
+      margin-right: 0px; }
 
   #pics .picwrap {
-    width: 100%;
-    position: relative;
-    margin-bottom: 130px;
-    display: flex; }
-    #pics .picwrap .picbox {
-      height: 600px;
-      overflow: hidden;
-      background: #000;
-      flex: 1;
-      transition: 0.5s; }
-      #pics .picwrap .picbox:nth-of-type(2) img {
-        opacity: 0.2; }
-      #pics .picwrap .picbox:nth-of-type(odd):hover {
-        flex: 2; }
-        #pics .picwrap .picbox:nth-of-type(odd):hover video {
-          opacity: 0.6; }
-      #pics .picwrap .picbox video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0.4;
-        transition: 1s; }
-      #pics .picwrap .picbox p {
-        font: bold 20px/1.5 'Montserrat';
-        color: #fff;
-        position: relative;
-        top: -100px;
-        left: 45px; }
-      #pics .picwrap .picbox a {
-        display: block;
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
-        #pics .picwrap .picbox a span {
-          display: block;
-          width: 100%;
-          height: 100%; }
-          #pics .picwrap .picbox a span::before {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 2px;
-            background: #fff;
-            position: absolute;
-            top: 50%;
-            margin-top: -1px; }
-          #pics .picwrap .picbox a span::after {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 2px;
-            transform: rotate(-90deg);
-            background: #fff;
-            position: absolute;
-            top: 50%;
-            margin-top: -1px; }
-
-  #news {
-    width: 100%;
     margin-bottom: 100px; }
-    #news > .inner {
-      width: 1180px;
-      margin: 0 auto; }
-      #news > .inner .txtbox {
-        padding-left: 50px;
-        margin-bottom: 80px; }
-        #news > .inner .txtbox span {
-          font-size: 12px;
-          color: #444;
-          display: block;
-          margin-bottom: 15px; }
-          #news > .inner .txtbox span::before {
-            content: '';
-            display: block;
-            width: 30px;
-            height: 1.5px;
-            background: #222;
-            position: relative;
-            left: -50px;
-            top: 10px; }
-        #news > .inner .txtbox h2 {
-          font: bold 30px/1.2 'Montserrat';
-          color: #222; }
-      #news > .inner .articlebox {
-        width: 100%;
-        margin-bottom: 80px;
-        display: flex; }
-        #news > .inner .articlebox article {
-          width: 380px;
-          margin-right: 20px; }
-          #news > .inner .articlebox article:last-child {
-            margin-right: 0px; }
-          #news > .inner .articlebox article .pic {
-            width: 100%;
-            height: 250px;
-            margin-bottom: 20px; }
-            #news > .inner .articlebox article .pic img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              object-position: top; }
-            #news > .inner .articlebox article .pic span {
-              display: block;
-              width: 80px;
-              height: 30px;
-              background: #444;
-              font-size: 12px;
-              color: #fff;
-              text-align: center;
-              line-height: 30px;
-              position: relative;
-              top: -42px;
-              left: 10px; }
-            #news > .inner .articlebox article .pic:nth-of-type(1) img {
-              object-position: center; }
-          #news > .inner .articlebox article .pictxt {
-            padding: 0px 15px; }
-            #news > .inner .articlebox article .pictxt h3 {
-              font: bold 18px/1 'Montserrat';
-              color: #222;
-              margin-bottom: 10px; }
-            #news > .inner .articlebox article .pictxt span {
-              font-size: 15px;
-              color: #222;
-              margin-bottom: 10px;
-              display: block; }
-            #news > .inner .articlebox article .pictxt p {
-              font: 18px/1.2 'Open Sans';
-              color: #444; }
-      #news > .inner > a {
-        display: block;
-        width: 150px;
-        height: 50px;
-        margin: 0 auto;
-        border: 2px solid #ddd;
-        font: bold 15px/50px 'Montserrat';
+    #pics .picwrap .picbox {
+      height: 400px;
+      position: relative; }
+      #pics .picwrap .picbox p {
+        position: absolute;
+        top: 320px;
+        left: 20px; }
+
+  #news > .inner {
+    width: 100%;
+    padding: 0 20px; }
+    #news > .inner .txtbox {
+      padding-left: 0px;
+      margin-bottom: 80px; }
+      #news > .inner .txtbox span {
+        font-size: 12px;
         color: #444;
-        text-align: center; }
+        display: block;
+        margin-bottom: 15px; }
+        #news > .inner .txtbox span::before {
+          content: '';
+          display: block;
+          width: 30px;
+          height: 1.5px;
+          background: #222;
+          position: relative;
+          left: -50px;
+          top: 10px; }
+      #news > .inner .txtbox h2 {
+        font: bold 30px/1.2 'Montserrat';
+        color: #222; }
+    #news > .inner .articlebox {
+      width: 100%;
+      margin-bottom: 80px;
+      display: flex; }
+      #news > .inner .articlebox article {
+        width: 380px;
+        margin-right: 20px; }
+        #news > .inner .articlebox article:last-child {
+          margin-right: 0px; }
+        #news > .inner .articlebox article .pic {
+          width: 100%;
+          height: 250px;
+          margin-bottom: 20px; }
+          #news > .inner .articlebox article .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top; }
+          #news > .inner .articlebox article .pic span {
+            display: block;
+            width: 80px;
+            height: 30px;
+            background: #444;
+            font-size: 12px;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            position: relative;
+            top: -42px;
+            left: 10px; }
+          #news > .inner .articlebox article .pic:nth-of-type(1) img {
+            object-position: center; }
+        #news > .inner .articlebox article .pictxt {
+          padding: 0px 15px; }
+          #news > .inner .articlebox article .pictxt h3 {
+            font: bold 18px/1 'Montserrat';
+            color: #222;
+            margin-bottom: 10px; }
+          #news > .inner .articlebox article .pictxt span {
+            font-size: 15px;
+            color: #222;
+            margin-bottom: 10px;
+            display: block; }
+          #news > .inner .articlebox article .pictxt p {
+            font: 18px/1.2 'Open Sans';
+            color: #444; }
+    #news > .inner > a {
+      display: block;
+      width: 150px;
+      height: 50px;
+      margin: 0 auto;
+      border: 2px solid #ddd;
+      font: bold 15px/50px 'Montserrat';
+      color: #444;
+      text-align: center; }
 
   #banner {
     width: 100%;
@@ -2594,28 +2523,14 @@ body {
     padding: 90px 0px;
     background: url(../img/banner2.jpg) no-repeat bottom/cover; }
     #banner > .txtbox {
-      width: 60%;
-      margin: 0 auto;
-      text-align: center; }
-      #banner > .txtbox span {
-        font-size: 20px/1 'Open Sans';
-        color: #fff;
-        margin-bottom: 20px;
-        display: block; }
+      width: 100%; }
       #banner > .txtbox p {
-        font: bold 30px/1.2 'Montserrat';
-        color: #fff;
-        margin-bottom: 40px;
-        letter-spacing: 1px; }
+        font-size: 20px; }
       #banner > .txtbox a {
-        display: block;
-        width: 200px;
-        height: 50px;
+        width: 120px;
+        height: 40px;
         text-align: center;
-        font: 20px/50px 'Montserrat';
-        color: #fff;
-        border: 1px solid #eee;
-        margin: 0 auto; }
+        font: 15px/40px 'Montserrat'; }
 
   #footer {
     padding: 20px 20px; }
