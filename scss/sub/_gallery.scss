@@ -213,7 +213,7 @@
         
         .inner{
             width: 100%;
-            margin: 0 40px;        
+            padding: 0 20px;        
     
             .introtxt{
                 width: 100%;
@@ -224,14 +224,9 @@
             
     
             .galleryintro{
-                width: 30%; height: 500px;
-                
-                float: right;
-    
+                width: 30%;
                 #searchBox{
                     width: 100%;
-                    
-    
                     ul{
                         li{
                             width: 100%;
@@ -251,11 +246,7 @@
                                 }
                             }
                             input{
-                                width: 300px; height: 40px;
-                                border: none;
-                                border-bottom: 2px solid #000;
-    
-                                font: 15px/1 'Alegreya Sans'; color: #000;
+                                width: 100%; 
                                 
                             }
                             .search{
@@ -289,24 +280,11 @@
             }
             
             #gallery{
-                width: 70%; min-height: 500px;
-                float: left;
-                position: relative; 
+                width: 50%; 
                 
                 ul{
-                    width: 100%;
-                    transform: translateY(100px);
-                    opacity: 0; 
-                    transition: 0.5s; 
-                    
-                    &.on{
-                        opacity: 1; transform: translateY(0px);
-                    }
-                    &::after{content: ''; display: block; clear: both;}
                     li{
-                        width: 32%; 
-                        float: left;
-                        padding: 10px;
+                        width: 50%; 
     
                         >div{
                             a{

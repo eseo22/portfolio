@@ -1043,16 +1043,14 @@ input, a, select, option {
 @media screen and (max-width: 1179px) {
   .gallery .inner {
     width: 100%;
-    margin: 0 40px; }
+    padding: 0 20px; }
     .gallery .inner .introtxt {
       width: 100%;
       border-bottom: 1px solid #222;
       margin-bottom: 50px;
       float: left; }
     .gallery .inner .galleryintro {
-      width: 30%;
-      height: 500px;
-      float: right; }
+      width: 30%; }
       .gallery .inner .galleryintro #searchBox {
         width: 100%; }
         .gallery .inner .galleryintro #searchBox ul li {
@@ -1069,12 +1067,7 @@ input, a, select, option {
               font: italic 17px/1 'EB Garamond';
               color: #5f5f5f; }
           .gallery .inner .galleryintro #searchBox ul li input {
-            width: 300px;
-            height: 40px;
-            border: none;
-            border-bottom: 2px solid #000;
-            font: 15px/1 'Alegreya Sans';
-            color: #000; }
+            width: 100%; }
           .gallery .inner .galleryintro #searchBox ul li .search {
             position: relative;
             left: -40px; }
@@ -1093,43 +1086,26 @@ input, a, select, option {
               word-break: break-all;
               letter-spacing: 0; }
     .gallery .inner #gallery {
-      width: 70%;
-      min-height: 500px;
-      float: left;
-      position: relative; }
-      .gallery .inner #gallery ul {
-        width: 100%;
-        transform: translateY(100px);
-        opacity: 0;
-        transition: 0.5s; }
-        .gallery .inner #gallery ul.on {
-          opacity: 1;
-          transform: translateY(0px); }
-        .gallery .inner #gallery ul::after {
-          content: '';
+      width: 50%; }
+      .gallery .inner #gallery ul li {
+        width: 50%; }
+        .gallery .inner #gallery ul li > div a {
           display: block;
-          clear: both; }
-        .gallery .inner #gallery ul li {
-          width: 32%;
-          float: left;
-          padding: 10px; }
-          .gallery .inner #gallery ul li > div a {
-            display: block;
-            width: 100%;
-            margin-bottom: 30px; }
-            .gallery .inner #gallery ul li > div a .thumb {
-              width: 100%; }
-          .gallery .inner #gallery ul li > div p {
-            font: bold 20px/1 'Zen Kaku Gothic Antique';
-            color: #000;
-            border-top: 2px solid #000;
-            border-bottom: 2px solid #000;
-            padding: 20px 0px 40px; }
-          .gallery .inner #gallery ul li > div .profile {
-            text-align: right; }
-            .gallery .inner #gallery ul li > div .profile span {
-              font: 15px/1 'Nanum Gothic';
-              color: #000; } }
+          width: 100%;
+          margin-bottom: 30px; }
+          .gallery .inner #gallery ul li > div a .thumb {
+            width: 100%; }
+        .gallery .inner #gallery ul li > div p {
+          font: bold 20px/1 'Zen Kaku Gothic Antique';
+          color: #000;
+          border-top: 2px solid #000;
+          border-bottom: 2px solid #000;
+          padding: 20px 0px 40px; }
+        .gallery .inner #gallery ul li > div .profile {
+          text-align: right; }
+          .gallery .inner #gallery ul li > div .profile span {
+            font: 15px/1 'Nanum Gothic';
+            color: #000; } }
 .location .sub_visual {
   width: 100%;
   position: relative;
