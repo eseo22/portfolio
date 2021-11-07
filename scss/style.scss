@@ -192,10 +192,10 @@ body{width: 100%; overflow-x: hidden;}
             }
         }
         .menuMo{
-            width: 80%; height: 100vh;
+            width: 300px; height: 100vh;
             background: #ddd;
             position: fixed;
-            left: -80%; top: 0;
+            left: -300px; top: 0;
             z-index: 10;
             box-shadow: 5px 0px 10px -10px #000;
             transition:1s;
@@ -699,11 +699,12 @@ body{width: 100%; overflow-x: hidden;}
                 font-size: 0px;
                 img{
                     &:nth-of-type(1){
-                        display: inline-block; width: 50%;
-                        margin: 0px;
+                        display: inline-block; width: 50%; height: 300px;
+                        margin: 0px; 
+                        object-position: 0px center;
                     }
                     &:nth-of-type(2){
-                        display: inline-block; width: 50%;
+                        display: inline-block; width: 50%; height: 300px;
                         margin-right: 0px; top:0px;
                     }
 
@@ -711,11 +712,14 @@ body{width: 100%; overflow-x: hidden;}
             }
             >.txtbox{
             width: 100%; display: block; padding-left: 0px;
+            text-align: center;
                 span{
                     &::before{
                         display: none;
                     }
                 }
+                h3,p{width: 100%;}
+                a{margin: 0 auto;}
             }
         }
     }
@@ -742,7 +746,7 @@ body{width: 100%; overflow-x: hidden;}
                     height:400px;         
                     position: relative;            
                     p{
-                        position: absolute; top:320px;left:20px;
+                        position: absolute; top:300px;left:20px;
                     }    
                 }
             }
@@ -831,14 +835,92 @@ body{width: 100%; overflow-x: hidden;}
         }
     }
 }
-@media screen and (max-width:539px){
+@media screen and (max-width:760px){
     #header{
         .inner{
             >a{display: none;} 
             .btnCall{left: 20px;}
         }
     }
+    #visual{
+        .inner{
+            .txtwrap{
+                width: 100%; left: 20px;
+            }
+            .viswrap{
+                width: 100%;
+                .visbox{
+                    p{
+                        font: bold 14px/1.2 'Montserrat';
+                    }
+                }
+            }
+        }
+        
+    }
     
+    #intro2{
+        .inner{
+            width: 100%; padding:20px;
+            .txtbox{
+                padding-left: 0px; 
+                h2{font-size: 25px;}
+                span{&::before{display: none;}}
+            }
+            .iconwrap{
+                .iconbox{
+                    width: 50%; padding: 20px 10px 0px; min-height: 250px; text-align: center;
+                    
+                    p{font-size: 14px; }
+                    h3{font-size:18px; margin-bottom: 20px;}
+                
+                }
+                
+            }
+        }
+    }
+    #pics{
+            .picwrap{
+                margin-bottom: 100px;
+                
+                .picbox{ 
+                    height:400px;         
+                    p{left:10px; font-size: 15px;}            
+                }
+            }
+        
+    }
+    
+    #news{
+        >.inner{
+            width: 100%; padding: 0 20px;
+    
+            .txtbox{
+                h2{font-size: 25px;}
+            }
+            .articlebox{
+                display: block;
+                article{
+                    width: 100%; margin-bottom: 20px;
+                    .pic{height: 200px;}
+                    .pictxt{padding: 0px;}
+                }
+            
+            }
+        }
+    }
+    #banner{
+    
+        >.txtbox{
+            width: 100%; 
+            p{font-size: 20px;}
+            a{
+                width: 120px; height: 40px; text-align: center;
+                font: 15px/40px 'Montserrat'; 
+            }
+        }
+    
+    }
     #footer{
         .inner{ 
             .wrap{

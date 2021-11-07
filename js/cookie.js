@@ -3,6 +3,10 @@ $("#popup .wrap span").on("click", function(){
     setCookie();
     $("#popup").hide();
 })
+$("#popup .wrap a").on("click", function(){
+    $("#popup").hide();
+
+})
 
 
 function setCookie(){

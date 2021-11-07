@@ -1834,11 +1834,11 @@ body {
       #header .inner .btnCall:hover span {
         width: 100%; }
     #header .inner .menuMo {
-      width: 80%;
+      width: 300px;
       height: 100vh;
       background: #ddd;
       position: fixed;
-      left: -80%;
+      left: -300px;
       top: 0;
       z-index: 10;
       box-shadow: 5px 0px 10px -10px #000;
@@ -2400,18 +2400,26 @@ body {
       #intro > .inner > .imgwrap img:nth-of-type(1) {
         display: inline-block;
         width: 50%;
-        margin: 0px; }
+        height: 300px;
+        margin: 0px;
+        object-position: 0px center; }
       #intro > .inner > .imgwrap img:nth-of-type(2) {
         display: inline-block;
         width: 50%;
+        height: 300px;
         margin-right: 0px;
         top: 0px; }
     #intro > .inner > .txtbox {
       width: 100%;
       display: block;
-      padding-left: 0px; }
+      padding-left: 0px;
+      text-align: center; }
       #intro > .inner > .txtbox span::before {
         display: none; }
+      #intro > .inner > .txtbox h3, #intro > .inner > .txtbox p {
+        width: 100%; }
+      #intro > .inner > .txtbox a {
+        margin: 0 auto; }
 
   #intro2 .inner {
     width: 100%;
@@ -2435,7 +2443,7 @@ body {
       position: relative; }
       #pics .picwrap .picbox p {
         position: absolute;
-        top: 320px;
+        top: 300px;
         left: 20px; }
 
   #news > .inner {
@@ -2502,11 +2510,72 @@ body {
         border-top: 1px solid #444; }
       #footer .inner address {
         font-size: 12px; } }
-@media screen and (max-width: 539px) {
+@media screen and (max-width: 760px) {
   #header .inner > a {
     display: none; }
   #header .inner .btnCall {
     left: 20px; }
+
+  #visual .inner .txtwrap {
+    width: 100%;
+    left: 20px; }
+  #visual .inner .viswrap {
+    width: 100%; }
+    #visual .inner .viswrap .visbox p {
+      font: bold 14px/1.2 'Montserrat'; }
+
+  #intro2 .inner {
+    width: 100%;
+    padding: 20px; }
+    #intro2 .inner .txtbox {
+      padding-left: 0px; }
+      #intro2 .inner .txtbox h2 {
+        font-size: 25px; }
+      #intro2 .inner .txtbox span::before {
+        display: none; }
+    #intro2 .inner .iconwrap .iconbox {
+      width: 50%;
+      padding: 20px 10px 0px;
+      min-height: 250px;
+      text-align: center; }
+      #intro2 .inner .iconwrap .iconbox p {
+        font-size: 14px; }
+      #intro2 .inner .iconwrap .iconbox h3 {
+        font-size: 18px;
+        margin-bottom: 20px; }
+
+  #pics .picwrap {
+    margin-bottom: 100px; }
+    #pics .picwrap .picbox {
+      height: 400px; }
+      #pics .picwrap .picbox p {
+        left: 10px;
+        font-size: 15px; }
+
+  #news > .inner {
+    width: 100%;
+    padding: 0 20px; }
+    #news > .inner .txtbox h2 {
+      font-size: 25px; }
+    #news > .inner .articlebox {
+      display: block; }
+      #news > .inner .articlebox article {
+        width: 100%;
+        margin-bottom: 20px; }
+        #news > .inner .articlebox article .pic {
+          height: 200px; }
+        #news > .inner .articlebox article .pictxt {
+          padding: 0px; }
+
+  #banner > .txtbox {
+    width: 100%; }
+    #banner > .txtbox p {
+      font-size: 20px; }
+    #banner > .txtbox a {
+      width: 120px;
+      height: 40px;
+      text-align: center;
+      font: 15px/40px 'Montserrat'; }
 
   #footer .inner .wrap article ul li {
     margin-bottom: 5px; }
