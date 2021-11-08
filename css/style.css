@@ -1749,11 +1749,10 @@ body {
           top: 91px;
           right: -177px;
           background: #fff;
-          display: none;
-          box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5); }
+          display: none; }
           #header .inner > .gnb > li .sub h2 {
             width: 200px;
-            height: 320px;
+            height: 100px;
             padding-top: 60px;
             float: left;
             font: 20px/1 'arial';
@@ -1761,12 +1760,12 @@ body {
             text-align: left; }
           #header .inner > .gnb > li .sub .subli {
             width: 250px;
-            height: 320px;
+            height: 20px;
             padding: 40px 0px;
             float: left;
             position: relative; }
             #header .inner > .gnb > li .sub .subli ul {
-              display: inline-block;
+              display: flex;
               position: absolute;
               top: 40px;
               left: 30px; }
@@ -1777,35 +1776,6 @@ body {
                 #header .inner > .gnb > li .sub .subli ul li a {
                   font: 18px/50px 'arial';
                   color: #000; }
-            #header .inner > .gnb > li .sub .subli::before {
-              content: '';
-              display: inline-block;
-              width: 1px;
-              height: 240px;
-              background: #ddd;
-              position: relative;
-              left: -120px; }
-          #header .inner > .gnb > li .sub .subpic {
-            width: 400px;
-            height: 280px;
-            padding: 40px 20px 0px;
-            float: right; }
-            #header .inner > .gnb > li .sub .subpic img {
-              width: 100%;
-              height: 100%; }
-          #header .inner > .gnb > li .sub .subli2 {
-            width: 250px;
-            height: 320px;
-            padding-top: 40px;
-            float: right; }
-            #header .inner > .gnb > li .sub .subli2 ul li {
-              width: 100%;
-              height: 60px;
-              text-align: left;
-              border-top: 1px solid #ddd; }
-              #header .inner > .gnb > li .sub .subli2 ul li a {
-                font: 20px/60px 'arial';
-                color: #000; }
           #header .inner > .gnb > li .sub::before {
             content: '';
             display: block;
