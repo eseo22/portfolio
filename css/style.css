@@ -1828,10 +1828,8 @@ body {
         #header .inner > .gnb > li .sub {
           width: 1180px;
           position: absolute;
-          top: 91px;
           right: -177px;
-          background: #fff;
-          display: none; }
+          background: #fff; }
           #header .inner > .gnb > li .sub h2 {
             width: 200px;
             height: 100px;

@@ -54,10 +54,12 @@ body{width: 100%; overflow-x: hidden;}
                 
                 .sub{
                     width: 1180px;
-                    position: absolute; top: 91px;
+                    position: absolute;
                     right: -177px;
                     background: #fff;
-                    display: none;
+                    //display: none;
+
+                    
                     h2{
                         width: 200px; height: 100px;
                         padding-top: 60px;
