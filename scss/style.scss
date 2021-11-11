@@ -282,23 +282,22 @@ body{width: 100%; overflow-x: hidden;}
         .txtbox{
             width: 500px; height: 200px; border: 1px solid #000;
             position: absolute; top: 240px; left: 20px;
-            z-index: 2; opacity: 1;
+            z-index: 2; 
             float: left; 
 
             &.on{
-                
                 h2{opacity: 1; margin-left: 0;}
                 p{opacity: 1; transform: translateY(0px);}
             }
 
             h2{
                 font: 30px/1 'arial'; color: #000;
-                opacity: 0; margin-left: 120px; transition: 1.5s;
+                opacity: 0; margin-left: 120px; transition: 1.2s;
                 margin-bottom: 40px;
             }
             p{
                 font: 20px/1.2 'arial'; color: #222;
-                transform: translateY(40px); transition: 1.5s; opacity: 0;
+                transform: translateY(40px); transition: 1.2s; opacity: 0;
             }
         }
         .slidebox{

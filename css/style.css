@@ -2006,7 +2006,6 @@ body {
       top: 240px;
       left: 20px;
       z-index: 2;
-      opacity: 1;
       float: left; }
       #visual .inner .txtbox.on h2 {
         opacity: 1;
@@ -2019,13 +2018,13 @@ body {
         color: #000;
         opacity: 0;
         margin-left: 120px;
-        transition: 1.5s;
+        transition: 1.2s;
         margin-bottom: 40px; }
       #visual .inner .txtbox p {
         font: 20px/1.2 'arial';
         color: #222;
         transform: translateY(40px);
-        transition: 1.5s;
+        transition: 1.2s;
         opacity: 0; }
     #visual .inner .slidebox {
       width: 600px;

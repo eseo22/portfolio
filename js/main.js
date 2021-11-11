@@ -47,13 +47,13 @@ function picspan(picnum){
 
 //슬라이드
 $(".slidewrap").children("li").last().prependTo(".slidewrap");
-$(".txtbox").addClass("on");
 
 $(".next").on("click", function(){
     $(".slidewrap").animate({marginLeft:"-200%"},1000,function(){
         $(".slidewrap").css({marginLeft:"-100%"});
         $(".slidewrap").children("li").first().appendTo(".slidewrap");
-        
+        $(".txtbox").addClass("on");
+
     })
 })
 $(".prev").on("click", function(){
@@ -62,6 +62,7 @@ $(".prev").on("click", function(){
         $(".slidewrap").children("li").last().prependTo(".slidewrap");
     })
 })
+
 
 
 
