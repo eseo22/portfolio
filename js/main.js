@@ -46,6 +46,26 @@ function picspan(picnum){
 
 
 //슬라이드
+$(".slidewrap").children("li").last().prependTo(".slidewrap");
+$(".txtbox").addClass("on");
+
+$(".next").on("click", function(){
+    $(".slidewrap").animate({marginLeft:"-200%"},1000,function(){
+        $(".slidewrap").css({marginLeft:"-100%"});
+        $(".slidewrap").children("li").first().appendTo(".slidewrap");
+        
+    })
+})
+$(".prev").on("click", function(){
+    $(".slidewrap").animate({marginLeft:"0%"},1000,function(){
+        $(".slidewrap").css({marginLeft:"-100%"});
+        $(".slidewrap").children("li").last().prependTo(".slidewrap");
+    })
+})
+
+
+
+//슬라이드
 /*
 let enableClick = true;  
 test(".slider2", ".list2");

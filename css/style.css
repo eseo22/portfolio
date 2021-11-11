@@ -31,19 +31,19 @@ input, a, select, option {
   z-index: 2; }
   #header_sub .inner {
     width: 1180px;
-    height: 100px;
+    height: 90px;
     margin: 0 auto;
     position: relative; }
     #header_sub .inner h1 {
       width: 20%;
       position: absolute;
-      top: 23px;
+      top: 20px;
       left: 0; }
       #header_sub .inner h1 a {
         display: block;
         width: 100%;
         height: 50px;
-        font: bold 24px/50px 'Prompt';
+        font: 24px/50px 'Prompt';
         color: #000; }
     #header_sub .inner > .gnb {
       width: 65%;
@@ -56,73 +56,48 @@ input, a, select, option {
       #header_sub .inner > .gnb > li {
         float: left;
         width: 120px;
-        height: 100px;
+        height: 90px;
         text-align: center; }
+        #header_sub .inner > .gnb > li:hover {
+          border-bottom: 4px solid #CFB6A4; }
+        #header_sub .inner > .gnb > li:nth-of-type(2) .sub {
+          padding-left: 200px; }
+        #header_sub .inner > .gnb > li:nth-of-type(3) .sub {
+          padding-left: 250px; }
+        #header_sub .inner > .gnb > li:nth-of-type(4) .sub {
+          padding-left: 300px; }
+        #header_sub .inner > .gnb > li:nth-of-type(5) .sub {
+          padding-left: 400px; }
+        #header_sub .inner > .gnb > li:nth-of-type(6) .sub {
+          padding-left: 500px; }
         #header_sub .inner > .gnb > li a {
-          font: bold 15px/100px 'Prompt';
+          font: 15px/90px 'Prompt';
           color: #222; }
         #header_sub .inner > .gnb > li .sub {
           width: 1180px;
-          position: absolute;
-          top: 101px;
-          right: -177px;
+          position: fixed;
+          right: 200px;
           background: #fff;
-          display: none;
-          box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5); }
-          #header_sub .inner > .gnb > li .sub h2 {
-            width: 200px;
-            height: 320px;
-            padding-top: 60px;
-            float: left;
-            font: 20px/1 'arial';
-            color: #000;
-            text-align: left; }
+          display: none; }
           #header_sub .inner > .gnb > li .sub .subli {
-            width: 250px;
-            height: 320px;
-            padding: 40px 0px;
-            float: left;
-            position: relative; }
-            #header_sub .inner > .gnb > li .sub .subli ul {
-              display: inline-block;
-              position: absolute;
-              top: 40px;
-              left: 30px; }
-              #header_sub .inner > .gnb > li .sub .subli ul li {
+            width: 100%;
+            padding: 20px; }
+            #header_sub .inner > .gnb > li .sub .subli::after {
+              content: '';
+              display: block;
+              clear: both; }
+            #header_sub .inner > .gnb > li .sub .subli > li {
+              width: 120px;
+              height: 50px;
+              float: left;
+              border-right: 1px solid #eee; }
+              #header_sub .inner > .gnb > li .sub .subli > li:last-child {
+                border-right: none; }
+              #header_sub .inner > .gnb > li .sub .subli > li a {
+                display: block;
                 width: 100%;
                 height: 50px;
-                text-align: left; }
-                #header_sub .inner > .gnb > li .sub .subli ul li a {
-                  font: 18px/50px 'arial';
-                  color: #000; }
-            #header_sub .inner > .gnb > li .sub .subli::before {
-              content: '';
-              display: inline-block;
-              width: 1px;
-              height: 240px;
-              background: #ddd;
-              position: relative;
-              left: -120px; }
-          #header_sub .inner > .gnb > li .sub .subpic {
-            width: 400px;
-            height: 280px;
-            padding: 40px 20px 0px;
-            float: right; }
-            #header_sub .inner > .gnb > li .sub .subpic img {
-              width: 100%;
-              height: 100%; }
-          #header_sub .inner > .gnb > li .sub .subli2 {
-            width: 250px;
-            height: 320px;
-            padding-top: 40px;
-            float: right; }
-            #header_sub .inner > .gnb > li .sub .subli2 ul li {
-              width: 100%;
-              height: 60px;
-              text-align: left;
-              border-top: 1px solid #ddd; }
-              #header_sub .inner > .gnb > li .sub .subli2 ul li a {
-                font: 20px/60px 'arial';
+                font: 15px/50px 'arial';
                 color: #000; }
           #header_sub .inner > .gnb > li .sub::before {
             content: '';
@@ -132,8 +107,7 @@ input, a, select, option {
             position: absolute;
             top: 0;
             left: -100%;
-            background: #fff;
-            box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5); }
+            background: #fff; }
           #header_sub .inner > .gnb > li .sub::after {
             content: '';
             display: block;
@@ -142,15 +116,14 @@ input, a, select, option {
             position: absolute;
             top: 0;
             right: -100%;
-            background: #fff;
-            box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5); }
+            background: #fff; }
     #header_sub .inner > a {
       display: block;
       width: 8%;
       height: 28px;
       border: 1px solid #bbb;
       text-align: center;
-      font: bold 12px/28px 'Prompt';
+      font: 12px/28px 'Prompt';
       color: #222;
       position: absolute;
       right: 0px;
@@ -189,7 +162,8 @@ input, a, select, option {
         background: #222;
         position: absolute;
         bottom: 0;
-        left: 0; }
+        left: 0;
+        transition: 0.5s; }
       #header_sub .inner .btnCall:hover::before {
         width: 100%; }
       #header_sub .inner .btnCall:hover span {
@@ -223,7 +197,7 @@ input, a, select, option {
             background: #000;
             position: absolute;
             top: 50%;
-            margin-top: -0.5px; }
+            margin-top: -1px; }
           #header_sub .inner .menuMo .txtbox > a span {
             display: block;
             text-indent: -9999px; }
@@ -236,7 +210,7 @@ input, a, select, option {
             background: #000;
             position: absolute;
             top: 50%;
-            margin-top: -0.5px;
+            margin-top: -1px;
             transition: 0.5s; }
           #header_sub .inner .menuMo .txtbox > a:hover::after {
             transform: rotate(0deg); }
@@ -1824,16 +1798,18 @@ body {
         text-align: center; }
         #header .inner > .gnb > li:hover {
           border-bottom: 4px solid #CFB6A4; }
-        #header .inner > .gnb > li:nth-of-type(2) .sub {
+        #header .inner > .gnb > li:nth-of-type(1) .sub {
           padding-left: 200px; }
+        #header .inner > .gnb > li:nth-of-type(2) .sub {
+          padding-left: 340px; }
         #header .inner > .gnb > li:nth-of-type(3) .sub {
-          padding-left: 250px; }
+          padding-left: 440px; }
         #header .inner > .gnb > li:nth-of-type(4) .sub {
-          padding-left: 300px; }
+          padding-left: 540px; }
         #header .inner > .gnb > li:nth-of-type(5) .sub {
-          padding-left: 400px; }
+          padding-left: 640px; }
         #header .inner > .gnb > li:nth-of-type(6) .sub {
-          padding-left: 500px; }
+          padding-left: 740px; }
         #header .inner > .gnb > li a {
           font: 15px/90px 'Prompt';
           color: #222; }
@@ -1842,7 +1818,7 @@ body {
           position: fixed;
           right: 200px;
           background: #fff;
-          display: block; }
+          display: none; }
           #header .inner > .gnb > li .sub .subli {
             width: 100%;
             padding: 20px; }
@@ -2012,57 +1988,83 @@ body {
 #visual {
   width: 100%;
   height: calc(100vh - 91px);
-  position: relative;
-  z-index: 1;
-  background: url(../img/l4.jpg) no-repeat;
-  background-size: cover;
-  background-position: center center; }
+  background: #eee; }
   #visual .inner {
     width: 1180px;
     height: 100%;
-    margin: 0 auto; }
-    #visual .inner .txtwrap {
-      width: 40%;
-      position: relative;
-      top: 140px;
-      left: 50px; }
-      #visual .inner .txtwrap span {
-        font-size: 14px;
-        color: #eee;
-        display: block;
-        margin-bottom: 30px; }
-      #visual .inner .txtwrap h2 {
-        font: bold 40px/1.2 'Montserrat';
-        color: #fff;
-        margin-bottom: 20px; }
-      #visual .inner .txtwrap p {
-        font: 15px/1.2 'Open Sans';
-        color: #fff;
-        width: 70%; }
-    #visual .inner .viswrap {
-      width: 60%;
+    margin: 0 auto;
+    position: relative; }
+    #visual .inner::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #visual .inner .txtbox {
+      width: 500px;
+      height: 200px;
+      border: 1px solid #000;
       position: absolute;
-      bottom: 0;
-      right: 0;
-      display: flex; }
-      #visual .inner .viswrap .visbox {
-        width: 33.4%;
-        height: 120px;
-        background: #fff;
-        padding: 20px;
-        border: 1px solid #ddd; }
-        #visual .inner .viswrap .visbox span {
-          font-size: 15px;
-          color: #999;
-          display: block;
-          margin-bottom: 10px; }
-        #visual .inner .viswrap .visbox p {
-          font: bold 18px/1.4 'Montserrat';
-          color: #999;
-          margin-bottom: 20px; }
-        #visual .inner .viswrap .visbox:hover span, #visual .inner .viswrap .visbox:hover p {
-          color: #000;
-          transition: 0.5s; }
+      top: 240px;
+      left: 20px;
+      z-index: 2;
+      opacity: 1;
+      float: left; }
+      #visual .inner .txtbox.on h2 {
+        opacity: 1;
+        margin-left: 0; }
+      #visual .inner .txtbox.on p {
+        opacity: 1;
+        transform: translateY(0px); }
+      #visual .inner .txtbox h2 {
+        font: 30px/1 'arial';
+        color: #000;
+        opacity: 0;
+        margin-left: 120px;
+        transition: 1.5s;
+        margin-bottom: 40px; }
+      #visual .inner .txtbox p {
+        font: 20px/1.2 'arial';
+        color: #222;
+        transform: translateY(40px);
+        transition: 1.5s;
+        opacity: 0; }
+    #visual .inner .slidebox {
+      width: 600px;
+      height: 540px;
+      border: 1px solid orange;
+      float: right;
+      position: absolute;
+      top: 50px;
+      right: 140px;
+      z-index: 1;
+      overflow: hidden; }
+      #visual .inner .slidebox .slidewrap {
+        width: 2400px;
+        height: 100%;
+        margin-left: -100%; }
+        #visual .inner .slidebox .slidewrap li {
+          width: 600px;
+          height: 100%;
+          float: left; }
+        #visual .inner .slidebox .slidewrap .slide1 {
+          background: lightpink; }
+        #visual .inner .slidebox .slidewrap .slide2 {
+          background: lightsalmon; }
+        #visual .inner .slidebox .slidewrap .slide3 {
+          background: lightgray; }
+    #visual .inner .slidebtn {
+      font-size: 0;
+      float: left;
+      position: absolute;
+      bottom: 100px;
+      left: 290px; }
+      #visual .inner .slidebtn > a {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #000;
+        font: 15px/60px 'arial';
+        color: #000;
+        text-align: center; }
 
 #intro {
   width: 100%; }

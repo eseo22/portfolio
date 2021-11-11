@@ -49,30 +49,34 @@ body{width: 100%; overflow-x: hidden;}
                 text-align: center;
 
                 &:hover{border-bottom: 4px solid #CFB6A4}
-
-                &:nth-of-type(2){
+                &:nth-of-type(1){
                     .sub{
                         padding-left: 200px;
                     }
                 }
+                &:nth-of-type(2){
+                    .sub{
+                        padding-left: 340px;
+                    }
+                }
                 &:nth-of-type(3){
                     .sub{
-                        padding-left: 250px;
+                        padding-left: 440px;
                     }
                 }
                 &:nth-of-type(4){
                     .sub{
-                        padding-left: 300px;
+                        padding-left: 540px;
                     }
                 }
                 &:nth-of-type(5){
                     .sub{
-                        padding-left: 400px;
+                        padding-left: 640px;
                     }
                 }
                 &:nth-of-type(6){
                     .sub{
-                        padding-left: 500px;
+                        padding-left: 740px;
                     }
                 }
                 
@@ -88,7 +92,7 @@ body{width: 100%; overflow-x: hidden;}
                     position: fixed;
                     right: 200px;
                     background: #fff;
-                    display: block;
+                    display: none;
                     
 
                     .subli{
@@ -270,62 +274,64 @@ body{width: 100%; overflow-x: hidden;}
     }
 }
 #visual{
-    width: 100%;
-    height: calc(100vh - 91px);
-    position: relative;
-    z-index: 1;
-    background: url(../img/l4.jpg) no-repeat;
-    background-size: cover; 
-    background-position: center center;
-    
-
+    width: 100%; height: calc(100vh - 91px); background: #eee;
     .inner{
-        width: 1180px ; height: 100%; margin: 0 auto;
-        
-        .txtwrap{
-            width: 40%;
-            position: relative; top: 140px; left: 50px;
+        width: 1180px; height:100% ;margin: 0 auto;
+        position: relative;
+        &::after{content: ''; display: block; clear: both;}
+        .txtbox{
+            width: 500px; height: 200px; border: 1px solid #000;
+            position: absolute; top: 240px; left: 20px;
+            z-index: 2; opacity: 1;
+            float: left; 
 
-            span{
-                font-size: 14px; color: #eee;
-                display: block; margin-bottom: 30px;
+            &.on{
+                
+                h2{opacity: 1; margin-left: 0;}
+                p{opacity: 1; transform: translateY(0px);}
             }
+
             h2{
-                font: bold 40px/1.2 'Montserrat'; color: #fff;
-                margin-bottom: 20px;
+                font: 30px/1 'arial'; color: #000;
+                opacity: 0; margin-left: 120px; transition: 1.5s;
+                margin-bottom: 40px;
             }
             p{
-                font: 15px/1.2 'Open Sans'; color: #fff;
-                width: 70%;
+                font: 20px/1.2 'arial'; color: #222;
+                transform: translateY(40px); transition: 1.5s; opacity: 0;
             }
         }
-        .viswrap{
-            width: 60%;
-            position: absolute; bottom: 0; right: 0;
-            display: flex;
-            .visbox{
-                width: 33.4%; height: 120px;
-                background: #fff;
-                padding: 20px;
-                border: 1px solid #ddd;
+        .slidebox{
+            width: 600px; height: 540px; border: 1px solid orange;
+            float: right; position:absolute; top:50px;
+            right: 140px;
+            z-index: 1;
+            overflow: hidden;
 
-                span{
-                    font-size: 15px; color: #999;
-                    display: block;
-                    margin-bottom: 10px;
+            .slidewrap{
+                width: 2400px; height: 100%;
+                margin-left: -100%;
+                li{
+                    width: 600px; height: 100%;
+                    float: left;
                 }
-                p{
-                    font: bold 18px/1.4 'Montserrat'; color: #999; margin-bottom: 20px;
-                }
-
-                &:hover{
-                    span,p{color: #000; transition: 0.5s;}
-                }
-    
+                .slide1{background: lightpink;}
+                .slide2{background: lightsalmon;}
+                .slide3{background: lightgray;}
+            }
+        }
+        .slidebtn{
+            font-size: 0; float: left;
+            position: absolute; bottom: 100px; left: 290px;
+            >a{
+                display: inline-block; width: 60px; height: 60px;
+                border: 1px solid #000;
+                font: 15px/60px 'arial'; color: #000;
+                text-align: center;
             }
         }
     }
-    
+
 }
 #intro{
     width: 100%;

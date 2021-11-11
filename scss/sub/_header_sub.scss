@@ -6,18 +6,18 @@
 
     .inner{
         width: 1180px;
-        height: 100px;
+        height: 90px;
         margin: 0 auto;
         position: relative;
 
         h1{
             width: 20%;
             position: absolute;
-            top: 23px;
+            top: 20px;
             left: 0;
             a{
                 display: block; width: 100%; height: 50px;
-                font: bold 24px/50px 'Prompt'; color: #000;
+                font: 24px/50px 'Prompt'; color: #000;
             }
         }
         >.gnb{
@@ -32,80 +32,76 @@
             >li{
                 float: left;
                 width: 120px;
-                height: 100px;
+                height: 90px;
                 text-align: center;
+
+                &:hover{border-bottom: 4px solid #CFB6A4}
+
+                &:nth-of-type(2){
+                    .sub{
+                        padding-left: 200px;
+                    }
+                }
+                &:nth-of-type(3){
+                    .sub{
+                        padding-left: 250px;
+                    }
+                }
+                &:nth-of-type(4){
+                    .sub{
+                        padding-left: 300px;
+                    }
+                }
+                &:nth-of-type(5){
+                    .sub{
+                        padding-left: 400px;
+                    }
+                }
+                &:nth-of-type(6){
+                    .sub{
+                        padding-left: 500px;
+                    }
+                }
+                
+                
                 
                 a{
-                    font: bold 15px/100px 'Prompt'; color: #222;
+                    font:  15px/90px 'Prompt'; color: #222;
                 }
                 
                 .sub{
                     width: 1180px;
-                    position: absolute; top: 101px;
-                    right: -177px;
+                    //min-height: 100px;
+                    position: fixed;
+                    right: 200px;
                     background: #fff;
                     display: none;
-                    box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5);
+                    
 
-                    h2{
-                        width: 200px; height: 320px;
-                        padding-top: 60px;
-                        float: left;
-                        font: 20px/1 'arial'; color: #000;
-                        text-align: left;
-                    }
                     .subli{
-                        width: 250px; height: 320px;
-                        padding: 40px 0px;
-                        float: left;
-                        position: relative;
+                        width: 100%;
+                        //border:2px solid pink;
+                        padding: 20px;
+                        
+                            &::after{content: ''; display: block; clear: both;}
+                            >li{
+                                width: 120px; height: 50px;
+                                //border: 1px solid orange;
+                                float: left;
+                                border-right: 1px solid #eee;
 
-                        ul{
-                            display: inline-block;
-                            position: absolute; top: 40px; left: 30px;
-
-                            li{
-                                width: 100%; height: 50px;
-                                text-align: left;
-
+                                &:last-child{border-right: none;}
+                                
                                 a{
-                                    font: 18px/50px 'arial'; color: #000;
+                                    display: block;
+                                    width: 100%; height: 50px;
+                                    font: 15px/50px 'arial'; color: #000;
+                                    
                                 }
+                                
                             }
-                        }
-
-                        &::before{
-                            content: ''; display: inline-block; 
-                            width: 1px; height: 240px; background: #ddd; 
-                            position: relative; left: -120px;
-                        }
                     }
-                    .subpic{
-                        width: 400px; height: 280px;
-                        padding: 40px 20px 0px;
-                        float: right;
-
-                        img{
-                            width: 100%; height: 100%;
-                        }
-                    }
-
-                    .subli2{
-                        width: 250px; height: 320px;
-                        padding-top: 40px;
-                        float: right;
-
-                        ul{
-                            li{
-                                width: 100%; height: 60px;
-                                text-align: left;
-                                border-top: 1px solid #ddd;
-                                a{
-                                    font: 20px/60px 'arial'; color: #000;
-                                }
-                            }
-                        }
-                    }
+                    
                     
                     
 
@@ -116,7 +112,7 @@
                         position: absolute; top: 0;
                         left: -100%;
                         background: #fff;
-                        box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5);
+                        
                     }
                     &::after{
                         content: ''; display: block;
@@ -124,7 +120,7 @@
                         position: absolute; top: 0;
                         right: -100%;
                         background: #fff;
-                        box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5);
+                        
                     }
                 }
             }
@@ -136,7 +132,7 @@
             height: 28px;
             border: 1px solid #bbb;
             text-align: center;
-            font: bold 12px/28px 'Prompt'; color: #222;
+            font: 12px/28px 'Prompt'; color: #222;
             position: absolute;
             right: 0px;
             top: 50%;
@@ -169,6 +165,8 @@
                 width: 100%; height: 2px;
                 background: #222;
                 position: absolute; bottom: 0; left: 0;
+                transition: 0.5s;
+
             }
 
             &:hover{
@@ -183,7 +181,7 @@
             left: -300px; top: 0;
             z-index: 10;
             box-shadow: 5px 0px 10px -10px #000;
-            transition: 1s;
+            transition:1s;
 
             .txtbox{
                 width: 100%; height: 280px;
@@ -201,7 +199,7 @@
                         width: 100%; height: 2px;
                         background: #000;
                         position: absolute; top: 50%;
-                        margin-top: -0.5px;
+                        margin-top: -1px;
                     }
                     span{
                         display: block;
@@ -213,7 +211,7 @@
                         transform: rotate(-90deg);
                         background: #000;
                         position: absolute; top: 50%;
-                        margin-top: -0.5px;
+                        margin-top: -1px;
                         transition: 0.5s;
                     }
 
