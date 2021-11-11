@@ -60,16 +60,18 @@ input, a, select, option {
         text-align: center; }
         #header_sub .inner > .gnb > li:hover {
           border-bottom: 4px solid #CFB6A4; }
-        #header_sub .inner > .gnb > li:nth-of-type(2) .sub {
+        #header_sub .inner > .gnb > li:nth-of-type(1) .sub {
           padding-left: 200px; }
+        #header_sub .inner > .gnb > li:nth-of-type(2) .sub {
+          padding-left: 340px; }
         #header_sub .inner > .gnb > li:nth-of-type(3) .sub {
-          padding-left: 250px; }
+          padding-left: 440px; }
         #header_sub .inner > .gnb > li:nth-of-type(4) .sub {
-          padding-left: 300px; }
+          padding-left: 540px; }
         #header_sub .inner > .gnb > li:nth-of-type(5) .sub {
-          padding-left: 400px; }
+          padding-left: 640px; }
         #header_sub .inner > .gnb > li:nth-of-type(6) .sub {
-          padding-left: 500px; }
+          padding-left: 740px; }
         #header_sub .inner > .gnb > li a {
           font: 15px/90px 'Prompt';
           color: #222; }
@@ -437,7 +439,7 @@ input, a, select, option {
       left: 50%;
       transform: translate(-50%, -50%); }
       .members .sub_visual > .txt h1 {
-        font: 50px/1 'Crimson Text';
+        font: 50px/1  'EB Garamond';
         color: #fff;
         text-align: center;
         margin-bottom: 10px; }
@@ -445,7 +447,7 @@ input, a, select, option {
           font: 15px/1 '맑은 고딕';
           color: #fff; }
       .members .sub_visual > .txt > p {
-        font: 20px/1 'Zen Kaku Gothic Antique';
+        font: 20px/1  'EB Garamond';
         color: #fff; }
   .members .inner {
     width: 1180px;
@@ -722,7 +724,7 @@ input, a, select, option {
     left: 50%;
     transform: translate(-50%, -50%); }
     .youtube > .sub_visual .txt h1 {
-      font: 50px/1 'Crimson Text';
+      font: 50px/1 'EB Garamond';
       color: #fff;
       text-align: center;
       margin-bottom: 10px; }
@@ -730,7 +732,7 @@ input, a, select, option {
         font: 15px/1 '맑은 고딕';
         color: #fff; }
     .youtube > .sub_visual .txt > p {
-      font: 20px/1 'Zen Kaku Gothic Antique';
+      font: 20px/1 'EB Garamond';
       color: #fff; }
 .youtube .inner {
   width: 1180px;
@@ -757,7 +759,7 @@ input, a, select, option {
       color: #222;
       margin-bottom: 20px; }
     .youtube .inner .vidtxt > p {
-      font: 18px/1 'Zen Kaku Gothic Antique';
+      font: 18px/1 'Alegreya Sans';
       color: #aaa; }
   .youtube .inner .vidintro {
     width: 30%;
@@ -775,7 +777,7 @@ input, a, select, option {
         height: 50px;
         border-bottom: 1px solid #ddd; }
         .youtube .inner .vidintro .vidtxt2 ul li a {
-          font: bold 20px/50px 'Zen Kaku Gothic Antique';
+          font: 20px/50px 'Alegreya Sans';
           color: #000; }
   .youtube .inner #vidgallery {
     width: 68%;
@@ -807,15 +809,15 @@ input, a, select, option {
       .youtube .inner #vidgallery article .con {
         text-align: right; }
         .youtube .inner #vidgallery article .con h2 {
-          font: bold 25px/1 'Zen Kaku Gothic Antique';
+          font: 25px/1 'Alegreya Sans';
           color: #000;
           margin: 10px 0px 20px; }
         .youtube .inner #vidgallery article .con p {
-          font: 18px/1.2 'Zen Kaku Gothic Antique';
+          font: 18px/1.2 'Alegreya Sans';
           color: #222;
           margin-bottom: 10px; }
         .youtube .inner #vidgallery article .con span {
-          font: 15px/1 'Zen Kaku Gothic Antique';
+          font: 15px/1 'Alegreya Sans';
           color: #222; }
 
 .popVideo {
@@ -891,16 +893,16 @@ input, a, select, option {
           text-align: right;
           padding: 40px 0px; }
           .youtube .inner #vidgallery article .con h2 {
-            font: bold 25px/1 'Zen Kaku Gothic Antique';
+            font: 25px/1 'Alegreya Sans';
             color: #000;
             margin: 0px 20px;
             margin-bottom: 20px; }
           .youtube .inner #vidgallery article .con p {
-            font: 18px/1.2 'Zen Kaku Gothic Antique';
+            font: 18px/1.2 'Alegreya Sans';
             color: #222;
             margin-bottom: 10px; }
           .youtube .inner #vidgallery article .con span {
-            font: 15px/1 'Zen Kaku Gothic Antique';
+            font: 15px/1 "Alegreya Sans";
             color: #222; } }
 @media screen and (max-width: 600px) {
   .youtube .inner {
@@ -946,7 +948,7 @@ input, a, select, option {
     left: 50%;
     transform: translate(-50%, -50%); }
     .gallery .sub_visual > .txt h1 {
-      font: 50px/1 'Crimson Text';
+      font: 50px/1 'EB Garamond';
       color: #fff;
       text-align: center;
       margin-bottom: 10px; }
@@ -954,7 +956,7 @@ input, a, select, option {
         font: 15px/1 '맑은 고딕';
         color: #fff; }
     .gallery .sub_visual > .txt > p {
-      font: 20px/1 'Zen Kaku Gothic Antique';
+      font: 20px/1 'EB Garamond';
       color: #fff; }
 .gallery .inner {
   width: 1180px;
@@ -1159,7 +1161,7 @@ input, a, select, option {
     left: 50%;
     transform: translate(-50%, -50%); }
     .location .sub_visual > .txt h1 {
-      font: 50px/1 'Crimson Text';
+      font: 50px/1 'EB Garamond';
       color: #fff;
       text-align: center;
       margin-bottom: 10px; }
@@ -1167,7 +1169,7 @@ input, a, select, option {
         font: 15px/1 '맑은 고딕';
         color: #fff; }
     .location .sub_visual > .txt > p {
-      font: 20px/1 'Zen Kaku Gothic Antique';
+      font: 20px/1 'EB Garamond';
       color: #fff; }
 .location .inner {
   width: 1180px;
@@ -1178,11 +1180,11 @@ input, a, select, option {
     padding-top: 100px;
     margin-bottom: 80px; }
     .location .inner .txt h1 {
-      font: 40px/1 'arial';
+      font: 40px/1 'EB Garamond';
       color: #000;
       margin-bottom: 20px; }
     .location .inner .txt p {
-      font: 25px/1 'arial';
+      font: 20px/1 'Alegreya Sans';
       color: #222; }
   .location .inner .wrap {
     width: 100%;
@@ -1229,11 +1231,11 @@ input, a, select, option {
       width: 40%;
       margin-right: 20px; }
       .location .inner .contact > .contacttxt h3 {
-        font: 40px/1 'arial';
+        font: 40px/1 'Alegreya Sans';
         color: #000;
         margin-bottom: 20px; }
       .location .inner .contact > .contacttxt p {
-        font: 18px/1.2 'arial';
+        font: 18px/1.2 'Alegreya Sans';
         color: #222; }
     .location .inner .contact > .form {
       width: 60%; }
@@ -1249,7 +1251,7 @@ input, a, select, option {
             height: 50px;
             border: 1px solid #ccc;
             padding: 14px 18px;
-            font: 15px/50px 'arial';
+            font: 15px/50px 'Alegreya Sans';
             color: #000; }
           .location .inner .contact > .form ul li:nth-of-type(2) {
             margin-left: 4%; }
@@ -1262,7 +1264,7 @@ input, a, select, option {
               height: 150px;
               border: 1px solid #ccc;
               padding: 14px 18px;
-              font: 15px/1 'arial';
+              font: 15px/1 'Alegreya Sans';
               color: #000;
               resize: none; }
 
@@ -1287,7 +1289,7 @@ input, a, select, option {
       left: 50%;
       transform: translate(-50%, -50%); }
       .community > .sub_visual .txt h1 {
-        font: 50px/1 'Crimson Text';
+        font: 50px/1 'EB Garamond';
         color: #fff;
         text-align: center;
         margin-bottom: 10px; }
@@ -1295,7 +1297,7 @@ input, a, select, option {
           font: 15px/1 '맑은 고딕';
           color: #fff; }
       .community > .sub_visual .txt > p {
-        font: 20px/1 'Zen Kaku Gothic Antique';
+        font: 20px/1 'EB Garamond';
         color: #fff; }
   .community .inner {
     width: 1180px;
@@ -1325,7 +1327,7 @@ input, a, select, option {
           color: #222;
           margin-bottom: 20px; }
         .community .inner > .wrap > .btn > p {
-          font: 18px/1.2 'Zen Kaku Gothic Antique';
+          font: 18px/1.2 'Alegreya Sans';
           color: #666;
           margin-bottom: 10px;
           height: 65px; }
@@ -1348,22 +1350,22 @@ input, a, select, option {
         .community .inner > .wrap > .btn:nth-of-type(1) {
           margin-left: 0px; }
           .community .inner > .wrap > .btn:nth-of-type(1) span {
-            font: 14px/1 'arial';
+            font: 14px/1 'Alegreya Sans';
             color: #222; }
           .community .inner > .wrap > .btn:nth-of-type(1) p::after {
             display: none; }
           .community .inner > .wrap > .btn:nth-of-type(1) p:nth-of-type(2) {
-            font: 24px/1 'arial';
+            font: 24px/1 'Alegreya Sans';
             color: #222;
             height: auto;
             margin-bottom: 10px; }
     .community .inner > h3 {
       display: inline-block;
-      font: 40px/1 'arial';
+      font: 40px/1 'Alegreya Sans';
       color: #000; }
     .community .inner > p {
       display: inline-block;
-      font: 18px/1 'arial';
+      font: 18px/1 'Alegreya Sans';
       color: #000; }
     .community .inner .searchbox {
       width: 100%;
@@ -1377,7 +1379,7 @@ input, a, select, option {
         border: none;
         border: 2px solid #eee;
         margin-right: 5px;
-        font: 15px/50px 'arial';
+        font: 15px/50px 'Alegreya Sans';
         color: #000; }
       .community .inner .searchbox label i {
         font-size: 20px;
@@ -1444,7 +1446,7 @@ input, a, select, option {
             display: inline-block;
             width: 43px;
             height: 43px;
-            font: 20px/43px 'arial';
+            font: 20px/43px 'Alegreya Sans';
             color: #343434;
             margin-left: 4px; }
       .community .inner .pagination .pgnumb {
@@ -1462,11 +1464,11 @@ input, a, select, option {
       margin-bottom: 120px;
       padding: 80px 40px; }
       .community .inner .helpbox .txtbox h2 {
-        font: 30px/1 'arial';
+        font: 30px/1 'Alegreya Sans';
         color: #fff;
         margin-bottom: 20px; }
       .community .inner .helpbox .txtbox p {
-        font: 18px/1.2 'arial';
+        font: 18px/1.2 'Alegreya Sans';
         color: #ddd;
         margin-bottom: 40px; }
         .community .inner .helpbox .txtbox p a {
@@ -1500,7 +1502,7 @@ input, a, select, option {
       left: 50%;
       transform: translate(-50%, -50%); }
       .department .sub_visual > .txt h1 {
-        font: 50px/1 'Crimson Text';
+        font: 50px/1 'EB Garamond';
         color: #fff;
         text-align: center;
         margin-bottom: 10px; }
@@ -1508,7 +1510,7 @@ input, a, select, option {
           font: 15px/1 '맑은 고딕';
           color: #fff; }
       .department .sub_visual > .txt > p {
-        font: 20px/1 'Zen Kaku Gothic Antique';
+        font: 20px/1 'EB Garamond';
         color: #fff; }
   .department .inner {
     width: 1180px;
@@ -1533,7 +1535,7 @@ input, a, select, option {
         right: 230px; }
         .department .inner .about1 .txt span {
           display: inline-block;
-          font: 6px/1 'arial';
+          font: 6px/1 'Alegreya Sans';
           color: #000;
           transform: rotate(-90deg);
           position: absolute;
@@ -1541,7 +1543,7 @@ input, a, select, option {
           top: 6px;
           letter-spacing: 1px; }
         .department .inner .about1 .txt h2 {
-          font: 30px/1 'arial';
+          font: 30px/1 'Alegreya Sans';
           color: #000;
           margin-bottom: 20px;
           margin-top: 60px; }
@@ -1555,7 +1557,7 @@ input, a, select, option {
             top: -60px;
             left: 6px; }
         .department .inner .about1 .txt p {
-          font: 20px/1.2 'arial';
+          font: 20px/1.2 'Alegreya Sans';
           color: #888; }
     .department .inner .team {
       width: 100%;
@@ -1596,7 +1598,7 @@ input, a, select, option {
         top: -40px;
         left: -50px; }
         .department .inner .team .dpbox p {
-          font: 30px/1.2 'arial';
+          font: 30px/1.2 'Alegreya Sans';
           color: #000; }
       .department .inner .team .dptxt {
         width: 280px;
@@ -1605,7 +1607,7 @@ input, a, select, option {
         top: 230px;
         left: 40px; }
         .department .inner .team .dptxt p {
-          font: 16px/1.2 'arial';
+          font: 16px/1.2 'Alegreya Sans';
           color: #000; }
     .department .inner .about2 {
       width: 100%;
@@ -1623,11 +1625,11 @@ input, a, select, option {
           height: 400px;
           margin-right: 80px; }
           .department .inner .about2 article:nth-of-type(1) h2 {
-            font: 30px/1 'arial';
+            font: 30px/1 'Alegreya Sans';
             color: #000;
             margin-bottom: 20px; }
           .department .inner .about2 article:nth-of-type(1) p {
-            font: 20px/1.2 'arial';
+            font: 20px/1.2 'Alegreya Sans';
             color: #000; }
         .department .inner .about2 article:nth-of-type(2), .department .inner .about2 article:nth-of-type(3) {
           width: 340px; }
@@ -1636,14 +1638,14 @@ input, a, select, option {
             color: #bbb;
             margin-bottom: 20px; }
           .department .inner .about2 article:nth-of-type(2) p, .department .inner .about2 article:nth-of-type(3) p {
-            font: 20px/1 'arial';
+            font: 20px/1 'Alegreya Sans';
             color: #000; }
         .department .inner .about2 article:nth-of-type(4) {
           width: 680px;
           height: 200px;
           padding-top: 40px; }
           .department .inner .about2 article:nth-of-type(4) p {
-            font: 18px/1 'arial';
+            font: 18px/1 'Alegreya Sans';
             color: #888; }
 
 @media screen and (max-width: 1179px) {
@@ -1709,7 +1711,7 @@ input, a, select, option {
     .department .inner .about1 .txt span {
       display: none; }
     .department .inner .about1 .txt h2 {
-      font: bold 20px/1 'arial'; }
+      font: bold 20px/1 'Alegreya Sans'; }
       .department .inner .about1 .txt h2::before {
         display: none; }
     .department .inner .about1 .txt p {
@@ -1751,7 +1753,7 @@ input, a, select, option {
       .department .inner .about2 article:nth-of-type(1) p, .department .inner .about2 article:nth-of-type(2) p, .department .inner .about2 article:nth-of-type(3) p, .department .inner .about2 article:nth-of-type(4) p {
         font-size: 15px; }
     .department .inner .about2 article:nth-of-type(1) h2 {
-      font: bold 20px/1 'arial'; }
+      font: bold 20px/1 'Alegreya Sans'; }
     .department .inner .about2 article:nth-of-type(2), .department .inner .about2 article:nth-of-type(3) {
       height: auto; }
       .department .inner .about2 article:nth-of-type(2) i, .department .inner .about2 article:nth-of-type(3) i {
@@ -1799,15 +1801,15 @@ body {
         #header .inner > .gnb > li:hover {
           border-bottom: 4px solid #CFB6A4; }
         #header .inner > .gnb > li:nth-of-type(1) .sub {
-          padding-left: 200px; }
+          padding-left: 235px; }
         #header .inner > .gnb > li:nth-of-type(2) .sub {
-          padding-left: 340px; }
+          padding-left: 355px; }
         #header .inner > .gnb > li:nth-of-type(3) .sub {
-          padding-left: 440px; }
+          padding-left: 475px; }
         #header .inner > .gnb > li:nth-of-type(4) .sub {
-          padding-left: 540px; }
+          padding-left: 595px; }
         #header .inner > .gnb > li:nth-of-type(5) .sub {
-          padding-left: 640px; }
+          padding-left: 720px; }
         #header .inner > .gnb > li:nth-of-type(6) .sub {
           padding-left: 740px; }
         #header .inner > .gnb > li a {
@@ -2006,7 +2008,8 @@ body {
       top: 240px;
       left: 20px;
       z-index: 2;
-      float: left; }
+      float: left;
+      transition: 1s; }
       #visual .inner .txtbox.on h2 {
         opacity: 1;
         margin-left: 0; }
@@ -2018,13 +2021,13 @@ body {
         color: #000;
         opacity: 0;
         margin-left: 120px;
-        transition: 1.2s;
+        transition: 1.4s;
         margin-bottom: 40px; }
       #visual .inner .txtbox p {
         font: 20px/1.2 'arial';
         color: #222;
         transform: translateY(40px);
-        transition: 1.2s;
+        transition: 1.4s;
         opacity: 0; }
     #visual .inner .slidebox {
       width: 600px;
@@ -2037,9 +2040,9 @@ body {
       z-index: 1;
       overflow: hidden; }
       #visual .inner .slidebox .slidewrap {
-        width: 2400px;
+        width: 1200px;
         height: 100%;
-        margin-left: -100%; }
+        margin-left: 0%; }
         #visual .inner .slidebox .slidewrap li {
           width: 600px;
           height: 100%;
@@ -2049,19 +2052,21 @@ body {
         #visual .inner .slidebox .slidewrap .slide2 {
           background: lightsalmon; }
         #visual .inner .slidebox .slidewrap .slide3 {
-          background: lightgray; }
+          background: lightcyan; }
     #visual .inner .slidebtn {
       font-size: 0;
       float: left;
       position: absolute;
-      bottom: 100px;
-      left: 290px; }
+      top: 510px;
+      left: 361px;
+      z-index: 2; }
       #visual .inner .slidebtn > a {
         display: inline-block;
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
         border: 1px solid #000;
-        font: 15px/60px 'arial';
+        background: #fff;
+        font: 15px/80px 'arial';
         color: #000;
         text-align: center; }
 

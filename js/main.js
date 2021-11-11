@@ -49,16 +49,16 @@ function picspan(picnum){
 $(".slidewrap").children("li").last().prependTo(".slidewrap");
 
 $(".next").on("click", function(){
-    $(".slidewrap").animate({marginLeft:"-200%"},1000,function(){
-        $(".slidewrap").css({marginLeft:"-100%"});
+    $(".slidewrap").animate({marginLeft:"-100%"},1000,function(){
+        $(".slidewrap").css({marginLeft:"0%"});
         $(".slidewrap").children("li").first().appendTo(".slidewrap");
         $(".txtbox").addClass("on");
 
     })
 })
 $(".prev").on("click", function(){
-    $(".slidewrap").animate({marginLeft:"0%"},1000,function(){
-        $(".slidewrap").css({marginLeft:"-100%"});
+    $(".slidewrap").animate({marginLeft:"-100%"},1000,function(){
+        $(".slidewrap").css({marginLeft:"0%"});
         $(".slidewrap").children("li").last().prependTo(".slidewrap");
     })
 })

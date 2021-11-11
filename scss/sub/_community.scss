@@ -18,7 +18,7 @@
             position: absolute; top: 50%; left: 50%;
             transform: translate(-50%, -50%);
             h1{
-                font: 50px/1 'Crimson Text'; color: #fff; 
+                font: 50px/1 'EB Garamond'; color: #fff; 
                 text-align: center;
                 margin-bottom: 10px;
     
@@ -27,7 +27,7 @@
                 }
             }
             >p{
-                font: 20px/1 'Zen Kaku Gothic Antique'; color: #fff;
+                font: 20px/1 'EB Garamond'; color: #fff;
             }
         }
         
@@ -63,7 +63,7 @@
                     margin-bottom: 20px;
                 }
                 >p{
-                    font: 18px/1.2 'Zen Kaku Gothic Antique'; color: #666;
+                    font: 18px/1.2 'Alegreya Sans'; color: #666;
                     margin-bottom: 10px;
                     height: 65px;
                 }
@@ -83,12 +83,12 @@
                 &:nth-of-type(1){
                     //border-left: 2px solid #f1e2d7;
                     margin-left: 0px;
-                    span{font: 14px/1 'arial'; color: #222;}
+                    span{font: 14px/1 'Alegreya Sans'; color: #222;}
                     p{
                         
                         &::after{display: none;}
                         &:nth-of-type(2){
-                            font: 24px/1 'arial'; color: #222;
+                            font: 24px/1 'Alegreya Sans'; color: #222;
                             height: auto;
                             margin-bottom: 10px;
                         }
@@ -101,13 +101,13 @@
 
         >h3{
             display: inline-block;
-            font: 40px/1 'arial'; color: #000;
+            font: 40px/1 'Alegreya Sans'; color: #000;
 
            
         }
         >p{
             display: inline-block;
-            font: 18px/1 'arial'; color: #000;
+            font: 18px/1 'Alegreya Sans'; color: #000;
 
         }
         
@@ -122,7 +122,7 @@
                 border: none;
                 border: 2px solid #eee;
                 margin-right: 5px;
-                font: 15px/50px 'arial'; color: #000;
+                font: 15px/50px 'Alegreya Sans'; color: #000;
             }
             label{
                 i{
@@ -215,7 +215,7 @@
                     a{
                         display: inline-block;
                         width: 43px; height: 43px;
-                        font: 20px/43px 'arial';
+                        font: 20px/43px 'Alegreya Sans';
                         color: #343434;
                         margin-left: 4px;
                     }                
@@ -246,11 +246,11 @@
             padding: 80px 40px;
             .txtbox{
                 h2{
-                    font: 30px/1 'arial'; color:#fff;
+                    font: 30px/1 'Alegreya Sans'; color:#fff;
                     margin-bottom: 20px;
                 }
                 p{
-                    font: 18px/1.2 'arial'; color: #ddd;
+                    font: 18px/1.2 'Alegreya Sans'; color: #ddd;
                     margin-bottom: 40px;
 
                     a{

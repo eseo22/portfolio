@@ -51,27 +51,27 @@ body{width: 100%; overflow-x: hidden;}
                 &:hover{border-bottom: 4px solid #CFB6A4}
                 &:nth-of-type(1){
                     .sub{
-                        padding-left: 200px;
+                        padding-left: 235px;
                     }
                 }
                 &:nth-of-type(2){
                     .sub{
-                        padding-left: 340px;
+                        padding-left: 355px;
                     }
                 }
                 &:nth-of-type(3){
                     .sub{
-                        padding-left: 440px;
+                        padding-left: 475px;
                     }
                 }
                 &:nth-of-type(4){
                     .sub{
-                        padding-left: 540px;
+                        padding-left: 595px;
                     }
                 }
                 &:nth-of-type(5){
                     .sub{
-                        padding-left: 640px;
+                        padding-left: 720px;
                     }
                 }
                 &:nth-of-type(6){
@@ -283,7 +283,8 @@ body{width: 100%; overflow-x: hidden;}
             width: 500px; height: 200px; border: 1px solid #000;
             position: absolute; top: 240px; left: 20px;
             z-index: 2; 
-            float: left; 
+            float: left;
+            transition: 1s; 
 
             &.on{
                 h2{opacity: 1; margin-left: 0;}
@@ -292,12 +293,12 @@ body{width: 100%; overflow-x: hidden;}
 
             h2{
                 font: 30px/1 'arial'; color: #000;
-                opacity: 0; margin-left: 120px; transition: 1.2s;
+                opacity: 0; margin-left: 120px; transition: 1.4s;
                 margin-bottom: 40px;
             }
             p{
                 font: 20px/1.2 'arial'; color: #222;
-                transform: translateY(40px); transition: 1.2s; opacity: 0;
+                transform: translateY(40px); transition: 1.4s; opacity: 0;
             }
         }
         .slidebox{
@@ -308,24 +309,26 @@ body{width: 100%; overflow-x: hidden;}
             overflow: hidden;
 
             .slidewrap{
-                width: 2400px; height: 100%;
-                margin-left: -100%;
+                width: 1200px; height: 100%;
+                margin-left: 0%;
                 li{
                     width: 600px; height: 100%;
                     float: left;
                 }
                 .slide1{background: lightpink;}
                 .slide2{background: lightsalmon;}
-                .slide3{background: lightgray;}
+                .slide3{background: lightcyan;}
+
             }
         }
         .slidebtn{
             font-size: 0; float: left;
-            position: absolute; bottom: 100px; left: 290px;
+            position: absolute; top:510px; left: 361px; z-index: 2;
             >a{
-                display: inline-block; width: 60px; height: 60px;
+                display: inline-block; width: 80px; height: 80px;
                 border: 1px solid #000;
-                font: 15px/60px 'arial'; color: #000;
+                background: #fff;
+                font: 15px/80px 'arial'; color: #000;
                 text-align: center;
             }
         }
