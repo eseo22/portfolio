@@ -1822,40 +1822,47 @@ body {
         width: 120px;
         height: 90px;
         text-align: center; }
+        #header .inner > .gnb > li:hover {
+          border-bottom: 4px solid #CFB6A4; }
+        #header .inner > .gnb > li:nth-of-type(2) .sub {
+          padding-left: 200px; }
+        #header .inner > .gnb > li:nth-of-type(3) .sub {
+          padding-left: 250px; }
+        #header .inner > .gnb > li:nth-of-type(4) .sub {
+          padding-left: 300px; }
+        #header .inner > .gnb > li:nth-of-type(5) .sub {
+          padding-left: 400px; }
+        #header .inner > .gnb > li:nth-of-type(6) .sub {
+          padding-left: 500px; }
         #header .inner > .gnb > li a {
           font: 15px/90px 'Prompt';
           color: #222; }
         #header .inner > .gnb > li .sub {
           width: 1180px;
-          position: absolute;
-          right: -177px;
-          background: #fff; }
-          #header .inner > .gnb > li .sub h2 {
-            width: 200px;
-            height: 100px;
-            padding-top: 60px;
-            float: left;
-            font: 20px/1 'arial';
-            color: #000;
-            text-align: left; }
+          position: fixed;
+          right: 200px;
+          background: #fff;
+          display: block; }
           #header .inner > .gnb > li .sub .subli {
-            width: 250px;
-            height: 20px;
-            padding: 40px 0px;
-            float: left;
-            position: relative; }
-            #header .inner > .gnb > li .sub .subli ul {
-              display: flex;
-              position: absolute;
-              top: 40px;
-              left: 30px; }
-              #header .inner > .gnb > li .sub .subli ul li {
+            width: 100%;
+            padding: 20px; }
+            #header .inner > .gnb > li .sub .subli::after {
+              content: '';
+              display: block;
+              clear: both; }
+            #header .inner > .gnb > li .sub .subli > li {
+              width: 120px;
+              height: 50px;
+              float: left;
+              border-right: 1px solid #eee; }
+              #header .inner > .gnb > li .sub .subli > li:last-child {
+                border-right: none; }
+              #header .inner > .gnb > li .sub .subli > li a {
+                display: block;
                 width: 100%;
                 height: 50px;
-                text-align: left; }
-                #header .inner > .gnb > li .sub .subli ul li a {
-                  font: 18px/50px 'arial';
-                  color: #000; }
+                font: 15px/50px 'arial';
+                color: #000; }
           #header .inner > .gnb > li .sub::before {
             content: '';
             display: block;
@@ -1864,8 +1871,7 @@ body {
             position: absolute;
             top: 0;
             left: -100%;
-            background: #fff;
-            box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5); }
+            background: #fff; }
           #header .inner > .gnb > li .sub::after {
             content: '';
             display: block;
@@ -1874,8 +1880,7 @@ body {
             position: absolute;
             top: 0;
             right: -100%;
-            background: #fff;
-            box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5); }
+            background: #fff; }
     #header .inner > a {
       display: block;
       width: 8%;

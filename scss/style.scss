@@ -47,6 +47,36 @@ body{width: 100%; overflow-x: hidden;}
                 width: 120px;
                 height: 90px;
                 text-align: center;
+
+                &:hover{border-bottom: 4px solid #CFB6A4}
+
+                &:nth-of-type(2){
+                    .sub{
+                        padding-left: 200px;
+                    }
+                }
+                &:nth-of-type(3){
+                    .sub{
+                        padding-left: 250px;
+                    }
+                }
+                &:nth-of-type(4){
+                    .sub{
+                        padding-left: 300px;
+                    }
+                }
+                &:nth-of-type(5){
+                    .sub{
+                        padding-left: 400px;
+                    }
+                }
+                &:nth-of-type(6){
+                    .sub{
+                        padding-left: 500px;
+                    }
+                }
+                
+                
                 
                 a{
                     font:  15px/90px 'Prompt'; color: #222;
@@ -54,39 +84,35 @@ body{width: 100%; overflow-x: hidden;}
                 
                 .sub{
                     width: 1180px;
-                    position: absolute;
-                    right: -177px;
+                    //min-height: 100px;
+                    position: fixed;
+                    right: 200px;
                     background: #fff;
-                    //display: none;
-
+                    display: block;
                     
-                    h2{
-                        width: 200px; height: 100px;
-                        padding-top: 60px;
-                        float: left;
-                        font: 20px/1 'arial'; color: #000;
-                        text-align: left;
-                    }
+
                     .subli{
-                        width: 250px; height: 20px;
-                        padding: 40px 0px;
-                        float: left;
-                        position: relative;
+                        width: 100%;
+                        //border:2px solid pink;
+                        padding: 20px;
+                        
+                            &::after{content: ''; display: block; clear: both;}
+                            >li{
+                                width: 120px; height: 50px;
+                                //border: 1px solid orange;
+                                float: left;
+                                border-right: 1px solid #eee;
 
-                        ul{
-                            display: flex;
-                            position: absolute; top: 40px; left: 30px;
-
-                            li{
-                                width: 100%; height: 50px;
-                                text-align: left;
-
+                                &:last-child{border-right: none;}
+                                
                                 a{
-                                    font: 18px/50px 'arial'; color: #000;
+                                    display: block;
+                                    width: 100%; height: 50px;
+                                    font: 15px/50px 'arial'; color: #000;
+                                    
                                 }
+                                
                             }
-                        }
-
                     }
                     
                     
@@ -99,7 +125,7 @@ body{width: 100%; overflow-x: hidden;}
                         position: absolute; top: 0;
                         left: -100%;
                         background: #fff;
-                        box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5);
+                        
                     }
                     &::after{
                         content: ''; display: block;
@@ -107,7 +133,7 @@ body{width: 100%; overflow-x: hidden;}
                         position: absolute; top: 0;
                         right: -100%;
                         background: #fff;
-                        box-shadow: 0px 10px 10px -10px rgba(68, 68, 68, 0.5);
+                        
                     }
                 }
             }
