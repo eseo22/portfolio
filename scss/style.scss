@@ -280,61 +280,121 @@ body{width: 100%; overflow-x: hidden;}
         position: relative;
         &::after{content: ''; display: block; clear: both;}
         .txtbox{
-            width: 500px; height: 200px; border: 1px solid #000;
+            width: 500px; height: 200px; //border: 1px solid #000;
             position: absolute; top: 240px; left: 20px;
             z-index: 2; 
             float: left;
             transition: 1s; 
+            
+            .txtlist{
+                position: absolute; opacity: 0;
+                &.on{
+                    opacity: 1;
+                    h2{opacity: 1; margin-left: 0;}
+                    p,a{opacity: 1; transform: translateY(0px);}
+                }
+                h2{
+                    font: 40px/1.2 'arial'; color: #000;
+                    opacity: 0; margin-left: 120px; transition: 1.4s;
+                    margin-bottom: 40px;
+                }
+                p{
+                    width: 60%;
+                    font: 16px/1.2 'arial'; color: #222;
+                    transform: translateY(40px); transition: 1.4s; opacity: 0;
+                    margin-bottom: 40px;
+                }
+                a{
+                    display: block;
+                    font: bold 14px/1 'arial'; color: #222;
+                    transform: translateY(40px); transition: 1.4s; 
+                    transition-delay: 0.2s;
+                    opacity: 0;
+                }
+            }
+            
 
-            &.on{
-                h2{opacity: 1; margin-left: 0;}
-                p{opacity: 1; transform: translateY(0px);}
-            }
-
-            h2{
-                font: 30px/1 'arial'; color: #000;
-                opacity: 0; margin-left: 120px; transition: 1.4s;
-                margin-bottom: 40px;
-            }
-            p{
-                font: 20px/1.2 'arial'; color: #222;
-                transform: translateY(40px); transition: 1.4s; opacity: 0;
-            }
+            
         }
         .slidebox{
-            width: 600px; height: 540px; border: 1px solid orange;
+            width: 700px; height: 540px; //border: 1px solid orange;
             float: right; position:absolute; top:50px;
             right: 140px;
             z-index: 1;
             overflow: hidden;
 
             .slidewrap{
-                width: 1200px; height: 100%;
+                width: 1400px; height: 100%;
                 margin-left: 0%;
                 li{
-                    width: 600px; height: 100%;
+                    width: 700px; height: 100%;
                     float: left;
+
+                    img{
+                        width: 100%; height: 100%;
+                        object-fit: cover;
+                    }
                 }
                 .slide1{background: lightpink;}
                 .slide2{background: lightsalmon;}
-                .slide3{background: lightcyan;}
 
             }
+            .slidebtn{
+                font-size: 0; float: left;
+                position: absolute; bottom:0px; left: 0px; z-index: 2;
+                >a{
+                    display: inline-block; width: 100px; height: 70px;
+                    border: 1px solid #000;
+                    background: #eee;
+                    padding: 0px 30px;
+                    &:nth-of-type(1){text-align: right;}
+                    &:nth-of-type(2){text-align: left;}
+    
+                    
+                    i{
+                        font-size: 15px; line-height: 70px;
+                        color: #444;
+                    }
+                    
+                }
+            }
         }
-        .slidebtn{
-            font-size: 0; float: left;
-            position: absolute; top:510px; left: 361px; z-index: 2;
-            >a{
-                display: inline-block; width: 80px; height: 80px;
-                border: 1px solid #000;
-                background: #fff;
-                font: 15px/80px 'arial'; color: #000;
-                text-align: center;
+        
+        .numbox{
+            position: absolute; right: 40px; top: 80px;
+            ul{
+                .numlist{
+                    width: 50px; height: 50px; 
+                    // border: 1px solid pink;
+                    margin-bottom: 20px; 
+                    position: relative;
+                    span{
+                        display: block;
+                        position: absolute; top: 50%; left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                    
+                    path{
+                        fill: transparent;
+                        stroke: #666;
+                        stroke-width: 30px;
+                        stroke-linejoin:round;
+                        stroke-linecap: round;
+                        stroke-dasharray: 1600;
+                        stroke-dashoffset: 1600;
+                        transition:2s;
+                        transform: scale(0.8);
+                        transform-origin: center center;
+                    }
+                    
+                    &.on{path{stroke-dashoffset: 0;}}
+
+                }
             }
         }
     }
-
 }
+
 #intro{
     width: 100%;
     >.inner{

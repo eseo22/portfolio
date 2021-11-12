@@ -2003,36 +2003,49 @@ body {
     #visual .inner .txtbox {
       width: 500px;
       height: 200px;
-      border: 1px solid #000;
       position: absolute;
       top: 240px;
       left: 20px;
       z-index: 2;
       float: left;
       transition: 1s; }
-      #visual .inner .txtbox.on h2 {
-        opacity: 1;
-        margin-left: 0; }
-      #visual .inner .txtbox.on p {
-        opacity: 1;
-        transform: translateY(0px); }
-      #visual .inner .txtbox h2 {
-        font: 30px/1 'arial';
-        color: #000;
-        opacity: 0;
-        margin-left: 120px;
-        transition: 1.4s;
-        margin-bottom: 40px; }
-      #visual .inner .txtbox p {
-        font: 20px/1.2 'arial';
-        color: #222;
-        transform: translateY(40px);
-        transition: 1.4s;
+      #visual .inner .txtbox .txtlist {
+        position: absolute;
         opacity: 0; }
+        #visual .inner .txtbox .txtlist.on {
+          opacity: 1; }
+          #visual .inner .txtbox .txtlist.on h2 {
+            opacity: 1;
+            margin-left: 0; }
+          #visual .inner .txtbox .txtlist.on p, #visual .inner .txtbox .txtlist.on a {
+            opacity: 1;
+            transform: translateY(0px); }
+        #visual .inner .txtbox .txtlist h2 {
+          font: 40px/1.2 'arial';
+          color: #000;
+          opacity: 0;
+          margin-left: 120px;
+          transition: 1.4s;
+          margin-bottom: 40px; }
+        #visual .inner .txtbox .txtlist p {
+          width: 60%;
+          font: 16px/1.2 'arial';
+          color: #222;
+          transform: translateY(40px);
+          transition: 1.4s;
+          opacity: 0;
+          margin-bottom: 40px; }
+        #visual .inner .txtbox .txtlist a {
+          display: block;
+          font: bold 14px/1 'arial';
+          color: #222;
+          transform: translateY(40px);
+          transition: 1.4s;
+          transition-delay: 0.2s;
+          opacity: 0; }
     #visual .inner .slidebox {
-      width: 600px;
+      width: 700px;
       height: 540px;
-      border: 1px solid orange;
       float: right;
       position: absolute;
       top: 50px;
@@ -2040,35 +2053,71 @@ body {
       z-index: 1;
       overflow: hidden; }
       #visual .inner .slidebox .slidewrap {
-        width: 1200px;
+        width: 1400px;
         height: 100%;
         margin-left: 0%; }
         #visual .inner .slidebox .slidewrap li {
-          width: 600px;
+          width: 700px;
           height: 100%;
           float: left; }
+          #visual .inner .slidebox .slidewrap li img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
         #visual .inner .slidebox .slidewrap .slide1 {
           background: lightpink; }
         #visual .inner .slidebox .slidewrap .slide2 {
           background: lightsalmon; }
-        #visual .inner .slidebox .slidewrap .slide3 {
-          background: lightcyan; }
-    #visual .inner .slidebtn {
-      font-size: 0;
-      float: left;
+      #visual .inner .slidebox .slidebtn {
+        font-size: 0;
+        float: left;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: 2; }
+        #visual .inner .slidebox .slidebtn > a {
+          display: inline-block;
+          width: 100px;
+          height: 70px;
+          border: 1px solid #000;
+          background: #eee;
+          padding: 0px 30px; }
+          #visual .inner .slidebox .slidebtn > a:nth-of-type(1) {
+            text-align: right; }
+          #visual .inner .slidebox .slidebtn > a:nth-of-type(2) {
+            text-align: left; }
+          #visual .inner .slidebox .slidebtn > a i {
+            font-size: 15px;
+            line-height: 70px;
+            color: #444; }
+    #visual .inner .numbox {
       position: absolute;
-      top: 510px;
-      left: 361px;
-      z-index: 2; }
-      #visual .inner .slidebtn > a {
-        display: inline-block;
-        width: 80px;
-        height: 80px;
-        border: 1px solid #000;
-        background: #fff;
-        font: 15px/80px 'arial';
-        color: #000;
-        text-align: center; }
+      right: 40px;
+      top: 80px; }
+      #visual .inner .numbox ul .numlist {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+        position: relative; }
+        #visual .inner .numbox ul .numlist span {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+        #visual .inner .numbox ul .numlist path {
+          fill: transparent;
+          stroke: #666;
+          stroke-width: 30px;
+          stroke-linejoin: round;
+          stroke-linecap: round;
+          stroke-dasharray: 1600;
+          stroke-dashoffset: 1600;
+          transition: 2s;
+          transform: scale(0.8);
+          transform-origin: center center; }
+        #visual .inner .numbox ul .numlist.on path {
+          stroke-dashoffset: 0; }
 
 #intro {
   width: 100%; }
