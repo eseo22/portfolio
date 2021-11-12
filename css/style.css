@@ -2079,7 +2079,6 @@ body {
           display: inline-block;
           width: 100px;
           height: 70px;
-          border: 1px solid #000;
           background: #eee;
           padding: 0px 30px; }
           #visual .inner .slidebox .slidebtn > a:nth-of-type(1) {
