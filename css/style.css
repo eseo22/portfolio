@@ -1451,7 +1451,9 @@ input, a, select, option {
             margin-left: 4px; }
       .community .inner .pagination .pgnumb {
         margin: 0 20px; }
-        .community .inner .pagination .pgnumb li:hover a {
+        .community .inner .pagination .pgnumb > li > a {
+          font-size: 18px; }
+        .community .inner .pagination .pgnumb > li:hover a {
           border-radius: 22px;
           background-color: #343434;
           color: #fff; }
@@ -1481,6 +1483,134 @@ input, a, select, option {
         color: #fff;
         margin-right: 10px; }
 
+@media screen and (max-width: 1179px) {
+  .community > .sub_visual {
+    margin-bottom: 20px; }
+    .community > .sub_visual .txt h1 {
+      font-size: 40px; }
+    .community > .sub_visual .txt > p {
+      width: 300px; }
+  .community .inner {
+    width: 100%;
+    padding: 0px 20px; }
+    .community .inner > .wrap {
+      width: 100%; }
+      .community .inner > .wrap > .btn {
+        height: 240px;
+        padding: 10px;
+        margin-left: 5px; }
+        .community .inner > .wrap > .btn > i {
+          margin-bottom: 20px; }
+        .community .inner > .wrap > .btn > h3 {
+          font-size: 16px; }
+        .community .inner > .wrap > .btn > p {
+          font-size: 14px; }
+        .community .inner > .wrap > .btn:nth-of-type(1) span {
+          font-size: 12px; }
+        .community .inner > .wrap > .btn:nth-of-type(1) p:nth-of-type(2) {
+          font-size: 18px; }
+    .community .inner > h3 {
+      font-size: 24px; }
+    .community .inner > p {
+      font-size: 14px; }
+    .community .inner .searchbox {
+      padding: 10px 10px;
+      display: flex; }
+      .community .inner .searchbox select {
+        width: 20%;
+        height: 40px;
+        margin-right: 10px; }
+      .community .inner .searchbox label {
+        width: 80%;
+        position: relative; }
+        .community .inner .searchbox label i {
+          position: absolute;
+          left: 10px;
+          top: 10px; }
+        .community .inner .searchbox label input {
+          width: 100%;
+          height: 40px; }
+    .community .inner .table table thead tr th {
+      height: 40px;
+      padding: 10px 20px;
+      font: 18px/1 '맑은 고딕'; }
+      .community .inner .table table thead tr th:nth-of-type(1) {
+        width: 50px; }
+      .community .inner .table table thead tr th:nth-of-type(2) {
+        width: auto; }
+      .community .inner .table table thead tr th:nth-of-type(3) {
+        display: none; }
+      .community .inner .table table thead tr th:nth-of-type(4) {
+        width: 100px; }
+    .community .inner .table table tbody tr td {
+      height: 60px;
+      padding: 10px 20px;
+      font: 15px/1 '맑은 고딕'; }
+      .community .inner .table table tbody tr td:nth-of-type(3) {
+        display: none; }
+      .community .inner .table table tbody tr td a {
+        font: 15px/1 '맑은 고딕'; }
+    .community .inner .pagination {
+      margin-bottom: 70px; }
+      .community .inner .pagination > ul:nth-of-type(1) {
+        text-align: right; }
+      .community .inner .pagination > ul:nth-of-type(3) {
+        text-align: left; }
+      .community .inner .pagination .pgnumb {
+        margin: 0 20px; }
+        .community .inner .pagination .pgnumb li:nth-of-type(6), .community .inner .pagination .pgnumb li:nth-of-type(7), .community .inner .pagination .pgnumb li:nth-of-type(8), .community .inner .pagination .pgnumb li:nth-of-type(9) {
+          display: none; }
+        .community .inner .pagination .pgnumb li a {
+          font-size: 15px; }
+    .community .inner .helpbox {
+      height: 200px;
+      padding: 25px 40px; }
+      .community .inner .helpbox .txtbox h2 {
+        font-size: 20px; }
+      .community .inner .helpbox .txtbox p {
+        font-size: 15px; }
+      .community .inner .helpbox .txtbox i {
+        font-size: 18px; } }
+@media screen and (max-width: 539px) {
+  .community .inner > .wrap > .btn {
+    width: 50%;
+    height: 200px;
+    padding: 10px;
+    margin-left: 0px; }
+    .community .inner > .wrap > .btn > p {
+      font-size: 14px;
+      height: auto; }
+  .community .inner .searchbox select {
+    font-size: 12px; }
+  .community .inner .searchbox label i {
+    font-size: 15px;
+    top: 12px; }
+  .community .inner .table table thead tr th {
+    font: 15px/1 '맑은 고딕'; }
+    .community .inner .table table thead tr th:nth-of-type(1) {
+      display: none; }
+  .community .inner .table table tbody tr:nth-of-type(6), .community .inner .table table tbody tr:nth-of-type(7), .community .inner .table table tbody tr:nth-of-type(8), .community .inner .table table tbody tr:nth-of-type(9) {
+    display: none; }
+  .community .inner .table table tbody tr td:nth-of-type(1) {
+    display: none; }
+  .community .inner .pagination > ul {
+    display: inline-block;
+    font-size: 0; }
+    .community .inner .pagination > ul:nth-of-type(odd) li a i {
+      font-size: 15px;
+      color: #ccc; }
+    .community .inner .pagination > ul li a {
+      width: 20px;
+      height: 20px;
+      font: 15px/20px 'Alegreya Sans'; }
+  .community .inner .helpbox {
+    padding: 20px; }
+    .community .inner .helpbox .txtbox h2 {
+      font-size: 15px; }
+    .community .inner .helpbox .txtbox p {
+      font-size: 12px; }
+    .community .inner .helpbox .txtbox i {
+      font-size: 15px; } }
 .department {
   width: 100%; }
   .department .sub_visual {
@@ -2020,14 +2150,14 @@ body {
           #visual .inner .txtbox .txtlist.on p, #visual .inner .txtbox .txtlist.on a {
             opacity: 1;
             transform: translateY(0px); }
-        #visual .inner .txtbox .txtlist h2 {
+        #visual .inner .txtbox .txtlist > h2 {
           font: 40px/1.2 'arial';
           color: #000;
           opacity: 0;
           margin-left: 120px;
-          transition: 1.4s;
+          transition: 2s;
           margin-bottom: 40px; }
-        #visual .inner .txtbox .txtlist p {
+        #visual .inner .txtbox .txtlist > p {
           width: 60%;
           font: 16px/1.2 'arial';
           color: #222;
@@ -2035,7 +2165,7 @@ body {
           transition: 1.4s;
           opacity: 0;
           margin-bottom: 40px; }
-        #visual .inner .txtbox .txtlist a {
+        #visual .inner .txtbox .txtlist > a {
           display: block;
           font: bold 14px/1 'arial';
           color: #222;
@@ -2053,9 +2183,9 @@ body {
       z-index: 1;
       overflow: hidden; }
       #visual .inner .slidebox .slidewrap {
-        width: 1400px;
+        width: 2100px;
         height: 100%;
-        margin-left: 0%; }
+        margin-left: -100%; }
         #visual .inner .slidebox .slidewrap li {
           width: 700px;
           height: 100%;

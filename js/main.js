@@ -52,7 +52,7 @@ var slideIndex = 0;
 var len = $(".slidewrap li").length;
 let enableClick = true;
 //console.log(len);
-//$(".slidewrap").children("li").last().prependTo(".slidewrap");
+$(".slidewrap").children("li").last().prependTo(".slidewrap");
 
 $(".next").on("click", function(e){
     e.preventDefault();
@@ -61,15 +61,12 @@ $(".next").on("click", function(e){
         slideIndex += 1;
         if(slideIndex < 0){slideIndex = len - 1;}
         if(slideIndex >= len){slideIndex = 0;}
-        $(".slidewrap").animate({marginLeft:"-100%"},1000,function(){
-            $(".slidewrap").css({marginLeft:"0%"});
+        $(".slidewrap").animate({marginLeft:"-200%"},1000,function(){
+            $(".slidewrap").css({marginLeft:"-100%"});
             $(".slidewrap").children("li").first().appendTo(".slidewrap");
             enableClick=true;
         })
-        $txt.removeClass("on");
-        $txt.eq(slideIndex).addClass("on");
-        $svgli.removeClass("on");
-        $svgli.eq(slideIndex).addClass("on");
+        test(slideIndex);
     }
 })
 $(".prev").on("click", function(e){
@@ -77,22 +74,25 @@ $(".prev").on("click", function(e){
     if(enableClick){
         enableClick = false; 
         slideIndex -= 1;
+        //console.log(slideIndex);
+
     if(slideIndex < 0){slideIndex = len - 1;}
     if(slideIndex >= len){slideIndex = 0;}
-   
-    $(".slidewrap").animate({marginLeft:"-100%"},1000,function(){
-        $(".slidewrap").css({marginLeft:"0%"});
+    //console.log(slideIndex);
+    $(".slidewrap").animate({marginLeft:"0%"},1000,function(){
+        $(".slidewrap").css({marginLeft:"-100%"});
         $(".slidewrap").children("li").last().prependTo(".slidewrap");
         enableClick = true;
     })
-    $txt.removeClass("on");
-    $txt.eq(slideIndex).addClass("on");
-    $svgli.removeClass("on");
-    $svgli.eq(slideIndex).addClass("on");
+    test(slideIndex);
     }
-
 })
-
+function test(el){
+    $txt.removeClass("on");
+    $txt.eq(el).addClass("on");
+    $svgli.removeClass("on");
+    $svgli.eq(el).addClass("on");
+}
 
 
 

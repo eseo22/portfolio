@@ -293,18 +293,18 @@ body{width: 100%; overflow-x: hidden;}
                     h2{opacity: 1; margin-left: 0;}
                     p,a{opacity: 1; transform: translateY(0px);}
                 }
-                h2{
+                >h2{
                     font: 40px/1.2 'arial'; color: #000;
-                    opacity: 0; margin-left: 120px; transition: 1.4s;
+                    opacity: 0; margin-left: 120px; transition: 2s;
                     margin-bottom: 40px;
                 }
-                p{
+                >p{
                     width: 60%;
                     font: 16px/1.2 'arial'; color: #222;
                     transform: translateY(40px); transition: 1.4s; opacity: 0;
                     margin-bottom: 40px;
                 }
-                a{
+                >a{
                     display: block;
                     font: bold 14px/1 'arial'; color: #222;
                     transform: translateY(40px); transition: 1.4s; 
@@ -324,8 +324,8 @@ body{width: 100%; overflow-x: hidden;}
             overflow: hidden;
 
             .slidewrap{
-                width: 1400px; height: 100%;
-                margin-left: 0%;
+                width: 2100px; height: 100%;
+                margin-left: -100%;
                 li{
                     width: 700px; height: 100%;
                     float: left;
