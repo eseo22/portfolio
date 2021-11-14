@@ -1,18 +1,18 @@
 
 //메뉴에 마우스 호버시 2depth
-$(".gnb>li").on("mouseenter", function(){
+$(".gnb>li").on("mouseenter", function () {
     $(this).find(".sub").show();
 });
-$(".gnb>li").on("mouseleave", function(){
+$(".gnb>li").on("mouseleave", function () {
     $(this).find(".sub").hide();
 });
 
 //포커스 이동시 2depth 활성화
-$(".gnb>li").each(function(index){
-    $(".gnb>li").eq(index).find("a").on("focusin",function(){
+$(".gnb>li").each(function (index) {
+    $(".gnb>li").eq(index).find("a").on("focusin", function () {
         $(".gnb>li").eq(index).find(".sub").show();
     });
-    $(".gnb>li").eq(index).find("a").last().on("focusout", function(){
+    $(".gnb>li").eq(index).find("a").last().on("focusout", function () {
         $(".gnb>li").eq(index).find(".sub").hide();
     });
 });
@@ -22,10 +22,10 @@ const btnCall = document.querySelector(".btnCall");
 const menuMo = document.querySelector(".menuMo");
 const menuClose = menuMo.querySelector(".txtbox a");
 
-$(btnCall).on("click", function(){
+$(btnCall).on("click", function () {
     $(menuMo).addClass("on");
 });
-$(menuClose).on("click",function(){
+$(menuClose).on("click", function () {
     $(menuMo).removeClass("on");
 });
 
@@ -33,13 +33,13 @@ $(menuClose).on("click",function(){
 //main pic 호버시
 const picbox = document.querySelectorAll("#pics .picbox");
 
-picspan(0); 
+picspan(0);
 picspan(2);
-function picspan(picnum){
-    $(picbox).eq(picnum).on("mouseenter", function(){
+function picspan(picnum) {
+    $(picbox).eq(picnum).on("mouseenter", function () {
         $(this).parent().find("span").hide();
     })
-    $(picbox).eq(picnum).on("mouseleave", function(){
+    $(picbox).eq(picnum).on("mouseleave", function () {
         $(this).parent().find("span").show();
     })
 }
@@ -48,46 +48,99 @@ function picspan(picnum){
 //슬라이드
 var $svgli = $(".numbox ul li");
 var $txt = $(".txtbox li");
+var $txtnum = $txt.length;
 var slideIndex = 0;
 var len = $(".slidewrap li").length;
+var listnum = $(".movebox").find("li").length;
 let enableClick = true;
 //console.log(len);
-$(".slidewrap").children("li").last().prependTo(".slidewrap");
 
-$(".next").on("click", function(e){
+slideinit(".slidewrap");
+slideinit(".slidewrap3");
+$(".slidewrap2 li").last().prependTo(".slidewrap2");
+function slideinit(el) {
+    $(el).children("li").last().prependTo(el);
+    $(el).css({
+        width: 100 * len + "%",
+        marginLeft: "-100%"
+    });
+    $(el).children("li").css({
+        width: 100 / len + "%",
+        float: "left"
+    })
+}
+
+
+//main visual 슬라이드
+$(".slidebox").find(".next").on("click", function (e) {
     e.preventDefault();
-    if(enableClick){
-        enableClick = false; 
+    if (enableClick) {
+        enableClick = false;
         slideIndex += 1;
-        if(slideIndex < 0){slideIndex = len - 1;}
-        if(slideIndex >= len){slideIndex = 0;}
-        $(".slidewrap").animate({marginLeft:"-200%"},1000,function(){
-            $(".slidewrap").css({marginLeft:"-100%"});
-            $(".slidewrap").children("li").first().appendTo(".slidewrap");
-            enableClick=true;
-        })
+        if (slideIndex >= len) { slideIndex = 0; }
+        next(".slidewrap");
         test(slideIndex);
     }
-})
-$(".prev").on("click", function(e){
+});
+$(".slidebox").find(".prev").on("click", function (e) {
     e.preventDefault();
-    if(enableClick){
-        enableClick = false; 
+    if (enableClick) {
+        enableClick = false;
         slideIndex -= 1;
-        //console.log(slideIndex);
+    if (slideIndex < 0) { slideIndex = len - 1; }
+        prev(".slidewrap");
+        test(slideIndex);
+    }
+});
 
-    if(slideIndex < 0){slideIndex = len - 1;}
-    if(slideIndex >= len){slideIndex = 0;}
-    //console.log(slideIndex);
-    $(".slidewrap").animate({marginLeft:"0%"},1000,function(){
-        $(".slidewrap").css({marginLeft:"-100%"});
-        $(".slidewrap").children("li").last().prependTo(".slidewrap");
+//자동롤링 슬라이드
+setInterval(function () {
+    $(".slidewrap2").animate({ marginLeft: "-200%" }, 1000, function () {
+        $(".slidewrap2").css({ marginLeft: "-100%" });
+        $(".slidewrap2").children("li").first().appendTo(".slidewrap2");
+    });
+}, 3000);
+
+//section information 슬라이드 + 페이지숫자 카운트
+$(".movebox").find(".next").on("click", function (e) {
+    e.preventDefault();
+    if (enableClick) {
+        enableClick = false;
+        slideIndex += 1;
+        if (slideIndex >= listnum) { slideIndex = 0; }
+        next(".slidewrap3");
+        $(".movebox").children(".downbox").find(".page").text(slideIndex + 1);
+    }
+});
+$(".movebox").find(".prev").on("click", function (e) {
+    e.preventDefault();
+    if (enableClick) {
+        enableClick = false;
+        slideIndex -= 1;
+    if (slideIndex < 0) { slideIndex = listnum - 1; }
+        prev(".slidewrap3");
+        $(".movebox").children(".downbox").find(".page").text(slideIndex + 1);
+    }
+});
+
+
+function next(wrap) {
+    $(wrap).animate({ marginLeft: "-200%" }, 1000, function () {
+        $(wrap).css({ marginLeft: "-100%" });
+        $(wrap).children("li").first().appendTo(wrap);
         enableClick = true;
     })
-    test(slideIndex);
-    }
-})
-function test(el){
+}
+function prev(wrap) {
+    
+    $(wrap).animate({ marginLeft: "0%" }, 1000, function () {
+        $(wrap).css({ marginLeft: "-100%" });
+        $(wrap).children("li").last().prependTo(wrap);
+        enableClick = true;
+    })
+}
+
+function test(el) {
     $txt.removeClass("on");
     $txt.eq(el).addClass("on");
     $svgli.removeClass("on");
@@ -96,86 +149,63 @@ function test(el){
 
 
 
-//슬라이드
-/*
-let enableClick = true;  
-test(".slider2", ".list2");
-
-function test(btn, list){
-    $(btn).find(".next").on("click", function(e){
-        e.preventDefault(); 
-    
-        if(enableClick){
-            enableClick = false; 
-            $(list).animate({marginLeft:"-200%" },500, function(){
-                $(list).css({marginLeft : "-100%"}); 
-                $(list).children("li").first().appendTo(list);
-
-                enableClick = true;  
-            });
-        }
-    }); 
-    
-    $(btn).find(".prev").on("click", function(e){
-        e.preventDefault(); 
-    
-        if(enableClick){
-            $(list).animate({ marginLeft: "-0%"},500, function(){
-                $(list).css({marginLeft :"-100%"}); 
-                $(list).children("li").last().prependTo(list); 
-                enableClick = true; 
-            });
-            enableClick = false; 
-        }    
-    });
-}
-
-
-//tab
-const $tab = $("#tab"); 
-const $btns = $tab.find("dt a"); 
-const $boxs = $tab.find("dd"); 
-
-$btns.on("click focusin", function(e){
-    e.preventDefault(); 
-
-    let isOn = $(this).hasClass("on"); 
-    if(isOn) return; 
-
-    var target = $(this).attr("href"); 
-    $boxs.hide();  
-    $(target).show();
-    
-    $btns.removeClass("on"); 
-    $(this).addClass("on"); 
-});  
-
 //scroll
-const posArr = [];
-const $scrollBox = $(".myScroll");
-let len = $scrollBox.length;
-let baseLine = -500;
+const pos = [];
+const boxs = $(".myScroll");
+let base = 500;
 
-for(let i=0; i<len; i++){
-    posArr.push($scrollBox.eq(i).offset().top);
-}
-$(window).on("resize", function(){
-    posArr =[]; 
-    for(let i=0; i<len; i++){
-       posArr.push($scrollBox.eq(i).offset().top); 
-    }
-}); 
+boxs.each(function(_, box){
+    pos.push($(box).offset().top);
+});
 
 $(window).on("scroll", function(){
-    let scroll = $(this).scrollTop();
-    console.log(scroll);
+    var scroll = $(this).scrollTop();
+    //console.log(scroll);
 
-    for(let i=0; i<len; i++){
-        if(scroll >= posArr[i] +baseLine){
-
-            $scrollBox.removeClass("on");
-            $scrollBox.eq(i).addClass("on");
-        }
+    // if(scroll >= pos[2] && scroll < pos[3] ){
+    //     var current_scroll = scroll - pos[2]
+        
+    // }
+    if(scroll >= pos[3] && scroll < pos[4] - base){
+        var current_scroll = scroll - pos[3] ;
+        var move_scroll;
+        //console.log(current_scroll);
+        (current_scroll>=1200) ? move_scroll = 1200 : move_scroll = current_scroll;
+        $(".head h2").css({top : move_scroll});
     }
-})
-*/
+    if(scroll >= pos[4] && scroll < pos[5]){
+        var current_scroll = scroll - pos[4];
+    }
+    if(scroll >= pos[5] - base){
+        var current_scroll = scroll - pos[5] ;
+        var move2_scroll= current_scroll/2;
+        console.log(move2_scroll);
+        (move2_scroll>=1360) ? move2_scroll = 1360 : move2_scroll = current_scroll/2;
+        (move2_scroll<160) ? move2_scroll = 160 : move2_scroll = current_scroll/2;
+
+
+        $(".movebox").css({top : -700 + move2_scroll});
+    }
+
+});
+
+
+
+// //tab
+// const $tab = $("#tab"); 
+// const $btns = $tab.find("dt a"); 
+// const $boxs = $tab.find("dd"); 
+
+// $btns.on("click focusin", function(e){
+//     e.preventDefault(); 
+
+//     let isOn = $(this).hasClass("on"); 
+//     if(isOn) return; 
+
+//     var target = $(this).attr("href"); 
+//     $boxs.hide();  
+//     $(target).show();
+
+//     $btns.removeClass("on"); 
+//     $(this).addClass("on"); 
+// });  
