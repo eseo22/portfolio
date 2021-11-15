@@ -1930,65 +1930,63 @@ body {
         text-align: center; }
         #header .inner > .gnb > li:hover {
           border-bottom: 4px solid #cfb6a4; }
-        #header .inner > .gnb > li:nth-of-type(1) .sub {
-          padding-left: 235px; }
-        #header .inner > .gnb > li:nth-of-type(2) .sub {
-          padding-left: 355px; }
-        #header .inner > .gnb > li:nth-of-type(3) .sub {
-          padding-left: 475px; }
-        #header .inner > .gnb > li:nth-of-type(4) .sub {
-          padding-left: 595px; }
-        #header .inner > .gnb > li:nth-of-type(5) .sub {
-          padding-left: 720px; }
-        #header .inner > .gnb > li:nth-of-type(6) .sub {
-          padding-left: 740px; }
+        #header .inner > .gnb > li:nth-of-type(1) .sub ul {
+          position: relative;
+          margin-left: 0vw; }
+        #header .inner > .gnb > li:nth-of-type(2) .sub ul {
+          position: relative;
+          margin-left: 0.01vw; }
+        #header .inner > .gnb > li:nth-of-type(3) .sub ul {
+          position: relative;
+          margin-left: 0.04vw; }
+        #header .inner > .gnb > li:nth-of-type(4) .sub ul {
+          position: relative;
+          margin-left: 0.05vw; }
+        #header .inner > .gnb > li:nth-of-type(5) .sub ul {
+          position: relative;
+          margin-left: 0.05vw; }
+        #header .inner > .gnb > li:nth-of-type(6) .sub ul {
+          position: relative;
+          margin-left: 0.05vw; }
         #header .inner > .gnb > li a {
           font: 15px/90px "Prompt";
           color: #222; }
         #header .inner > .gnb > li .sub {
-          width: 1180px;
-          position: fixed;
-          right: 200px;
-          background: #fff;
+          width: 250px;
           display: none; }
-          #header .inner > .gnb > li .sub .subli {
-            width: 100%;
-            padding: 20px; }
-            #header .inner > .gnb > li .sub .subli::after {
-              content: "";
-              display: block;
-              clear: both; }
-            #header .inner > .gnb > li .sub .subli > li {
-              width: 120px;
-              height: 50px;
-              float: left;
-              border-right: 1px solid #eee; }
-              #header .inner > .gnb > li .sub .subli > li:last-child {
-                border-right: none; }
-              #header .inner > .gnb > li .sub .subli > li a {
+          #header .inner > .gnb > li .sub > .subli {
+            width: 250px;
+            background: #fff; }
+            #header .inner > .gnb > li .sub > .subli > li {
+              width: 100%;
+              padding: 5px 30px; }
+              #header .inner > .gnb > li .sub > .subli > li:last-child {
+                padding-bottom: 40px; }
+              #header .inner > .gnb > li .sub > .subli > li a {
                 display: block;
                 width: 100%;
                 height: 50px;
-                font: 15px/50px "arial";
-                color: #000; }
-          #header .inner > .gnb > li .sub::before {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: -100%;
-            background: #fff; }
-          #header .inner > .gnb > li .sub::after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            right: -100%;
-            background: #fff; }
+                font: 18px/50px "arial";
+                color: #000;
+                text-align: left;
+                border-bottom: 1px solid #eee; }
+                #header .inner > .gnb > li .sub > .subli > li a span {
+                  margin-left: 5px;
+                  font-size: 12px;
+                  color: #222; }
+                #header .inner > .gnb > li .sub > .subli > li a::after {
+                  content: '';
+                  display: block;
+                  width: 120px;
+                  height: 2px;
+                  background: #e4d5ca;
+                  position: relative;
+                  top: -3px;
+                  opacity: 0; }
+              #header .inner > .gnb > li .sub > .subli > li:hover a::after {
+                animation-name: lineani;
+                animation-duration: 1s;
+                animation-fill-mode: forwards; }
     #header .inner > a {
       display: block;
       width: 8%;
@@ -2116,7 +2114,12 @@ body {
             color: #000; }
       #header .inner .menuMo.on {
         left: 0; }
-
+@keyframes lineani {
+  from {
+    width: 0px; }
+  to {
+    width: 80px;
+    opacity: 1; } }
 #visual {
   width: 100%;
   height: calc(100vh - 91px);
@@ -2253,12 +2256,13 @@ body {
   width: 100%; }
   #intro .inner {
     width: 1180px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 225px 0px; }
     #intro .inner .txtbox {
       width: 50%;
       margin: 0 auto;
       text-align: center;
-      padding: 255px 0px; }
+      padding: 0px 0px 255px; }
       #intro .inner .txtbox > h2 {
         font: 40px/1.4 'arial';
         color: #000;
@@ -2308,7 +2312,8 @@ body {
         color: #5f5f5f; }
 
 #service {
-  width: 100%; }
+  width: 100%;
+  background: #f5f5f5; }
   #service .inner {
     width: 1180px;
     margin: 0 auto;
@@ -2360,16 +2365,13 @@ body {
     #work .inner h2 {
       font: 45px/1 'arial';
       color: #000;
-      margin-bottom: 180px;
+      margin-bottom: 40px;
       letter-spacing: 4px; }
-      #work .inner h2::after {
-        content: '';
-        display: block;
-        width: 50px;
-        height: 1px;
-        background: #000;
-        position: relative;
-        top: 50px; }
+    #work .inner .line {
+      width: 50px;
+      height: 2px;
+      background: #000;
+      margin-bottom: 160px; }
     #work .inner .slidebox {
       width: 736px;
       height: 500px;
@@ -2411,7 +2413,7 @@ body {
   #contact > .inner {
     width: 1180px;
     margin: 0 auto;
-    padding: 200px 0px 400px; }
+    padding: 200px 0px 300px; }
     #contact > .inner > .boxwrap {
       display: flex; }
       #contact > .inner > .boxwrap .right:hover, #contact > .inner > .boxwrap .center:hover {
@@ -2454,7 +2456,7 @@ body {
   #information > .inner {
     width: 1180px;
     margin: 0 auto;
-    padding: 400px 0px; }
+    padding: 300px 0px 400px; }
     #information > .inner > .boxwrap {
       width: 100%; }
       #information > .inner > .boxwrap::after {
@@ -2466,9 +2468,8 @@ body {
         width: 420px;
         padding: 50px 50px;
         position: relative;
-        top: -700px;
-        background: #fff;
-        border: 1px solid #000; }
+        top: -400px;
+        background: #fff; }
         #information > .inner > .boxwrap .movebox .slidebox {
           width: 100%;
           height: 304px;
@@ -2487,12 +2488,10 @@ body {
               width: calc(100% / 3);
               height: 100%;
               float: left; }
-            #information > .inner > .boxwrap .movebox .slidebox .slidewrap3 .slide1 {
-              background: pink; }
-            #information > .inner > .boxwrap .movebox .slidebox .slidewrap3 .slide2 {
-              background: orange; }
-            #information > .inner > .boxwrap .movebox .slidebox .slidewrap3 .slide3 {
-              background: orangered; }
+              #information > .inner > .boxwrap .movebox .slidebox .slidewrap3 > li img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; }
         #information > .inner > .boxwrap .movebox > .txtbox {
           width: 100%;
           padding: 0px 10px;
@@ -2501,7 +2500,7 @@ body {
             display: inline-block;
             width: 90px;
             height: 24px;
-            background: pink;
+            background: #f1f1f1;
             border-radius: 5px;
             font-size: 12px;
             line-height: 24px;
@@ -2560,10 +2559,15 @@ body {
           content: "";
           display: block;
           clear: both; }
+        #information > .inner > .boxwrap .articlewrap > h3 {
+          font: 40px/1 'arial';
+          color: #000;
+          padding-bottom: 20px;
+          margin-bottom: 120px;
+          border-bottom: 2px solid #000; }
         #information > .inner > .boxwrap .articlewrap > article {
           width: 240px;
           min-height: 600px;
-          border: 1px solid #000;
           float: right;
           padding-right: 20px; }
           #information > .inner > .boxwrap .articlewrap > article:last-child {
@@ -2579,27 +2583,31 @@ body {
             border: 1px solid #000;
             background: #eee;
             margin-bottom: 20px; }
-          #information > .inner > .boxwrap .articlewrap > article .txtbox {
+            #information > .inner > .boxwrap .articlewrap > article .picbox img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          #information > .inner > .boxwrap .articlewrap > article > .txtbox {
             width: 100%;
-            border: 1px solid orange; }
-            #information > .inner > .boxwrap .articlewrap > article .txtbox h3 {
+            padding-left: 10px; }
+            #information > .inner > .boxwrap .articlewrap > article > .txtbox h3 {
               font: bold 22px/1 "arial";
               color: #000;
               margin-bottom: 10px; }
-            #information > .inner > .boxwrap .articlewrap > article .txtbox p {
+            #information > .inner > .boxwrap .articlewrap > article > .txtbox p {
               font: 18px/1.2 "arial";
               color: #222;
               margin-bottom: 20px; }
-            #information > .inner > .boxwrap .articlewrap > article .txtbox span {
+            #information > .inner > .boxwrap .articlewrap > article > .txtbox span {
               font-size: 18px; }
           #information > .inner > .boxwrap .articlewrap > article .news {
             width: 100%;
             height: 170px;
-            border: 1px solid orange; }
+            border-bottom: 2px solid #f1f1f1; }
             #information > .inner > .boxwrap .articlewrap > article .news span {
               font-size: 14px;
               margin-bottom: 10px;
-              color: #000; }
+              color: lightsalmon; }
             #information > .inner > .boxwrap .articlewrap > article .news h3 {
               font: bold 22px/1.2 "arial";
               color: #000;
@@ -2613,10 +2621,12 @@ body {
         #information > .inner > .boxwrap .articlelist > li {
           width: 720px;
           height: 150px;
-          border: 1px solid pink;
+          border-top: 2px solid #f1f1f1;
           font-size: 0;
           display: flex;
           align-items: center; }
+          #information > .inner > .boxwrap .articlelist > li:last-child {
+            border-bottom: 2px solid #f1f1f1; }
           #information > .inner > .boxwrap .articlelist > li .picbox {
             width: 128px;
             height: 128px;
@@ -2633,7 +2643,7 @@ body {
               display: inline-block;
               width: 60px;
               height: 24px;
-              background: pink;
+              background: #f1f1f1;
               border-radius: 5px;
               font-size: 12px;
               line-height: 24px;
@@ -2652,41 +2662,52 @@ body {
   width: 100%; }
   #banner .inner {
     width: 100%;
+    padding: 200px 0px;
     display: flex; }
-    #banner .inner .txtbox {
+    #banner .inner > .leftbox {
       width: 50%;
       height: 500px;
-      border: 1px solid pink;
-      padding: 100px; }
-      #banner .inner .txtbox span {
-        font-size: 15px;
-        color: #000;
-        margin-bottom: 10px; }
-      #banner .inner .txtbox h3 {
-        font: 40px/1.2 'arial';
-        color: #000;
-        margin-bottom: 20px; }
-      #banner .inner .txtbox p {
-        margin-bottom: 40px; }
-        #banner .inner .txtbox p:first-child {
-          font: 20px/1.4 'arial';
-          color: #000; }
-        #banner .inner .txtbox p:last-child {
-          font: 17px/1.4 'arial';
-          color: #000; }
-      #banner .inner .txtbox a {
-        display: block;
-        width: 164px;
-        height: 50px;
-        font: 15px/50px 'arial';
-        color: #000;
-        text-align: center;
-        border: 1px solid #000;
-        margin-top: 20px; }
-    #banner .inner .picbox {
+      padding: 50px;
+      background: #f5eeea; }
+      #banner .inner > .leftbox > .txtbox {
+        width: 120%;
+        height: 100%;
+        padding: 40px 60px;
+        background: #fff;
+        position: relative;
+        margin-left: 50px; }
+        #banner .inner > .leftbox > .txtbox .txtwrap span {
+          font-size: 15px;
+          color: #000;
+          margin-bottom: 10px; }
+        #banner .inner > .leftbox > .txtbox .txtwrap h3 {
+          font: 30px/1.2 'arial';
+          color: #000;
+          margin-bottom: 20px; }
+        #banner .inner > .leftbox > .txtbox .txtwrap > p {
+          width: 90%;
+          margin-bottom: 40px; }
+          #banner .inner > .leftbox > .txtbox .txtwrap > p:nth-of-type(1) {
+            font: 18px/1.4 'arial';
+            color: #000; }
+          #banner .inner > .leftbox > .txtbox .txtwrap > p:nth-of-type(2) {
+            font: 15px/1.4 'arial';
+            color: #000; }
+        #banner .inner > .leftbox > .txtbox .txtwrap a {
+          display: block;
+          width: 164px;
+          height: 50px;
+          font: 15px/50px 'arial';
+          color: #000;
+          text-align: center;
+          border: 1px solid #000; }
+    #banner .inner .rightbox {
       width: 50%;
-      height: 500px;
-      border: 1px solid orange; }
+      height: 500px; }
+      #banner .inner .rightbox img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
 
 #popup {
   width: 300px;
@@ -2777,7 +2798,7 @@ body {
           #footer .inner .wrap article:nth-of-type(4) input[type="submit"] {
             width: 100px;
             height: 35px;
-            background-color: burlywood;
+            background-color: bisque;
             border: none;
             font: 12px/35px "arial";
             color: #000;

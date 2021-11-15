@@ -152,41 +152,52 @@ function test(el) {
 //scroll
 const pos = [];
 const boxs = $(".myScroll");
-let base = 500;
 
 boxs.each(function(_, box){
     pos.push($(box).offset().top);
 });
-
+console.log(pos);
 $(window).on("scroll", function(){
     var scroll = $(this).scrollTop();
     //console.log(scroll);
+    
 
     // if(scroll >= pos[2] && scroll < pos[3] ){
     //     var current_scroll = scroll - pos[2]
         
     // }
-    if(scroll >= pos[3] && scroll < pos[4] - base){
-        var current_scroll = scroll - pos[3] ;
+    if(scroll >= pos[3] - 100 ){
+        var current_scroll = scroll - pos[3] + 100 ;
         var move_scroll;
-        //console.log(current_scroll);
-        (current_scroll>=1200) ? move_scroll = 1200 : move_scroll = current_scroll;
+        console.log(current_scroll);
+        (current_scroll>=1035) ? move_scroll = 1035 : move_scroll = current_scroll;
         $(".head h2").css({top : move_scroll});
     }
-    if(scroll >= pos[4] && scroll < pos[5]){
-        var current_scroll = scroll - pos[4];
+    if(scroll >= pos[4] - 400){
+        var current_scroll = scroll - pos[4] + 400 ; 
+        var move_scroll;
+        console.log(current_scroll);
+        (current_scroll>=800) ? move_scroll = 800 : move_scroll = current_scroll;
+        $(".line").css({width:move_scroll});
     }
-    if(scroll >= pos[5] - base){
-        var current_scroll = scroll - pos[5] ;
-        var move2_scroll= current_scroll/2;
-        console.log(move2_scroll);
-        (move2_scroll>=1360) ? move2_scroll = 1360 : move2_scroll = current_scroll/2;
-        (move2_scroll<160) ? move2_scroll = 160 : move2_scroll = current_scroll/2;
-
-
-        $(".movebox").css({top : -700 + move2_scroll});
+    if(scroll >= pos[5]){
+        var current_scroll = scroll - pos[5];
+        //console.log(current_scroll);
     }
-
+    if(scroll >= pos[6] - 100){
+        var current_scroll = scroll - pos[6] + 100 ;
+        var move_scroll ;
+        console.log(current_scroll); //1423
+        //var move_scroll = current_scroll/2 ;
+        (current_scroll>=1520) ? move_scroll = 1520 : move_scroll = current_scroll;
+        
+        $(".boxwrap").children(".movebox").css({top : -400 + move_scroll });
+    }
+    if(scroll >= pos[7]){
+        var current_scroll = scroll - pos[7] ;
+        console.log(current_scroll);        
+    }
+    
 });
 
 
