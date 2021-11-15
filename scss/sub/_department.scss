@@ -18,16 +18,16 @@
             position: absolute; top: 50%; left: 50%;
             transform: translate(-50%, -50%);
             h1{
-                font: 50px/1 'EB Garamond'; color: #fff; 
+                font: 40px/1 'Cardo'; color: #fff; 
                 text-align: center;
                 margin-bottom: 10px;
     
                 span{
-                    font: 15px/1 '맑은 고딕'; color: #fff;
+                    font-size:15px; color: #fff;
                 }
             }
             >p{
-                font: 20px/1 'EB Garamond'; color: #fff;
+                font: 20px/1 'Cardo'; color: #fff;
             }
         }
     }

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo&family=Noto+Serif&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Playfair+Display&family=Roboto+Slab&family=Zen+Antique+Soft&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto+Slab&family=Zen+Antique+Soft&family=Zen+Kaku+Gothic+Antique:wght@300&family=EB+Garamond&family=EB+Garamond:ital@0;1&display=swap");
 * {
@@ -43,14 +44,14 @@ input, a, select, option {
         display: block;
         width: 100%;
         height: 50px;
-        font: 24px/50px 'Prompt';
+        font: 24px/50px 'arial';
         color: #000; }
     #header_sub .inner > .gnb {
       width: 65%;
       position: absolute;
       left: 20%; }
       #header_sub .inner > .gnb::after {
-        content: '';
+        content: "";
         display: block;
         clear: both; }
       #header_sub .inner > .gnb > li {
@@ -59,73 +60,74 @@ input, a, select, option {
         height: 90px;
         text-align: center; }
         #header_sub .inner > .gnb > li:hover {
-          border-bottom: 4px solid #CFB6A4; }
-        #header_sub .inner > .gnb > li:nth-of-type(1) .sub {
-          padding-left: 200px; }
-        #header_sub .inner > .gnb > li:nth-of-type(2) .sub {
-          padding-left: 340px; }
-        #header_sub .inner > .gnb > li:nth-of-type(3) .sub {
-          padding-left: 440px; }
-        #header_sub .inner > .gnb > li:nth-of-type(4) .sub {
-          padding-left: 540px; }
-        #header_sub .inner > .gnb > li:nth-of-type(5) .sub {
-          padding-left: 640px; }
-        #header_sub .inner > .gnb > li:nth-of-type(6) .sub {
-          padding-left: 740px; }
+          animation: testani 1s;
+          animation-fill-mode: forwards; }
+        #header_sub .inner > .gnb > li:nth-of-type(1) .sub ul {
+          position: relative;
+          margin-left: 0vw; }
+        #header_sub .inner > .gnb > li:nth-of-type(2) .sub ul {
+          position: relative;
+          margin-left: 0.01vw; }
+        #header_sub .inner > .gnb > li:nth-of-type(3) .sub ul {
+          position: relative;
+          margin-left: 0.04vw; }
+        #header_sub .inner > .gnb > li:nth-of-type(4) .sub ul {
+          position: relative;
+          margin-left: 0.05vw; }
+        #header_sub .inner > .gnb > li:nth-of-type(5) .sub ul {
+          position: relative;
+          margin-left: 0.05vw; }
+        #header_sub .inner > .gnb > li:nth-of-type(6) .sub ul {
+          position: relative;
+          margin-left: 0.05vw; }
         #header_sub .inner > .gnb > li a {
-          font: 15px/90px 'Prompt';
+          font: 15px/90px 'arial';
           color: #222; }
         #header_sub .inner > .gnb > li .sub {
-          width: 1180px;
-          position: fixed;
-          right: 200px;
-          background: #fff;
+          width: 250px;
           display: none; }
-          #header_sub .inner > .gnb > li .sub .subli {
-            width: 100%;
-            padding: 20px; }
-            #header_sub .inner > .gnb > li .sub .subli::after {
-              content: '';
-              display: block;
-              clear: both; }
-            #header_sub .inner > .gnb > li .sub .subli > li {
-              width: 120px;
-              height: 50px;
-              float: left;
-              border-right: 1px solid #eee; }
-              #header_sub .inner > .gnb > li .sub .subli > li:last-child {
-                border-right: none; }
-              #header_sub .inner > .gnb > li .sub .subli > li a {
+          #header_sub .inner > .gnb > li .sub > .subli {
+            width: 250px;
+            background: #fff; }
+            #header_sub .inner > .gnb > li .sub > .subli > li {
+              width: 100%;
+              padding: 0px 30px; }
+              #header_sub .inner > .gnb > li .sub > .subli > li:first-child {
+                padding-top: 40px; }
+              #header_sub .inner > .gnb > li .sub > .subli > li:last-child {
+                padding-bottom: 40px; }
+              #header_sub .inner > .gnb > li .sub > .subli > li a {
                 display: block;
                 width: 100%;
                 height: 50px;
-                font: 15px/50px 'arial';
-                color: #000; }
-          #header_sub .inner > .gnb > li .sub::before {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: -100%;
-            background: #fff; }
-          #header_sub .inner > .gnb > li .sub::after {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            right: -100%;
-            background: #fff; }
+                font: 15px/50px 'Noto Serif';
+                color: #000;
+                text-align: left;
+                border-bottom: 1px solid #eee; }
+                #header_sub .inner > .gnb > li .sub > .subli > li a span {
+                  margin-left: 5px;
+                  font-size: 10px;
+                  color: #000; }
+                #header_sub .inner > .gnb > li .sub > .subli > li a::after {
+                  content: '';
+                  display: block;
+                  width: 120px;
+                  height: 2px;
+                  background: #cfb6a4;
+                  position: relative;
+                  top: -3px;
+                  opacity: 0; }
+              #header_sub .inner > .gnb > li .sub > .subli > li:hover a::after {
+                animation-name: lineani;
+                animation-duration: 1s;
+                animation-fill-mode: forwards; }
     #header_sub .inner > a {
       display: block;
       width: 8%;
       height: 28px;
       border: 1px solid #bbb;
       text-align: center;
-      font: 12px/28px 'Prompt';
+      font: 12px/28px 'Noto Serif';
       color: #222;
       position: absolute;
       right: 0px;
@@ -139,7 +141,7 @@ input, a, select, option {
       right: 0px;
       display: none; }
       #header_sub .inner .btnCall::before {
-        content: '';
+        content: "";
         display: block;
         width: 80%;
         height: 2px;
@@ -157,7 +159,7 @@ input, a, select, option {
         text-indent: -9999px;
         transition: 0.5s; }
       #header_sub .inner .btnCall::after {
-        content: '';
+        content: "";
         display: block;
         width: 100%;
         height: 2px;
@@ -192,7 +194,7 @@ input, a, select, option {
           position: relative;
           margin-bottom: 60px; }
           #header_sub .inner .menuMo .txtbox > a::before {
-            content: '';
+            content: "";
             display: block;
             width: 100%;
             height: 2px;
@@ -204,7 +206,7 @@ input, a, select, option {
             display: block;
             text-indent: -9999px; }
           #header_sub .inner .menuMo .txtbox > a::after {
-            content: '';
+            content: "";
             display: block;
             width: 100%;
             height: 2px;
@@ -218,14 +220,14 @@ input, a, select, option {
             transform: rotate(0deg); }
         #header_sub .inner .menuMo .txtbox p {
           width: 250px;
-          font: 16px/1.8 'arial';
+          font: 16px/1.8 'Noto Serif';
           color: #000; }
           #header_sub .inner .menuMo .txtbox p a {
             font-size: 16px;
             color: #000;
             position: relative; }
             #header_sub .inner .menuMo .txtbox p a::after {
-              content: '';
+              content: "";
               display: block;
               width: 50px;
               height: 1px;
@@ -242,11 +244,21 @@ input, a, select, option {
           #header_sub .inner .menuMo .gnbmo li a {
             display: block;
             height: 40px;
-            font: 15px/40px 'arial';
+            font: 15px/40px 'Cardo';
             color: #000; }
       #header_sub .inner .menuMo.on {
         left: 0; }
-
+@keyframes lineani {
+  from {
+    width: 0px; }
+  to {
+    width: 80px;
+    opacity: 1; } }
+@keyframes testani {
+  from {
+    border-bottom: 0px solid #e4d5ca; }
+  to {
+    border-bottom: 45px solid #e4d5ca; } }
 @media screen and (max-width: 1179px) {
   #header_sub .inner {
     width: 100%;
@@ -439,15 +451,15 @@ input, a, select, option {
       left: 50%;
       transform: translate(-50%, -50%); }
       .members .sub_visual > .txt h1 {
-        font: 50px/1  'EB Garamond';
+        font: 40px/1 'Cardo';
         color: #fff;
         text-align: center;
         margin-bottom: 10px; }
         .members .sub_visual > .txt h1 span {
-          font: 15px/1 '맑은 고딕';
+          font-size: 15px;
           color: #fff; }
       .members .sub_visual > .txt > p {
-        font: 20px/1  'EB Garamond';
+        font: 20px/1 'Cardo';
         color: #fff; }
   .members .inner {
     width: 1180px;
@@ -724,15 +736,15 @@ input, a, select, option {
     left: 50%;
     transform: translate(-50%, -50%); }
     .youtube > .sub_visual .txt h1 {
-      font: 50px/1 'EB Garamond';
+      font: 40px/1 'Cardo';
       color: #fff;
       text-align: center;
       margin-bottom: 10px; }
       .youtube > .sub_visual .txt h1 span {
-        font: 15px/1 '맑은 고딕';
+        font-size: 15px;
         color: #fff; }
     .youtube > .sub_visual .txt > p {
-      font: 20px/1 'EB Garamond';
+      font: 20px/1 'Cardo';
       color: #fff; }
 .youtube .inner {
   width: 1180px;
@@ -948,15 +960,15 @@ input, a, select, option {
     left: 50%;
     transform: translate(-50%, -50%); }
     .gallery .sub_visual > .txt h1 {
-      font: 50px/1 'EB Garamond';
+      font: 40px/1 'Cardo';
       color: #fff;
       text-align: center;
       margin-bottom: 10px; }
       .gallery .sub_visual > .txt h1 span {
-        font: 15px/1 '맑은 고딕';
+        font-size: 15px;
         color: #fff; }
     .gallery .sub_visual > .txt > p {
-      font: 20px/1 'EB Garamond';
+      font: 20px/1 'Cardo';
       color: #fff; }
 .gallery .inner {
   width: 1180px;
@@ -1161,15 +1173,15 @@ input, a, select, option {
     left: 50%;
     transform: translate(-50%, -50%); }
     .location .sub_visual > .txt h1 {
-      font: 50px/1 'EB Garamond';
+      font: 40px/1 'Cardo';
       color: #fff;
       text-align: center;
       margin-bottom: 10px; }
       .location .sub_visual > .txt h1 span {
-        font: 15px/1 '맑은 고딕';
+        font-size: 15px;
         color: #fff; }
     .location .sub_visual > .txt > p {
-      font: 20px/1 'EB Garamond';
+      font: 20px/1 'Cardo';
       color: #fff; }
 .location .inner {
   width: 1180px;
@@ -1289,15 +1301,15 @@ input, a, select, option {
       left: 50%;
       transform: translate(-50%, -50%); }
       .community > .sub_visual .txt h1 {
-        font: 50px/1 'EB Garamond';
+        font: 40px/1 'Cardo';
         color: #fff;
         text-align: center;
         margin-bottom: 10px; }
         .community > .sub_visual .txt h1 span {
-          font: 15px/1 '맑은 고딕';
+          font-size: 15px;
           color: #fff; }
       .community > .sub_visual .txt > p {
-        font: 20px/1 'EB Garamond';
+        font: 20px/1 'Cardo';
         color: #fff; }
   .community .inner {
     width: 1180px;
@@ -1632,15 +1644,15 @@ input, a, select, option {
       left: 50%;
       transform: translate(-50%, -50%); }
       .department .sub_visual > .txt h1 {
-        font: 50px/1 'EB Garamond';
+        font: 40px/1 'Cardo';
         color: #fff;
         text-align: center;
         margin-bottom: 10px; }
         .department .sub_visual > .txt h1 span {
-          font: 15px/1 '맑은 고딕';
+          font-size: 15px;
           color: #fff; }
       .department .sub_visual > .txt > p {
-        font: 20px/1 'EB Garamond';
+        font: 20px/1 'Cardo';
         color: #fff; }
   .department .inner {
     width: 1180px;
@@ -1896,7 +1908,7 @@ body {
 
 #header {
   width: 100%;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #f5f5f5;
   position: relative;
   z-index: 2; }
   #header .inner {
@@ -1907,13 +1919,13 @@ body {
     #header .inner h1 {
       width: 20%;
       position: absolute;
-      top: 20px;
+      top: 29px;
       left: 0; }
       #header .inner h1 a {
         display: block;
         width: 100%;
         height: 50px;
-        font: 24px/50px "Prompt";
+        font: 24px/50px 'arial';
         color: #000; }
     #header .inner > .gnb {
       width: 65%;
@@ -1929,7 +1941,8 @@ body {
         height: 90px;
         text-align: center; }
         #header .inner > .gnb > li:hover {
-          border-bottom: 4px solid #cfb6a4; }
+          animation: testani 1s;
+          animation-fill-mode: forwards; }
         #header .inner > .gnb > li:nth-of-type(1) .sub ul {
           position: relative;
           margin-left: 0vw; }
@@ -1949,7 +1962,7 @@ body {
           position: relative;
           margin-left: 0.05vw; }
         #header .inner > .gnb > li a {
-          font: 15px/90px "Prompt";
+          font: 15px/112px 'arial';
           color: #222; }
         #header .inner > .gnb > li .sub {
           width: 250px;
@@ -1959,27 +1972,29 @@ body {
             background: #fff; }
             #header .inner > .gnb > li .sub > .subli > li {
               width: 100%;
-              padding: 5px 30px; }
+              padding: 0px 30px; }
+              #header .inner > .gnb > li .sub > .subli > li:first-child {
+                padding-top: 40px; }
               #header .inner > .gnb > li .sub > .subli > li:last-child {
                 padding-bottom: 40px; }
               #header .inner > .gnb > li .sub > .subli > li a {
                 display: block;
                 width: 100%;
                 height: 50px;
-                font: 18px/50px "arial";
+                font: 15px/50px 'Noto Serif';
                 color: #000;
                 text-align: left;
                 border-bottom: 1px solid #eee; }
                 #header .inner > .gnb > li .sub > .subli > li a span {
                   margin-left: 5px;
-                  font-size: 12px;
-                  color: #222; }
+                  font-size: 10px;
+                  color: #000; }
                 #header .inner > .gnb > li .sub > .subli > li a::after {
                   content: '';
                   display: block;
                   width: 120px;
                   height: 2px;
-                  background: #e4d5ca;
+                  background: #cfb6a4;
                   position: relative;
                   top: -3px;
                   opacity: 0; }
@@ -1993,12 +2008,11 @@ body {
       height: 28px;
       border: 1px solid #bbb;
       text-align: center;
-      font: 12px/28px "Prompt";
+      font: 12px/28px 'Noto Serif';
       color: #222;
       position: absolute;
       right: 0px;
-      top: 50%;
-      transform: translateY(-50%); }
+      top: 42%; }
     #header .inner .btnCall {
       display: block;
       width: 30px;
@@ -2086,7 +2100,7 @@ body {
             transform: rotate(0deg); }
         #header .inner .menuMo .txtbox p {
           width: 250px;
-          font: 16px/1.8 "arial";
+          font: 16px/1.8 'Noto Serif';
           color: #000; }
           #header .inner .menuMo .txtbox p a {
             font-size: 16px;
@@ -2110,7 +2124,7 @@ body {
           #header .inner .menuMo .gnbmo li a {
             display: block;
             height: 40px;
-            font: 15px/40px "arial";
+            font: 15px/40px 'Cardo';
             color: #000; }
       #header .inner .menuMo.on {
         left: 0; }
@@ -2120,10 +2134,15 @@ body {
   to {
     width: 80px;
     opacity: 1; } }
+@keyframes testani {
+  from {
+    border-bottom: 0px solid #e4d5ca; }
+  to {
+    border-bottom: 45px solid #e4d5ca; } }
 #visual {
   width: 100%;
   height: calc(100vh - 91px);
-  background: #eee; }
+  background: #f5f5f5; }
   #visual .inner {
     width: 1180px;
     height: 100%;
@@ -2139,7 +2158,7 @@ body {
       position: absolute;
       top: 240px;
       left: 20px;
-      z-index: 2;
+      z-index: 1;
       float: left;
       transition: 1s; }
       #visual .inner .txtbox .txtlist {
@@ -2155,7 +2174,7 @@ body {
             opacity: 1;
             transform: translateY(0px); }
         #visual .inner .txtbox .txtlist > h2 {
-          font: 40px/1.2 "arial";
+          font: 40px/1.2 'Cardo';
           color: #000;
           opacity: 0;
           margin-left: 120px;
@@ -2163,7 +2182,7 @@ body {
           margin-bottom: 40px; }
         #visual .inner .txtbox .txtlist > p {
           width: 60%;
-          font: 16px/1.2 "arial";
+          font: 16px/1.2 'Noto Serif';
           color: #222;
           transform: translateY(40px);
           transition: 1.4s;
@@ -2171,7 +2190,7 @@ body {
           margin-bottom: 40px; }
         #visual .inner .txtbox .txtlist > a {
           display: block;
-          font: bold 14px/1 "arial";
+          font: bold 14px/1 "Noto Serif";
           color: #222;
           transform: translateY(40px);
           transition: 1.4s;
@@ -2213,7 +2232,7 @@ body {
           display: inline-block;
           width: 100px;
           height: 70px;
-          background: #eee;
+          background: #f5f5f5;
           padding: 0px 30px; }
           #visual .inner .slidebox .slidebtn > a:nth-of-type(1) {
             text-align: right; }
@@ -2264,15 +2283,15 @@ body {
       text-align: center;
       padding: 0px 0px 255px; }
       #intro .inner .txtbox > h2 {
-        font: 40px/1.4 'arial';
+        font: 40px/1.4 'Cardo';
         color: #000;
         margin-bottom: 20px; }
       #intro .inner .txtbox > h3 {
-        font: 24px/1 'arial';
+        font: 24px/1 'Cardo';
         color: #000;
         margin-bottom: 40px; }
       #intro .inner .txtbox > p {
-        font: 16px/1.4 'arial';
+        font: 16px/1.4 'Noto Serif';
         color: #000; }
       #intro .inner .txtbox > div {
         margin-bottom: 80px;
@@ -2304,11 +2323,11 @@ body {
         color: rgba(34, 34, 34, 0.836);
         margin-bottom: 30px; }
       #intro .inner .boxwrap > article h3 {
-        font: 24px/1 "arial";
+        font: 24px/1 'Cardo';
         color: #525252;
         margin-bottom: 20px; }
       #intro .inner .boxwrap > article p {
-        font: 16px/1.4 "arial";
+        font: 16px/1.4 'Noto Serif';
         color: #5f5f5f; }
 
 #service {
@@ -2327,7 +2346,7 @@ body {
       height: 100vh;
       float: left; }
       #service .inner .head h2 {
-        font: 45px/1 'arial';
+        font: 45px/1 'Cardo';
         color: #000;
         position: relative;
         top: 0; }
@@ -2347,11 +2366,11 @@ body {
             height: 100%;
             object-fit: cover; }
         #service .inner .body .box h3 {
-          font: 30px/1 'arial';
+          font: 30px/1 'Cardo';
           color: #000;
           padding: 0px 0px 10px 10px; }
         #service .inner .body .box p {
-          font: 14px/1.4 'arial';
+          font: 14px/1.4  'Noto Serif';
           color: #000;
           padding-left: 10px;
           width: 656px; }
@@ -2363,7 +2382,7 @@ body {
     margin: 0 auto;
     padding: 200px 0px; }
     #work .inner h2 {
-      font: 45px/1 'arial';
+      font: 45px/1  'Cardo';
       color: #000;
       margin-bottom: 40px;
       letter-spacing: 4px; }
@@ -2433,11 +2452,11 @@ body {
         transition: 0.5s;
         flex: 1; }
         #contact > .inner > .boxwrap > div h3 {
-          font: 34px/1.4 'arial';
+          font: 34px/1.4 'Cardo';
           color: #000;
           margin-bottom: 40px; }
         #contact > .inner > .boxwrap > div p {
-          font: 24px/1.4 'arial';
+          font: 24px/1.4 'Noto Serif';
           color: #000; }
         #contact > .inner > .boxwrap > div .circleb {
           width: 100px;
@@ -2508,10 +2527,10 @@ body {
             margin-right: 7px; }
           #information > .inner > .boxwrap .movebox > .txtbox p {
             display: inline-block;
-            font: 15px/1 'arial';
+            font: 15px/1  'Noto Serif';
             color: #000; }
           #information > .inner > .boxwrap .movebox > .txtbox > h3 {
-            font: 18px/1.4 'arial';
+            font: 18px/1.4 'Cardo';
             color: #000;
             margin-top: 20px; }
         #information > .inner > .boxwrap .movebox > .downbox {
@@ -2529,7 +2548,7 @@ body {
             #information > .inner > .boxwrap .movebox > .downbox > .txtbox > p {
               display: block;
               height: 60px;
-              font: 16px/60px "arial";
+              font: 16px/60px "Noto Serif";
               color: #000; }
               #information > .inner > .boxwrap .movebox > .downbox > .txtbox > p:first-child {
                 padding-right: 30px;
@@ -2560,7 +2579,7 @@ body {
           display: block;
           clear: both; }
         #information > .inner > .boxwrap .articlewrap > h3 {
-          font: 40px/1 'arial';
+          font: 40px/1 'Cardo';
           color: #000;
           padding-bottom: 20px;
           margin-bottom: 120px;
@@ -2591,11 +2610,11 @@ body {
             width: 100%;
             padding-left: 10px; }
             #information > .inner > .boxwrap .articlewrap > article > .txtbox h3 {
-              font: bold 22px/1 "arial";
+              font: bold 22px/1 'Cardo';
               color: #000;
               margin-bottom: 10px; }
             #information > .inner > .boxwrap .articlewrap > article > .txtbox p {
-              font: 18px/1.2 "arial";
+              font: 18px/1.2 'Noto Serif';
               color: #222;
               margin-bottom: 20px; }
             #information > .inner > .boxwrap .articlewrap > article > .txtbox span {
@@ -2609,11 +2628,11 @@ body {
               margin-bottom: 10px;
               color: lightsalmon; }
             #information > .inner > .boxwrap .articlewrap > article .news h3 {
-              font: bold 22px/1.2 "arial";
+              font: bold 22px/1.2 'Cardo';
               color: #000;
               margin-bottom: 10px; }
             #information > .inner > .boxwrap .articlewrap > article .news p {
-              font: 15px/1.2 "arial";
+              font: 15px/1.2 'Noto Serif';
               color: #222;
               margin-bottom: 20px; }
       #information > .inner > .boxwrap .articlelist {
@@ -2651,10 +2670,10 @@ body {
               margin-right: 15px; }
             #information > .inner > .boxwrap .articlelist > li > .txtbox p {
               display: inline-block;
-              font: 15px/1 'arial';
+              font: 15px/1 'Noto Serif';
               color: #000; }
             #information > .inner > .boxwrap .articlelist > li > .txtbox h3 {
-              font: 20px/1.2 'arial';
+              font: 20px/1.2 'Cardo';
               color: #000;
               margin-top: 20px; }
 
@@ -2681,23 +2700,23 @@ body {
           color: #000;
           margin-bottom: 10px; }
         #banner .inner > .leftbox > .txtbox .txtwrap h3 {
-          font: 30px/1.2 'arial';
+          font: 30px/1.2 'Cardo';
           color: #000;
           margin-bottom: 20px; }
         #banner .inner > .leftbox > .txtbox .txtwrap > p {
           width: 90%;
           margin-bottom: 40px; }
           #banner .inner > .leftbox > .txtbox .txtwrap > p:nth-of-type(1) {
-            font: 18px/1.4 'arial';
+            font: 18px/1.4 'Noto Serif';
             color: #000; }
           #banner .inner > .leftbox > .txtbox .txtwrap > p:nth-of-type(2) {
-            font: 15px/1.4 'arial';
+            font: 15px/1.4 'Noto Serif';
             color: #000; }
         #banner .inner > .leftbox > .txtbox .txtwrap a {
           display: block;
           width: 164px;
           height: 50px;
-          font: 15px/50px 'arial';
+          font: 15px/50px  'Noto Serif';
           color: #000;
           text-align: center;
           border: 1px solid #000; }

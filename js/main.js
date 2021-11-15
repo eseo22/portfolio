@@ -50,6 +50,7 @@ var $svgli = $(".numbox ul li");
 var $txt = $(".txtbox li");
 var $txtnum = $txt.length;
 var slideIndex = 0;
+var slideIndex2 = 0;
 var len = $(".slidewrap li").length;
 var listnum = $(".movebox").find("li").length;
 let enableClick = true;
@@ -93,6 +94,29 @@ $(".slidebox").find(".prev").on("click", function (e) {
     }
 });
 
+
+//section information 슬라이드 + 페이지숫자 카운트
+$(".movebox").find(".next").on("click", function (e) {
+    e.preventDefault();
+    if (enableClick) {
+        enableClick = false;
+        slideIndex2 += 1;
+        if (slideIndex2 >= listnum) { slideIndex2 = 0; }
+        next(".slidewrap3");
+        $(".movebox").children(".downbox").find(".page").text(slideIndex2 + 1);
+    }
+});
+$(".movebox").find(".prev").on("click", function (e) {
+    e.preventDefault();
+    if (enableClick) {
+        enableClick = false;
+        slideIndex2 -= 1;
+    if (slideIndex2 < 0) { slideIndex2 = listnum - 1; }
+        prev(".slidewrap3");
+        $(".movebox").children(".downbox").find(".page").text(slideIndex2 + 1);
+    }
+});
+
 //자동롤링 슬라이드
 setInterval(function () {
     $(".slidewrap2").animate({ marginLeft: "-200%" }, 1000, function () {
@@ -100,28 +124,6 @@ setInterval(function () {
         $(".slidewrap2").children("li").first().appendTo(".slidewrap2");
     });
 }, 3000);
-
-//section information 슬라이드 + 페이지숫자 카운트
-$(".movebox").find(".next").on("click", function (e) {
-    e.preventDefault();
-    if (enableClick) {
-        enableClick = false;
-        slideIndex += 1;
-        if (slideIndex >= listnum) { slideIndex = 0; }
-        next(".slidewrap3");
-        $(".movebox").children(".downbox").find(".page").text(slideIndex + 1);
-    }
-});
-$(".movebox").find(".prev").on("click", function (e) {
-    e.preventDefault();
-    if (enableClick) {
-        enableClick = false;
-        slideIndex -= 1;
-    if (slideIndex < 0) { slideIndex = listnum - 1; }
-        prev(".slidewrap3");
-        $(".movebox").children(".downbox").find(".page").text(slideIndex + 1);
-    }
-});
 
 
 function next(wrap) {
