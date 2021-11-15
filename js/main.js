@@ -158,46 +158,49 @@ const boxs = $(".myScroll");
 boxs.each(function(_, box){
     pos.push($(box).offset().top);
 });
-console.log(pos);
+$(window).on("resize",function(){
+    pos = [];
+    boxs.each(function(_, box){
+        pos.push($(box).offset().top);
+    });
+});
 $(window).on("scroll", function(){
     var scroll = $(this).scrollTop();
     //console.log(scroll);
     
 
-    // if(scroll >= pos[2] && scroll < pos[3] ){
-    //     var current_scroll = scroll - pos[2]
-        
-    // }
+    if(scroll >= pos[2] - 80 ){
+        $(".boxwrap").children("article").addClass("on");
+    }else{
+        $(".boxwrap").children("article").removeClass("on");
+
+    }
     if(scroll >= pos[3] - 100 ){
         var current_scroll = scroll - pos[3] + 100 ;
         var move_scroll;
-        console.log(current_scroll);
+        //console.log(current_scroll);
         (current_scroll>=1035) ? move_scroll = 1035 : move_scroll = current_scroll;
         $(".head h2").css({top : move_scroll});
     }
     if(scroll >= pos[4] - 400){
         var current_scroll = scroll - pos[4] + 400 ; 
         var move_scroll;
-        console.log(current_scroll);
         (current_scroll>=800) ? move_scroll = 800 : move_scroll = current_scroll;
         $(".line").css({width:move_scroll});
     }
     if(scroll >= pos[5]){
         var current_scroll = scroll - pos[5];
-        //console.log(current_scroll);
     }
-    if(scroll >= pos[6] - 100){
-        var current_scroll = scroll - pos[6] + 100 ;
+    if(scroll >= pos[6] - 70){
+        var current_scroll = scroll - pos[6] + 70 ;
         var move_scroll ;
-        console.log(current_scroll); //1423
-        //var move_scroll = current_scroll/2 ;
-        (current_scroll>=1520) ? move_scroll = 1520 : move_scroll = current_scroll;
-        
-        $(".boxwrap").children(".movebox").css({top : -400 + move_scroll });
+        (current_scroll>=1540) ? move_scroll = 1540 : move_scroll = current_scroll;
+        console.log(current_scroll);
+        $(".boxwrap").children(".movebox").css({top : -420 + move_scroll });
     }
     if(scroll >= pos[7]){
         var current_scroll = scroll - pos[7] ;
-        console.log(current_scroll);        
+        //console.log(current_scroll);        
     }
     
 });
