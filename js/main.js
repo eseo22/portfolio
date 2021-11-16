@@ -175,8 +175,8 @@ $(window).on("scroll", function(){
         $(".boxwrap").children("article").removeClass("on");
 
     }
-    if(scroll >= pos[3] - 100 ){
-        var current_scroll = scroll - pos[3] + 100 ;
+    if(scroll >= pos[3] ){
+        var current_scroll = scroll - pos[3]  ;
         var move_scroll;
         //console.log(current_scroll);
         (current_scroll>=1035) ? move_scroll = 1035 : move_scroll = current_scroll;
