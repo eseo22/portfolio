@@ -13,7 +13,7 @@
 		h1 {
 			width: 20%;
 			position: absolute;
-			top: 20px;
+			top: 29px;
 			left: 0;
 			a {
 				display: block;
@@ -41,8 +41,7 @@
 				text-align: center;
 
 				&:hover {
-					animation: testani 1s;
-					animation-fill-mode: forwards;
+                    border-bottom: 2px solid #222;
 				}
 				&:nth-of-type(1) {
 					.sub ul{
@@ -87,7 +86,7 @@
 				}
 
 				a {
-					font: 15px/90px 'arial';
+					font: 15px/112px 'arial';
 					color: #222;
 				}
 
@@ -99,6 +98,7 @@
 						width: 250px;
 						background: #fff;
 						//padding: 20px;
+                        top: -21px;
 						
 						
 						> li {
@@ -154,8 +154,7 @@
 			color: #222;
 			position: absolute;
 			right: 0px;
-			top: 50%;
-			transform: translateY(-50%);
+			top: 42%;
 		}
 
 		.btnCall {
@@ -309,11 +308,7 @@
 		from { width: 0px ;}
 		to {width: 80px ; opacity: 1;}
 	}
-	@keyframes testani{
-		from {border-bottom: 0px solid #e4d5ca;}
-		to {border-bottom: 45px solid #e4d5ca;}
-
-	}
+	
 }
 
 @media screen and (max-width:1179px){

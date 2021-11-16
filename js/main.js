@@ -169,7 +169,7 @@ $(window).on("scroll", function(){
     //console.log(scroll);
     
 
-    if(scroll >= pos[2] - 80 ){
+    if(scroll >= pos[2] - 20 ){
         $(".boxwrap").children("article").addClass("on");
     }else{
         $(".boxwrap").children("article").removeClass("on");

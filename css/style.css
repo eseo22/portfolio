@@ -38,7 +38,7 @@ input, a, select, option {
     #header_sub .inner h1 {
       width: 20%;
       position: absolute;
-      top: 20px;
+      top: 29px;
       left: 0; }
       #header_sub .inner h1 a {
         display: block;
@@ -60,8 +60,7 @@ input, a, select, option {
         height: 90px;
         text-align: center; }
         #header_sub .inner > .gnb > li:hover {
-          animation: testani 1s;
-          animation-fill-mode: forwards; }
+          border-bottom: 2px solid #222; }
         #header_sub .inner > .gnb > li:nth-of-type(1) .sub ul {
           position: relative;
           margin-left: 0vw; }
@@ -81,14 +80,15 @@ input, a, select, option {
           position: relative;
           margin-left: 0.05vw; }
         #header_sub .inner > .gnb > li a {
-          font: 15px/90px 'arial';
+          font: 15px/112px 'arial';
           color: #222; }
         #header_sub .inner > .gnb > li .sub {
           width: 250px;
           display: none; }
           #header_sub .inner > .gnb > li .sub > .subli {
             width: 250px;
-            background: #fff; }
+            background: #fff;
+            top: -21px; }
             #header_sub .inner > .gnb > li .sub > .subli > li {
               width: 100%;
               padding: 0px 30px; }
@@ -131,8 +131,7 @@ input, a, select, option {
       color: #222;
       position: absolute;
       right: 0px;
-      top: 50%;
-      transform: translateY(-50%); }
+      top: 42%; }
     #header_sub .inner .btnCall {
       display: block;
       width: 30px;
@@ -254,11 +253,6 @@ input, a, select, option {
   to {
     width: 80px;
     opacity: 1; } }
-@keyframes testani {
-  from {
-    border-bottom: 0px solid #e4d5ca; }
-  to {
-    border-bottom: 45px solid #e4d5ca; } }
 @media screen and (max-width: 1179px) {
   #header_sub .inner {
     width: 100%;
@@ -1944,8 +1938,7 @@ body {
         height: 90px;
         text-align: center; }
         #header .inner > .gnb > li:hover {
-          animation: testani 1s;
-          animation-fill-mode: forwards; }
+          border-bottom: 2px solid #222; }
         #header .inner > .gnb > li:nth-of-type(1) .sub ul {
           position: relative;
           margin-left: 0vw; }
@@ -2137,11 +2130,6 @@ body {
   to {
     width: 80px;
     opacity: 1; } }
-@keyframes testani {
-  from {
-    border-bottom: 0px solid #e4d5ca; }
-  to {
-    border-bottom: 45px solid #e4d5ca; } }
 #visual {
   width: 100%;
   height: calc(100vh - 91px);

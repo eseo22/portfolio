@@ -58,8 +58,7 @@ body {
 				text-align: center;
 
 				&:hover {
-					animation: testani 1s;
-					animation-fill-mode: forwards;
+					border-bottom: 2px solid #222;
 				}
 				&:nth-of-type(1) {
 					.sub ul{
@@ -326,11 +325,7 @@ body {
 		from { width: 0px ;}
 		to {width: 80px ; opacity: 1;}
 	}
-	@keyframes testani{
-		from {border-bottom: 0px solid #e4d5ca;}
-		to {border-bottom: 45px solid #e4d5ca;}
-
-	}
+	
 }
 
 #visual {
