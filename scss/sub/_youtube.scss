@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Playfair+Display&family=Roboto+Slab&family=Zen+Antique+Soft&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
 .youtube{
     >.sub_visual{
-        width: 100%;
+        width: 100%; height: 300px;
         position: relative;
         background-color: #000;
-        margin-bottom: 100px;
         
         >.pic{
             width: 100%; height: 100%;
             background: url(../img/test4.jpg) no-repeat;
             background-size: cover;
             background-position: center;
-            opacity: 0.6;
+            opacity: 0.4;
         }
         .txt{
             text-align: center;
@@ -27,16 +26,49 @@
                 }
             }
             >p{
-                font: 20px/1 'Cardo'; color: #fff;
+                font: 15px/1 'Cardo'; color: #fff;
             }
         }
         
     }
     .inner{
         width: 1180px;
-        margin: 100px auto;
+        margin: 0px auto 200px;
 
         &::after{content: ''; display: block; clear: both;}
+
+        .topbox{
+            width: 100%; 
+            border: 1px solid #ddd;
+            background: #fff;
+            margin-bottom: 100px;
+            position: relative;
+            top: -25px;
+            
+            ul{
+                width: 100%; 
+                display: flex; 
+                
+                li{
+                    width: 200px; height: 50px;
+                    border-right: 1px solid #ddd;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0px 20px;
+                    &:nth-of-type(1){
+                        width: 60px; justify-content: center;
+                        padding: 0px 0px;
+                    }
+                    &:nth-of-type(3){
+                        border-bottom: 2px solid #222;
+                        
+                    }
+                    p{color: #222;}
+                    i{color: #ccc;}
+                }
+            }
+        }
         .vidtxt{
             text-align: center;
             margin-bottom: 140px;
@@ -48,12 +80,12 @@
                 transform: translateX(-50%);
             }
             >h2{
-                font: 30px/1 'EB Garamond'; color: #222;
+                font: 30px/1 'Cardo'; color: #222;
                 margin-bottom: 20px;
             }
             >p{
                 
-                font: 18px/1 'Alegreya Sans'; color: #aaa;
+                font: 14px/1.4 'Noto Serif'; color: #aaa;
                 
             }
         }
@@ -75,8 +107,8 @@
                         width: 100%; height: 50px;
                         border-bottom: 1px solid #ddd;
                         a{
-                            font: 20px/50px 'Alegreya Sans';
-                            color: #000;
+                            font: 18px/50px 'Cardo';
+                            color: #222;
                         }
                     }
                 }
@@ -107,22 +139,24 @@
                     overflow: hidden;
                     img{
                         width: 100%; height: 100%;
-                        object-fit: cover; transform: scale(1.6);
+                        object-fit: cover; transform: scale(1.38);
                     }
                 }
                 .con{
                     text-align: right;
+                    padding-top: 40px;
 
                     h2{
-                        font: 25px/1 'Alegreya Sans'; color: #000;
+                        font: 20px/1 'Noto Serif'; color: #222;
                         margin: 10px 0px 20px;
                     }
                     p{
-                        font: 18px/1.2 'Alegreya Sans'; color: #222;
+                        font: 15px; color: #222;
+                        line-height: 1.4;
                         margin-bottom: 10px;
                     }
                     span{
-                        font: 15px/1 'Alegreya Sans'; color: #222;
+                        font-size: 15px; color: #222;
                     }
                 }
 
@@ -137,11 +171,15 @@
 }
 
 .popVideo{
-    position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%);
-    width: 1000px; height: 500px;
-
+    position: fixed; top: 0px; left: 0px;
+    width: 100vw; height: 100vh;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     iframe{
-        margin-bottom: 20px;
+        width: 80%; height: 80%;
     }
 
     span{
@@ -150,7 +188,7 @@
         background: #000;
         font: 20px/50px 'Nanum Gothic'; color: #fff;
         cursor: pointer;
-        position: absolute; top: 0px; right: -100px;
+        position: absolute; top: 0px; right: 0px;
         text-align: center;
         border-radius:40px;
     }

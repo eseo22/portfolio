@@ -428,7 +428,7 @@ input, a, select, option {
   margin-bottom: 240px; }
   .members .sub_visual {
     width: 100%;
-    height: 320px;
+    height: 300px;
     position: relative;
     background-color: #000; }
     .members .sub_visual > .pic {
@@ -453,11 +453,10 @@ input, a, select, option {
           font-size: 15px;
           color: #fff; }
       .members .sub_visual > .txt > p {
-        font: 20px/1 'Cardo';
+        font: 15px 'Cardo';
         color: #fff; }
   .members .inner {
     width: 1180px;
-    min-height: 500px;
     margin: 0 auto; }
     .members .inner .topbox {
       width: 100%;
@@ -492,21 +491,13 @@ input, a, select, option {
       margin: 0 auto 80px;
       text-align: center; }
       .members .inner .txtbox h2 {
-        font-size: 25px;
-        color: #222; }
-        .members .inner .txtbox h2::after {
-          content: '';
-          display: block;
-          width: 50px;
-          height: 1px;
-          background: #000;
-          position: relative;
-          left: 270px;
-          margin: 30px 0px 40px; }
-      .members .inner .txtbox p {
-        font-size: 15px;
+        font-size: 30px;
         color: #222;
-        line-height: 1.4; }
+        margin-bottom: 40px; }
+      .members .inner .txtbox p {
+        font-size: 14px;
+        color: #222;
+        line-height: 1.5; }
     .members .inner .spotbox {
       display: flex;
       justify-content: center;
@@ -516,8 +507,8 @@ input, a, select, option {
         content: '';
         display: block;
         width: 520px;
-        height: 2px;
-        background: #eee;
+        height: 1px;
+        background: #ccc;
         position: absolute;
         top: 52%;
         z-index: 1; }
@@ -526,6 +517,8 @@ input, a, select, option {
         .members .inner .spotbox > div span {
           display: block;
           font-size: 20px;
+          color: #ccc;
+          font-weight: bold;
           text-align: center;
           margin-bottom: 10px; }
         .members .inner .spotbox > div .circle {
@@ -533,12 +526,15 @@ input, a, select, option {
           width: 20px;
           height: 20px;
           border-radius: 50%;
-          background-color: #eee;
-          margin-bottom: 10px;
+          background-color: #ccc;
+          margin-bottom: 15px;
           position: relative;
           z-index: 2; }
         .members .inner .spotbox > div p {
-          font-size: 15px; }
+          font-size: 16px;
+          color: #ccc; }
+      .members .inner .spotbox .center span, .members .inner .spotbox .center p {
+        color: #aca092; }
       .members .inner .spotbox .center .circle {
         background-color: #cfb6a4; }
     .members .inner form fieldset {
@@ -584,11 +580,10 @@ input, a, select, option {
             font-size: 12px;
             line-height: 30px;
             color: #fff;
-            background: #222;
+            background: #aca092;
             width: 100px;
             vertical-align: middle;
-            padding-left: 0px;
-            border: 1px solid #222; }
+            padding-left: 0px; }
           .members .inner form fieldset table tr:nth-of-type(5) th {
             position: relative; }
             .members .inner form fieldset table tr:nth-of-type(5) th label {
@@ -623,7 +618,8 @@ input, a, select, option {
       text-align: center;
       font-size: 15px;
       color: #222;
-      background: #f5f5f5; }
+      background: #f5f5f5;
+      border: none; }
       .members .inner form .add table tr:nth-of-type(2) td select option {
         font-size: 15px;
         color: #000; }
@@ -683,21 +679,21 @@ input, a, select, option {
         border: none; }
     .members .inner form p {
       font-size: 12px;
-      color: orangered;
+      color: orange;
       margin-top: 10px; }
 
 .youtube > .sub_visual {
   width: 100%;
+  height: 300px;
   position: relative;
-  background-color: #000;
-  margin-bottom: 100px; }
+  background-color: #000; }
   .youtube > .sub_visual > .pic {
     width: 100%;
     height: 100%;
     background: url(../img/test4.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.6; }
+    opacity: 0.4; }
   .youtube > .sub_visual .txt {
     text-align: center;
     position: absolute;
@@ -713,15 +709,43 @@ input, a, select, option {
         font-size: 15px;
         color: #fff; }
     .youtube > .sub_visual .txt > p {
-      font: 20px/1 'Cardo';
+      font: 15px/1 'Cardo';
       color: #fff; }
 .youtube .inner {
   width: 1180px;
-  margin: 100px auto; }
+  margin: 0px auto 200px; }
   .youtube .inner::after {
     content: '';
     display: block;
     clear: both; }
+  .youtube .inner .topbox {
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #fff;
+    margin-bottom: 100px;
+    position: relative;
+    top: -25px; }
+    .youtube .inner .topbox ul {
+      width: 100%;
+      display: flex; }
+      .youtube .inner .topbox ul li {
+        width: 200px;
+        height: 50px;
+        border-right: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px; }
+        .youtube .inner .topbox ul li:nth-of-type(1) {
+          width: 60px;
+          justify-content: center;
+          padding: 0px 0px; }
+        .youtube .inner .topbox ul li:nth-of-type(3) {
+          border-bottom: 2px solid #222; }
+        .youtube .inner .topbox ul li p {
+          color: #222; }
+        .youtube .inner .topbox ul li i {
+          color: #ccc; }
   .youtube .inner .vidtxt {
     text-align: center;
     margin-bottom: 140px; }
@@ -736,11 +760,11 @@ input, a, select, option {
       left: 50%;
       transform: translateX(-50%); }
     .youtube .inner .vidtxt > h2 {
-      font: 30px/1 'EB Garamond';
+      font: 30px/1 'Cardo';
       color: #222;
       margin-bottom: 20px; }
     .youtube .inner .vidtxt > p {
-      font: 18px/1 'Alegreya Sans';
+      font: 14px/1.4 'Noto Serif';
       color: #aaa; }
   .youtube .inner .vidintro {
     width: 30%;
@@ -758,8 +782,8 @@ input, a, select, option {
         height: 50px;
         border-bottom: 1px solid #ddd; }
         .youtube .inner .vidintro .vidtxt2 ul li a {
-          font: 20px/50px 'Alegreya Sans';
-          color: #000; }
+          font: 18px/50px 'Cardo';
+          color: #222; }
   .youtube .inner #vidgallery {
     width: 68%;
     float: right;
@@ -786,30 +810,37 @@ input, a, select, option {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          transform: scale(1.6); }
+          transform: scale(1.38); }
       .youtube .inner #vidgallery article .con {
-        text-align: right; }
+        text-align: right;
+        padding-top: 40px; }
         .youtube .inner #vidgallery article .con h2 {
-          font: 25px/1 'Alegreya Sans';
-          color: #000;
+          font: 20px/1 'Noto Serif';
+          color: #222;
           margin: 10px 0px 20px; }
         .youtube .inner #vidgallery article .con p {
-          font: 18px/1.2 'Alegreya Sans';
+          font: 15px;
           color: #222;
+          line-height: 1.4;
           margin-bottom: 10px; }
         .youtube .inner #vidgallery article .con span {
-          font: 15px/1 'Alegreya Sans';
+          font-size: 15px;
           color: #222; }
 
 .popVideo {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1000px;
-  height: 500px; }
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .popVideo iframe {
-    margin-bottom: 20px; }
+    width: 80%;
+    height: 80%; }
   .popVideo span {
     display: block;
     width: 80px;
@@ -821,7 +852,7 @@ input, a, select, option {
     cursor: pointer;
     position: absolute;
     top: 0px;
-    right: -100px;
+    right: 0px;
     text-align: center;
     border-radius: 40px; }
 
@@ -1251,42 +1282,82 @@ input, a, select, option {
 
 .community {
   width: 100%; }
-  .community > .sub_visual {
+  .community .sub_visual {
     width: 100%;
+    height: 300px;
     position: relative;
-    background-color: #000;
-    margin-bottom: 50px; }
-    .community > .sub_visual > .pic {
+    background-color: #000; }
+    .community .sub_visual > .pic {
       width: 100%;
       height: 100%;
-      background: url(../img/test3.jpg) no-repeat;
+      background: url(../img/t2.jpg) no-repeat;
       background-size: cover;
-      background-position: center;
-      opacity: 0.5; }
-    .community > .sub_visual .txt {
+      background-position: right bottom;
+      opacity: 0.4; }
+    .community .sub_visual > .txt {
       text-align: center;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-      .community > .sub_visual .txt h1 {
+      .community .sub_visual > .txt h1 {
         font: 40px/1 'Cardo';
         color: #fff;
         text-align: center;
         margin-bottom: 10px; }
-        .community > .sub_visual .txt h1 span {
+        .community .sub_visual > .txt h1 span {
           font-size: 15px;
           color: #fff; }
-      .community > .sub_visual .txt > p {
-        font: 20px/1 'Cardo';
+      .community .sub_visual > .txt > p {
+        font: 15px 'Cardo';
         color: #fff; }
   .community .inner {
     width: 1180px;
     margin: 0 auto; }
+    .community .inner .topbox {
+      width: 100%;
+      border: 1px solid #ddd;
+      background: #fff;
+      margin-bottom: 100px;
+      position: relative;
+      top: -25px; }
+      .community .inner .topbox ul {
+        width: 100%;
+        display: flex; }
+        .community .inner .topbox ul li {
+          width: 200px;
+          height: 50px;
+          border-right: 1px solid #ddd;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0px 20px; }
+          .community .inner .topbox ul li:nth-of-type(1) {
+            width: 60px;
+            justify-content: center;
+            padding: 0px 0px; }
+          .community .inner .topbox ul li:nth-of-type(3) {
+            border-bottom: 2px solid #222; }
+          .community .inner .topbox ul li p {
+            color: #222; }
+          .community .inner .topbox ul li i {
+            color: #ccc; }
+    .community .inner > .txtbox {
+      width: 50%;
+      margin: 0 auto 120px;
+      text-align: center; }
+      .community .inner > .txtbox h2 {
+        font-size: 30px;
+        color: #222;
+        margin-bottom: 40px; }
+      .community .inner > .txtbox p {
+        font-size: 14px;
+        color: #222;
+        line-height: 1.4; }
     .community .inner > .wrap {
       width: 80%;
       margin: 0 auto;
-      margin-bottom: 100px; }
+      margin-bottom: 150px; }
       .community .inner > .wrap::after {
         content: '';
         display: block;
@@ -1297,18 +1368,19 @@ input, a, select, option {
         padding: 30px 10px;
         float: left;
         text-align: center;
-        border: 1px solid #ddd;
+        border: 1px solid #eee;
         margin-left: 10px; }
         .community .inner > .wrap > .btn > i {
           font-size: 30px;
           margin-bottom: 40px;
           color: #444; }
         .community .inner > .wrap > .btn > h3 {
-          font: 20px/1 '맑은 고딕';
+          font-size: 20px;
           color: #222;
           margin-bottom: 20px; }
         .community .inner > .wrap > .btn > p {
-          font: 18px/1.2 'Alegreya Sans';
+          font: 16px;
+          line-height: 1.2;
           color: #666;
           margin-bottom: 10px;
           height: 65px; }
@@ -1316,14 +1388,14 @@ input, a, select, option {
           display: block;
           width: 80px;
           height: 2px;
-          background: burlywood;
+          background: #cfb6a4;
           margin: 50px auto; }
           .community .inner > .wrap > .btn .line::after {
             content: '';
             display: block;
             width: 10px;
             height: 2px;
-            background: burlywood;
+            background: #cfb6a4;
             position: relative;
             top: -3px;
             left: 72px;
@@ -1336,23 +1408,23 @@ input, a, select, option {
           .community .inner > .wrap > .btn:nth-of-type(1) p::after {
             display: none; }
           .community .inner > .wrap > .btn:nth-of-type(1) p:nth-of-type(2) {
-            font: 24px/1 'Alegreya Sans';
+            font-size: 20px;
             color: #222;
             height: auto;
             margin-bottom: 10px; }
     .community .inner > h3 {
       display: inline-block;
-      font: 40px/1 'Alegreya Sans';
-      color: #000; }
+      font-size: 30px;
+      color: #222; }
     .community .inner > p {
       display: inline-block;
-      font: 18px/1 'Alegreya Sans';
-      color: #000; }
+      font-size: 15px;
+      color: #222; }
     .community .inner .searchbox {
       width: 100%;
       background: #F1EFEC;
       padding: 20px 0px;
-      margin: 20px 0px 40px;
+      margin: 20px 0px 100px;
       text-align: center; }
       .community .inner .searchbox select {
         width: 200px;
@@ -1360,10 +1432,11 @@ input, a, select, option {
         border: none;
         border: 2px solid #eee;
         margin-right: 5px;
-        font: 15px/50px 'Alegreya Sans';
-        color: #000; }
+        font-size: 15px;
+        color: #222; }
       .community .inner .searchbox label i {
         font-size: 20px;
+        color: #222;
         position: relative;
         left: 40px;
         top: 4px; }
@@ -1378,15 +1451,15 @@ input, a, select, option {
       margin-bottom: 80px; }
       .community .inner .table table {
         width: 100%;
-        border-top: 2px solid #222;
+        border-top: 2px solid #524C4A;
         border-collapse: collapse; }
         .community .inner .table table thead tr th {
           height: 50px;
           padding: 10px 30px;
           text-align: center;
-          font: bold 18px/1 '맑은 고딕';
-          color: #000;
-          border-bottom: 1px solid #222; }
+          font-size: 18px;
+          color: #222;
+          border-bottom: 1px solid #524C4A; }
           .community .inner .table table thead tr th:nth-of-type(1) {
             width: 150px; }
           .community .inner .table table thead tr th:nth-of-type(2) {
@@ -1398,14 +1471,14 @@ input, a, select, option {
           height: 100px;
           padding: 10px 30px;
           text-align: center;
-          font: 20px/1 '맑은 고딕';
-          color: #000;
+          font-size: 18px;
+          color: #222;
           border-bottom: 1px solid #eee; }
           .community .inner .table table tbody tr td:nth-of-type(2) {
             text-align: left; }
           .community .inner .table table tbody tr td a {
-            font: 20px/1 '맑은 고딕';
-            color: #000; }
+            font-size: 18px;
+            color: #222; }
         .community .inner .table table tbody tr:hover td {
           background: #eee; }
     .community .inner .pagination {
@@ -1425,33 +1498,32 @@ input, a, select, option {
           display: inline; }
           .community .inner .pagination > ul li a {
             display: inline-block;
-            width: 43px;
-            height: 43px;
-            font: 20px/43px 'Alegreya Sans';
-            color: #343434;
-            margin-left: 4px; }
+            width: 25px;
+            height: 25px;
+            font-size: 20px;
+            line-height: 25px;
+            color: #222;
+            margin: 0px 10px; }
       .community .inner .pagination .pgnumb {
         margin: 0 20px; }
         .community .inner .pagination .pgnumb > li > a {
           font-size: 18px; }
         .community .inner .pagination .pgnumb > li:hover a {
-          border-radius: 22px;
-          background-color: #343434;
-          color: #fff; }
+          border-bottom: 2px solid #2d2d2d; }
     .community .inner .helpbox {
       width: 100%;
       height: 300px;
-      background: url(../img/help.jpg) no-repeat bottom;
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/help.jpg) no-repeat bottom;
       background-size: cover;
-      filter: grayscale(40%);
       margin-bottom: 120px;
       padding: 80px 40px; }
       .community .inner .helpbox .txtbox h2 {
-        font: 30px/1 'Alegreya Sans';
+        font-size: 30px;
         color: #fff;
         margin-bottom: 20px; }
       .community .inner .helpbox .txtbox p {
-        font: 18px/1.2 'Alegreya Sans';
+        font-size: 18px;
+        line-height: 1.2;
         color: #ddd;
         margin-bottom: 40px; }
         .community .inner .helpbox .txtbox p a {
@@ -1460,7 +1532,7 @@ input, a, select, option {
           color: #ddd;
           border-bottom: 1px solid #ddd; }
       .community .inner .helpbox .txtbox i {
-        font-size: 20px;
+        font-size: 18px;
         color: #fff;
         margin-right: 10px; }
 

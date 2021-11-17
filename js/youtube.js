@@ -70,12 +70,12 @@ $("body").on("click", "#vidgallery article", function(e){
                         width:"100%",
                         height:500
                     }),
-                    $("<span>").text("close")
+                    $("<span>")
                 )
             
             )
 
 });
-$("body").on("click", ".popVideo span", function(){
+$("body").on("click", ".popVideo", function(){
     $(".popVideo").remove();
 });
