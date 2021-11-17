@@ -1,8 +1,11 @@
 $("input[type=submit]").on("click", function(e){
     if(!isTxt("userid", 5)) e.preventDefault();
     if(!password("userpw1","userpw2")) e.preventDefault();
+    if(!isName("username")) e.preventDefault();
     if(!isEmail("email")) e.preventDefault();
     if(!isPhone("hpnum")) e.preventDefault();
+    if(!isCheck("chk")) e.preventDefault();
+    if(!isCheck("chk2")) e.preventDefault();
 });
 
 $("input[type=button]").on("click", function(e){
@@ -30,6 +33,7 @@ function isTxt(name, len){
         return false;
     }
 }
+
 //비밀번호 인증
 function password(name1, name2){
     let pw1 = $("input[name="+name1+"]").val();
@@ -47,10 +51,27 @@ function password(name1, name2){
     }else{
         $("input[name="+name1+"]").parent().find("p").remove();
         $("input[name="+name1+"]").parent().append(
-            "<p>영문 대소문자,숫자, 또는 특수문자 둥 1가지 이상 조합하여 8자이상 입력해주세요</p>"
+            "<p>영문 대소문자,숫자, 또는 특수문자 중 1가지 이상 조합하여 8자이상 입력해주세요</p>"
         );
         return false;
 
+    }
+}
+
+//이름 인증
+function isName(name){
+    let txt = $("input[name="+name+"]").val();    
+    let han = /^[가-힣]+$/ ;
+    let len = 2;
+    if(txt.length >= len && han.test(txt)){
+        $("input[name="+name+"]").parent().find("p").remove();
+        return true;
+    }else{
+        $("input[name="+name+"]").parent().find("p").remove();
+        $("input[name="+name+"]").parent().append(
+            "<p>한글로 "+len+"자 이상 입력해주세요</p>"
+        );
+        return false;
     }
 }
 
@@ -85,6 +106,21 @@ function isPhone(name){
         $("input[name="+name+"]").parent().find("p").remove();
         $("input[name="+name+"]").parent().append(
             "<p>전화번호 입력시 -를 제외하고 입력해주세요"
+        );
+        return false;
+    }
+}
+
+//약관동의 인증
+function isCheck(name){
+    let isCheck = $("input[name="+name+"]").is(":checked");
+    if(isCheck){
+        $("input[name="+name+"]").parent().find("p").remove();
+        return true;
+    }else{
+        $("input[name="+name+"]").parent().find("p").remove();
+        $("input[name="+name+"]").parent().append(
+            "<p>필수 동의사항을 체크해주세요</p>"
         );
         return false;
     }
