@@ -507,22 +507,22 @@ body {
 		margin: 0 auto;
 		padding: 225px 0px;
         .txtbox{
-            width: 50%; margin:  0 auto;
+            width: 700px; margin:  0 auto;
             text-align: center;
-            padding: 0px 0px 255px;
+            padding: 0px 0px 200px;
             >h2{
-                font: 40px/1.4 'Cardo'; color: #222;
-                margin-bottom: 20px;
+                font: 50px/1.5 'Cardo'; color: #222;
+                margin-bottom: 30px;
             }
             >h3{
-                font: 24px/1 'Cardo'; color: #222;
-                margin-bottom: 40px;
+                font: 36px/1 'Cardo'; color: #222;
+                padding: 70px 0px 30px;
             }
             >p{
-                font: 16px/1.4 'Noto Serif'; color:#222;
+                font: 16px/2 'Noto Serif'; color:#222;
             }
             >div{
-                margin-bottom: 80px;
+                
                 position: relative;
                 &::after{
                     content: ''; display: block;
