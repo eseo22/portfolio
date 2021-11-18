@@ -434,7 +434,7 @@ input, a, select, option {
     .members .sub_visual > .pic {
       width: 100%;
       height: 100%;
-      background: url(../img/s4.jpg) no-repeat;
+      background: url(../img/s4b.jpg) no-repeat;
       background-size: cover;
       background-position: left bottom;
       opacity: 0.6; }
@@ -453,7 +453,7 @@ input, a, select, option {
           font-size: 15px;
           color: #fff; }
       .members .sub_visual > .txt > p {
-        font: 15px 'Cardo';
+        font: 15px/1 'Cardo';
         color: #fff; }
   .members .inner {
     width: 1180px;
@@ -841,20 +841,6 @@ input, a, select, option {
   .popVideo iframe {
     width: 80%;
     height: 80%; }
-  .popVideo span {
-    display: block;
-    width: 80px;
-    height: 50px;
-    border: 1px solid #000;
-    background: #000;
-    font: 20px/50px 'Nanum Gothic';
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    text-align: center;
-    border-radius: 40px; }
 
 @media screen and (max-width: 1179px) {
   .youtube .sub_visual {
@@ -943,16 +929,16 @@ input, a, select, option {
         font-size: 15px; } }
 .gallery .sub_visual {
   width: 100%;
+  height: 300px;
   position: relative;
-  background-color: #000;
-  margin-bottom: 120px; }
+  background-color: #000; }
   .gallery .sub_visual > .pic {
     width: 100%;
     height: 100%;
-    background: url(../img/test.jpg) no-repeat;
+    background: url(../img/slide5.jpg) no-repeat;
     background-size: cover;
-    background-position: center;
-    opacity: 0.6; }
+    background-position: center bottom;
+    opacity: 0.4; }
   .gallery .sub_visual > .txt {
     text-align: center;
     position: absolute;
@@ -968,16 +954,44 @@ input, a, select, option {
         font-size: 15px;
         color: #fff; }
     .gallery .sub_visual > .txt > p {
-      font: 20px/1 'Cardo';
+      font: 15px/1 'Cardo';
       color: #fff; }
 .gallery .inner {
   width: 1180px;
-  margin: 100px auto;
+  margin: 0px auto 200px;
   position: relative; }
   .gallery .inner::after {
     content: '';
     display: block;
     clear: both; }
+  .gallery .inner .topbox {
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #fff;
+    margin-bottom: 120px;
+    position: relative;
+    top: -25px; }
+    .gallery .inner .topbox ul {
+      width: 100%;
+      display: flex; }
+      .gallery .inner .topbox ul li {
+        width: 200px;
+        height: 50px;
+        border-right: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px; }
+        .gallery .inner .topbox ul li:nth-of-type(1) {
+          width: 60px;
+          justify-content: center;
+          padding: 0px 0px; }
+        .gallery .inner .topbox ul li:nth-of-type(3) {
+          border-bottom: 2px solid #222; }
+        .gallery .inner .topbox ul li p {
+          color: #222; }
+        .gallery .inner .topbox ul li i {
+          color: #ccc; }
   .gallery .inner .loading {
     width: 80px;
     height: 80px;
@@ -1000,7 +1014,7 @@ input, a, select, option {
     .gallery .inner .introtxt > p {
       font: 18px/1 'Alegreya Sans';
       color: #444;
-      margin-bottom: 50px; }
+      margin-bottom: 80px; }
   .gallery .inner .galleryintro {
     width: 30%;
     height: auto;
@@ -1156,16 +1170,16 @@ input, a, select, option {
         width: 100%; } }
 .location .sub_visual {
   width: 100%;
+  height: 300px;
   position: relative;
-  background-color: #000;
-  margin-bottom: 120px; }
+  background-color: #000; }
   .location .sub_visual > .pic {
     width: 100%;
     height: 100%;
-    background: url(../img/test6.jpg) no-repeat;
+    background: url(../img/middle.jpg) no-repeat;
     background-size: cover;
-    background-position: center bottom;
-    opacity: 0.5; }
+    background-position: center center;
+    opacity: 0.4; }
   .location .sub_visual > .txt {
     text-align: center;
     position: absolute;
@@ -1181,12 +1195,40 @@ input, a, select, option {
         font-size: 15px;
         color: #fff; }
     .location .sub_visual > .txt > p {
-      font: 20px/1 'Cardo';
+      font: 15px/1 'Cardo';
       color: #fff; }
 .location .inner {
   width: 1180px;
   margin: 0 auto;
-  padding-bottom: 300px; }
+  margin-bottom: 300px; }
+  .location .inner .topbox {
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #fff;
+    margin-bottom: 100px;
+    position: relative;
+    top: -25px; }
+    .location .inner .topbox ul {
+      width: 100%;
+      display: flex; }
+      .location .inner .topbox ul li {
+        width: 200px;
+        height: 50px;
+        border-right: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px; }
+        .location .inner .topbox ul li:nth-of-type(1) {
+          width: 60px;
+          justify-content: center;
+          padding: 0px 0px; }
+        .location .inner .topbox ul li:nth-of-type(3) {
+          border-bottom: 2px solid #222; }
+        .location .inner .topbox ul li p {
+          color: #222; }
+        .location .inner .topbox ul li i {
+          color: #ccc; }
   .location .inner .txt {
     width: 500px;
     padding-top: 100px;
@@ -1290,9 +1332,9 @@ input, a, select, option {
     .community .sub_visual > .pic {
       width: 100%;
       height: 100%;
-      background: url(../img/t2.jpg) no-repeat;
+      background: url(../img/paper.jpg) no-repeat;
       background-size: cover;
-      background-position: right bottom;
+      background-position: center bottom;
       opacity: 0.4; }
     .community .sub_visual > .txt {
       text-align: center;
@@ -1309,7 +1351,7 @@ input, a, select, option {
           font-size: 15px;
           color: #fff; }
       .community .sub_visual > .txt > p {
-        font: 15px 'Cardo';
+        font: 15px/1 'Cardo';
         color: #fff; }
   .community .inner {
     width: 1180px;
@@ -1668,16 +1710,16 @@ input, a, select, option {
   width: 100%; }
   .department .sub_visual {
     width: 100%;
+    height: 300px;
     position: relative;
-    background-color: #000;
-    margin-bottom: 120px; }
+    background-color: #000; }
     .department .sub_visual > .pic {
       width: 100%;
       height: 100%;
-      background: url(../img/test5.jpg) no-repeat;
+      background: url(../img/slide.jpg) no-repeat;
       background-size: cover;
-      background-position: center;
-      opacity: 0.5; }
+      background-position: top;
+      opacity: 0.4; }
     .department .sub_visual > .txt {
       text-align: center;
       position: absolute;
@@ -1693,11 +1735,39 @@ input, a, select, option {
           font-size: 15px;
           color: #fff; }
       .department .sub_visual > .txt > p {
-        font: 20px/1 'Cardo';
+        font: 15px/1 'Cardo';
         color: #fff; }
   .department .inner {
     width: 1180px;
     margin: 0 auto; }
+    .department .inner .topbox {
+      width: 100%;
+      border: 1px solid #ddd;
+      background: #fff;
+      margin-bottom: 100px;
+      position: relative;
+      top: -25px; }
+      .department .inner .topbox ul {
+        width: 100%;
+        display: flex; }
+        .department .inner .topbox ul li {
+          width: 200px;
+          height: 50px;
+          border-right: 1px solid #ddd;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0px 20px; }
+          .department .inner .topbox ul li:nth-of-type(1) {
+            width: 60px;
+            justify-content: center;
+            padding: 0px 0px; }
+          .department .inner .topbox ul li:nth-of-type(3) {
+            border-bottom: 2px solid #222; }
+          .department .inner .topbox ul li p {
+            color: #222; }
+          .department .inner .topbox ul li i {
+            color: #ccc; }
     .department .inner .about1 {
       width: 100%;
       height: 600px;

@@ -1,17 +1,16 @@
 .department{
     width: 100%;
     .sub_visual{
-        width: 100%;
+        width: 100%; height: 300px;
         position: relative;
         background-color: #000;
-        margin-bottom: 120px;
         
         >.pic{
             width: 100%; height: 100%;
-            background: url(../img/test5.jpg) no-repeat;
+            background: url(../img/slide.jpg) no-repeat;
             background-size: cover;
-            background-position: center;
-            opacity: 0.5;
+            background-position: top;
+            opacity: 0.4;
         }
         >.txt{
             text-align: center;
@@ -27,13 +26,44 @@
                 }
             }
             >p{
-                font: 20px/1 'Cardo'; color: #fff;
+                font: 15px/1 'Cardo'; color: #fff;
             }
         }
     }
     .inner{
         width: 1180px; margin: 0 auto;
-
+        .topbox{
+            width: 100%; 
+            border: 1px solid #ddd;
+            background: #fff;
+            margin-bottom: 100px;
+            position: relative;
+            top: -25px;
+            
+            ul{
+                width: 100%; 
+                display: flex; 
+                
+                li{
+                    width: 200px; height: 50px;
+                    border-right: 1px solid #ddd;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0px 20px;
+                    &:nth-of-type(1){
+                        width: 60px; justify-content: center;
+                        padding: 0px 0px;
+                    }
+                    &:nth-of-type(3){
+                        border-bottom: 2px solid #222;
+                        
+                    }
+                    p{color: #222;}
+                    i{color: #ccc;}
+                }
+            }
+        }
         .about1{
             width: 100%; height: 600px;
             padding: 40px;

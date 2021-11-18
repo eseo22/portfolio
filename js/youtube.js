@@ -20,11 +20,11 @@ $.ajax({
 
         let tit = data.snippet.title;
         let titlen = tit.length;
-        if(titlen>20){tit=tit.substr(0,20)+"...."}
+        if(titlen>20){tit=tit.substr(0,20)+".."}
 
         let txt = data.snippet.description;
         let len = txt.length;
-        if(len>100){txt=txt.substr(0,100)+"...."}
+        if(len>100){txt=txt.substr(0,100)+".."}
         
 
         let date = data.snippet.publishedAt;
@@ -70,7 +70,7 @@ $("body").on("click", "#vidgallery article", function(e){
                         width:"100%",
                         height:500
                     }),
-                    $("<span>")
+                    $("<span>").text("close")
                 )
             
             )
