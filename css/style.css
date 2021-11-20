@@ -1187,7 +1187,7 @@ input, a, select, option {
     left: 50%;
     transform: translate(-50%, -50%); }
     .location .sub_visual > .txt h1 {
-      font: 40px/1 'Cardo';
+      font: 40px/1 "Cardo";
       color: #fff;
       text-align: center;
       margin-bottom: 10px; }
@@ -1195,7 +1195,7 @@ input, a, select, option {
         font-size: 15px;
         color: #fff; }
     .location .sub_visual > .txt > p {
-      font: 15px/1 'Cardo';
+      font: 15px/1 "Cardo";
       color: #fff; }
 .location .inner {
   width: 1180px;
@@ -1229,98 +1229,136 @@ input, a, select, option {
           color: #222; }
         .location .inner .topbox ul li i {
           color: #ccc; }
-  .location .inner .txt {
-    width: 500px;
-    padding-top: 100px;
-    margin-bottom: 80px; }
-    .location .inner .txt h1 {
-      font: 40px/1 'EB Garamond';
-      color: #000;
-      margin-bottom: 20px; }
-    .location .inner .txt p {
-      font: 20px/1 'Alegreya Sans';
-      color: #222; }
-  .location .inner .wrap {
-    width: 100%;
-    border-bottom: 1px solid #555;
-    margin-bottom: 120px;
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: flex-end; }
-    .location .inner .wrap article {
-      width: 400px;
-      padding: 20px; }
-      .location .inner .wrap article h3 {
-        font-size: 20px;
-        color: #000;
-        margin-bottom: 20px; }
-      .location .inner .wrap article ul li {
-        font-size: 18px;
-        color: #222; }
+  .location .inner .txtbox {
+    width: 50%;
+    margin: 0 auto 80px;
+    text-align: center; }
+    .location .inner .txtbox h2 {
+      font-size: 30px;
+      color: #222;
+      margin-bottom: 40px; }
+  .location .inner > h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000; }
+  .location .inner .direction {
+    margin-bottom: 50px;
+    padding: 20px;
+    background: #f5f5f5; }
+    .location .inner .direction ul li {
+      display: flex;
+      align-items: center;
+      height: 50px; }
+      .location .inner .direction ul li span {
+        display: block;
+        width: 15%;
+        font-size: 16px; }
+      .location .inner .direction ul li p {
+        width: 85%;
+        font-size: 16px; }
   .location .inner #map {
     width: 100%;
     height: 400px; }
   .location .inner .branch {
-    float: right;
-    margin-top: 20px; }
+    margin: 20px 0 100px;
+    display: flex;
+    justify-content: flex-end; }
+    .location .inner .branch::after {
+      content: '';
+      display: block;
+      clear: both; }
     .location .inner .branch li {
       float: left;
       margin-right: 10px; }
+      .location .inner .branch li:last-child {
+        margin-right: 0px; }
       .location .inner .branch li a {
         display: block;
-        width: 200px;
+        width: 150px;
         height: 40px;
         background: #555;
-        font: bold 12px/40px '맑은 고딕';
+        font: bold 12px/40px "맑은 고딕";
         color: #fff;
         text-align: center; }
       .location .inner .branch li.on a {
-        background: #aaa;
+        background: #eee;
         color: #333; }
   .location .inner .contact {
     width: 100%;
-    margin-top: 120px;
     display: flex; }
-    .location .inner .contact > .contacttxt {
-      width: 40%;
-      margin-right: 20px; }
-      .location .inner .contact > .contacttxt h3 {
-        font: 40px/1 'Alegreya Sans';
-        color: #000;
-        margin-bottom: 20px; }
-      .location .inner .contact > .contacttxt p {
-        font: 18px/1.2 'Alegreya Sans';
+    .location .inner .contact > .leftbox {
+      width: 50%;
+      padding-right: 40px; }
+      .location .inner .contact > .leftbox span {
+        font-size: 15px;
         color: #222; }
-    .location .inner .contact > .form {
-      width: 60%; }
-      .location .inner .contact > .form ul {
+      .location .inner .contact > .leftbox h3 {
+        font-size: 36px;
+        color: #222;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        font-weight: normal; }
+      .location .inner .contact > .leftbox > .form ul {
         width: 100%; }
-        .location .inner .contact > .form ul li {
+        .location .inner .contact > .leftbox > .form ul li {
           width: 48%;
           float: left;
           margin-right: 0px;
           margin-bottom: 20px; }
-          .location .inner .contact > .form ul li input {
+          .location .inner .contact > .leftbox > .form ul li input {
             width: 100%;
             height: 50px;
             border: 1px solid #ccc;
             padding: 14px 18px;
-            font: 15px/50px 'Alegreya Sans';
+            font: 15px/50px "Alegreya Sans";
             color: #000; }
-          .location .inner .contact > .form ul li:nth-of-type(2) {
+          .location .inner .contact > .leftbox > .form ul li:nth-of-type(2) {
             margin-left: 4%; }
-          .location .inner .contact > .form ul li:nth-of-type(3) {
+          .location .inner .contact > .leftbox > .form ul li:nth-of-type(3) {
             width: 100%; }
-          .location .inner .contact > .form ul li:nth-of-type(4) {
+          .location .inner .contact > .leftbox > .form ul li:nth-of-type(4) {
             width: 100%; }
-            .location .inner .contact > .form ul li:nth-of-type(4) textarea {
+            .location .inner .contact > .leftbox > .form ul li:nth-of-type(4) textarea {
               width: 100%;
-              height: 150px;
+              height: 100px;
               border: 1px solid #ccc;
               padding: 14px 18px;
-              font: 15px/1 'Alegreya Sans';
+              font: 15px/1 "Alegreya Sans";
               color: #000;
               resize: none; }
+      .location .inner .contact > .leftbox > .form input[type=submit] {
+        width: 200px;
+        height: 50px;
+        border: 1px solid #ccc;
+        background-color: #f5f5f5;
+        font-size: 20px;
+        line-height: 50px; }
+    .location .inner .contact > .rightbox {
+      width: 50%;
+      padding-left: 40px; }
+      .location .inner .contact > .rightbox span {
+        font-size: 15px;
+        color: #222; }
+      .location .inner .contact > .rightbox h3 {
+        font-size: 36px;
+        color: #222;
+        letter-spacing: 1.4px;
+        margin-bottom: 30px;
+        font-weight: normal; }
+      .location .inner .contact > .rightbox ul li {
+        height: 50px;
+        display: flex;
+        align-items: center; }
+        .location .inner .contact > .rightbox ul li span {
+          display: block;
+          width: 25%;
+          font-size: 16px;
+          color: #222; }
+        .location .inner .contact > .rightbox ul li p {
+          width: 75%;
+          font-size: 16px;
+          color: #222; }
 
 .community {
   width: 100%; }
@@ -1768,138 +1806,87 @@ input, a, select, option {
             color: #222; }
           .department .inner .topbox ul li i {
             color: #ccc; }
-    .department .inner .about1 {
-      width: 100%;
-      height: 600px;
-      padding: 40px;
-      position: relative;
-      margin-bottom: 100px; }
-      .department .inner .about1 .pic {
-        width: 350px;
-        height: 450px; }
-        .department .inner .about1 .pic img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover; }
-      .department .inner .about1 .txt {
-        width: 450px;
-        position: absolute;
-        top: 140px;
-        right: 230px; }
-        .department .inner .about1 .txt span {
-          display: inline-block;
-          font: 6px/1 'Alegreya Sans';
-          color: #000;
-          transform: rotate(-90deg);
-          position: absolute;
-          left: -22px;
-          top: 6px;
-          letter-spacing: 1px; }
-        .department .inner .about1 .txt h2 {
-          font: 30px/1 'Alegreya Sans';
-          color: #000;
-          margin-bottom: 20px;
-          margin-top: 60px; }
-          .department .inner .about1 .txt h2::before {
-            content: '';
-            display: block;
-            width: 2px;
-            height: 30px;
-            background: #222;
-            position: absolute;
-            top: -60px;
-            left: 6px; }
-        .department .inner .about1 .txt p {
-          font: 20px/1.2 'Alegreya Sans';
-          color: #888; }
-    .department .inner .team {
-      width: 100%;
-      height: 450px;
-      position: relative;
-      margin-bottom: 200px;
-      background: #eee;
+    .department .inner > .txtbox {
+      width: 50%;
+      margin: 0 auto 200px;
+      text-align: center; }
+      .department .inner > .txtbox h2 {
+        font-size: 30px;
+        color: #222;
+        margin-bottom: 40px; }
+      .department .inner > .txtbox p {
+        font-size: 14px;
+        color: #222;
+        line-height: 1.5; }
+    .department .inner .concept {
       display: flex;
-      justify-content: flex-end; }
-      .department .inner .team::before {
-        content: '';
-        display: block;
+      margin-bottom: 40px; }
+      .department .inner .concept .title {
+        width: 30%; }
+        .department .inner .concept .title h2 {
+          font-size: 25px;
+          color: #222; }
+      .department .inner .concept .text {
+        width: 70%;
+        height: 150px;
+        padding: 10px 16px; }
+        .department .inner .concept .text p {
+          font-size: 16px;
+          color: #222;
+          line-height: 1.4; }
+    .department .inner .process {
+      margin-bottom: 40px; }
+      .department .inner .process > .title {
+        width: 100%; }
+        .department .inner .process > .title h2 {
+          font-size: 25px;
+          color: #222;
+          margin-bottom: 20px; }
+      .department .inner .process > .wrap {
         width: 100%;
-        height: 450px;
-        background: #eee;
-        position: absolute;
-        left: 100%; }
-      .department .inner .team .pic {
-        width: 250px;
-        height: 340px;
-        margin-left: 30px;
-        margin-top: 40px; }
-        .department .inner .team .pic img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: center center;
-          filter: grayscale(80%);
-          transition: 0.5s; }
-        .department .inner .team .pic:hover img {
-          filter: grayscale(0%); }
-      .department .inner .team .dpbox {
-        width: 280px;
-        height: 250px;
-        border: 2.5px solid #000;
-        padding: 28px;
-        position: absolute;
-        top: -40px;
-        left: -50px; }
-        .department .inner .team .dpbox p {
-          font: 30px/1.2 'Alegreya Sans';
-          color: #000; }
-      .department .inner .team .dptxt {
-        width: 280px;
-        height: 100px;
-        position: absolute;
-        top: 230px;
-        left: 40px; }
-        .department .inner .team .dptxt p {
-          font: 16px/1.2 'Alegreya Sans';
-          color: #000; }
-    .department .inner .about2 {
-      width: 100%;
-      margin-bottom: 100px; }
-      .department .inner .about2::after {
-        content: '';
-        display: block;
-        clear: both; }
-      .department .inner .about2 article {
-        width: 380px;
-        height: 200px;
-        padding: 20px 0px;
-        float: left; }
-        .department .inner .about2 article:nth-of-type(1) {
-          height: 400px;
-          margin-right: 80px; }
-          .department .inner .about2 article:nth-of-type(1) h2 {
-            font: 30px/1 'Alegreya Sans';
-            color: #000;
-            margin-bottom: 20px; }
-          .department .inner .about2 article:nth-of-type(1) p {
-            font: 20px/1.2 'Alegreya Sans';
-            color: #000; }
-        .department .inner .about2 article:nth-of-type(2), .department .inner .about2 article:nth-of-type(3) {
-          width: 340px; }
-          .department .inner .about2 article:nth-of-type(2) i, .department .inner .about2 article:nth-of-type(3) i {
-            font-size: 40px;
-            color: #bbb;
-            margin-bottom: 20px; }
-          .department .inner .about2 article:nth-of-type(2) p, .department .inner .about2 article:nth-of-type(3) p {
-            font: 20px/1 'Alegreya Sans';
-            color: #000; }
-        .department .inner .about2 article:nth-of-type(4) {
-          width: 680px;
+        display: flex;
+        flex-wrap: wrap; }
+        .department .inner .process > .wrap article {
+          width: 380px;
           height: 200px;
-          padding-top: 40px; }
-          .department .inner .about2 article:nth-of-type(4) p {
-            font: 18px/1 'Alegreya Sans';
-            color: #888; }
+          padding: 10px 20px;
+          display: flex;
+          margin-right: 20px; }
+          .department .inner .process > .wrap article:nth-of-type(3n) {
+            margin-right: 0px; }
+          .department .inner .process > .wrap article .picbox {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .department .inner .process > .wrap article .picbox i {
+              font-size: 40px;
+              color: #ddd; }
+          .department .inner .process > .wrap article > .txtbox {
+            width: 70%;
+            height: 100%;
+            padding: 5px 0px 0px 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center; }
+            .department .inner .process > .wrap article > .txtbox h3 {
+              font-size: 15px;
+              color: #222;
+              margin-bottom: 5px; }
+            .department .inner .process > .wrap article > .txtbox p {
+              font-size: 15px;
+              color: #222;
+              line-height: 1.2; }
+    .department .inner .member h2 {
+      font-size: 25px;
+      color: #222; }
+    .department .inner .member > .pic {
+      padding: 100px 80px; }
+      .department .inner .member > .pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
 
 @media screen and (max-width: 1179px) {
   .department .inner {
@@ -2019,7 +2006,7 @@ body {
 
 #header {
   width: 100%;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #ddd;
   position: relative;
   z-index: 2; }
   #header .inner {
@@ -2246,8 +2233,7 @@ body {
     opacity: 1; } }
 #visual {
   width: 100%;
-  height: calc(100vh - 91px);
-  background: #f5f5f5; }
+  height: calc(100vh - 91px); }
   #visual .inner {
     width: 1180px;
     height: 100%;
@@ -2325,7 +2311,7 @@ body {
         #visual .inner .slidebox .slidewrap .slide1 {
           background: lightpink; }
         #visual .inner .slidebox .slidewrap .slide2 {
-          background: lightsalmon; }
+          background: #222; }
       #visual .inner .slidebox .slidebtn {
         font-size: 0;
         float: left;
@@ -2337,7 +2323,6 @@ body {
           display: inline-block;
           width: 100px;
           height: 70px;
-          background: #f5f5f5;
           padding: 0px 30px; }
           #visual .inner .slidebox .slidebtn > a:nth-of-type(1) {
             text-align: right; }

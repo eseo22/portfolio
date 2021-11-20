@@ -17,7 +17,7 @@ body {
 }
 #header {
 	width: 100%;
-	border-bottom: 1px solid #f5f5f5;
+	border-bottom: 1px solid #ddd;
 	position: relative;
 	z-index: 2;
 
@@ -331,7 +331,7 @@ body {
 #visual {
 	width: 100%;
 	height: calc(100vh - 91px);
-	background: #f5f5f5;
+	//background: #f5f5f5;
 	.inner {
 		width: 1180px;
 		height: 100%;
@@ -425,7 +425,7 @@ body {
 					background: lightpink;
 				}
 				.slide2 {
-					background: lightsalmon;
+					background: #222;
 				}
 			}
 			.slidebtn {
@@ -440,7 +440,7 @@ body {
 					width: 100px;
 					height: 70px;
 					//border: 1px solid pink;
-					background: #f5f5f5;
+					//background: #f5f5f5;
 					padding: 0px 30px;
 					&:nth-of-type(1) {
 						text-align: right;

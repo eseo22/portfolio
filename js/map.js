@@ -2,7 +2,7 @@
 const container = document.getElementById('map');
 const branch_btns = document.querySelectorAll(".branch li");
 const options = {
-    center: new kakao.maps.LatLng(37.5109446,127.0567967), 
+    center: new kakao.maps.LatLng(37.480547, 127.014224), 
     level: 3
 };
     
@@ -11,15 +11,15 @@ const map = new kakao.maps.Map(container, options);
 const markerOptions = [
     
     { 
-        title: "본점", 
-        latlng : new kakao.maps.LatLng(37.5109446,127.0567967), 
+        title: "서울지점", 
+        latlng : new kakao.maps.LatLng(37.480547, 127.014224), 
         // imgSrc : "img/marker1.png", 
         // imgSize : new kakao.maps.Size(232, 99),
         // imgPos : {offset: new kakao.maps.Point(128, 99)}, 
         button :  branch_btns[0]
         },
         {
-        title: "지점1", 
+        title: "경기지점", 
         latlng : new kakao.maps.LatLng(37.507099922888266,126.75640469886633), 
         // imgSrc : "img/marker2.png", 
         // imgSize : new kakao.maps.Size(232, 99),
@@ -27,11 +27,11 @@ const markerOptions = [
         button :  branch_btns[1]
         },
         {
-        title: "지점2",  //37.529852,126.9646949
-        latlng : new kakao.maps.LatLng(37.52964557140191,126.96444186998666), 
+        title: "부산지점",  //37.529852,126.9646949
+        latlng : new kakao.maps.LatLng(35.179940, 129.075004), 
         // imgSrc : "img/marker3.png", 
         // imgSize : new kakao.maps.Size(232, 99),
-        // imgPos : {offset: new kakao.maps.Point(116, 99)}, 
+        //imgPos : {offset: new kakao.maps.Point(116, 99)}, 
         button :  branch_btns[2]
         }
     
