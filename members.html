@@ -12,6 +12,12 @@
     <script defer src="js/members.js"></script>
     <script defer src="js/main.js"></script>
 
+    <script>
+        $(document).ready(function(){
+            new MyForm("#myForm");
+        });
+    </script>
+    
 </head>
 
 <body>
@@ -175,7 +181,7 @@
                     <p>가입완료</p>
                 </div>
             </div>
-            <form action="result.html" method="get">
+            <form action="result.html" method="get" id="myForm">
                 <!-- 기본정보 -->
                 <fieldset>
                     <legend class="title">기본정보</legend>

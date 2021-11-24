@@ -1,20 +1,35 @@
-$("input[type=submit]").on("click", function(e){
-    if(!isTxt("userid", 5)) e.preventDefault();
-    if(!password("userpw1","userpw2")) e.preventDefault();
-    if(!isName("username")) e.preventDefault();
-    if(!isEmail("email")) e.preventDefault();
-    if(!isPhone("hpnum")) e.preventDefault();
-    if(!isCheck("chk")) e.preventDefault();
-    if(!isCheck("chk2")) e.preventDefault();
-});
+function MyForm(selector){
+    this.init(selector);
+    this.bindingEvent();
+}
 
-$("input[type=button]").on("click", function(e){
-    if(!isTxt("userid",5)) e.preventDefault();
-})
+MyForm.prototype.init = function(selector){
+    this.form = $(selector);
+    this.btnSubmit = this.form.find("input[type=submit]");
+    this.btnButton = this.form.find("input[type=button]");
+}
+
+MyForm.prototype.bindingEvent = function(){
+    this.btnSubmit.on("click", function(e){
+        if(!this.isTxt("userid", 5)) e.preventDefault();
+        if(!this.password("userpw1","userpw2")) e.preventDefault();
+        if(!this.isName("username")) e.preventDefault();
+        if(!this.isEmail("email")) e.preventDefault();
+        if(!this.isPhone("hpnum")) e.preventDefault();
+        if(!this.isCheck("chk")) e.preventDefault();
+        if(!this.isCheck("chk2")) e.preventDefault();
+    }.bind(this));
+    
+    this.btnButton.on("click", function(e){
+        if(!this.isTxt("userid",5)) e.preventDefault();
+    }.bind(this));
+}
+
+
 
 
 //아이디 인증
-function isTxt(name, len){
+MyForm.prototype.isTxt=function(name, len){
 
     if(len === undefined) len=5;
     let txt = $("input[name="+name+"]").val();
@@ -35,7 +50,7 @@ function isTxt(name, len){
 }
 
 //비밀번호 인증
-function password(name1, name2){
+MyForm.prototype.password=function(name1, name2){
     let pw1 = $("input[name="+name1+"]").val();
     let pw2 = $("input[name="+name2+"]").val();
 
@@ -59,7 +74,7 @@ function password(name1, name2){
 }
 
 //이름 인증
-function isName(name){
+MyForm.prototype.isName = function(name){
     let txt = $("input[name="+name+"]").val();    
     let han = /^[가-힣]+$/ ;
     let len = 2;
@@ -76,7 +91,7 @@ function isName(name){
 }
 
 //이메일 인증
-function isEmail(name){
+MyForm.prototype.isEmail = function(name){
     let txt = $("[name="+name+"]").val();
  
     if(/@/.test(txt)){
@@ -93,7 +108,7 @@ function isEmail(name){
 
 //휴대전화 인증
 
-function isPhone(name){
+MyForm.prototype.isPhone= function(name){
     let hpNum = $("[name="+name+"]").val(); 
     let len = 11;
     let num = /[0-9]/gi;
@@ -112,7 +127,7 @@ function isPhone(name){
 }
 
 //약관동의 인증
-function isCheck(name){
+MyForm.prototype.isCheck = function(name){
     let isCheck = $("input[name="+name+"]").is(":checked");
     if(isCheck){
         $("input[name="+name+"]").parent().find("p").remove();
