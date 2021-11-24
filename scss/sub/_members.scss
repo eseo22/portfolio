@@ -119,7 +119,7 @@
                     background-color: #ccc;
                     margin-bottom: 15px;
                     position: relative;
-                    z-index: 2;
+                    z-index: 1;
                 }
                 p{
                     font-size: 16px;
@@ -464,12 +464,12 @@
                     
                     table{
                         
-                        
                         tr{
                             height: 50px;
 
                             th{
                                 padding: 0px;
+                                text-align: center;
                                 
                             }
                             td{
@@ -486,6 +486,8 @@
                                 th{
                                     label{
                                         top: 20px;
+                                        left: 50%;
+                                        transform: translateX(-50%);
                                     }
                                 }
                                 td{
@@ -595,6 +597,199 @@
                     
                     >input{
                         width: 100px; height: 50px;
+                    }
+                    
+                }
+                
+            }
+        }
+    
+        
+    }
+}
+
+@media screen and (max-width: 820px){
+    .members{
+        
+        .inner{
+            
+    
+            .txtbox{
+                width: 100%;
+                margin-bottom: 40px;
+            }
+    
+            .spotbox{
+                width: 80%;
+                margin: 0 auto 100px;
+                
+                justify-content: space-between;
+    
+                &::before{
+                    
+                    width: 90%; 
+                    left: 20px;
+                    top: 50%;
+                    
+                }
+    
+                >div{
+                    padding: 0px;
+                    
+                }
+                
+            }
+            
+            form{
+                width: 100%;
+                //기본정보
+                fieldset{
+                    width: 100%;
+                    
+                    table{
+                        width: 100%;
+                        //table-layout: fixed;
+                        
+                        
+                        tr{
+                            width: 100%;
+
+                            th{
+                                text-align: left;
+                                label{
+                                    font-size: 14px;
+                                }
+
+                                
+                            }
+                            td{
+                                width: 60%;
+                                padding: 10px;
+                                
+    
+                                input{
+                                    width: 65%;
+                                }
+                            }
+
+                            &:nth-of-type(1),&:nth-of-type(5){
+                                th{
+                                    label{
+                                        left: 0%;
+                                        transform: translateX(-0%);
+                                    }
+                                }
+                                td{
+                                    input:nth-of-type(2){
+                                        width: 29%;
+                                    }
+                                }
+                            }
+    
+                            &:nth-of-type(5){
+                                
+                                td{
+                                    input:nth-of-type(3){
+                                        width: 100%;
+                                        
+                                    }
+                                }
+                            }
+                            &:nth-of-type(6),&:nth-of-type(7){
+                                td{
+                                    input{width: 100%;}
+                                }
+                            }
+                            
+                            &:nth-of-type(8){
+                                th{
+                                    font-size: 14px;
+                                }
+                                
+                            }
+                                
+    
+                            
+                        }
+                    }
+    
+                    
+                }
+    
+                //추가정보
+                .add{
+                    
+                    table{
+                        tr{
+                            th{
+                                font-size: 14px;
+                                
+                            }
+                            &:nth-of-type(1),&:nth-of-type(4){
+                                td{
+                                    input{  
+                                        width: 100%;
+                                        
+                                    }
+                                }
+                            }
+                            &:nth-of-type(2){
+                                td{
+                                    select{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            &:nth-of-type(3){
+                                td{
+                                    width: 100%;
+                                    label{
+                                        display: inline-block;
+                                        width: 45%;
+                                        margin-right: 0px;
+                                        font-size:12px;
+                                    }                                
+                                }
+                            }
+                            
+                            
+                        }
+                    }
+                }
+    
+                //약관동의
+                .agree{
+                    .join_box{
+                        padding: 20px 10px 0px;
+                        >li{
+                            label{
+                                font-size: 12px;  
+
+                                input{
+                                    width: 15px;
+                                    height: 15px;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+    
+                        .ckbox2{
+                            label{margin-bottom: 20px;}
+                            
+                        }
+    
+    
+    
+                    }
+                    
+                }
+    
+                //전송버튼
+                .btns{
+                    width: 100%;
+                    
+                    >input{
+                        width: 50%;
                     }
                     
                 }

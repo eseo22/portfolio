@@ -114,7 +114,7 @@ class MyForm {
         let len = 11;
         let num = /[0-9]/gi;
 
-        if (hpNum.length = len && num.test(hpNum)) {
+        if (hpNum.length >= len && num.test(hpNum)) {
             $("input[name=" + name + "]").parent().find("p").remove();
             return true;
 
