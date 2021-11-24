@@ -389,3 +389,219 @@
     
 }
 
+@media screen and (max-width: 1179px) {
+    .members{
+        .sub_visual{
+            height: 200px;
+            >.txt{
+                
+                h1{
+                    font-size: 26px;
+        
+                    span{
+                        font-size:12px;
+                    }
+                }
+                >p{
+                    font-size: 14px;
+                }
+            }
+        }
+        .inner{
+            width: 100%;
+            padding: 0px 20px;
+            .topbox{
+                margin-bottom: 50px;
+                
+                ul{
+                    li{
+                        height: 40px;
+                        p{ font-size: 12px;}
+                        i{font-size: 15px;}
+                    }
+                }
+            }
+    
+            .txtbox{
+                
+    
+                h2{
+                    font-size: 20px;
+                    
+                }
+                p{
+                    font-size: 12px; 
+                }
+    
+            }
+    
+            .spotbox{
+                
+    
+                &::before{
+                    
+                    width: 500px; 
+                    
+                }
+    
+                >div{
+                    
+                    span{
+                        font-size: 15px; 
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                }
+                
+            }
+            
+            form{
+                
+                //기본정보
+                fieldset{
+                    width: 90%;
+                    
+                    table{
+                        
+                        
+                        tr{
+                            height: 50px;
+
+                            th{
+                                padding: 0px;
+                                
+                            }
+                            td{
+                                width: 50%;
+                                padding: 10px 5%;
+                                
+    
+                                input{
+                                    height: 30px;
+                                }
+                            }
+    
+                            &:nth-of-type(5){
+                                th{
+                                    label{
+                                        top: 20px;
+                                    }
+                                }
+                                td{
+                                    input:nth-of-type(3){
+                                        display: block;
+                                        width: 362px;
+                                        margin-top: 10px;
+                                        
+                                    }
+                                }
+                            }
+                            
+                            &:nth-of-type(8){
+                                
+                                td{
+                                    label{
+                                        font-size: 12px;
+                                        
+                                        input{
+                                            height: 15px;
+                                            margin-right: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                                
+    
+                            
+                        }
+                    }
+    
+                    
+                }
+    
+                //추가정보
+                .add{
+                    
+                    table{
+                        tr{
+                            
+                            &:nth-of-type(1){
+                                td{
+                                    input{  
+                                        text-align: right;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            &:nth-of-type(2){
+                                td{
+                                    select{
+                                        height:30px;         
+                                        font-size:12px;
+                                    }
+                                }
+                            }
+                            &:nth-of-type(3){
+                                td{
+                                    label{
+                                        input{
+                                            height: 15px;
+                                            margin-right: 12px;
+                                        }
+                                        
+                                        font-size:12px;
+                                    }                                
+                                }
+                            }
+                            
+                            
+                        }
+                    }
+                }
+    
+                //약관동의
+                .agree{
+                    margin-bottom: 0px;
+    
+                    
+                    .join_box{
+                        padding: 40px 10px 0px;
+                    
+                        >li{
+                            margin-bottom: 30px;
+                            label{
+                                font-size: 14px;  
+                            }
+                        }
+    
+                        .ckbox2{
+                            label{margin-bottom: 30px;}
+                            textarea{
+                                font: 12px/1.4 'Noto Sans KR'; 
+                            }
+                        }
+    
+    
+    
+                    }
+                    
+                }
+    
+                //전송버튼
+                .btns{
+                    width: 90%;
+                    padding: 0px 10px;
+                    
+                    >input{
+                        width: 100px; height: 50px;
+                    }
+                    
+                }
+                
+            }
+        }
+    
+        
+    }
+}
