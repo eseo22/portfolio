@@ -2526,11 +2526,11 @@ body {
       text-align: center;
       padding: 0px 0px 200px; }
       #intro .inner .txtbox > h2 {
-        font: 50px/1.5 'Cardo';
+        font: 40px/1.5 'Cardo';
         color: #222;
         margin-bottom: 30px; }
       #intro .inner .txtbox > h3 {
-        font: 36px/1 'Cardo';
+        font: 30px/1 'Cardo';
         color: #222;
         padding: 70px 0px 30px; }
       #intro .inner .txtbox > p {
