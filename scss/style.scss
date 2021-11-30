@@ -458,46 +458,7 @@ body {
 			}
 		}
 
-		.numbox {
-			position: absolute;
-			right: 20px;
-			top: 80px;
-			ul {
-				.numlist {
-					width: 50px;
-					height: 50px;
-					// border: 1px solid pink;
-					margin-bottom: 20px;
-					position: relative;
-					span {
-						display: block;
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						transform: translate(-50%, -50%);
-					}
-
-					path {
-						fill: transparent;
-						stroke: #666;
-						stroke-width: 30px;
-						stroke-linejoin: round;
-						stroke-linecap: round;
-						stroke-dasharray: 1600;
-						stroke-dashoffset: 1600;
-						transition: 2s;
-						transform: scale(0.8);
-						transform-origin: center center;
-					}
-
-					&.on {
-						path {
-							stroke-dashoffset: 0;
-						}
-					}
-				}
-			}
-		}
+		
 	}
 }
 #intro {
