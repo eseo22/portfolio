@@ -145,8 +145,6 @@ function prev(wrap) {
 function test(el) {
     $txt.removeClass("on");
     $txt.eq(el).addClass("on");
-    $svgli.removeClass("on");
-    $svgli.eq(el).addClass("on");
 }
 
 
