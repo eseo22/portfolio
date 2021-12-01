@@ -2252,17 +2252,6 @@ body {
                 animation-name: lineani;
                 animation-duration: 1s;
                 animation-fill-mode: forwards; }
-    #header .inner > a {
-      display: block;
-      width: 8%;
-      height: 28px;
-      border: 1px solid #bbb;
-      text-align: center;
-      font: 12px/28px 'Noto Serif';
-      color: #222;
-      position: absolute;
-      right: 0px;
-      top: 42%; }
     #header .inner .btnCall {
       display: block;
       width: 30px;
@@ -2473,16 +2462,15 @@ body {
           display: inline-block;
           width: 100px;
           height: 70px;
-          background: #fff;
           padding: 0px 30px; }
           #visual .inner .slidebox .slidebtn > a:nth-of-type(1) {
             text-align: right; }
           #visual .inner .slidebox .slidebtn > a:nth-of-type(2) {
             text-align: left; }
-          #visual .inner .slidebox .slidebtn > a i {
-            font-size: 15px;
-            line-height: 70px;
-            color: #444; }
+          #visual .inner .slidebox .slidebtn > a img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover; }
 
 #intro {
   width: 100%; }
