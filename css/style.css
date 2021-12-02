@@ -2375,7 +2375,7 @@ body {
     opacity: 1; } }
 #visual {
   width: 100%;
-  height: calc(100vh - 91px); }
+  height: 100vh; }
   #visual .inner {
     width: 100vw;
     height: 100%;
