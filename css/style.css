@@ -2396,6 +2396,7 @@ body {
       transition: 1s; }
       #visual .inner .txtbox .txtlist {
         position: absolute;
+        left: 92px;
         opacity: 0; }
         #visual .inner .txtbox .txtlist.on {
           opacity: 1; }
@@ -3200,7 +3201,9 @@ body {
   #header .inner > a {
     display: none; }
   #header .inner .btnCall {
-    left: 20px; }
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%); }
 
   #visual .inner .txtwrap {
     width: 100%;

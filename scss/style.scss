@@ -343,6 +343,7 @@ body {
 
 			.txtlist {
 				position: absolute;
+				left:92px;
 				opacity: 0;
 				&.on {
 					opacity: 1;
@@ -1332,7 +1333,9 @@ body {
 				display: none;
 			}
 			.btnCall {
+				top:50%;
 				left: 20px;
+				transform: translateY(-50%);
 			}
 		}
 	}
