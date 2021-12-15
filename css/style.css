@@ -2252,6 +2252,17 @@ body {
                 animation-name: lineani;
                 animation-duration: 1s;
                 animation-fill-mode: forwards; }
+    #header .inner > a {
+      display: block;
+      width: 8%;
+      height: 28px;
+      border: 1px solid #bbb;
+      text-align: center;
+      font: 12px/28px 'Noto Serif';
+      color: #222;
+      position: absolute;
+      right: 0px;
+      top: 42%; }
     #header .inner .btnCall {
       display: block;
       width: 30px;
