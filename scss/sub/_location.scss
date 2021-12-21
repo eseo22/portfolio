@@ -245,3 +245,148 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1179px) {
+	.location {
+		.sub_visual{
+            height: 200px;
+            >.txt{
+                
+                h1{
+                    font-size: 26px;
+        
+                    span{
+                        font-size:12px;
+                    }
+                }
+                >p{
+                    font-size: 14px;
+                }
+            }
+        }
+		.inner {
+			width: 100%;
+			padding: 0px 20px;
+
+			.topbox{
+                margin-bottom: 50px;
+                
+                ul{
+                    li{
+                        height: 40px;
+                        p{ font-size: 12px;}
+                        i{font-size: 15px;}
+                    }
+                }
+            }
+			.contact {
+				
+				
+				
+				>.rightbox{
+					
+					ul li{
+						
+						span{
+							width: 40%;
+						}
+						p{
+							width: 60%;	
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px){
+	.location {
+		
+		.inner {
+			
+			
+			
+			.direction{
+				
+				ul li{
+					
+					span{
+						width: 30%; 
+						font-size: 14px;
+					}
+					p{
+						width: 70%; 
+						font-size: 14px;
+					}
+				}
+			}
+	
+			#map {
+				height: 300px;
+			}
+	
+			.branch {
+				width: 100%;
+				justify-content: space-between;
+				li {
+					width: calc(100% / 3);
+	
+	
+					a {
+						width: 100%;
+						display: block;
+						background: #555;
+					}
+				}
+			}
+			.contact {
+				display: block;
+				
+				>.leftbox {
+					
+					width: 100%;
+					padding-right: 0px;
+					margin-bottom: 50px;
+					h3 {
+						font-size: 25px;
+					}
+					> .form {
+						ul {
+							li {
+								input {
+									height: 40px;
+								}
+							}
+							
+						}
+						input[type=submit]{
+							width: 100%; height: 40px;
+							font-size: 15px; 
+							line-height: 40px;
+						}
+					}
+				}
+				>.rightbox{
+					width: 100%;
+					//border: 1px solid pink;
+					padding-left: 0px;
+					h3 {
+						font-size: 25px;
+						
+					}
+					ul li{
+						
+						span{
+							font-size: 14px; 
+						}
+						p{
+							font-size: 14px;
+	
+						}
+					}
+				}
+			}
+		}
+	}
+}
