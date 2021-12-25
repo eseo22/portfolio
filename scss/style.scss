@@ -23,7 +23,7 @@ body {
 
 	.inner {
 		width: 1180px;
-		height: 90px;
+		height: 100px;
 		margin: 0 auto;
 		position: relative;
 
@@ -330,7 +330,7 @@ body {
 #visual {
 	
 	width: 100%;
-	height: calc(100vh - 91px);
+	height: calc(100vh - 101px);
 	//background: #f5f5f5;
 	.inner {
 		width: 100vw;
@@ -972,6 +972,7 @@ body {
 	}
 }
 
+
 // #popup {
 // 	width: 300px;
 // 	background-color: #fff;
@@ -1021,6 +1022,16 @@ body {
 // 		}
 // 	}
 // }
+
+#navi a{
+	display: block; width: 100%; height: 30px;
+	position: fixed; top: -30px; left: 0;
+	background: #444; 
+	text-align: center; 
+	font: 16px/30px 'arial' ; color: #fff;
+	
+	&.on{top: 0px;}
+}
 
 #footer {
 	width: 100%;

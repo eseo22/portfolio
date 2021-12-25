@@ -2230,7 +2230,7 @@ body {
   z-index: 2; }
   #header .inner {
     width: 1180px;
-    height: 90px;
+    height: 100px;
     margin: 0 auto;
     position: relative; }
     #header .inner h1 {
@@ -2452,7 +2452,7 @@ body {
     opacity: 1; } }
 #visual {
   width: 100%;
-  height: calc(100vh - 91px); }
+  height: calc(100vh - 101px); }
   #visual .inner {
     width: 100vw;
     height: 100%;
@@ -3017,6 +3017,20 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover; }
+
+#navi a {
+  display: block;
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  top: -30px;
+  left: 0;
+  background: #444;
+  text-align: center;
+  font: 16px/30px "arial";
+  color: #fff; }
+  #navi a.on {
+    top: 0px; }
 
 #footer {
   width: 100%;
