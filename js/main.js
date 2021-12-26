@@ -9,9 +9,6 @@ $(navi).each(function(index, el) {
     $(el).on("focusout", function(){
         $(this).removeClass("on");
     });
-
-    console.log(el);
-    console.log(this);
 });
 
 
@@ -190,7 +187,7 @@ $(window).on("scroll", function(){
     if(scroll >= pos[3] + 100){
         var current_scroll = scroll - pos[3] - 100 ;
         var move_scroll;
-        //console.log(current_scroll);
+        console.log(current_scroll);
         (current_scroll>=1035) ? move_scroll = 1035 : move_scroll = current_scroll;
         $(".head h2").css({top : move_scroll});
     }
