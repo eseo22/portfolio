@@ -175,40 +175,40 @@ $(window).on("resize",function(){
 });
 $(window).on("scroll", function(){
     var scroll = $(this).scrollTop();
-    //console.log(scroll);
+    console.log(scroll);
     
 
-    if(scroll >= pos[2] ){
+    if(scroll >= pos[1] ){
         $(".boxwrap").children("article").addClass("on");
     }else{
         $(".boxwrap").children("article").removeClass("on");
 
     }
-    if(scroll >= pos[3] + 100){
-        var current_scroll = scroll - pos[3] - 100 ;
+    if(scroll >= pos[2] + 100){
+        var current_scroll = scroll - pos[2] - 100 ;
         var move_scroll;
-        console.log(current_scroll);
+        //console.log(current_scroll);
         (current_scroll>=1035) ? move_scroll = 1035 : move_scroll = current_scroll;
         $(".head h2").css({top : move_scroll});
     }
-    if(scroll >= pos[4] - 400){
-        var current_scroll = scroll - pos[4] + 400 ; 
+    if(scroll >= pos[3] - 400){
+        var current_scroll = scroll - pos[3] + 400 ; 
         var move_scroll;
         (current_scroll>=800) ? move_scroll = 800 : move_scroll = current_scroll;
         $(".line").css({width:move_scroll});
     }
-    if(scroll >= pos[5]){
-        var current_scroll = scroll - pos[5];
+    if(scroll >= pos[4]){
+        var current_scroll = scroll - pos[4];
     }
-    if(scroll >= pos[6] - 70){
-        var current_scroll = scroll - pos[6] + 70 ;
+    if(scroll >= pos[5] - 70){
+        var current_scroll = scroll - pos[5] + 70 ;
         var move_scroll ;
         (current_scroll>=1540) ? move_scroll = 1540 : move_scroll = current_scroll;
-        console.log(current_scroll);
+        //console.log(current_scroll);
         $(".boxwrap").children(".movebox").css({top : -420 + move_scroll });
     }
-    if(scroll >= pos[7]){
-        var current_scroll = scroll - pos[7] ;
+    if(scroll >= pos[6]){
+        var current_scroll = scroll - pos[6] ;
         //console.log(current_scroll);        
     }
     
