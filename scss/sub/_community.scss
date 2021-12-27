@@ -501,6 +501,7 @@
                     font-size: 0;
                     &:nth-of-type(odd){
                         li{
+                            
                             a{
                                 i{
                                     font-size: 15px;
@@ -512,6 +513,7 @@
                         a{
                             width: 20px; height: 20px;
                             font: 15px/20px 'Alegreya Sans';
+                            margin: 0px 5px;
                         }                
                     }
                 }

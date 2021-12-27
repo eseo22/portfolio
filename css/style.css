@@ -1954,7 +1954,8 @@ input, a, select, option {
     .community .inner .pagination > ul li a {
       width: 20px;
       height: 20px;
-      font: 15px/20px 'Alegreya Sans'; }
+      font: 15px/20px 'Alegreya Sans';
+      margin: 0px 5px; }
   .community .inner .helpbox {
     padding: 20px; }
     .community .inner .helpbox .txtbox h2 {
