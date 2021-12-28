@@ -697,7 +697,8 @@ input, a, select, option {
     .members .inner .topbox {
       margin-bottom: 50px; }
       .members .inner .topbox ul li {
-        height: 40px; }
+        height: 40px;
+        padding: 0 10px; }
         .members .inner .topbox ul li p {
           font-size: 12px; }
         .members .inner .topbox ul li i {
@@ -1004,6 +1005,8 @@ input, a, select, option {
       width: 300px; }
   .youtube .inner {
     width: 100%; }
+    .youtube .inner .topbox ul li {
+      padding: 0px 10px; }
     .youtube .inner .vidintro {
       width: 40%;
       padding: 20px; }
@@ -1284,6 +1287,8 @@ input, a, select, option {
   .gallery .inner {
     width: 100%;
     padding: 0 20px; }
+    .gallery .inner .topbox ul li {
+      padding: 0px 10px; }
     .gallery .inner .galleryintro ul li {
       position: relative; }
       .gallery .inner .galleryintro ul li input {
@@ -1528,6 +1533,7 @@ input, a, select, option {
     .location .inner .topbox {
       margin-bottom: 50px; }
       .location .inner .topbox ul li {
+        padding: 0px 10px;
         height: 40px; }
         .location .inner .topbox ul li p {
           font-size: 12px; }
@@ -1845,6 +1851,8 @@ input, a, select, option {
   .community .inner {
     width: 100%;
     padding: 0px 20px; }
+    .community .inner .topbox ul li {
+      padding: 0px 10px; }
     .community .inner > .wrap {
       width: 100%; }
       .community .inner > .wrap > .btn {
@@ -2111,6 +2119,8 @@ input, a, select, option {
 @media screen and (max-width: 1179px) {
   .department .inner {
     width: 100%; }
+    .department .inner .topbox ul li {
+      padding: 0px 10px; }
     .department .inner .about1 {
       height: 500px;
       padding: 20px 20px 0px; }

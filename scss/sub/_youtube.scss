@@ -200,6 +200,12 @@
         }
         .inner{
             width: 100%;    
+
+            .topbox{
+                ul li{
+                    padding: 0px 10px;
+                }
+            }
             .vidintro{
                 width: 40%; 
                 padding: 20px;
