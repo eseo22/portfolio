@@ -2511,7 +2511,7 @@ main {
             display: block;
             margin-bottom: 20px; }
           main #visual .inner .txtbox .txtlist > h2 {
-            font: bold 40px/1  'Noto Sans KR';
+            font: bold 40px/1.4  'Noto Sans KR';
             letter-spacing: 2px;
             color: #222;
             opacity: 0;
@@ -3154,13 +3154,19 @@ main {
     main #header .inner .btnCall {
       left: 30px;
       display: block; }
-  main #visual .inner .txtbox {
-    width: 100%;
-    left: 0px; }
-    main #visual .inner .txtbox .txtlist {
-      left: 20px; }
-  main #visual .inner .slidebox {
+  main #visual .inner {
     width: 100%; }
+    main #visual .inner .txtbox {
+      width: 60%;
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%); }
+      main #visual .inner .txtbox .txtlist {
+        left: 20px; }
+        main #visual .inner .txtbox .txtlist p {
+          font-size: 19px; }
+    main #visual .inner .slidebox {
+      width: 100%; }
 
   #intro .inner {
     width: 100%;

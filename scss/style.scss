@@ -383,7 +383,7 @@ main{
                     }
                     > h2 {
                         
-                        font: bold 40px/1  'Noto Sans KR';
+                        font: bold 40px/1.4  'Noto Sans KR';
                         letter-spacing: 2px;
                         color: #222;
                         opacity: 0;
@@ -1183,13 +1183,17 @@ main{
 		#visual {
 		
 			.inner {
-				
+				width: 100%;
 				.txtbox {
-					width: 100%;
-					left: 0px;
+					width: 60%;
+					top: 25%;
+					left: 50%;
+					transform: translateX(-50%);
 					
 					.txtlist {
 						left:20px;
+
+						p{font-size: 19px;}
 						
 					}
 				}
