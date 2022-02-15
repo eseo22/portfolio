@@ -94,6 +94,7 @@ function getList(opt) {
     if (opt.type == "userid") {
         result_opt = {
             url: "https://www.flickr.com/services/rest/?method=flickr.people.getPhotos",
+            
             dataType: "json",
             data: {
                 api_key: "c3497ae54a8e80023a954c8815e7b28e",

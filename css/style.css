@@ -184,7 +184,7 @@ input, a, select, option {
       #header_sub .inner .menuMo .txtbox {
         width: 100%;
         height: 280px;
-        padding: 40px;
+        padding: 20px;
         background: #fff; }
         #header_sub .inner .menuMo .txtbox > a {
           display: block;
@@ -238,12 +238,13 @@ input, a, select, option {
         background: #eee; }
         #header_sub .inner .menuMo .gnbmo li {
           width: 100%;
-          padding: 20px 40px;
+          padding: 20px;
           border-bottom: 1px solid #ddd; }
           #header_sub .inner .menuMo .gnbmo li a {
             display: block;
-            height: 40px;
-            font: 15px/40px 'Cardo';
+            height: 30px;
+            font: 14px;
+            line-height: 30px;
             color: #000; }
       #header_sub .inner .menuMo.on {
         left: 0; }
@@ -2397,7 +2398,7 @@ main {
         main #header .inner .menuMo .txtbox {
           width: 100%;
           height: 280px;
-          padding: 40px;
+          padding: 20px;
           background: #fff; }
           main #header .inner .menuMo .txtbox > a {
             display: block;
@@ -2451,12 +2452,13 @@ main {
           background: #eee; }
           main #header .inner .menuMo .gnbmo li {
             width: 100%;
-            padding: 20px 40px;
+            padding: 20px;
             border-bottom: 1px solid #ddd; }
             main #header .inner .menuMo .gnbmo li a {
               display: block;
-              height: 40px;
-              font: 15px/40px 'Cardo';
+              height: 30px;
+              font: 14px;
+              line-height: 30px;
               color: #000; }
         main #header .inner .menuMo.on {
           left: 0; }
