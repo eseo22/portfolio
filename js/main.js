@@ -129,12 +129,20 @@ $(".movebox").find(".prev").on("click", function (e) {
 });
 
 //자동롤링 슬라이드
-setInterval(function () {
+timer = setInterval(move, 3000);
+
+$("li").on("mouseenter", function () {
+    clearInterval(timer);
+});
+$("li").on("mouseleave", function () {
+    timer = setInterval(move, 3000);
+});
+function move(){
     $(".slidewrap2").animate({ marginLeft: "-200%" }, 1000, function () {
         $(".slidewrap2").css({ marginLeft: "-100%" });
         $(".slidewrap2").children("li").first().appendTo(".slidewrap2");
     });
-}, 3000);
+}
 
 
 function next(wrap) {
