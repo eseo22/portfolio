@@ -2118,119 +2118,93 @@ input, a, select, option {
         object-fit: cover; }
 
 @media screen and (max-width: 1179px) {
-  .department .inner {
+  .department {
     width: 100%; }
-    .department .inner .topbox ul li {
-      padding: 0px 10px; }
-    .department .inner .about1 {
-      height: 500px;
-      padding: 20px 20px 0px; }
-      .department .inner .about1 .pic {
-        width: 280px;
-        height: 400px; }
-      .department .inner .about1 .txt {
-        position: absolute;
-        top: 120px;
-        left: 320px; }
-        .department .inner .about1 .txt p {
-          width: 340px; }
-    .department .inner .team {
-      height: auto;
-      margin-bottom: 100px;
-      padding: 20px; }
-      .department .inner .team::before {
-        display: none; }
-      .department .inner .team .pic {
-        width: 200px;
-        height: 320px;
-        margin-left: 0px; }
-      .department .inner .team .dpbox {
-        width: 220px;
-        height: 320px;
-        padding: 10px;
-        top: 60px;
-        left: 20px; }
-      .department .inner .team .dptxt {
-        width: 200px;
-        top: 200px;
-        left: 30px; }
-    .department .inner .about2 {
+    .department .sub_visual {
+      height: 200px; }
+      .department .sub_visual > .txt h1 {
+        font-size: 26px; }
+        .department .sub_visual > .txt h1 span {
+          font-size: 12px; }
+      .department .sub_visual > .txt > p {
+        font-size: 14px; }
+    .department .inner {
+      width: 100%;
       padding: 0px 20px; }
-      .department .inner .about2 article {
-        padding: 0px; }
-        .department .inner .about2 article::after {
-          content: '';
-          display: block;
-          clear: both; }
-        .department .inner .about2 article:nth-of-type(1) {
-          height: auto;
-          float: left;
+      .department .inner .topbox {
+        margin-bottom: 50px; }
+        .department .inner .topbox ul li {
+          height: 40px;
+          padding: 0 10px; }
+          .department .inner .topbox ul li p {
+            font-size: 12px; }
+          .department .inner .topbox ul li i {
+            font-size: 15px; }
+      .department .inner > .txtbox {
+        margin-bottom: 100px; }
+        .department .inner > .txtbox h2 {
+          font-size: 20px; }
+        .department .inner > .txtbox p {
+          font-size: 12px; }
+      .department .inner .process {
+        margin-bottom: 60px; }
+        .department .inner .process > .title {
+          width: 100%; }
+        .department .inner .process > .wrap article {
+          width: 50%;
           margin-right: 0px; }
-        .department .inner .about2 article:nth-of-type(2), .department .inner .about2 article:nth-of-type(3) {
-          height: 120px;
-          margin-bottom: 20px;
-          float: right; }
-        .department .inner .about2 article:nth-of-type(4) {
-          width: 100%; } }
+          .department .inner .process > .wrap article .picbox i {
+            font-size: 40px;
+            color: #ddd; }
+      .department .inner .member {
+        margin-bottom: 100px; }
+        .department .inner .member > .pic {
+          padding: 50px 0px; } }
 @media screen and (max-width: 870px) {
-  .department .inner .about1 .pic {
-    width: 100%;
-    height: 200px; }
-  .department .inner .about1 .txt {
-    width: 100%;
-    position: static; }
-    .department .inner .about1 .txt span {
-      display: none; }
-    .department .inner .about1 .txt h2 {
-      font: bold 20px/1 'Alegreya Sans'; }
-      .department .inner .about1 .txt h2::before {
-        display: none; }
-    .department .inner .about1 .txt p {
-      font-size: 15px;
-      width: 100%; }
-  .department .inner .team {
-    width: 100%;
-    display: block; }
-    .department .inner .team::after {
-      content: '';
-      display: block;
-      clear: both; }
-    .department .inner .team .pic {
-      width: 50%;
-      height: 200px;
-      float: right;
-      margin-top: 0px; }
-    .department .inner .team .dpbox {
-      width: 50%;
-      height: 200px;
-      position: static;
-      float: left; }
-    .department .inner .team .dptxt {
+  .department {
+    width: 100%; }
+    .department .sub_visual {
+      height: 200px; }
+      .department .sub_visual > .txt h1 {
+        font-size: 26px; }
+        .department .sub_visual > .txt h1 span {
+          font-size: 12px; }
+      .department .sub_visual > .txt > p {
+        font-size: 14px; }
+    .department .inner {
       width: 100%;
-      position: static;
-      float: left; }
-      .department .inner .team .dptxt p {
-        font-size: 15px;
-        margin-top: 20px; }
-  .department .inner .about2 article {
-    padding: 0px; }
-    .department .inner .about2 article::after {
-      content: '';
-      display: block;
-      clear: both; }
-    .department .inner .about2 article:nth-of-type(1), .department .inner .about2 article:nth-of-type(2), .department .inner .about2 article:nth-of-type(3), .department .inner .about2 article:nth-of-type(4) {
-      width: 100%;
-      margin-bottom: 40px; }
-      .department .inner .about2 article:nth-of-type(1) p, .department .inner .about2 article:nth-of-type(2) p, .department .inner .about2 article:nth-of-type(3) p, .department .inner .about2 article:nth-of-type(4) p {
-        font-size: 15px; }
-    .department .inner .about2 article:nth-of-type(1) h2 {
-      font: bold 20px/1 'Alegreya Sans'; }
-    .department .inner .about2 article:nth-of-type(2), .department .inner .about2 article:nth-of-type(3) {
-      height: auto; }
-      .department .inner .about2 article:nth-of-type(2) i, .department .inner .about2 article:nth-of-type(3) i {
-        font-size: 30px; }
-    .department .inner .about2 article:nth-of-type(4) {
-      padding-top: 0px; } }
+      padding: 0px 20px; }
+      .department .inner .topbox {
+        margin-bottom: 50px; }
+        .department .inner .topbox ul li {
+          height: 40px;
+          padding: 0 10px; }
+          .department .inner .topbox ul li p {
+            font-size: 12px; }
+          .department .inner .topbox ul li i {
+            font-size: 15px; }
+      .department .inner > .txtbox {
+        width: 100%;
+        margin-bottom: 100px; }
+        .department .inner > .txtbox h2 {
+          font-size: 20px; }
+        .department .inner > .txtbox p {
+          font-size: 12px; }
+      .department .inner .process {
+        margin-bottom: 60px; }
+        .department .inner .process > .title {
+          width: 100%; }
+        .department .inner .process > .wrap article {
+          width: 100%;
+          height: 140px;
+          margin-right: 0px; }
+          .department .inner .process > .wrap article .picbox i {
+            font-size: 40px;
+            color: #ddd; }
+      .department .inner .member {
+        margin-bottom: 100px; }
+        .department .inner .member > .pic {
+          padding: 50px 0px; } }
 body {
   width: 100%;
   overflow-x: hidden; }
