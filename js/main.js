@@ -129,7 +129,7 @@ $(".movebox").find(".prev").on("click", function (e) {
 });
 
 //자동롤링 슬라이드
-timer = setInterval(move, 3000);
+timer = setInterval(move, 2000);
 
 $("li").on("mouseenter", function () {
     clearInterval(timer);

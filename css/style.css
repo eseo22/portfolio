@@ -18,7 +18,7 @@ fieldset {
   border: none; }
 
 input, a, select, option {
-  outline: 1; }
+  outline: 1px; }
 
 .h {
   position: absolute;
@@ -3238,7 +3238,7 @@ main {
     #work .inner .slidebox {
       width: 90%;
       height: 400px;
-      margin: 20 auto; }
+      margin: 20px auto; }
       #work .inner .slidebox .slidewrap2 {
         width: calc(100% * 6);
         height: 100%; }
