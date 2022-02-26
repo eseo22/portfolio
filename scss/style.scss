@@ -586,7 +586,7 @@ main{
             width: 340px; height: 100vh;
             float: left;
             h2{
-                font: 45px/1 'Cardo'; color: #222;
+                font: 40px/1 'Cardo'; color: #222;
 				position: relative; top: 0;
             }
         }
@@ -829,7 +829,7 @@ main{
 					clear: both;
 				}
 				>h3{
-					font: 40px/1 'Cardo'; color: #222;
+					font: 30px/1 'Cardo'; color: #222;
 					padding-bottom: 20px;
 					margin-bottom: 120px;
 					border-bottom: 2px solid #000;
@@ -959,7 +959,7 @@ main{
 			background: #f1eae0;
 			>.txtbox{
 				width: 120%; height: 100%;
-				padding: 40px 60px;
+				padding: 24px 60px;
 				background: #fff;
 				position: relative;
 				margin-left: 50px;
@@ -1073,7 +1073,7 @@ main{
 
 			article {
 				margin-right: 60px;
-				h1 {
+				h2 {
 					font: 20px/1 "arial";
 					color: #ddd;
 					margin-bottom: 30px;
@@ -1227,9 +1227,9 @@ main{
 			}
 	
 			.boxwrap {
-				
+				display: flex;
 				> article {
-					width: 32%;
+					width: 33.3%;
 					padding: 20px 0px;
 					margin-right: 10px;
 					h3 {
@@ -1251,6 +1251,7 @@ main{
 			.head{
 				width: 100%; height: 138px;
 				h2{
+					font-size:30px;
 					position: static;
 				}
 			}
@@ -1258,11 +1259,12 @@ main{
 				width: 100%;
 				.box{
 					.picbox{
-						width: 90%; height: 200px; 
-						margin: 0 auto;
+						width: 90%; height: 160px; 
+						margin: 0 auto 20px;
 					}
 					>.txtbox{
 						width: 90%; margin: 0 auto;
+						h3{font-size: 25px;}
 						p{
 							width: 100%;
 						}
@@ -1277,15 +1279,15 @@ main{
 		.inner{
 			width: 100%; 
 			padding: 50px 20px;
-			
+			h2{font-size: 30px;}
 			.slidebox{
-				width: 90%; height: 400px;
+				width: 60%; height: 300px;
 				margin: 20px auto; //border: 1px solid #000;
 				.slidewrap2{
 					width: calc(100% * 6); height: 100%; 
 					>li{
 						width:calc(100% / 6);  
-						margin-right: 30px;
+						margin-right: 40px;
 					}
 				}
 			}
@@ -1299,8 +1301,13 @@ main{
 				
 				>div{
 					width: 33.3%; 
+					h3{font-size: 28px;}
 					p{ 
 						font: 18px/1.4 'Noto Serif'; color: #444;
+					}
+					.circleb{
+						width: 50px; height: 50px;
+						i{font-size: 30px; line-height: 50px;}
 					}
 					
 				}
@@ -1321,6 +1328,11 @@ main{
 					width: 100%; //border: 1px solid pink;
 					margin: 0 auto;
 					
+				}
+				.articlelist{
+					>li{
+						width: 100%;
+					}
 				}
 				
 			}
@@ -1413,86 +1425,274 @@ main{
 		}
 	}
 }
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 780px) {
 	main{
 		#header {
 			.inner {
-				> a {
+				width: 100%;
+				height: 80px;
+	
+				h1 {
+					width: 50%;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+	
+					a {
+						height: 80px;
+						line-height: 80px;
+						text-align: center;
+					}
+				}
+				> .gnb {
 					display: none;
 				}
+	
+				> a {
+					border: none;
+					letter-spacing: 1px;
+					color: #666;
+					right: 30px;
+				}
 				.btnCall {
-					top:50%;
-					left: 20px;
-					transform: translateY(-50%);
+					left: 30px;
+					display: block;
+				}
+			}
+		}
+		#visual {
+		
+			.inner {
+				width: 100%;
+				.txtbox {
+					width: 60%;
+					top: 25%;
+					left: 50%;
+					transform: translateX(-50%);
+					
+					.txtlist {
+						left:20px;
+
+						p{font-size: 19px;}
+						
+					}
+				}
+				.slidebox {
+					width: 100%;
+				}
+		
+				
+			}
+		}
+	}
+	
+	#intro {
+		.inner {
+	
+			.boxwrap {
+				display: block;
+				> article {
+					width: 100%;
+					padding: 20px 0px;
+					margin-right: 10px;
+					h3 {
+						font: 20px/1 'Cardo';
+					}
+					p {
+						font: 14px/1.4 'Noto Serif';
+						color: #333;
+					}
 				}
 			}
 		}
 	}
 	
-	#footer {
-		.inner {
-			.wrap {
-				article {
-					ul {
-						li {
-							margin-bottom: 5px;
-						}
+	#service{
+		.inner{
+			width: 100%; 
+			padding: 50px 20px;
+			.head{
+				width: 100%; height: 138px;
+				h2{
+					font-size:30px;
+					position: static;
+				}
+			}
+			.body{
+				width: 100%;
+				.box{
+					.picbox{
+						width: 90%; height: 160px; 
+						margin: 0 auto 20px;
 					}
-
-					&:nth-of-type(1) {
-						width: 100%;
-						margin-right: 0px;
-						margin-bottom: 50px;
-						h1 {
-							margin-bottom: 5px;
-						}
-					}
-					&:nth-of-type(2),
-					&:nth-of-type(3) {
-						width: 100%;
-						margin: 0px 0px 20px;
-
-						h1 {
-							margin-bottom: 5px;
-						}
-
-						li {
-							display: inline-block;
-							padding-right: 10px;
-
-							&::after {
-								content: "";
-								display: block;
-								width: 1px;
-								height: 10px;
-								background: #eee;
-								position: relative;
-								top: -13px;
-								left: -9px;
-							}
-							&:nth-of-type(1) {
-								&::after {
-									display: none;
-								}
-							}
-						}
-					}
-
-					&:nth-of-type(4) {
-						input[type="text"] {
-							width: 66%;
-							background-color: #eee;
-							border: none;
-						}
-						input[type="submit"] {
-							width: 30%;
+					>.txtbox{
+						width: 90%; margin: 0 auto;
+						h3{font-size: 25px;}
+						p{
+							width: 100%;
 						}
 					}
 				}
-			}
-			> p {
-				margin-bottom: 5px;
+	
 			}
 		}
 	}
+	
+	#work{
+		.inner{			
+			.slidebox{
+				width: 100%; 
+				.slidewrap2{
+					>li{
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+	
+	#contact{
+		background-color: #fff;
+		>.inner{
+			>.boxwrap{
+				display: block;
+				>div{
+					width: 100%; min-height: 180px;
+					padding:20px;
+					border: 1px solid #ddd;
+					cursor: pointer;
+					h3{font-size: 25px; margin-bottom: 10px;}
+					
+					.circleb{
+						display: none;
+					}
+					&:hover{
+						background-color: #efefef;
+					}
+					
+				}
+				
+			}
+		}
+	}
+	
+	#information {
+		> .inner {
+	
+			> .boxwrap {
+				.articlewrap {
+					h3{margin-bottom: 100px;}
+					article{
+						width: 100%;
+						padding: 0px 0px;
+
+						&:last-child{
+							width: 100%; min-height: 400px;
+							.picbox{height: 200px;}
+							.txtbox{
+								padding-left: 0px;
+								h3{font-size: 20px;}
+								p,span{font-size: 15px;}
+							}
+						}
+					}
+					
+				}
+				.articlelist{
+					width: 100%;
+					>li{
+						.picbox{
+							width: 40%;
+						}
+						.txtbox{
+							width:60%;
+							h3{font-size: 15px;}
+						}
+					}
+				}
+				
+			}
+		}
+	}
+	
+	#banner{
+		.inner{
+			>.leftbox{
+				height: 300px;
+				>.txtbox{
+					width: 340%;
+					padding: 15px;
+					margin-left: 0px;
+					margin: 0 auto;
+
+					.txtwrap{
+						span{font-size: 12px;}
+						h3{font-size: 20px; margin-bottom: 10px;}
+						p{
+							display: none;
+							
+							&:nth-of-type(1){
+								display: block;
+								font-size: 12px;
+								margin-bottom: 10px;
+							}
+						}
+						
+						a {
+							width: 150px;
+							height: 30px;
+							font: 12px/30px 'Noto Serif';
+						}
+					}
+				}
+				
+	
+			}
+			.rightbox{height: 300px;}
+		}
+	}
+	#footer{
+        .inner{ 
+            .wrap{
+                article{
+                    ul{
+                        li{ margin-bottom: 5px;}
+                    }
+    
+                    &:nth-of-type(1){
+                        width: 100%;
+                        margin-right: 0px;
+                        margin-bottom: 50px;
+                        h2{
+                            margin-bottom: 5px;
+                        }
+
+                    }
+                    &:nth-of-type(2), &:nth-of-type(3){
+                        width:50%;
+                        margin:0px;
+                        h2{margin-bottom: 10px;}
+                    }
+                    
+                    &:nth-of-type(4){
+                        input[type=text]{ 
+                            width: 66%;
+                            background-color: #eee;
+                            border: none;
+                        }
+                        input[type=submit]{
+                            width: 30%;
+                            
+                        }
+                    }
+                }
+    
+                
+            }
+            >p{
+                margin-bottom: 5px;
+            }
+    
+        }
+    }
 }
