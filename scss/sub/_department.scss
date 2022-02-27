@@ -86,7 +86,7 @@
                         object-fit: cover;
                         object-position: center;
 
-                        &:last-child{object-position: center right;}
+                        &:last-child{object-position: right center;}
                     }
                 }
             }
@@ -229,7 +229,6 @@
 @media screen and (max-width:1179px){
 
     .department{
-        width: 100%;
         .sub_visual{
             height: 200px;
             >.txt{
@@ -264,48 +263,32 @@
             
             >.about{
                 display: block;
-                margin-bottom: 200px;
     
                 .left{
                     width: 100%; 
-                    display: flex;
                     flex-wrap: nowrap;
-                    padding: 0px 20px;
                     .pic{
-                        width: 48%; height: 250px;
-                        background-color: #eee;
-                        margin-bottom: 20px;
+                        height: 250px;
                         margin-left: 2%;
                         &:nth-of-type(1){margin-left: 0px;}
                         &:nth-of-type(2n){
                             margin-left: 2%;
-                            position: relative; top: 20px;
                         }
 
-                        img{
-                            width: 100%; height: 100%;
-                            object-fit: cover;
-                            object-position: center;
-    
-                            &:last-child{object-position: center right;}
-                        }
                     }
                 }
                 >.right{
                     width: 100%; 
                     padding: 40px;
                     >.txt{
-                        width: 100%; 
                         transform: translateY(0px);
                         text-align: center;
                         h2{
-                            font-size: 30px; margin-bottom: 40px;
-                            letter-spacing: 2px;
+                            font-size: 30px; 
                         }
                         p{
                             width: 100%;
-                            font-size: 18px; line-height: 1.4;
-                            margin-bottom: 40px;
+                            font-size: 18px; 
                         }
                         >a{
                             display: inline-block;
@@ -316,57 +299,20 @@
             }
             
             .process{
-                margin-bottom: 200px;
                 >.title{
-                    width: 100%;
-                    //border: 1px solid pink;
-                    h2{
-                        font-size: 30px; color: #222;
-                        margin-bottom: 80px;
-                        text-align: center;
-                        letter-spacing: 2px;
-    
-                        &::before{
-                            content: ''; display: block;
-                            width: 50px; height: 2px;
-                            background-color: #000;
-                            position: relative;
-                            left: 50%; top: -20px;
-                            transform: translate(-50%);
-                        }
-                    }
+                    h2{font-size: 30px;}
                 }
                 >.wrap{
-                    width: 100%; 
-                    //border: 1px solid orange;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
                     article{
                         width:33.3%; 
-                        //border: 1px solid #000;
                         padding: 10px;
-                        //display: flex;
-                        align-items: center;
                         .picbox{
-                            width: 100%; height: 100px;
-                            
                             margin-bottom: 0px;
-    
-                            i{
-                                font-size: 34px; 
-                            }
+                            i{font-size: 34px;}
                         }
                         >.txtbox{
-                            width: 100%; height: 100px;
-                            //border: 1px solid orange;
-                            text-align: center;
-    
-                            h3{font-size: 16px; color: #222; margin-bottom: 10px;}
-                            p{
-                                font-size: 12px; color: #444;
-                                line-height: 1.2;
-                            }
+                            h3{font-size: 16px;}
+                            p{font-size: 12px;}
                         }
                     }
     
@@ -375,25 +321,12 @@
             }
             
             .member{
-                width: 100%;
-                margin-bottom: 200px ;
-    
-                h2{
-                    font-size: 30px; color: #222;
-                    margin-bottom: 80px;
-
-                }
+                h2{font-size: 30px;}
                 >.wrap{
-                    width: 100%;
-                    display: flex;
-                    flex-wrap: wrap;
                     justify-items: space-between;
                     .pic{
                         width: 32%; height: 280px;
-                        background-color: #eee;
-                        margin-bottom: 20px;
                         margin-right: auto;
-                        &:nth-of-type(3n){margin-right: 0px;}
                     }
     
                     
@@ -409,116 +342,37 @@
 @media screen and (max-width:600px){
 
     .department{
-        width: 100%;
-        
         .inner{
-            
             >.about{
-                display: block;
-                margin-bottom: 200px;
-    
                 .left{
-                    width: 100%; 
-                    display: flex;
                     flex-wrap: wrap;
-                    padding: 0px 20px;
                     margin-bottom: 30px;
                     .pic{
                         width: 49%; height: 200px;
                         margin-bottom: 10px;
-                        margin-left: 2%;
                         &:nth-of-type(1),&:nth-of-type(3){margin-left: 0px;}
-                        &:nth-of-type(2n){
-                            //margin-left: 2%;
-                            position: relative; top: 20px;
-                        }
-
-                        img{
-                            width: 100%; height: 100%;
-                            object-fit: cover;
-                            object-position: center;
-    
-                            &:last-child{object-position: center right;}
-                        }
                     }
                 }
                 >.right{
-                    width: 100%; 
                     padding: 20px;
                     >.txt{
-                        width: 100%; 
-                        transform: translateY(0px);
-                        text-align: center;
                         h2{
-                            font-size: 30px; margin-bottom: 20px;
-                            letter-spacing: 2px;
+                            margin-bottom: 20px;
                         }
                         p{
-                            width: 100%;
-                            font-size: 16px; line-height: 1.4;
-                            margin-bottom: 40px;
+                            font-size: 16px; 
                         }
-                        >a{
-                            display: inline-block;
-                        }
+                        
                     }
                     
                 }
             }
             
             .process{
-                margin-bottom: 200px;
-                >.title{
-                    width: 100%;
-                    //border: 1px solid pink;
-                    h2{
-                        font-size: 30px; color: #222;
-                        margin-bottom: 80px;
-                        text-align: center;
-                        letter-spacing: 2px;
-    
-                        &::before{
-                            content: ''; display: block;
-                            width: 50px; height: 2px;
-                            background-color: #000;
-                            position: relative;
-                            left: 50%; top: -20px;
-                            transform: translate(-50%);
-                        }
-                    }
-                }
                 >.wrap{
-                    width: 100%; 
-                    //border: 1px solid orange;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
+                    
                     article{
                         width:50%; 
-                        //border: 1px solid #000;
-                        padding: 10px;
-                        //display: flex;
-                        align-items: center;
-                        .picbox{
-                            width: 100%; height: 100px;
-                            
-                            margin-bottom: 0px;
-    
-                            i{
-                                font-size: 34px; 
-                            }
-                        }
-                        >.txtbox{
-                            width: 100%; height: 100px;
-                            //border: 1px solid orange;
-                            text-align: center;
-    
-                            h3{font-size: 16px; color: #222; margin-bottom: 10px;}
-                            p{
-                                font-size: 12px; color: #444;
-                                line-height: 1.2;
-                            }
-                        }
                     }
     
                     
@@ -526,24 +380,10 @@
             }
             
             .member{
-                width: 100%;
                 margin-bottom: 100px ;
-    
-                h2{
-                    font-size: 30px; color: #222;
-                    margin-bottom: 80px;
-
-                }
                 >.wrap{
-                    width: 100%;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-items: space-between;
                     .pic{
                         width: 49%; height: 200px;
-                        background-color: #eee;
-                        margin-bottom: 20px;
-                        margin-right: auto;
                         &:nth-of-type(2n){margin-right: 0px;}
                         &:nth-of-type(3){margin-right:auto;}
                     }
