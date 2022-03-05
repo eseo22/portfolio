@@ -25,7 +25,16 @@ main{
         position: absolute;
         top: 0; left: 0;
         z-index: 2;
-    
+		//바로가기 탭
+		#navi a{
+			display: block; width: 100%; height: 30px;
+			position: fixed; top: -30px; left: 0;
+			background: #444; 
+			text-align: center; 
+			font: 16px/30px 'arial' ; color: #fff;
+			
+			&.on{top: 0px;}
+		}
         .inner {
             width: 1180px; height: 100px;
             margin: 0 auto;
@@ -44,6 +53,7 @@ main{
                     color: #000;
                 }
             }
+			//메뉴 리스트
             > .gnb {
                 width: 65%;
                 position: absolute;
@@ -145,7 +155,7 @@ main{
                                         content: ''; display: block;
                                         width: 120px; height: 2px;
                                         background: #cfb6a4;
-                                        position: relative; top: -3px;
+                                        position: relative; top: -2px;
                                         opacity: 0;
                                     }
                                     
@@ -163,7 +173,8 @@ main{
                     }
                 }
             }
-    
+
+			//로그인버튼 스타일
             > a {
                 display: block;
                 width: 8%;
@@ -177,8 +188,9 @@ main{
                 top: 42%;
                 
             }
+
+			//반응형 메뉴버튼
             .btnCall {
-                display: block;
                 width: 30px;
                 height: 16px;
                 position: absolute;
@@ -226,6 +238,7 @@ main{
                     }
                 }
             }
+			//반응형 메뉴
             .menuMo {
                 width: 300px;
                 height: 100vh;
@@ -325,6 +338,8 @@ main{
                 }
             }
         }
+
+		//gnb_sub메뉴 hover 효과
         @keyframes lineani{
             from { width: 0px ;}
             to {width: 80px ; opacity: 1;}
@@ -999,64 +1014,40 @@ main{
 }
 
 
-// #popup {
-// 	width: 300px; 
-// 	background-color: #fff;
-// 	position: absolute;
-// 	bottom: 10vh;
-// 	right: 5vw;
-// 	z-index: 10;
-// 	.content {
-// 		padding: 20px 20px 40px;
-// 		background-color: #272723;
-// 		p {
-// 			font: 30px/1 "맑은 고딕";
-// 			color: #fff;
-// 		}
-// 	}
-// 	.wrap {
-// 		width: 100%;
-// 		border-top: 1px solid #000;
-// 		&::after {
-// 			content: "";
-// 			display: block;
-// 			clear: both;
-// 		}
-// 		span {
-// 			font: 15px/50px "맑은 고딕";
-// 			color: #000;
-// 			float: left;
-// 			width: 50%;
-// 			height: 50px;
-// 			background-color: #fff;
-// 			padding: 0px 10px;
-// 			text-align: center;
-// 			border-right: 1px solid #000;
-// 			cursor: pointer;
-// 		}
+#popup {
+	width: 300px; 
+	background-color: #444;
+	position: absolute;
+	bottom: 10vh;
+	right: 5vw;
+	z-index: 10;
+	border-radius: 5px;
+	padding: 20px;
+	.content {
+		width: 100%; min-height: 80px;
+		p {
+			font: 30px/1 "맑은 고딕";
+			color: #fff;
+		}
+	}
+	.wrap{
+		display: inline-block;
 
-// 		a {
-// 			font: 15px/50px "arial";
-// 			color: #000;
-// 			float: right;
-// 			width: 50%;
-// 			height: 50px;
-// 			background-color: #fff;
-// 			padding: 0px 10px;
-// 			text-align: center;
-// 		}
-// 	}
-// }
-
-#navi a{
-	display: block; width: 100%; height: 30px;
-	position: fixed; top: -30px; left: 0;
-	background: #444; 
-	text-align: center; 
-	font: 16px/30px 'arial' ; color: #fff;
-	
-	&.on{top: 0px;}
+		input{
+			width: 10px; height: 10px; vertical-align: middle;
+		}
+		label{
+			font-size: 12px;vertical-align: middle;
+			color: #fff;
+		}
+	}
+	.close{
+		font-size: 12px; color: #fff;
+		position: absolute; right: 20px; bottom: 20px;
+	}
 }
+
+
 
 #footer {
 	width: 100%;

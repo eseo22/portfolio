@@ -1,9 +1,9 @@
 //쿠키팝업
-$("#popup .wrap span").on("click", function(){
+$("#popup .wrap label").on("click", function(){
     setCookie();
     $("#popup").hide();
 })
-$("#popup .wrap a").on("click", function(){
+$("#popup a").on("click", function(){
     $("#popup").hide();
 
 })
